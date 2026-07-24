@@ -32,6 +32,7 @@ Elke component heeft een eigen map: `component-library/<naam>/` met minimaal:
 - [`otp-input-boxes/`](otp-input-boxes/README.md) — illustratieve, auto-vullende verificatiecode-vakjes (alleen decoratief, geen echte invoer)
 - [`radial-fab-menu/`](radial-fab-menu/README.md) — ronde actieknop die radiaal uitwaaiert naar meerdere snelle acties (bijv. bellen/whatsapp/route)
 - [`gradient-sweep-text/`](gradient-sweep-text/README.md) — bewegende lichtband met kleurverloop veegt over een woord heen
+- [`alternating-timeline/`](alternating-timeline/README.md) — verticale tijdlijn met om-en-om links/rechts uitgelijnde mijlpalen, geschikt voor bedrijfsgeschiedenis
 
 ## Referentiepagina's (alleen inspiratie, niet direct bruikbaar)
 
