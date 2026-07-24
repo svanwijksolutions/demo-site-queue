@@ -27,6 +27,33 @@
       "pitch_email_klaar": true,
       "toegevoegd_op": "2026-07-23",
       "afgerond_op": "2026-07-23"
+    },
+    {
+      "id": "vanoostenvoorvis",
+      "status": "done",
+      "bedrijfsnaam": "Van Oosten voor Vis",
+      "branche": "Zeevishandel (visboer)",
+      "contactpersoon": "Wijnand van Oosten jr.",
+      "contact": {
+        "adres": "Buitenwatersloot 43, 2613 TA Delft",
+        "telefoon": "015-2120610",
+        "email": "info@vanoostenvoorvis.nl",
+        "kvk": null,
+        "huidige_site": "https://www.vanoostenvoorvis.nl/"
+      },
+      "regio": "Delft",
+      "diensten": ["Verse Noordzeevis", "Gerookte vis", "Kant-en-klaar/gebakken vis", "Vis bestellen vooraf", "Advies & bereidingstips"],
+      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
+      "ontwerprichting": "Kustmodern: diep marineblauw/petrol, fris blauw accent, gedurfde sans-serif typografie (Space Grotesk + Inter), geen bruidsstijl",
+      "notities": "Geen KVK-nummer bekend, bewust weggelaten i.p.v. verzonnen. Geen recensiedata bekend, geen ratingbadge toegevoegd. Oude vacaturetekst en gedateerde dagaanbieding/prijs (Hollandse Nieuwe) bewust niet overgenomen omdat actualiteit onzeker is. Rijke echte familiegeschiedenis (1923-2015) verwerkt als tijdlijn op geschiedenis.html.",
+      "fotos_beschikbaar": true,
+      "talen": ["nl"],
+      "repo_ready": true,
+      "repo": "vanoostenvoorvis",
+      "live_url": "https://svanwijksolutions.github.io/vanoostenvoorvis/",
+      "pitch_email_klaar": true,
+      "toegevoegd_op": "2026-07-24",
+      "afgerond_op": "2026-07-24"
     }
   ]
 }
