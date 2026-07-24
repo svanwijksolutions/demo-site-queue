@@ -1,0 +1,122 @@
+/* Testimonials columns — pure CSS, geen JS.
+   Pas de --tc-* variabelen aan de huisstijl van de site aan; ze vallen
+   terug op algemene site-variabelen als die al bestaan (--color-*, --font-*). */
+
+.tc-section {
+  --tc-card-bg: var(--color-surface, #ffffff);
+  --tc-card-border: var(--color-border, rgba(0, 0, 0, 0.08));
+  --tc-card-shadow: 0 24px 48px -28px rgba(0, 0, 0, 0.28);
+  --tc-text: var(--color-text, #1a1a1a);
+  --tc-text-muted: var(--color-text-muted, rgba(26, 26, 26, 0.62));
+  --tc-accent: var(--color-accent, #1a1a1a);
+  --tc-radius: 1.5rem;
+  --tc-gap: 1.5rem;
+  --tc-column-width: 22rem;
+  padding-block: clamp(3rem, 6vw, 6rem);
+}
+
+.tc-intro {
+  max-width: 34rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.tc-columns-wrap {
+  display: flex;
+  justify-content: center;
+  gap: var(--tc-gap);
+  margin-top: 2.5rem;
+  max-height: 44rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+}
+
+.tc-column {
+  flex: 1 1 0;
+  max-width: var(--tc-column-width);
+  min-width: 0;
+}
+
+.tc-column--tablet { display: none; }
+.tc-column--desktop { display: none; }
+
+@media (min-width: 48rem) {
+  .tc-column--tablet { display: block; }
+}
+
+@media (min-width: 64rem) {
+  .tc-column--desktop { display: block; }
+}
+
+.tc-track {
+  display: flex;
+  flex-direction: column;
+  gap: var(--tc-gap);
+  animation: tc-scroll var(--tc-duration, 24s) linear infinite;
+  will-change: transform;
+}
+
+@keyframes tc-scroll {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tc-track {
+    animation: none;
+  }
+}
+
+.tc-card {
+  margin: 0;
+  padding: 1.75rem;
+  border-radius: var(--tc-radius);
+  border: 1px solid var(--tc-card-border);
+  background: var(--tc-card-bg);
+  box-shadow: var(--tc-card-shadow);
+}
+
+.tc-card p {
+  margin: 0;
+  color: var(--tc-text);
+  line-height: 1.6;
+}
+
+.tc-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.tc-avatar-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--tc-accent);
+  color: var(--tc-card-bg);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+.tc-meta-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.35;
+}
+
+.tc-name {
+  font-weight: 600;
+  color: var(--tc-text);
+}
+
+.tc-role {
+  font-size: 0.875rem;
+  color: var(--tc-text-muted);
+}

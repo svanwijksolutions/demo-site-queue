@@ -1,0 +1,61 @@
+<!--
+  Testimonials columns — voorbeeldmarkup.
+  Vervang de voorbeeldkaarten door echte reviews. Elke .tc-track bevat de
+  kaartenset PRECIES TWEE KEER achter elkaar (set A, dan nogmaals set A) —
+  de animatie schuift 50% omhoog en moet dus naadloos op een identieke
+  kopie aansluiten. Geen quotes bekend voor dit bedrijf? Deze sectie
+  overslaan, niet vullen met verzonnen tekst.
+-->
+<section class="tc-section">
+  <div class="container">
+    <div class="tc-intro reveal">
+      <span class="eyebrow">Reviews</span>
+      <h2>Wat klanten zeggen</h2>
+      <p class="lede">Echte ervaringen van klanten.</p>
+    </div>
+
+    <div class="tc-columns-wrap">
+      <div class="tc-column" style="--tc-duration: 22s;">
+        <div class="tc-track">
+          <!-- set A -->
+          <blockquote class="tc-card">
+            <p>"Citaat van de klant, woordelijk overgenomen."</p>
+            <footer class="tc-meta">
+              <span class="tc-avatar-fallback" aria-hidden="true">AB</span>
+              <span class="tc-meta-text">
+                <span class="tc-name">Naam klant</span>
+                <span class="tc-role">Context, bijv. datum of dienst</span>
+              </span>
+            </footer>
+          </blockquote>
+          <!-- ...meer kaarten in set A... -->
+
+          <!-- set A herhaald (identiek, voor naadloze loop) -->
+          <blockquote class="tc-card" aria-hidden="true">
+            <p>"Citaat van de klant, woordelijk overgenomen."</p>
+            <footer class="tc-meta">
+              <span class="tc-avatar-fallback" aria-hidden="true">AB</span>
+              <span class="tc-meta-text">
+                <span class="tc-name">Naam klant</span>
+                <span class="tc-role">Context, bijv. datum of dienst</span>
+              </span>
+            </footer>
+          </blockquote>
+          <!-- ...zelfde kaarten nogmaals... -->
+        </div>
+      </div>
+
+      <div class="tc-column tc-column--tablet" style="--tc-duration: 28s;">
+        <div class="tc-track">
+          <!-- set B, twee keer -->
+        </div>
+      </div>
+
+      <div class="tc-column tc-column--desktop" style="--tc-duration: 25s;">
+        <div class="tc-track">
+          <!-- set C, twee keer -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
