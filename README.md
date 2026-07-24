@@ -49,21 +49,17 @@ Nieuwe componenten toevoegen: plak de code gewoon in de chat (met een korte aanw
 - `done` — live, pitchmail klaar in `pitches/<id>.md`
 - `needs_review` — de Routine is vastgelopen of twijfelde (ontbrekende/tegenstrijdige info, mislukte Pages-build, etc.) — zie `notities` voor de reden. Nooit stilzwijgend verzonnen invullen.
 
-## Vaste regels voor elke build (zie ook `webdesign`-skill, en de volledige bouwinstructie in de Routine)
+## Vaste regels
 
-- Losse HTML/CSS/JS, geen framework, relatieve paden (GitHub Pages sub-pad hosting)
-- Ultra modern en visueel rijk: bento-grids, glassmorphism, gradient-mesh achtergronden, grote expressieve typografie — met bewegende elementen (load-animaties, hover-effecten, doorlopende subtiele beweging) die nooit content permanent verbergen (geen scroll-observer die op `opacity: 0` blijft hangen)
-- Geen AI-gegenereerde "foto's" en geen kunstmatig/nep-ogende iconen. Alleen: (a) echte foto's die de gebruiker aanlevert in `uploads/<id>/`, correct geplaatst zonder vervorming, of (b) handgemaakte SVG/CSS-vormgeving (zoals het bloem-monogram bij Zie Haar Stralen) — nooit AI-artstijl illustraties of stockfoto-achtige AI-mensen
-- Nederlandse tekst zonder liggend streepje/gedachtestreepje ( - , – , — ) als stijlmiddel — herschrijf met een punt, komma, dubbele punt of "en". Correct gespelde koppeltekens in samenstellingen (e-mail) zijn wel gewoon toegestaan
-- Meertalig (met moderne taalswitcher) bij relevante bedrijven, zie "Talen" hierboven
-- Geen verzonnen prijzen, reviewquotes, geschiedenis of feiten — eerlijke placeholders
-- `noindex, nofollow` + `robots.txt: Disallow: /` — het zijn ongevraagde concepten, geen live sites
-- Footer-disclaimer: "Dit is een ongevraagd ontwerpvoorstel van Drivenn Agency..."
-- Footer-onderkant (`.footer-bottom`) altijd in drie delen: links copyright (&copy; jaar + bedrijfsnaam, evt. KVK), midden "Website gemaakt door S. van Wijk Solutions" met link naar `https://svanwijksolutions.nl`, rechts een klikbare link naar de privacyverklaring. Op mobiel onder elkaar, vanaf desktop-breedte (±768px) op een rij met ruimte ertussen. Geldt voor alle sites, inclusief bestaande `done`-sites (die worden er tijdens de eerstvolgende nachtrun nog even bij gepakt als retrofit, zie de Routine-instructie).
-- GitHub Pages via self-configuring Actions workflow (`.github/workflows/pages.yml`, `actions/configure-pages` + `upload-pages-artifact` + `deploy-pages`)
-- 8-staps kwaliteitscontrole vóór elke push (zie Routine-instructie) — niet oppervlakkig 8x hetzelfde checken, maar 8 verschillende invalshoeken
-- Pitchmail wordt **nooit verzonden**, alleen klaargezet in `pitches/<id>.md`
-- **Nooit** `svanwijksolutions/waterfordscocktails` aanraken — dat is een ander, ongerelateerd project
+Alle regels die voor élke build gelden (techniek, eerlijkheid/geen verzonnen feiten, beeldmateriaal, taal, footer, robots/noindex, bewegende elementen, pitchmail, enz.) staan in **[`RULES.md`](RULES.md)**, niet meer hier. Dat bestand is de enige bindende bron — bij twijfel of tegenstrijdigheid wint `RULES.md`, ook van wat de bouwinstructie in de Routine zelf op dat moment zegt (die instructie kan achterlopen; `RULES.md` wordt live uit de repo gelezen bij elke build).
+
+Zie voor de stap-voor-stap bouwprocedure (hoe je het aanpakt, kwaliteitscontrole, push/verify) de volledige bouwinstructie in de Routine zelf, en de `webdesign`-skill voor mapstructuur/hamburgermenu/SEO-basis.
+
+## Feedback en regels
+
+Sem kan op elk moment in de chat feedback geven over hoe sites eruit moeten zien, moeten werken of zich moeten gedragen (bijv. "de footer moet er zo uitzien", "geen AI-illustraties", enz.). **Sinds 24-07-2026 geldt als staande afspraak:** zulke feedback wordt niet alleen toegepast op het moment zelf, maar ook vastgelegd als permanente regel in `RULES.md`, met een gedateerde regel in het wijzigingslog onderaan dat bestand. Waar zinvol wordt een nieuwe regel ook retroactief toegepast op bestaande `done`-sites, via de "regel-compliance check" die de orchestrator elke nachtrun uitvoert (zie de Routine-instructie) — zo hoeft niet elke keer handmatig een specifieke site aangewezen te worden.
+
+Twijfelt de bouwende partij (subagent of orchestrator) of iets een eenmalige wens is of een staande regel: navragen bij Sem in plaats van het zelf te beslissen.
 
 ## Bekende sandbox-beperkingen
 
