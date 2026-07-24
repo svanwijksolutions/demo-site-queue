@@ -8,6 +8,8 @@ Interne wachtrij voor Drivenn Agency's demo-site pipeline (svanwijksolutions san
 2. GitHub Apps kunnen op een persoonlijk account geen nieuwe repo's aanmaken — dat is een platformbeperking, geen instelling. **Elk item heeft dus een handmatig aangemaakte lege repo nodig voordat de Routine het oppakt.**
 3. Na het aanmaken van de lege repo (publiek, naamgeving `<id>-demo`) zet je `repo_ready` op `true` en vul je `repo` in. Zonder die stap blijft een item gewoon `pending` en verschijnt het in de ochtendsamenvatting als "wacht op repo".
 4. Verder is het volledig automatisch: de Claude GitHub App staat op "All repositories", dus een nieuw aangemaakte repo is direct zichtbaar — de Routine hoeft 'm alleen nog aan zijn eigen sessie toe te voegen via `add_repo`, dat gebeurt vanzelf tijdens de run. Jij hoeft alleen de lege repo aan te maken, verder niets.
+5. De Routine draait in één vaste, persistente chat (bevestigd getest: een "verse sessie per run" krijgt geen toegang tot de GitHub-tools, dus dat kon niet). Binnen die ene chat krijgt elk bedrijf wel zijn eigen achtergrond-subagent, die geïsoleerd aan zijn eigen repo werkt en pas aan het eind rapporteert — het dichtstbijzijnde alternatief voor "elk bedrijf een eigen uitvoering" dat betrouwbaar werkt.
+6. Nieuw bedrijf of foto's toevoegen hoeft niet meer via deze bestanden direct — vertel het gewoon in de chat (met Claude) en die verwerkt het voor je in `companies.json`/`uploads/`.
 
 ## Foto's aanleveren (overdag, vóór 22:00)
 
