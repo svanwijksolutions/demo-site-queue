@@ -57,7 +57,7 @@
     },
     {
       "id": "manimania",
-      "status": "pending",
+      "status": "in_progress",
       "bedrijfsnaam": "ManiMania",
       "branche": "Nagelstudio (manicure, pedicure, nagelverzorging)",
       "contactpersoon": "Marzi",
@@ -84,7 +84,7 @@
     },
     {
       "id": "dekeukenvansandra",
-      "status": "pending",
+      "status": "in_progress",
       "bedrijfsnaam": "De Keuken van Sandra",
       "branche": "Catering, workshops, patisserie en lunches aan huis (foodstyling/culinair)",
       "contactpersoon": "Sandra Kaag",
