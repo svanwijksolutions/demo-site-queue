@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "companies": [
+    {
+      "id": "ziehaarstralen",
+      "status": "done",
+      "bedrijfsnaam": "Zie Haar Stralen",
+      "branche": "Bruidskapsel- en bruidsmake-up salon (aan huis)",
+      "contactpersoon": "Lisette",
+      "contact": {
+        "adres": "Zoete Aagt 39, 2286 WW Rijswijk",
+        "telefoon": "06-81502169",
+        "email": "info@ziehaarstralen.nl",
+        "kvk": "84415053",
+        "huidige_site": "https://www.ziehaarstralen.nl/"
+      },
+      "regio": "Rijswijk / Delft / Den Haag",
+      "diensten": ["Bruidskapsels", "Bruidsmake-up", "Extensions", "Haarsieraden/accessoires", "Proefsessie"],
+      "reviews": { "sterren": 5, "aantal": 15, "quotes_bekend": false },
+      "ontwerprichting": "Elegant/bruidsstijl, zachte kleuren, rose/creme, sierlijke typografie",
+      "notities": "",
+      "repo_ready": true,
+      "repo": "ziehaarstralen-demo",
+      "live_url": "https://svanwijksolutions.github.io/ziehaarstralen-demo/",
+      "pitch_email_klaar": true,
+      "toegevoegd_op": "2026-07-23",
+      "afgerond_op": "2026-07-23"
+    }
+  ]
+}
