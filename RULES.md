@@ -24,17 +24,23 @@ Dit bestand is de **enige bindende bron** voor regels die voor élke demo-site g
 ## Taal
 - Standaard Nederlands. Meertalig (met clientside taalswitcher, geen aparte URL's per taal) bij bedrijven met een duidelijk internationaal publiek. Zie `README.md` voor de volledige uitleg van de implementatie.
 
-## Footer (staande regel sinds 24-07-2026)
-- Footer-disclaimer op elke pagina: "Dit is een ongevraagd ontwerpvoorstel van Drivenn Agency en nog geen live website van [bedrijfsnaam]."
-- Footer-onderkant (`.footer-bottom`) bevat daarnaast ALTIJD een driedelig blok: links copyright (`&copy;` huidig jaar + bedrijfsnaam, plus KVK-nummer als dat bekend is), in het midden "Website gemaakt door S. van Wijk Solutions" met een link naar `https://svanwijksolutions.nl` (`target="_blank" rel="noopener"`), rechts een klikbare link naar de privacyverklaring (`privacy.html`). Op mobiel onder elkaar (`flex-direction: column`), vanaf ongeveer 768px breed op één rij met ruimte ertussen (`justify-content: space-between; align-items: center`).
+## Footer (staande regel sinds 24-07-2026, disclaimer verwijderd 24-07-2026)
+- **Geen** footer-disclaimer meer. De eerdere tekst ("Dit is een ongevraagd ontwerpvoorstel van Drivenn Agency...") mag nergens meer getoond worden, op geen enkele site, geen uitzonderingen. `noindex, nofollow` + `robots.txt: Disallow: /` blijven wel gewoon staan, die regelen de niet-indexering al.
+- Footer-onderkant (`.footer-bottom`) bevat ALTIJD een driedelig blok: links copyright (`&copy;` huidig jaar + bedrijfsnaam, plus KVK-nummer als dat bekend is), in het midden "Website gemaakt door S. van Wijk Solutions" met een link naar `https://svanwijksolutions.nl` (`target="_blank" rel="noopener"`), rechts een klikbare link naar de privacyverklaring (`privacy.html`). Op mobiel onder elkaar (`flex-direction: column`), vanaf ongeveer 768px breed op één rij met ruimte ertussen (`justify-content: space-between; align-items: center`).
 - Geldt voor élke site, inclusief bestaande `done`-sites. Komt er een nieuwe of gewijzigde regel bij die ook bestaande sites raakt: retrofit die sites net zoals hier gebeurd is, zie de "regel-compliance check" in de Routine-instructie.
 
 ## Bewegende elementen
 - Load-getriggerde CSS-animaties, hover-effecten en doorlopende subtiele beweging mogen altijd, met een `prefers-reduced-motion`-fallback naar geen animatie.
 - Nooit een `IntersectionObserver` die content op `opacity: 0` laat staan totdat er gescrold wordt. Content moet altijd zichtbaar zijn zonder dat scrollen daar een harde voorwaarde voor is.
+- Zelftekenende SVG-iconen mogen: een lijnicoon met `stroke-dasharray`/`stroke-dashoffset` die zichzelf "tekent" bij scroll-in-beeld of page-load, mits met dezelfde `prefers-reduced-motion`-fallback.
+
+## Zwevende UI-elementen
+- **Nooit** een zwevende ronde "+"-knop (radial FAB/quick-actions-menu) rechtsonder in beeld, ongeacht wat erachter zit (bellen/route/social). Dat patroon mag niet meer gebruikt worden, op geen enkele site.
+- Wil een site snelle acties (bellen, route, contact): verwerk die gewoon inline in de header/hero/footer, geen zwevend element eroverheen.
 
 ## Pitchmail
 - Nooit automatisch versturen, alleen als concept klaarzetten in `pitches/<id>.md`.
 
 ## Wijzigingslog
 - **24-07-2026**: bestand aangemaakt. Bestaande regels uit `README.md` en de Routine-instructie hierin samengevoegd tot één bindende bron, zodat toekomstige regelwijzigingen een gewone git-commit worden in plaats van een bewerking van de grote Routine-prompt. Footer-regel (driedelig blok) vastgelegd naar aanleiding van Sem's feedback.
+- **24-07-2026**: naar aanleiding van feedback op Van Oosten voor Vis: footer-disclaimer volledig geschrapt ("hoef ik nergens meer te zien ooit"), en een nieuwe regel toegevoegd tegen zwevende "+"-knoppen rechtsonder ("dat plusje rechtsonder hoef ik nooit te hebben op een website"). Beide gelden voor alle sites, ook bestaande.
