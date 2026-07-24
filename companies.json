@@ -54,6 +54,60 @@
       "pitch_email_klaar": true,
       "toegevoegd_op": "2026-07-24",
       "afgerond_op": "2026-07-24"
+    },
+    {
+      "id": "manimania",
+      "status": "pending",
+      "bedrijfsnaam": "ManiMania",
+      "branche": "Nagelstudio (manicure, pedicure, nagelverzorging)",
+      "contactpersoon": "Marzi",
+      "contact": {
+        "adres": "Bieslookpad 1, 2292 CD Wateringen",
+        "telefoon": "06 23 774 773",
+        "email": "info@manimania.nl",
+        "kvk": null,
+        "huidige_site": "https://manimania.nl/"
+      },
+      "regio": "Wateringen / Den Haag / Westland",
+      "diensten": ["Manicure", "Japanse manicure", "Pedicure", "OPI GelColor", "E-Manicure & BIAB", "Nail Extension Treatment", "Nagelart"],
+      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
+      "ontwerprichting": "Fris/vrouwelijk nagelstudio-gevoel, laat de echte OPI-productfoto's en nagelfoto's spreken, geen kunstmatige iconen. Brandquote als mogelijke hero-copy: \"Any woman can wear a great outfit, but it is her nails that make the statement.\" (Tammy Taylor)",
+      "notities": "Geen KVK-nummer vermeld op de site, bewust niet verzonnen. Geen openingstijden vermeld, bewust niet verzonnen (evt. 'op afspraak' als algemene formulering, geen concrete tijden). Eigenaresse heeft 18 jaar ervaring, dat is een echt feit en mag gebruikt worden. Volledige echte prijslijst aangeleverd door klant (tekst-export van de site) staat in de chatgeschiedenis van deze sessie en moet 1-op-1 overgenomen worden, niet verzinnen of afronden. Social: Facebook https://www.facebook.com/ManiManiamanicure, Instagram https://www.instagram.com/marzimanimania/.",
+      "fotos_beschikbaar": true,
+      "talen": ["nl"],
+      "repo_ready": true,
+      "repo": "manimania",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "toegevoegd_op": "2026-07-24",
+      "afgerond_op": null
+    },
+    {
+      "id": "dekeukenvansandra",
+      "status": "pending",
+      "bedrijfsnaam": "De Keuken van Sandra",
+      "branche": "Catering, workshops, patisserie en lunches aan huis (foodstyling/culinair)",
+      "contactpersoon": "Sandra Kaag",
+      "contact": {
+        "adres": "Fruitlaan 44, 2292 BB Wateringen",
+        "telefoon": "06 27 49 50 01",
+        "email": "sandra@dekeukenvansandra.nl",
+        "kvk": "12345678",
+        "huidige_site": "https://www.dekeukenvansandra.nl/"
+      },
+      "regio": "Wateringen / Westland / Den Haag",
+      "diensten": ["Hapjes en borrelplanken", "Catering op maat", "Buffet, walking dinner of diner op maat", "Tapas buffet (vanaf 20 personen)", "Chocolade (kerstkrans, valentijnshart, bonbonletter, roomtruffels)", "Lunches en lunchcatering", "Patisserie, gebak en high tea", "Workshops (o.a. vegan)", "Kistje van Sandra (cadeaupakket)", "Koekdoos (ook XL)", "Maaltijden bestellen", "Allerhande lekkers (houdbare producten zoals jam, saus, soep)"],
+      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
+      "ontwerprichting": "Warm/ambachtelijk foodstyling-gevoel, laat de echte foto's van gerechten en creaties spreken (geen stockfoto-uitstraling), persoonlijke toon van Sandra zelf",
+      "notities": "KvK-nr. 12345678 en BTW-nr. NL001714678B89 staan letterlijk zo op de bestaande site, overgenomen zoals aangeleverd (niet gecontroleerd of het geen placeholder is, niet zelf aangepast of verzonnen). Contactvoorkeur expliciet: bij voorkeur WhatsApp of e-mail, liever niet bellen (vaak op locatie/handen in het deeg). Site heeft bewust geen vaste prijslijst, wel een paar concrete prijzen: Kistje van Sandra vanaf €22,50, Koekdoos €11,-, Koekdoos XL €18,50 (PostNL verzendkosten €4,75 per doos, gratis bezorgd in Wateringen), maaltijd €6,95 (afhalen/bezorgen in overleg, min. 10 personen voor groepsbestelling). Tapas buffet vanaf 20 personen, borrelhapjes/buffet vanaf 10 personen. Samenwerking met 'We Canteen' voor warme bedrijfslunches, kan genoemd worden. Geen concrete Facebook/Instagram-URL's aangeleverd in de tekst-export, alleen de labels 'Facebook' en 'Instagram', dus geen social links verzinnen totdat de klant de echte URL's stuurt.",
+      "fotos_beschikbaar": true,
+      "talen": ["nl"],
+      "repo_ready": true,
+      "repo": "dekeukenvansandra",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "toegevoegd_op": "2026-07-24",
+      "afgerond_op": null
     }
   ]
 }
