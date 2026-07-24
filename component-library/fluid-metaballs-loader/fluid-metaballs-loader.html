@@ -1,0 +1,15 @@
+<div class="fm-container">
+  <div class="fm-ball"></div>
+  <div class="fm-ball fm-ball--2"></div>
+  <div class="fm-ball fm-ball--3"></div>
+</div>
+
+<svg style="position:absolute;width:0;height:0" width="0" height="0" aria-hidden="true">
+  <defs>
+    <filter id="fm-goo-filter">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="gooey"></feColorMatrix>
+      <feBlend in="SourceGraphic" in2="gooey"></feBlend>
+    </filter>
+  </defs>
+</svg>

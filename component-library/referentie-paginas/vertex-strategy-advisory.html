@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Vertex - Strategy Partner</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Forum&amp;family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet">
+
+  <style>
+    /* Tekst-masker-onthulling: regel schuift van translateY(110%) naar 0 zodra hij in beeld komt */
+    [data-animation-on-scroll] { opacity: 0; transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+    .animate-fade-up { transform: translateY(40px); }
+    .animate-on-scroll-visible { opacity: 1 !important; transform: translate(0, 0) scale(1) !important; }
+
+    .reveal-mask { overflow: hidden; display: block; }
+    .reveal-mask > span { display: block; transform: translateY(110%); transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+    .animate-on-scroll-visible .reveal-mask > span { transform: translateY(0); }
+  </style>
+
+<style type="text/tailwindcss">@tailwind base;
+@tailwind components;
+@tailwind utilities;</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = {
+  important: '#app-root',
+  theme: {
+    extend: {
+      colors: {
+        'brand-green': 'rgb(200, 248, 169)',
+        'brand-dark': 'rgb(15, 61, 58)',
+        'neutral-background': 'rgb(0, 0, 0)',
+        'text-primary': 'rgb(255, 255, 255)',
+        'text-secondary': 'rgba(255, 255, 255, 0.7)',
+      },
+      fontFamily: {
+        'primary': ['Forum', 'serif'],
+        'secondary': ['DM Sans', 'sans-serif'],
+      },
+    }
+  }
+}</script></head>
+
+<body id="app-root">
+  <div class="font-secondary bg-neutral-background text-text-secondary overflow-x-hidden min-h-screen flex flex-col w-full relative">
+
+    <header class="fixed top-0 left-0 right-0 z-50">
+      <nav class="max-w-[1200px] mx-auto px-6 py-5 flex items-center justify-between border-b border-white/10">
+        <a href="#" class="block"><span class="font-primary text-2xl text-white tracking-widest uppercase">Vertex</span></a>
+        <div class="hidden md:flex items-center gap-2">
+          <a href="#about" class="px-3 py-1 text-sm font-medium hover:bg-white/10 rounded-full transition-colors">Expertise</a>
+          <a href="#services" class="px-3 py-1 text-sm font-medium hover:bg-white/10 rounded-full transition-colors">Advisory</a>
+        </div>
+        <a href="#contact" class="bg-brand-green text-brand-dark px-4 py-2 rounded-[5px] text-sm font-medium hover:opacity-90 transition-colors shadow-[0_0_20px_rgba(200,248,169,0.3)]">
+          Partner with us
+        </a>
+      </nav>
+    </header>
+
+    <main class="flex-grow"><section id="hero-animated" class="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 z-0 overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1591823825955-f3fe0b1b9354?w=1920&amp;h=1080&amp;fit=crop" alt="Hero Background" class="hero-bg-zoom w-full h-full object-cover object-top grayscale">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black"></div>
+  </div>
+
+  <div class="relative z-10 w-full max-w-[1200px] px-6 mt-24">
+    <div class="flex flex-col items-start gap-12">
+      <div class="max-w-[750px] space-y-6">
+        <h1 class="font-primary text-[48px] lg:text-[80px] xl:text-[100px] leading-[0.95] text-white tracking-tighter">
+          <span class="reveal-mask block">
+            <span class="transition-transform duration-[1.2s]">Defining the <span class="text-brand-green italic">next era</span></span>
+          </span>
+          <span class="reveal-mask block mt-2">
+            <span class="transition-transform duration-[1.2s] delay-200">of global value.</span>
+          </span>
+        </h1>
+      </div>
+
+      <div class="w-full space-y-8">
+        <div class="w-full h-[1px] bg-white/10"></div>
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+          <p class="max-w-[550px] text-text-secondary text-[20px] leading-relaxed font-light">
+            We empower global decision-makers to navigate volatility, redefine their competitive edge, and scale with surgical precision through high-stakes intelligence.
+          </p>
+          <a href="#contact" class="group flex items-center justify-center gap-5 bg-white px-8 py-5 rounded-[5px] transition-all hover:bg-brand-green w-fit shrink-0 shadow-[0_0_30px_rgba(255,255,255,0.1)]">
+            <span class="text-black text-[15px] font-bold uppercase tracking-wider">Initiate consultation</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-32 bg-[#0c0c0c] relative overflow-hidden">
+  <div class="max-w-[1200px] mx-auto px-6 relative z-10">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+      <div class="max-w-2xl">
+        <span class="text-brand-green text-xs font-bold uppercase tracking-[0.3em] mb-4 block">Strategic Advisory</span>
+        <h2 class="font-primary text-4xl lg:text-6xl text-white leading-[0.95] tracking-tighter">Bespoke Intelligence</h2>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+      <div class="group relative bg-black/40 border border-white/5 p-12 hover:bg-black transition-all duration-500 hover:border-brand-green/30">
+        <h3 class="font-primary text-2xl text-white mb-6">Capital Defense</h3>
+        <p class="text-text-secondary leading-relaxed mb-8">Architecting resilient capital structures to withstand global volatility and systemic shifts.</p>
+      </div>
+      <div class="group relative bg-black/40 border border-white/5 p-12 hover:bg-black transition-all duration-500 hover:border-brand-green/30">
+        <h3 class="font-primary text-2xl text-white mb-6">Market Conquest</h3>
+        <p class="text-text-secondary leading-relaxed mb-8">Engineering entry and dominance strategies for high-barrier international markets.</p>
+      </div>
+      <div class="group relative bg-black/40 border border-white/5 p-12 hover:bg-black transition-all duration-500 hover:border-brand-green/30">
+        <h3 class="font-primary text-2xl text-white mb-6">Crisis Mandate</h3>
+        <p class="text-text-secondary leading-relaxed mb-8">Discreet management of high-stakes reputational and operational crises.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #hero-animated .hero-bg-zoom { animation: zoomOut 20s ease-out forwards; }
+  @keyframes zoomOut { from { transform: scale(1.15); } to { transform: scale(1); } }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hero = document.getElementById('hero-animated');
+    if (hero) {
+      const bg = hero.querySelector('.hero-bg-zoom');
+      hero.addEventListener('mousemove', (e) => {
+        const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+        const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+        bg.style.transform = `scale(1.05) translate(${moveX}px, ${moveY}px)`;
+      });
+      hero.addEventListener('mouseleave', () => { bg.style.transform = `scale(1) translate(0px, 0px)`; });
+    }
+
+    const scrollObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-on-scroll-visible');
+          scrollObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-animation-on-scroll]').forEach(el => scrollObserver.observe(el));
+  });
+</script></main>
+  </div>
+</body></html>

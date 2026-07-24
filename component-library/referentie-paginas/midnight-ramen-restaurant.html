@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Midnight Ramen | Authentic Japanese Flavors</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Oswald:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style type="text/tailwindcss">@import "tailwindcss";</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        'brand-primary': '#C8553D',
+        'brand-secondary': '#F2D06B',
+        'accent-teal': '#A8D0C8',
+        'neutral-surface': '#F9F1DC',
+        'text-primary': '#222222',
+        'footer-bg': '#4A3B32',
+      },
+      fontFamily: {
+        'primary': ['Oswald', 'sans-serif'],
+        'secondary': ['DM Sans', 'sans-serif'],
+      },
+      borderRadius: { 'card': '12px', 'pill': '50px' },
+    }
+  }
+}</script></head>
+
+<body class="font-secondary bg-white text-text-primary overflow-x-hidden">
+
+  <header class="sticky top-0 z-50 bg-white py-5 shadow-sm">
+    <div class="max-w-[1200px] mx-auto px-5 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+      <div class="flex gap-10">
+        <a href="#" class="font-primary font-medium text-sm tracking-widest hover:text-brand-primary transition-colors">HOME</a>
+        <a href="#" class="font-primary font-medium text-sm tracking-widest hover:text-brand-primary transition-colors">MENU</a>
+      </div>
+      <a href="#" class="font-primary font-bold text-2xl tracking-wider text-text-primary flex items-center gap-3">
+        MIDNIGHT RAMEN <i class="fas fa-bowl-food text-brand-primary"></i>
+      </a>
+      <div class="flex items-center gap-10">
+        <div class="hidden md:flex gap-10">
+            <a href="#" class="font-primary font-medium text-sm tracking-widest hover:text-brand-primary transition-colors">LOCATIONS</a>
+        </div>
+        <div class="flex gap-5 text-lg">
+            <i class="fas fa-shopping-bag cursor-pointer hover:text-brand-primary transition-colors"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-[1200px] mx-auto px-5 pt-5"><section class="mb-5">
+  <!-- Bento-grid met tekstblok + twee tegels met scheve foto's die rechtop draaien on hover -->
+  <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-4">
+    <div class="flex flex-col gap-4">
+      <div class="bg-neutral-surface rounded-card p-12 flex flex-col justify-center h-full">
+        <h1 class="font-primary text-[3.8rem] leading-[0.95] mb-5 text-text-primary uppercase">
+          The ultimate umami rush you need at 12:00 AM
+        </h1>
+        <p class="text-text-primary/70 text-sm leading-relaxed max-w-[80%] mb-8">
+          Authentic Tonkotsu broth simmered for 24 hours. Hand-pulled noodles.
+        </p>
+        <div class="flex gap-4">
+          <button class="font-primary font-bold text-sm tracking-wider px-8 py-3 border-2 border-text-primary bg-text-primary text-white hover:bg-transparent hover:text-text-primary transition-all uppercase">Order Now</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-brand-secondary rounded-card p-6 min-h-[200px] relative overflow-hidden flex flex-col justify-between group">
+          <h3 class="font-primary text-[1.8rem] leading-[0.9] text-text-primary z-10 relative">RAMEN<br>KITS</h3>
+          <div class="w-9 h-9 border-2 border-text-primary rounded-full flex items-center justify-center text-text-primary z-10">
+            <i class="fas fa-arrow-up transform rotate-45"></i>
+          </div>
+          <img src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?w=300" class="absolute -bottom-5 -right-2 w-32 transform -rotate-12 transition-transform group-hover:rotate-0" alt="Ramen Kit">
+        </div>
+        <div class="bg-brand-primary rounded-card p-6 min-h-[200px] relative overflow-hidden flex flex-col justify-between group">
+          <h3 class="font-primary text-[1.8rem] leading-[0.9] text-white z-10 relative">RESERVE<br>A TABLE</h3>
+          <div class="w-9 h-9 border-2 border-white rounded-full flex items-center justify-center text-white z-10">
+            <i class="fas fa-arrow-up transform rotate-45"></i>
+          </div>
+          <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?w=300" class="absolute -bottom-5 -right-2 w-32 transform -rotate-12 transition-transform group-hover:rotate-0" alt="Reserve Table">
+        </div>
+      </div>
+    </div>
+    <div class="hidden lg:block bg-gray-200 rounded-card overflow-hidden relative">
+      <img src="https://images.unsplash.com/photo-1591814468924-caf88d1232e1?w=800" class="w-full h-full object-cover" alt="Delicious Ramen">
+    </div>
+  </div>
+</section>
+
+<section data-animation-on-scroll="" class="mb-5 bg-brand-primary rounded-card p-10 text-center text-white relative overflow-hidden flex flex-col items-center justify-center">
+  <span class="absolute left-[-50px] top-1/2 -translate-y-1/2 w-[150px] h-[150px] bg-brand-secondary rounded-full"></span>
+  <span class="absolute right-[-50px] top-1/2 -translate-y-1/2 w-[150px] h-[150px] bg-brand-secondary rounded-full"></span>
+  <h2 class="relative z-10 font-primary text-3xl mb-3 uppercase">Opt in for exclusive rewards and offers delivered to your WhatsApp</h2>
+  <button class="relative z-10 bg-neutral-surface text-text-primary border-none px-8 py-3 rounded-pill font-primary font-bold uppercase cursor-pointer hover:scale-105 transition-transform">
+    Join Midnight Community
+  </button>
+</section></main>
+</body></html>

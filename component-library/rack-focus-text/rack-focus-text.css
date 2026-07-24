@@ -1,0 +1,40 @@
+.rf-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(4px, 2.4vh, 22px);
+  min-height: 50vh;
+  padding: 2rem 1rem;
+}
+
+.rf-word {
+  --rf-accent: var(--color-accent, #56cfe1);
+  --rf-text: var(--color-heading, #101418);
+  color: var(--rf-text);
+  font-size: clamp(34px, 11vw, 110px);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  will-change: filter, opacity, transform;
+  position: relative;
+}
+
+.rf-word::before {
+  content: attr(data-w);
+  position: absolute;
+  inset: 0;
+  color: var(--rf-accent);
+  pointer-events: none;
+  filter: blur(var(--rf-bloom-blur, 0));
+  opacity: var(--rf-bloom-opacity, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rf-word {
+    transition: none;
+  }
+}

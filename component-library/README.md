@@ -22,9 +22,20 @@ Elke component heeft een eigen map: `component-library/<naam>/` met minimaal:
 - een `.css`-bestand (styling + animatie)
 - eventueel een klein `.js`-bestand, alleen als het echt niet met pure CSS kan
 
-## Beschikbare componenten
+## Beschikbare componenten (klaar voor gebruik, vanilla, getest)
 
 - [`testimonials-columns/`](testimonials-columns/README.md) — drie verticaal doorlopende kolommen met reviewkaarten (glassmorphism/schaduw), pure CSS-animatie
+- [`rack-focus-text/`](rack-focus-text/README.md) — twee woorden die om beurten scherp/onscherp ademen (cinematische rack focus), pure CSS/JS
+- [`stroke-draw-button/`](stroke-draw-button/README.md) — ghost-knop waarvan de rand zichzelf tekent bij hover (SVG stroke-dashoffset)
+- [`fluid-metaballs-loader/`](fluid-metaballs-loader/README.md) — vloeiend samensmeltende gloeibollen als laadanimatie (SVG gooey-filter)
+- [`wavy-sine-text/`](wavy-sine-text/README.md) — letters die golvend bewegen langs een sinusgolf
+- [`otp-input-boxes/`](otp-input-boxes/README.md) — illustratieve, auto-vullende verificatiecode-vakjes (alleen decoratief, geen echte invoer)
+- [`radial-fab-menu/`](radial-fab-menu/README.md) — ronde actieknop die radiaal uitwaaiert naar meerdere snelle acties (bijv. bellen/whatsapp/route)
+- [`gradient-sweep-text/`](gradient-sweep-text/README.md) — bewegende lichtband met kleurverloop veegt over een woord heen
+
+## Referentiepagina's (alleen inspiratie, niet direct bruikbaar)
+
+- [`referentie-paginas/`](referentie-paginas/README.md) — 14 complete, aangeleverde landingspagina's (Tailwind-CDN, Google Fonts, stockfoto's) die **niet** aan onze bouwregels voldoen en dus nooit rechtstreeks gekopieerd mogen worden. Bevat wel sterke lay-out-/interactiepatronen (bento-grids, megamenu's, marquees, tekstonthullingen) die het waard zijn om met de hand na te bouwen in vanilla CSS. Zie het README daar voor een overzicht per bestand en de vaste waarschuwing.
 
 ## Overige assets
 

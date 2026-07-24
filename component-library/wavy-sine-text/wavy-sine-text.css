@@ -1,0 +1,17 @@
+.ws-text {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.ws-text span {
+  display: inline-block;
+  font-size: clamp(36px, 14vw, 110px);
+  font-weight: 800;
+  color: var(--color-accent, #7fffd4);
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ws-text span { transform: none !important; }
+}

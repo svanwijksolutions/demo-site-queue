@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Visual Design Studio</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&amp;display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .animate-on-scroll-hidden { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .animate-on-scroll-visible { opacity: 1; transform: translateY(0); }
+    html { scroll-behavior: smooth; }
+  </style>
+
+<style type="text/tailwindcss">@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = {
+  important: '#app-root',
+  theme: {
+    extend: {
+      colors: {
+        'brand-primary': '#cd5c3e',
+        'neutral-background': '#deded9',
+        'text-primary': '#1a1a1a',
+      },
+      fontFamily: {
+        'display': ['Syne', 'sans-serif'],
+      },
+    }
+  }
+}</script></head>
+
+<body id="app-root" class="font-sans bg-neutral-background text-text-primary selection:bg-brand-primary selection:text-white overflow-x-hidden">
+
+  <main><section id="hero" class="min-h-[90vh] flex flex-col justify-center px-6 lg:px-12 pt-24 pb-12 relative bg-[#deded9] w-full max-w-full overflow-x-hidden">
+  <div class="w-full flex flex-col lg:flex-row items-start lg:items-end justify-between gap-8 lg:gap-12">
+    <div class="w-full lg:w-[80%]">
+      <h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-[14vw] font-black font-display uppercase leading-[0.85] tracking-tighter text-text-primary mb-8 lg:mb-0">
+        <div data-animation-on-scroll="">Visual</div>
+        <div data-animation-on-scroll="" class="text-brand-primary lg:pl-16">Digital</div>
+        <div data-animation-on-scroll="">Design.</div>
+      </h1>
+    </div>
+
+    <div class="w-full lg:w-1/4 flex flex-col items-start justify-end lg:mb-4">
+      <p class="text-xl md:text-2xl italic text-text-primary/70 mb-8 leading-snug">
+        Crafting meaningful digital experiences through strategy, typography, and motion.
+      </p>
+      <div class="flex items-center gap-6">
+        <a href="#work" class="group flex items-center gap-2 text-lg font-medium hover:text-brand-primary transition-colors">
+          <div class="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center group-hover:border-brand-primary group-hover:bg-brand-primary group-hover:text-white transition-all">
+            <i data-lucide="arrow-down" class="w-5 h-5"></i>
+          </div>
+          <span class="sr-only">Scroll Down</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-on-scroll-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('[data-animation-on-scroll]').forEach(el => {
+        el.classList.add('animate-on-scroll-hidden');
+        observer.observe(el);
+      });
+    });
+  </script>
+</body></html>

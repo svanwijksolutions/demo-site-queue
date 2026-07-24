@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Visual Designer | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;display=swap" rel="stylesheet">
+
+<style type="text/tailwindcss">@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.follow-card {
+  transition: transform 0.1s ease-out;
+  will-change: left, top;
+}
+
+.media-stack {
+  pointer-events: none;
+}</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = {
+  important: '#app-root',
+  theme: {
+    extend: {
+      colors: {
+        'brand-primary': '#0D0D0D',
+        'neutral-background': '#F2F2F2',
+      },
+      fontFamily: {
+        'primary': ['Bricolage Grotesque', 'sans-serif'],
+      },
+    }
+  },
+  plugins: [],
+}</script></head>
+<body id="app-root">
+  <div class="font-primary bg-neutral-background text-brand-primary overflow-hidden min-h-screen flex flex-col w-full relative">
+    <header class="fixed top-0 left-0 w-full p-8 z-[60] flex justify-between items-center mix-blend-difference text-white">
+      <div class="font-primary font-bold text-xl uppercase tracking-widest">© 2024</div>
+      <div class="font-primary font-bold text-xl uppercase tracking-widest">Available for Freelance</div>
+    </header>
+
+    <main class="flex-grow"><div id="follow-effect-section" class="relative w-full h-screen overflow-hidden flex items-center justify-center bg-neutral-background cursor-none">
+
+  <div class="z-0 pointer-events-none select-none text-center px-6">
+    <div class="mb-4 overflow-hidden">
+      <span class="block text-sm uppercase tracking-[0.3em] opacity-60 font-medium">Independent Studio</span>
+    </div>
+    <h1 id="hero-text" class="font-primary text-[11vw] md:text-[10vw] leading-[0.85] uppercase tracking-tighter text-brand-primary flex flex-wrap justify-center overflow-hidden">
+      VISUAL DESIGNER
+    </h1>
+    <div class="mt-8 max-w-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 border-t border-brand-primary/10 pt-8">
+      <p class="text-left text-xs md:text-sm uppercase leading-relaxed max-w-[280px]">
+        Specializing in art direction, digital experiences &amp; brand identities that define the modern aesthetic.
+      </p>
+      <div class="flex gap-4">
+        <span class="px-4 py-2 border border-brand-primary rounded-full text-[10px] uppercase font-bold tracking-widest hover:bg-brand-primary hover:text-neutral-background transition-colors pointer-events-auto cursor-pointer">View Projects</span>
+        <span class="px-4 py-2 bg-brand-primary text-neutral-background border border-brand-primary rounded-full text-[10px] uppercase font-bold tracking-widest hover:bg-transparent hover:text-brand-primary transition-all pointer-events-auto cursor-pointer">Contact</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="hero-card" class="follow-card fixed z-50 pointer-events-none" style="width: 180px; height: 240px; transform: translate(-50%, -50%); opacity: 0; transition: opacity 0.3s ease;">
+    <div class="media-stack relative w-full h-full rounded-md overflow-hidden shadow-xl">
+      <img src="https://images.pexels.com/photos/29940493/pexels-photo-29940493.jpeg?w=600&amp;h=800&amp;fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-0 active:opacity-100 transition-opacity duration-200" alt="Design 1">
+      <img src="https://images.pexels.com/photos/30004063/pexels-photo-30004063.jpeg?w=600&amp;h=800&amp;fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-200" alt="Design 2">
+      <img src="https://images.pexels.com/photos/29888266/pexels-photo-29888266.jpeg?w=600&amp;h=800&amp;fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-200" alt="Design 3">
+    </div>
+  </div>
+
+</div>
+
+<style>
+#hero-text span {
+  display: inline-block;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.media-stack img.active {
+  opacity: 1 !important;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.getElementById('follow-effect-section');
+  const card = document.getElementById('hero-card');
+  const heroText = document.getElementById('hero-text');
+  const images = card.querySelectorAll('img');
+
+  const text = heroText.innerText;
+  heroText.innerHTML = '';
+  [...text].forEach((char) => {
+    const span = document.createElement('span');
+    span.innerText = char === ' ' ? ' ' : char;
+    heroText.appendChild(span);
+  });
+
+  const letters = Array.from(heroText.querySelectorAll('span'));
+  let currentIndex = 0;
+  let lastX = 0;
+  let lastY = 0;
+  const threshold = 60;
+
+  container.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    const isInteractive = e.target.closest('.pointer-events-auto');
+
+    card.style.left = `${x}px`;
+    card.style.top = `${y}px`;
+    card.style.opacity = isInteractive ? '0' : '1';
+
+    letters.forEach((letter) => {
+      const rect = letter.getBoundingClientRect();
+      const dx = x - (rect.left + rect.width / 2);
+      const dy = y - (rect.top + rect.height / 2);
+      const dist = Math.hypot(dx, dy);
+
+      if (dist < 150) {
+        const angle = Math.atan2(dy, dx);
+        const push = (150 - dist) / 10;
+        letter.style.transform = `translate(${Math.cos(angle) * push}px, ${Math.sin(angle) * push}px)`;
+      } else {
+        letter.style.transform = 'translate(0, 0)';
+      }
+    });
+
+    const movement = Math.hypot(x - lastX, y - lastY);
+    if (movement > threshold) {
+      images[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add('active');
+
+      lastX = x;
+      lastY = y;
+    }
+  });
+
+  container.addEventListener('mouseleave', () => {
+    card.style.opacity = '0';
+    letters.forEach(l => l.style.transform = 'translate(0,0)');
+  });
+});
+</script></main>
+
+    <footer class="fixed bottom-0 left-0 w-full p-8 z-[60] flex justify-between items-center mix-blend-difference text-white">
+       <div class="font-primary text-sm uppercase">Selected Works</div>
+       <div class="font-primary text-sm uppercase">Scroll to explore</div>
+    </footer>
+  </div>
+</body></html>

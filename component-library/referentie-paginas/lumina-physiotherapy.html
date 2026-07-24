@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Lumina - Precision Physiotherapy &amp; Human Performance</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<style type="text/tailwindcss">@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.action-block-hover img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.action-block-hover:hover img {
+  transform: scale(1.05);
+}
+.nav-item-hover {
+  transition: background-color 0.3s ease;
+}
+.nav-item-hover:hover {
+  background-color: rgba(159, 84, 52, 0.05);
+}
+</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = {
+  important: '#app-root',
+  theme: {
+    extend: {
+      colors: {
+        'brand-primary': 'rgb(159, 84, 52)',
+        'brand-secondary': 'rgb(254, 245, 240)',
+        'neutral-background': 'rgb(255, 255, 255)',
+        'text-primary': 'rgb(35, 31, 32)',
+      },
+      fontFamily: {
+        'primary': ['Archivo', 'sans-serif'],
+      },
+      boxShadow: {
+        'nav': '0 4px 24px 0 rgba(111, 59, 36, 0.05)',
+        'cta': '0 10px 30px rgba(159, 84, 52, 0.15)',
+      },
+    }
+  }
+}</script></head>
+<body id="app-root">
+  <div class="font-primary bg-neutral-background text-text-primary overflow-x-hidden min-h-screen flex flex-col w-full relative">
+
+    <header class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-6 px-4 md:px-16 pointer-events-none">
+      <nav class="w-full max-w-[1728px] pointer-events-auto">
+        <div class="flex items-center justify-between bg-brand-secondary/90 backdrop-blur-md rounded-full shadow-nav border border-text-primary/5 px-4 py-2 h-[56px] w-full">
+          <a href="/" class="flex items-center ml-4">
+            <span class="text-brand-primary text-xl font-bold tracking-widest uppercase">Lumina</span>
+          </a>
+          <div class="hidden lg:flex items-center gap-1">
+            <a href="#method" class="nav-item-hover px-4 py-2 rounded-full text-brand-primary text-sm font-medium">The Method</a>
+            <a href="#services" class="nav-item-hover px-4 py-2 rounded-full text-brand-primary text-sm font-medium">Services</a>
+          </div>
+          <a href="#book" class="bg-brand-primary text-brand-secondary rounded-full px-5 py-2 text-sm font-medium hover:opacity-90 transition-opacity">
+            Book Assessment
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow"><section class="relative w-full flex flex-col items-center overflow-visible">
+
+  <div class="absolute top-0 left-0 w-full h-[825px] z-10 overflow-hidden">
+    <div class="absolute inset-0 bg-black/50 z-[11]"></div>
+    <img src="https://images.pexels.com/photos/5793651/pexels-photo-5793651.jpeg?w=1920&amp;h=1080&amp;fit=crop" alt="Serene high-end physiotherapy studio" class="w-full h-full object-cover">
+  </div>
+
+  <div class="relative z-20 flex flex-col items-center justify-center w-full max-w-[1728px] h-[825px] pt-[75px] pb-[168px] px-6 md:px-16">
+    <div class="max-w-[1100px] text-center mb-10">
+      <h1 class="text-white text-6xl md:text-8xl leading-[0.96] tracking-[-0.03em] font-medium">
+        Mastering the Art of Precision Movement
+      </h1>
+      <p class="text-white text-lg md:text-xl mt-8 max-w-2xl mx-auto font-medium leading-relaxed drop-shadow-md">
+        Where clinical biomechanics meet elite performance. Experience tailored physiotherapy designed to restore, optimize, and elevate your physical potential.
+      </p>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="#book" class="bg-brand-secondary text-brand-primary rounded-full px-8 py-4 text-base font-semibold hover:bg-white transition-colors shadow-cta">
+        Book Assessment
+      </a>
+      <a href="#services" class="bg-transparent text-brand-secondary border border-brand-secondary rounded-full px-8 py-4 text-base font-semibold hover:bg-brand-secondary hover:text-brand-primary transition-all">
+        The Services
+      </a>
+    </div>
+  </div>
+
+  <!-- Actieblokken: hover-zoom foto's onder een sticky pill-navbar -->
+  <div class="relative z-30 w-full max-w-[1728px] px-6 md:px-16 -mt-32">
+    <div class="grid grid-cols-1 md:grid-cols-3 bg-brand-secondary rounded-xl overflow-hidden shadow-2xl min-h-[500px] w-full border border-text-primary/5">
+
+      <a href="#method" class="action-block-hover flex flex-col border-r border-text-primary/5 group">
+        <div class="p-8 h-[180px] flex flex-col justify-between border-b border-text-primary/5">
+          <div class="flex items-center justify-between w-full">
+            <span class="text-brand-primary text-xs uppercase tracking-widest font-bold">The Method</span>
+            <svg class="w-5 h-5 text-brand-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"></path>
+            </svg>
+          </div>
+          <h4 class="text-brand-primary text-[28px] leading-[1.1] tracking-tight font-medium max-w-[280px]">
+            Biomechanical Logic &amp; Movement Science
+          </h4>
+        </div>
+        <div class="flex-grow overflow-hidden">
+          <img src="https://images.pexels.com/photos/8540047/pexels-photo-8540047.jpeg?w=800&amp;h=1000&amp;fit=crop" alt="Biomechanical analysis" class="w-full h-full object-cover">
+        </div>
+      </a>
+
+      <a href="#performance" class="action-block-hover flex flex-col border-r border-text-primary/5 group">
+        <div class="p-8 h-[180px] flex flex-col justify-between border-b border-text-primary/5">
+          <div class="flex items-center justify-between w-full">
+            <span class="text-brand-primary text-xs uppercase tracking-widest font-bold">Performance</span>
+            <svg class="w-5 h-5 text-brand-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"></path>
+            </svg>
+          </div>
+          <h4 class="text-brand-primary text-[28px] leading-[1.1] tracking-tight font-medium max-w-[280px]">
+            Elite Conditioning for the Modern Athlete
+          </h4>
+        </div>
+        <div class="flex-grow overflow-hidden">
+          <img src="https://images.pexels.com/photos/6699963/pexels-photo-6699963.jpeg?w=800&amp;h=1000&amp;fit=crop" alt="Elite athlete training" class="w-full h-full object-cover">
+        </div>
+      </a>
+
+      <a href="#contact" class="action-block-hover flex flex-col group">
+        <div class="p-8 h-[180px] flex flex-col justify-between border-b border-text-primary/5">
+          <div class="flex items-center justify-between w-full">
+            <span class="text-brand-primary text-xs uppercase tracking-widest font-bold">Recovery</span>
+            <svg class="w-5 h-5 text-brand-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7V17"></path>
+            </svg>
+          </div>
+          <h4 class="text-brand-primary text-[28px] leading-[1.1] tracking-tight font-medium max-w-[280px]">
+            Restoring Balance &amp; Kinetic Freedom
+          </h4>
+        </div>
+        <div class="flex-grow overflow-hidden">
+          <img src="https://images.pexels.com/photos/5793909/pexels-photo-5793909.jpeg?w=800&amp;h=1000&amp;fit=crop" alt="Manual therapy session" class="w-full h-full object-cover">
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Zig-zag sectie: links tekst / rechts foto, met tegenovergestelde volgorde in de volgende sectie -->
+<section id="method" class="py-32 px-6 md:px-16 bg-white overflow-hidden">
+  <div class="max-w-[1728px] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+      <div>
+        <span class="text-brand-primary text-xs uppercase tracking-[0.3em] font-bold block mb-8">The Lumina Method</span>
+        <h2 class="text-5xl md:text-7xl leading-tight text-text-primary mb-10">
+          Precision Rehab for Every Body
+        </h2>
+        <div class="space-y-6 text-text-primary/70 text-lg leading-relaxed max-w-xl">
+          <p>
+            Movement is an exact science. At Lumina, we move beyond generic exercises, utilizing advanced motion capture and muscular data to understand the root cause of physical restriction.
+          </p>
+        </div>
+        <div class="mt-12 flex flex-col sm:flex-row gap-8">
+          <div class="flex flex-col">
+            <span class="text-brand-primary text-3xl font-medium mb-1">20+</span>
+            <span class="text-xs uppercase tracking-widest text-text-primary/60">Clinical Protocols</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-brand-primary text-3xl font-medium mb-1">98%</span>
+            <span class="text-xs uppercase tracking-widest text-text-primary/60">Recovery Rate</span>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-lg overflow-hidden border border-text-primary/5">
+          <img src="https://images.pexels.com/photos/5888158/pexels-photo-5888158.jpeg?w=800&amp;h=1000&amp;fit=crop" alt="Physiotherapist portrait" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+  </div>
+</body></html>

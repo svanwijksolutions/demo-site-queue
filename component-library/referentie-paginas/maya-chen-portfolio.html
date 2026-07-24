@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Maya Chen | Designer Portfolio</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+
+  <style>
+    .menu-text, .close-text { transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: block; height: 1.2em; line-height: 1.2; }
+    .close-text { position: absolute; left: 0; top: 0; transform: translateY(100%); opacity: 0; }
+    .nav-open .menu-text { transform: translateY(-100%); opacity: 0; }
+    .nav-open .close-text { transform: translateY(0); opacity: 1; }
+    .fullscreen-menu { transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.4s; }
+    body.nav-open { overflow: hidden; }
+
+    @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .project-ticker:hover { animation-play-state: paused; }
+  </style>
+<style type="text/tailwindcss">@tailwind base;
+@tailwind components;
+@tailwind utilities;</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        'brand-primary': '#ff6200',
+        'brand-secondary': '#ff8533',
+        'background-light': '#ffffff',
+        'background-dark': '#0f0f0f',
+        'text-dark': '#050505',
+        'text-subtle': '#999999',
+      },
+      fontFamily: { 'primary': ['Inter', 'sans-serif'], 'handwriting': ['Nanum Pen Script', 'cursive'] },
+      boxShadow: { 'cta': '0px 14px 14px -3.75px rgba(255, 98, 0, 0.25)' },
+    }
+  }
+}</script></head>
+
+<body class="font-primary bg-background-light text-text-dark overflow-x-hidden">
+
+  <header class="fixed top-0 left-0 w-full z-50 px-6 lg:px-10 py-5">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto">
+      <a class="text-base font-semibold uppercase tracking-tight text-brand-primary" href="/">Maya Chen®</a>
+      <button class="menu-toggle flex items-center gap-2 bg-transparent border-none cursor-pointer text-sm font-semibold uppercase tracking-tight text-text-dark relative overflow-visible z-50 p-1" id="menu-toggle">
+        <span class="menu-text">MENU</span>
+        <span class="close-text">CLOSE</span>
+        <div class="w-12 h-3.5 relative transition-transform duration-400">
+          <div class="absolute left-0 top-0 w-full h-0.5 bg-brand-primary rounded-full transition-transform duration-400 menu-icon-line-1"></div>
+          <div class="absolute left-0 bottom-0 w-full h-0.5 bg-brand-primary rounded-full transition-transform duration-400 menu-icon-line-2"></div>
+        </div>
+      </button>
+    </nav>
+
+    <!-- Fullscreen uitklap-navigatiemenu -->
+    <div class="fullscreen-menu fixed top-0 left-0 w-full h-full bg-background-dark flex justify-center items-center opacity-0 invisible transition-all duration-500 z-40" id="fullscreen-menu">
+      <div class="text-center flex flex-col gap-12">
+        <div class="flex flex-col gap-5">
+          <a href="/" class="text-4xl lg:text-5xl font-medium text-text-subtle hover:text-white transition-colors tracking-tight">Home</a>
+          <a href="/work" class="text-4xl lg:text-5xl font-medium text-text-subtle hover:text-white transition-colors tracking-tight">Work</a>
+          <a href="/contact" class="text-4xl lg:text-5xl font-medium text-text-subtle hover:text-white transition-colors tracking-tight">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main><section class="min-h-screen flex flex-col justify-center px-6 lg:px-10 pt-32 pb-16 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto w-full z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+      <div class="lg:col-span-7 space-y-8">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-0.5 bg-brand-primary"></div>
+          <p class="text-base font-medium tracking-tight uppercase text-brand-primary">Hello, I'm Maya</p>
+        </div>
+        <h1>
+          <span class="block text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-text-dark leading-none mb-2">UX Designer</span>
+          <span class="block text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-gray-600 leading-none mb-2">
+            &amp; <span class="font-handwriting text-brand-primary text-5xl sm:text-6xl lg:text-7xl inline-block transform -rotate-2">Creative Thinker</span>
+          </span>
+        </h1>
+        <p class="text-lg lg:text-xl font-normal tracking-tight text-gray-600 max-w-xl leading-relaxed">
+          I craft delightful digital experiences that solve real problems through elegant, user-centered design.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#work" class="group inline-flex items-center gap-3 px-8 py-4 bg-brand-primary text-white rounded-full font-semibold text-base tracking-tight shadow-cta transition-all hover:shadow-xl hover:transform hover:scale-105">
+            View My Work <span class="transform transition-transform group-hover:translate-x-1">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Horizontaal auto-scrollende projectenrij met perspective-tilt -->
+<style>
+  .work-perspective-container { width: 100%; position: relative; }
+  @media (min-width: 1024px) {
+    .work-perspective-container {
+      transform: perspective(1200px) rotateX(25deg) rotateY(-6deg);
+      box-shadow: 0px -10px 16px 0px rgb(255, 255, 255);
+      background: linear-gradient(180deg, transparent 0%, rgb(255, 255, 255) 34%);
+      width: 145%; left: -22.5%;
+    }
+  }
+</style>
+<section class="py-16 px-0 overflow-hidden lg:overflow-visible" id="work">
+  <div class="work-perspective-container">
+    <div class="flex gap-4 lg:gap-2.5 h-96 project-ticker will-change-transform" style="animation: scroll-left 40s linear infinite;">
+      <div class="w-96 h-full bg-gradient-to-br from-background-light to-gray-50 border-2 border-gray-200 rounded-xl flex-shrink-0 flex flex-col justify-between p-6 relative overflow-hidden group">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-primary to-brand-secondary"></div>
+        <div class="flex flex-col gap-4 h-full justify-between">
+          <div class="text-3xl w-12 h-12 flex items-center justify-center bg-white rounded-xl border border-gray-200 shadow-sm">🎨</div>
+          <h3 class="text-xl font-semibold tracking-tight text-text-dark leading-tight my-2">FinanceFlow Dashboard</h3>
+          <p class="text-sm font-medium tracking-tight text-gray-600 leading-relaxed flex-grow">Complete redesign of a financial management platform, improving user engagement by 85%.</p>
+        </div>
+      </div>
+      <div class="w-96 h-full bg-gradient-to-br from-background-light to-gray-50 border-2 border-gray-200 rounded-xl flex-shrink-0 flex flex-col justify-between p-6 relative overflow-hidden group">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-primary to-brand-secondary"></div>
+        <div class="flex flex-col gap-4 h-full justify-between">
+          <div class="text-3xl w-12 h-12 flex items-center justify-center bg-white rounded-xl border border-gray-200 shadow-sm">🛍️</div>
+          <h3 class="text-xl font-semibold tracking-tight text-text-dark leading-tight my-2">Luxe Fashion Store</h3>
+          <p class="text-sm font-medium tracking-tight text-gray-600 leading-relaxed flex-grow">Premium e-commerce experience with custom checkout flow and AR try-on feature.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const fullscreenMenu = document.getElementById('fullscreen-menu');
+  const body = document.body;
+
+  if (menuToggle && fullscreenMenu) {
+    const closeMenu = () => {
+      body.classList.remove('nav-open');
+      fullscreenMenu.classList.remove('opacity-100', 'visible');
+      fullscreenMenu.classList.add('opacity-0', 'invisible');
+    };
+    const openMenu = () => {
+      body.classList.add('nav-open');
+      fullscreenMenu.classList.remove('opacity-0', 'invisible');
+      fullscreenMenu.classList.add('opacity-100', 'visible');
+    };
+    menuToggle.addEventListener('click', () => {
+      body.classList.contains('nav-open') ? closeMenu() : openMenu();
+    });
+    fullscreenMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+  }
+});
+</script></main>
+</body></html>

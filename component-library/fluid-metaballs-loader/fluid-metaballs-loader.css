@@ -1,0 +1,56 @@
+.fm-container {
+  --fm-color-1: #22d3ee;
+  --fm-color-2: #7c5cff;
+  --fm-color-3: #ff5ca8;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin-inline: auto;
+  filter: url(#fm-goo-filter);
+  background: transparent;
+}
+
+.fm-ball {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--fm-color-1);
+  top: 48px;
+  left: 48px;
+  animation: fm-move-a 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--fm-color-1) 50%, transparent);
+}
+
+.fm-ball--2 {
+  background: var(--fm-color-2);
+  animation-name: fm-move-b;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--fm-color-2) 50%, transparent);
+}
+
+.fm-ball--3 {
+  width: 30px;
+  height: 30px;
+  top: 55px;
+  left: 55px;
+  background: var(--fm-color-3);
+  animation-name: fm-move-c;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--fm-color-3) 50%, transparent);
+}
+
+@keyframes fm-move-a {
+  0%, 100% { transform: translateX(-38px); }
+  50% { transform: translateX(38px); }
+}
+@keyframes fm-move-b {
+  0%, 100% { transform: translateX(38px); }
+  50% { transform: translateX(-38px); }
+}
+@keyframes fm-move-c {
+  0%, 100% { transform: translateY(-32px) scale(0.85); }
+  50% { transform: translateY(32px) scale(1.1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fm-ball { animation-play-state: paused !important; }
+}

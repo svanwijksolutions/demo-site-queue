@@ -1,0 +1,156 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Julian Voss - Creative Director</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&amp;family=Titillium+Web:wght@400&amp;display=swap" rel="stylesheet">
+
+  <style>
+    /* Verticaal roulerend woord in de hero-titel: elk woord staat h-[168px], het blok schuift omhoog door een lijst synoniemen en herhaalt naadloos */
+    .headline-loop-container { height: 168px; overflow: hidden; }
+    .headline-loop-inner { animation: text-loop 10s cubic-bezier(0.76, 0, 0.24, 1) infinite; }
+    @keyframes text-loop {
+      0%, 20% { transform: translateY(0); }
+      25%, 45% { transform: translateY(-168px); }
+      50%, 70% { transform: translateY(-336px); }
+      75%, 95% { transform: translateY(-504px); }
+      100% { transform: translateY(-672px); }
+    }
+    @keyframes zoom-bg {
+      0% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.15) rotate(2deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
+    .animate-zoom-slow { animation: zoom-bg 20s ease-in-out infinite; }
+    .grid-overlay {
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+  </style>
+<style type="text/tailwindcss">@tailwind base;
+@tailwind components;
+@tailwind utilities;</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = {
+  important: '#app-root',
+  theme: {
+    extend: {
+      colors: {
+        'brand-dark': '#060606',
+        'brand-accent': '#ffffff',
+      },
+      fontFamily: {
+        'primary': ['Manrope', 'sans-serif'],
+        'secondary': ['Titillium Web', 'sans-serif'],
+      },
+      letterSpacing: {
+        'headline': '-3.6px',
+      },
+    }
+  }
+}</script></head>
+<body id="app-root">
+  <div class="font-primary bg-brand-dark text-brand-accent min-h-screen flex flex-col w-full relative overflow-x-hidden">
+    <main class="flex-grow"><div class="relative w-full h-screen min-h-[825px] flex flex-col justify-end items-center px-8 pb-[60px] overflow-hidden">
+
+  <div class="absolute inset-0 z-0 bg-brand-dark overflow-hidden">
+    <div class="absolute inset-[-15%] animate-zoom-slow opacity-70 blur-[100px]">
+      <div class="absolute top-[5%] left-[5%] w-[50%] h-[50%] bg-[#fbbf24] rounded-full mix-blend-screen opacity-40"></div>
+      <div class="absolute top-[35%] right-[5%] w-[45%] h-[45%] bg-[#ec4899] rounded-full mix-blend-screen opacity-35"></div>
+      <div class="absolute bottom-[5%] left-[15%] w-[55%] h-[55%] bg-[#3b82f6] rounded-full mix-blend-screen opacity-40"></div>
+    </div>
+    <div class="absolute inset-0 grid-overlay z-[1] opacity-60"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-brand-dark/10 to-brand-dark/80 z-[2]"></div>
+    <div class="absolute inset-0 shadow-[inset_0_0_150px_rgba(0,0,0,0.6)] z-[4]"></div>
+  </div>
+
+  <header class="absolute top-0 left-0 w-full z-20">
+    <nav class="flex items-center justify-between px-8 py-6 h-[74px]">
+      <div class="flex items-center gap-1">
+        <a href="#" class="text-[32px] font-normal tracking-[-0.96px] text-white">Julian Voss</a>
+      </div>
+      <button id="menu-trigger" class="text-[18px] text-white/50 hover:text-white transition-colors border-t border-b border-white/50 px-4 py-2">
+        discover
+      </button>
+    </nav>
+  </header>
+
+  <div class="relative z-10 w-full max-w-[1800px] flex items-end justify-between">
+    <div class="flex items-end gap-[57px] w-full">
+      <div class="flex flex-col gap-6 pb-4">
+        <a href="#" target="_blank" class="w-10 h-10 flex items-center justify-center border border-white/10 rounded-full group hover:border-white/40 transition-all duration-300">
+          <span class="text-[10px] uppercase tracking-widest text-white/40 group-hover:text-white transition-colors">Dr</span>
+        </a>
+      </div>
+
+      <div class="flex flex-col">
+        <h1 class="text-[120px] font-normal leading-[120px] tracking-headline text-white mb-9">
+          Crafting
+        </h1>
+        <div class="flex items-center gap-4">
+          <h1 class="text-[120px] font-extralight leading-[120px] tracking-headline text-white/50">
+            beyond
+          </h1>
+          <div class="headline-loop-container">
+            <div class="headline-loop-inner flex flex-col">
+              <h1 class="text-[120px] font-normal h-[168px] leading-[168px] tracking-headline text-white">Boundaries</h1>
+              <h1 class="text-[120px] font-normal h-[168px] leading-[168px] tracking-headline text-white">Expectations</h1>
+              <h1 class="text-[120px] font-normal h-[168px] leading-[168px] tracking-headline text-white">Conventions</h1>
+              <h1 class="text-[120px] font-normal h-[168px] leading-[168px] tracking-headline text-white">Reality</h1>
+              <!-- eerste item herhaald voor naadloze loop -->
+              <h1 class="text-[120px] font-normal h-[168px] leading-[168px] tracking-headline text-white">Boundaries</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen menu-overlay met per-item hover-ticker -->
+  <div id="menu-overlay" class="fixed inset-0 z-[100] bg-brand-dark/98 backdrop-blur-2xl translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.85,0,0.15,1)] flex flex-col items-center pt-32 overflow-hidden pointer-events-none">
+    <button id="menu-close" class="absolute top-8 right-8 text-white/40 hover:text-white transition-colors flex items-center gap-2 group pointer-events-auto">
+      <span class="text-xs uppercase tracking-[0.2em]">Close Menu</span>
+    </button>
+    <div class="w-full flex flex-col items-center pointer-events-auto">
+      <div class="group relative w-full h-24 border-y border-white/10 flex items-center justify-center overflow-hidden cursor-pointer">
+        <div class="flex items-center gap-2 translate-y-1">
+          <span class="text-[10px] text-white/40 uppercase mt-1">01</span>
+          <span class="text-[48px] leading-tight lowercase font-light tracking-tight">home</span>
+        </div>
+      </div>
+      <div class="group relative w-full h-24 border-b border-white/10 flex items-center justify-center overflow-hidden cursor-pointer">
+        <div class="flex items-center gap-2 translate-y-1">
+          <span class="text-[10px] text-white/40 uppercase mt-1">02</span>
+          <span class="text-[48px] leading-tight lowercase font-light tracking-tight">projects</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const menuTrigger = document.getElementById('menu-trigger');
+  const menuClose = document.getElementById('menu-close');
+  const menuOverlay = document.getElementById('menu-overlay');
+
+  const openMenu = () => {
+    menuOverlay.classList.remove('translate-y-full');
+    menuOverlay.classList.add('translate-y-0', 'pointer-events-auto');
+    document.body.style.overflow = 'hidden';
+  };
+  const closeMenu = () => {
+    menuOverlay.classList.remove('translate-y-0', 'pointer-events-auto');
+    menuOverlay.classList.add('translate-y-full');
+    document.body.style.overflow = '';
+  };
+
+  menuTrigger.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenu);
+  window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+});
+</script></main>
+  </div>
+</body></html>

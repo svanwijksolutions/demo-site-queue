@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Vertex Elite - Modern Marketing Agency</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&amp;family=Share+Tech&amp;family=Space+Grotesk:wght@300;400;500;600&amp;family=VT323&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/geist@1.0.0/dist/fonts/geist-mono/style.css" rel="stylesheet">
+
+  <style>
+    #app-root [data-animation-on-scroll] {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1), transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    #app-root [data-animation-on-scroll].animate-on-scroll-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-scroll {
+      animation: scroll 30s linear infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .animation-float {
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .mask-fade-edges {
+      mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .bg-isometric-grid {
+      background-image:
+        linear-gradient(30deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(150deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+      background-size: 10px 17px;
+    }
+
+    .footer-3d-scene {
+      perspective: 800px;
+      overflow: hidden;
+    }
+    .footer-floor-grid {
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+      background-image:
+         linear-gradient(to right, rgba(0, 0, 0, 0.05) 2px, transparent 2px),
+         linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 2px, transparent 2px);
+      background-size: 60px 60px;
+      transform: rotateX(60deg) translateY(0);
+      transform-origin: top center;
+      mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
+    }
+    .isometric-text-footer {
+       display: block;
+       color: transparent;
+       -webkit-text-stroke: 2px rgb(101, 28, 36);
+       transform: perspective(1000px) rotateX(65deg) scale(1.5);
+       transform-origin: bottom center;
+       white-space: nowrap;
+       mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+       -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+<style type="text/tailwindcss">@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .mask-fade-edges {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  }
+}</style><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config = {
+  important: '#app-root',
+  theme: {
+    extend: {
+      colors: {
+        'brand-primary': 'rgb(101, 28, 36)', // Signature Maroon
+        'brand-secondary': 'rgb(101, 28, 36)', // Map Maroon to accent
+        'brand-dark': '#050505',
+        'neutral-background': '#FFFFFF',
+        'neutral-surface': '#F5F5F5',
+        'neutral-border': 'rgba(0, 0, 0, 0.08)',
+        'text-primary': '#050505',
+        'text-secondary': '#4A4A4A',
+      },
+      fontFamily: {
+        'primary': ['Josefin Sans', 'sans-serif'],
+        'secondary': ['Space Grotesk', 'sans-serif'],
+        'terminal': ['Share Tech', 'sans-serif'],
+        'geist': ['Geist Mono', 'monospace'],
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        'md': '8px',
+        'lg': '12px',
+        'xl': '16px',
+        'full': '9999px',
+      },
+      letterSpacing: {
+        'tightest': '-0.04em',
+        'tighter': '-0.02em',
+        'tight': '-0.01em',
+      },
+      boxShadow: {
+        '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.08)',
+      }
+    }
+  }
+}</script></head>
+
+<body id="app-root">
+  <div class="font-secondary bg-neutral-background text-text-secondary overflow-x-hidden min-h-screen flex flex-col w-full relative">
+
+    <!-- Navbar -->
+    <header class="w-full fixed top-0 left-0 z-50 bg-neutral-background/90 backdrop-blur-md border-b border-neutral-border">
+      <nav class="max-w-[1200px] mx-auto h-[79px] px-6 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="font-geist text-xl font-bold tracking-tight text-brand-dark">Vertex<span class="text-brand-primary">.</span>Elite</span>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#services" class="text-base font-medium tracking-tight text-text-secondary hover:text-brand-primary transition-colors">Services</a>
+          <a href="#work" class="text-base font-medium tracking-tight hover:text-brand-primary transition-colors">Our Work</a>
+          <a href="#process" class="text-base font-medium tracking-tight hover:text-brand-primary transition-colors">Process</a>
+          <a href="#testimonials" class="text-base font-medium tracking-tight hover:text-brand-primary transition-colors">Client Voices</a>
+        </div>
+
+        <a href="#contact" class="bg-brand-primary text-white pl-6 pr-1.5 rounded-full h-[46px] flex items-center gap-3 hover:opacity-90 transition-opacity group">
+          <span class="text-base font-medium tracking-tight">Let's Talk</span>
+          <div class="w-[34px] h-[34px] bg-white rounded-full flex items-center justify-center relative overflow-hidden flex-shrink-0">
+            <svg class="w-[18px] h-[18px] text-brand-primary fill-current transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-1" viewBox="0 0 24 24">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+            </svg>
+          </div>
+        </a>
+      </nav>
+    </header>
+
+    <main class="flex-grow pt-[79px]"><div class="relative w-full overflow-hidden flex flex-col items-center">
+
+  <!-- Hero Section -->
+  <section class="w-full pb-8 pt-12 px-6 flex flex-col items-center gap-[42px]">
+    <div class="max-w-[1200px] w-full bg-brand-primary rounded-xl p-4 flex flex-col items-center overflow-hidden">
+      <div class="w-full flex flex-col lg:flex-row items-center gap-[34px]">
+        <div class="flex-1 pl-5 py-12 lg:py-24 flex flex-col items-start gap-8">
+          <div class="flex items-center gap-[10px]" data-animation-on-scroll="" style="transition-delay: 100ms;">
+            <div class="flex items-center">
+              <svg class="w-[21px] h-[21px] fill-white" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+              <svg class="w-[21px] h-[21px] fill-white" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+              <svg class="w-[21px] h-[21px] fill-white" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+              <svg class="w-[21px] h-[21px] fill-white" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+              <svg class="w-[21px] h-[21px] fill-white" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+            </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const testimonials = [
+    {
+      quote: "Vertex Elite didn't just give us a marketing plan; they gave us a new perspective on our own potential. Their strategic clarity is unmatched in the industry.",
+      name: "Julian Sterling",
+      title: "CEO, Sterling & Co.",
+      image: "https://images.pexels.com/photos/26150470/pexels-photo-26150470.jpeg?w=80&h=80&fit=crop"
+    },
+    {
+      quote: "The results speak for themselves. We've seen a 142% increase in digital revenue within the first six months of engagement with the Vertex team.",
+      name: "Sarah Chen",
+      title: "CMO, Aurora Collection",
+      image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?w=80&h=80&fit=crop"
+    },
+    {
+      quote: "Vertex Elite bridges the gap between high-level brand strategy and ruthless performance execution. They are truly partners in our growth.",
+      name: "Marcus Vane",
+      title: "Founder, Vortex Systems",
+      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?w=80&h=80&fit=crop"
+    }
+  ];
+
+  let currentIdx = 0;
+  const quoteEl = document.getElementById('testimonial-quote');
+  const nameEl = document.getElementById('testimonial-name');
+  const titleEl = document.getElementById('testimonial-title');
+  const imageEl = document.getElementById('testimonial-image');
+  const dots = document.querySelectorAll('.testimonial-dot');
+  const slider = document.getElementById('testimonial-slider');
+
+  function updateTestimonial(index) {
+    slider.style.opacity = '0';
+    slider.style.transform = 'translateY(10px)';
+
+    setTimeout(() => {
+      const t = testimonials[index];
+      quoteEl.textContent = `"${t.quote}"`;
+      nameEl.textContent = t.name;
+      titleEl.textContent = t.title;
+      imageEl.src = t.image;
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('bg-brand-primary', i === index);
+        dot.classList.toggle('bg-brand-primary/20', i !== index);
+        dot.classList.toggle('w-6', i === index);
+        dot.classList.toggle('w-2.5', i !== index);
+      });
+
+      slider.style.opacity = '1';
+      slider.style.transform = 'translateY(0)';
+    }, 500);
+  }
+
+  dots[0].classList.add('w-6');
+
+  setInterval(() => {
+    currentIdx = (currentIdx + 1) % testimonials.length;
+    updateTestimonial(currentIdx);
+  }, 5000);
+});
+</script>
+            <span class="text-white font-medium text-base tracking-tight">The new standard in modern marketing</span>
+          </div>
+
+          <div class="space-y-[18px]">
+            <h1 class="font-primary text-[48px] md:text-[56px] leading-[1.1] text-white tracking-tightest max-w-[614px]" data-animation-on-scroll="" style="transition-delay: 200ms;">
+              Marketing that scales with surgical precision
+            </h1>
+            <p class="text-white/80 font-medium text-xl leading-[1.5] tracking-tighter max-w-[480px]" data-animation-on-scroll="" style="transition-delay: 300ms;">
+              We bridge the gap between high-level brand strategy and ruthless performance execution. Your partner for long-term dominance.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-[22px]" data-animation-on-scroll="" style="transition-delay: 400ms;">
+            <a href="#contact" class="bg-white text-brand-dark pl-6 pr-1.5 rounded-full h-[46px] flex items-center gap-3 hover:bg-neutral-100 transition-colors group">
+              <span class="text-base font-medium tracking-tight hidden sm:inline">Begin Engagement</span>
+              <span class="text-base font-medium tracking-tight inline sm:hidden">Engagement</span>
+              <div class="w-[34px] h-[34px] bg-brand-primary rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-[18px] h-[18px] text-white fill-current transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-1" viewBox="0 0 24 24">
+                  <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                </svg>
+              </div>
+            </a>
+            <a href="#work" class="text-white text-lg font-medium tracking-tighter hover:underline">
+              View Case Studies
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-[450px] h-[580px] shrink-0" data-animation-on-scroll="">
+          <img src="https://images.pexels.com/photos/8117466/pexels-photo-8117466.jpeg?w=450&amp;h=580&amp;fit=crop" alt="Vertex marketing consultants" class="w-full h-full object-cover rounded-lg shadow-2xl">
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner Logos -->
+    <section class="w-full flex flex-col items-center gap-[38px] mt-12" data-animation-on-scroll="">
+      <p class="text-brand-dark text-base font-bold tracking-tighter uppercase">Powering market leaders:</p>
+      <div class="w-full max-w-[1200px] h-14 overflow-hidden relative mask-fade-edges">
+        <div class="flex items-center gap-[80px] w-max animate-scroll">
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">VOLVO</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">PATAGONIA</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">SAMSUNG</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">SHOPIFY</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">SQUARE</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">VOLVO</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">PATAGONIA</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">SAMSUNG</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">SHOPIFY</span>
+          <span class="font-primary text-3xl font-bold text-brand-primary tracking-tight">SQUARE</span>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Services Section (Simplified Cards) -->
+  <section id="services" class="w-full pt-16 pb-12 lg:pt-20 lg:pb-16 px-6 bg-neutral-background flex flex-col items-center">
+    <div class="max-w-[1200px] mx-auto w-full">
+      <div class="lg:mb-[80px] mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-[40px] items-end">
+          <div class="lg:col-span-7">
+            <h2 class="text-[48px] md:text-[56px] lg:text-[110px] font-primary font-medium leading-[0.85] tracking-tightest text-brand-dark">
+              <span class="block">The Future</span>
+              <span class="block">of Growth.</span>
+            </h2>
+          </div>
+          <div class="lg:col-span-5 pb-2">
+            <div class="flex flex-col gap-8">
+              <h3 class="text-xl lg:text-[26px] font-primary font-light leading-[1.3] text-brand-dark/80">
+                We design marketing experiences that transcend the digital. Moving from what consumers see to what they feel, and eventually, how they lead.
+              </h3>
+              <a href="#contact" class="group relative inline-flex items-center justify-center w-fit px-8 py-4 bg-brand-primary text-white rounded-md text-[11px] font-primary font-medium uppercase tracking-[2px] transition-all hover:opacity-90">
+                Architect Your Vision
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch border-t border-brand-dark/10 pt-16">
+        <div class="bg-neutral-surface border border-neutral-border rounded-xl p-6 md:p-10 flex flex-col gap-6 h-full transition-shadow hover:shadow-md">
+          <div>
+            <p class="text-sm font-primary font-semibold uppercase tracking-[2px] mb-4 text-brand-primary">Strategy</p>
+            <h4 class="font-primary text-2xl md:text-3xl font-bold leading-tight tracking-tight text-brand-dark">
+              Surgical Precision
+            </h4>
+          </div>
+          <p class="text-base md:text-lg font-secondary font-normal leading-relaxed text-text-secondary">
+            Strategy isn't a static document; it's a living compass. We help brands find the pulse of their audience and build movements that last.
+          </p>
+        </div>
+
+        <div class="bg-brand-primary rounded-xl p-6 md:p-10 flex flex-col gap-6 h-full transition-all hover:shadow-xl shadow-brand-primary/20">
+          <div>
+            <p class="text-sm font-primary font-semibold uppercase tracking-[2px] mb-4 text-white/60">Curation</p>
+            <h4 class="font-primary text-2xl md:text-3xl font-bold leading-tight tracking-tight text-white">
+              Brand Architecture
+            </h4>
+          </div>
+          <p class="text-base md:text-lg font-secondary font-normal leading-relaxed text-white/90">
+            Beyond aesthetic, we build for human connection. We define your identity to build lasting emotional equity in a crowded marketplace.
+          </p>
+        </div>
+
+        <div class="bg-neutral-surface border border-neutral-border rounded-xl p-6 md:p-10 flex flex-col gap-6 h-full transition-shadow hover:shadow-md">
+          <div>
+            <p class="text-sm font-primary font-semibold uppercase tracking-[2px] mb-4 text-brand-primary">Evolution</p>
+            <h4 class="font-primary text-2xl md:text-3xl font-bold leading-tight tracking-tight text-brand-dark">
+              Market Synchronicity
+            </h4>
+          </div>
+          <p class="text-base md:text-lg font-secondary font-normal leading-relaxed text-text-secondary">
+            The digital layer should enhance reality. We integrate growth systems that evolve with your market, ensuring you're always ahead of the curve.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div></main>
+  </div>
+</body></html>
