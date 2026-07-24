@@ -22,11 +22,17 @@ De Routine heeft geen rechtenvrije foto's van een specifiek bedrijf — die moet
 
 ## Een nieuw bedrijf toevoegen
 
-1. Voeg een object toe aan `companies.json` met minimaal: `id`, `bedrijfsnaam`, `branche`, `contactpersoon`, `contact` (adres, telefoon, email, kvk, huidige_site), `regio`, `diensten`, `reviews`, `ontwerprichting`. Zet `status: "pending"`, `repo_ready: false`, `fotos_beschikbaar: false`.
+1. Voeg een object toe aan `companies.json` met minimaal: `id`, `bedrijfsnaam`, `branche`, `contactpersoon`, `contact` (adres, telefoon, email, kvk, huidige_site), `regio`, `diensten`, `reviews`, `ontwerprichting`, `talen` (array, bijv. `["nl"]` of `["nl","en"]` — zie hieronder). Zet `status: "pending"`, `repo_ready: false`, `fotos_beschikbaar: false`.
 2. Maak op github.com/svanwijksolutions een nieuwe **publieke** repo aan genaamd `<id>-demo`.
 3. Zet `repo_ready: true` en `repo: "<id>-demo"` in het item.
 4. (Optioneel) Zet vóór 22:00 foto's in `uploads/<id>/` en `fotos_beschikbaar: true` — zie hierboven.
 5. Klaar — de eerstvolgende nachtrun (22:00 NL-tijd) pakt het op (mits er ruimte is, max. 2-3 per nacht).
+
+Makkelijkste route: vertel het gewoon in de chat (met foto's als bijlage), Claude verwerkt de rest.
+
+## Talen
+
+Standaard is elke site alleen Nederlands (`talen: ["nl"]`). Voor bedrijven met internationaal publiek (toerisme, horeca, hotels, expat-diensten, of een toeristische regio) kun je een tweede/derde taal opgeven, bijv. `talen: ["nl", "en"]`. Is `talen` niet gezet, dan mag de bouwende subagent zelf EN toevoegen als de branche/regio duidelijk internationaal is — bij twijfel blijft het bij NL. De taalswitcher wisselt clientside (geen aparte URL's per taal), met vertaalbestanden in `i18n/<taal>.json`.
 
 ## Statussen
 
@@ -35,11 +41,13 @@ De Routine heeft geen rechtenvrije foto's van een specifiek bedrijf — die moet
 - `done` — live, pitchmail klaar in `pitches/<id>.md`
 - `needs_review` — de Routine is vastgelopen of twijfelde (ontbrekende/tegenstrijdige info, mislukte Pages-build, etc.) — zie `notities` voor de reden. Nooit stilzwijgend verzonnen invullen.
 
-## Vaste regels voor elke build (zie ook `webdesign`-skill)
+## Vaste regels voor elke build (zie ook `webdesign`-skill, en de volledige bouwinstructie in de Routine)
 
-- Losse HTML/CSS/JS, relatieve paden (GitHub Pages sub-pad hosting)
-- Ultra moderne, visueel rijke stijl met bewegende elementen (subtiele load-animaties, hover-effecten, geen scroll-observer die content kan laten "vastzitten" op `opacity: 0`)
-- Foto's alleen als de gebruiker ze aanlevert in `uploads/<id>/` (zie boven); anders gegenereerde illustraties/CSS-vormgeving — nooit doen alsof gegenereerd beeld een echte foto van dit specifieke bedrijf is
+- Losse HTML/CSS/JS, geen framework, relatieve paden (GitHub Pages sub-pad hosting)
+- Ultra modern en visueel rijk: bento-grids, glassmorphism, gradient-mesh achtergronden, grote expressieve typografie — met bewegende elementen (load-animaties, hover-effecten, doorlopende subtiele beweging) die nooit content permanent verbergen (geen scroll-observer die op `opacity: 0` blijft hangen)
+- Geen AI-gegenereerde "foto's" en geen kunstmatig/nep-ogende iconen. Alleen: (a) echte foto's die de gebruiker aanlevert in `uploads/<id>/`, correct geplaatst zonder vervorming, of (b) handgemaakte SVG/CSS-vormgeving (zoals het bloem-monogram bij Zie Haar Stralen) — nooit AI-artstijl illustraties of stockfoto-achtige AI-mensen
+- Nederlandse tekst zonder liggend streepje/gedachtestreepje ( - , – , — ) als stijlmiddel — herschrijf met een punt, komma, dubbele punt of "en". Correct gespelde koppeltekens in samenstellingen (e-mail) zijn wel gewoon toegestaan
+- Meertalig (met moderne taalswitcher) bij relevante bedrijven, zie "Talen" hierboven
 - Geen verzonnen prijzen, reviewquotes, geschiedenis of feiten — eerlijke placeholders
 - `noindex, nofollow` + `robots.txt: Disallow: /` — het zijn ongevraagde concepten, geen live sites
 - Footer-disclaimer: "Dit is een ongevraagd ontwerpvoorstel van Drivenn Agency..."
@@ -47,3 +55,7 @@ De Routine heeft geen rechtenvrije foto's van een specifiek bedrijf — die moet
 - 8-staps kwaliteitscontrole vóór elke push (zie Routine-instructie) — niet oppervlakkig 8x hetzelfde checken, maar 8 verschillende invalshoeken
 - Pitchmail wordt **nooit verzonden**, alleen klaargezet in `pitches/<id>.md`
 - **Nooit** `svanwijksolutions/waterfordscocktails` aanraken — dat is een ander, ongerelateerd project
+
+## Bekende sandbox-beperkingen
+
+- `*.github.io` en de meeste externe sites (o.a. 21st.dev, Google Maps/Fonts) zijn geblokkeerd door het netwerkbeleid van deze omgeving — subagents kunnen dus niet live naar componentgalerijen kijken voor inspiratie en gebruiken in plaats daarvan de uitgeschreven patroonlijst in de Routine-instructie. Live-URL's worden geverifieerd via de GitHub Actions-status, niet door de site zelf te bezoeken.
