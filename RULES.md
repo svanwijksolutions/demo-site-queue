@@ -47,9 +47,9 @@ Dit bestand is de **enige bindende bron** voor regels die voor élke demo-site g
 - Meer ideeën die passen bij "modern, niet standaard": gestaggerde reveals (kaarten na elkaar in plaats van tegelijk), lichte parallax op hero-beelden (`transform: translateY()` gekoppeld aan scrollpositie, met reduced-motion fallback), een scroll-voortgangsbalk, tellers die pas oplopen zodra ze in beeld komen in plaats van alleen bij page-load, microinteracties op iconen bij hover. Kies een paar die bij het merk passen, geen opeenstapeling van alles tegelijk.
 
 ## Navigatie
-- Heeft een paginasoort (Aanbod, Diensten, Portfolio, enz.) meerdere duidelijke subonderdelen (categorieën, diensttypes, enz.): geef het bijbehorende item in de hoofdnavigatie een uitklapbaar dropdown/mega-menu dat die subonderdelen direct toont en aanklikbaar maakt, in plaats van alleen een link naar de overzichtspagina. Geldt voor elk paginatype waar dit zich voordoet, niet alleen "Aanbod".
-- Desktop: dropdown opent bij hover/focus op het navigatie-item, sluit bij het verlaten van het menu of bij Escape, volledig toetsenbord-navigeerbaar.
-- Mobiel: geen aparte flyout. De subonderdelen klappen inline uit onder het hoofditem in het mobiele menu (accordion-stijl), geen twee losse interactiepatronen door elkaar.
+- **Alleen toepassen als het echt nodig is (staande verduidelijking sinds 24-07-2026, n.a.v. Van Oosten voor Vis):** heeft een paginasoort (Aanbod, Diensten, Portfolio, enz.) zoveel te vertellen per subonderdeel dat het niet meer overzichtelijk op één pagina past (uitgebreide productbeschrijvingen, losse pagina's per dienst, een lange lijst categorieën): geef het bijbehorende item in de hoofdnavigatie een uitklapbaar dropdown/mega-menu dat die subonderdelen direct toont en aanklikbaar maakt, in plaats van alleen een link naar de overzichtspagina.
+- Passen alle producten/diensten al overzichtelijk op één pagina (zoals bij Van Oosten voor Vis: vier categorieën die gewoon op de aanbodpagina staan): dan is een gewone link naar de overzichtspagina genoeg, geen dropdown. Niet toepassen "omdat het kan" of omdat een andere site er een heeft.
+- Wordt een dropdown wel toegepast: desktop opent bij hover/focus op het navigatie-item, sluit bij het verlaten van het menu of bij Escape, volledig toetsenbord-navigeerbaar. Mobiel geen aparte flyout, de subonderdelen klappen inline uit onder het hoofditem in het mobiele menu (accordion-stijl), geen twee losse interactiepatronen door elkaar.
 
 ## SEO
 Gedistilleerd uit een technische-SEO-checklist die Sem heeft aangeleverd (bron: `every-app/open-seo`, zie `reference/README.md`). Dit zijn de punten die zonder externe tools/diensten te borgen zijn bij het bouwen:
@@ -60,6 +60,23 @@ Gedistilleerd uit een technische-SEO-checklist die Sem heeft aangeleverd (bron: 
 - Structured data (JSON-LD) waar relevant, consistent op alle pagina's van een site, niet alleen op de homepage.
 - Content staat in de statische HTML zelf, niet achter client-side rendering verstopt. Dit hebben we sowieso al staan (losse HTML/CSS/JS, geen framework) en is ook wat AI-crawlers (GPTBot, ClaudeBot) en gewone zoekmachine-crawlers het makkelijkst kunnen lezen.
 - Deze demo-sites blijven zelf altijd `noindex, nofollow` + `robots.txt: Disallow: /` (zie "Techniek & hosting"). Dat is geen tegenstelling met bovenstaande punten: de site is technisch al SEO-klaar zodra een klant 'm live zou zetten en de noindex-regel eraf haalt.
+
+## Cookies & privacy
+- Bevat de site een formulier (zo goed als altijd het geval, denk aan het contactformulier): toon bij het eerste bezoek een korte, duidelijke cookiemelding met een accepteren-actie en een link naar de privacyverklaring. Geen ellenlange categorie-instellingen nodig voor deze eenvoudige demo-sites, alleen een nette, korte melding.
+
+## 404-pagina
+- Elke site krijgt een `404.html` (GitHub Pages pikt dit bestand automatisch op voor niet-bestaande paden binnen de repo): kort, vriendelijk, in dezelfde huisstijl als de rest van de site, met een duidelijke link terug naar de homepage.
+
+## Achtergrondfoto-hero (optioneel patroon, geen verplichting)
+- Waar het past bij het merk en de aangeleverde foto's (niet verplicht, alleen inzetten als het goed staat): een sfeervolle achtergrondfoto over de volle breedte van de hero op de homepage, verdonkerd met een overlay zodat de tekst er goed leesbaar overheen staat. Alleen met een echte, door de klant aangeleverde foto, nooit AI-gegenereerd, zie "Beeldmateriaal".
+
+## Formulieren
+- **Feedback na verzenden**: altijd een duidelijke bevestiging tonen zodat de bezoeker niet in het duister tast. De tekst moet kloppen met wat er technisch echt gebeurt. Gebruikt het formulier `mailto:` (de standaard zonder eigen backend): zeg dat het e-mailprogramma opent met een kant-en-klaar bericht, niet "we nemen contact op" (dat impliceert een verzending die nog niet heeft plaatsgevonden, en dat is een verzonnen claim, zie "Content & eerlijkheid"). Is er wel een echte formulierdienst/backend gekoppeld: dan mag een claim als "Bedankt voor uw bericht, we nemen zo snel mogelijk contact op" wel, en is een automatische bevestigingsmail een mooie toevoeging.
+- **Spambeveiliging**: geen onmogelijke tekstcodes voor de bezoeker. Standaard, zonder externe dienst nodig: een honeypot-veld (een verborgen invoerveld dat alleen bots invullen, negeer de inzending stil als het ingevuld is). Heeft de klant zelf een Google reCAPTCHA-sitekey aangeleverd: gebruik die aanvullend of in plaats van de honeypot.
+- **Knoptekst**: nooit "Klik hier" of een ander leeg label. Beschrijf de actie concreet ("Vrijblijvend aanvragen", "Verstuur bericht", "Bekijk het aanbod").
+
+## Toegankelijkheid per apparaat
+- Test nadrukkelijk op de standaard breakpoints (480px, 768px, 1200px, zie de 8-staps kwaliteitscontrole) en bevestig expliciet in het subagent-rapport dat de site op elk apparaattype goed werkt: geen overflow, leesbare tekst, tikbare targets van minimaal 44px, werkend menu.
 
 ## Zwevende UI-elementen
 - **Nooit** een zwevende ronde "+"-knop (radial FAB/quick-actions-menu) rechtsonder in beeld, ongeacht wat erachter zit (bellen/route/social). Dat patroon mag niet meer gebruikt worden, op geen enkele site.
@@ -72,3 +89,4 @@ Gedistilleerd uit een technische-SEO-checklist die Sem heeft aangeleverd (bron: 
 - **24-07-2026**: bestand aangemaakt. Bestaande regels uit `README.md` en de Routine-instructie hierin samengevoegd tot één bindende bron, zodat toekomstige regelwijzigingen een gewone git-commit worden in plaats van een bewerking van de grote Routine-prompt. Footer-regel (driedelig blok) vastgelegd naar aanleiding van Sem's feedback.
 - **24-07-2026**: naar aanleiding van feedback op Van Oosten voor Vis: footer-disclaimer volledig geschrapt ("hoef ik nergens meer te zien ooit"), en een nieuwe regel toegevoegd tegen zwevende "+"-knoppen rechtsonder ("dat plusje rechtsonder hoef ik nooit te hebben op een website"). Beide gelden voor alle sites, ook bestaande.
 - **24-07-2026**: naar aanleiding van verdere feedback op Van Oosten voor Vis: typografie-regel tegen standaard font-pairings toegevoegd (Space Grotesk + Inter voelde als "AI-lettertype" aan), animatieregel verruimd met een veilig scroll-reveal-patroon (rijkere beweging toegestaan, zonder het permanent-onzichtbare-content risico van het eerdere blanket-verbod), nieuwe navigatieregel voor dropdown-menu's bij pagina's met subonderdelen, en een SEO-sectie toegevoegd op basis van door Sem aangeleverd referentiemateriaal (`every-app/open-seo`, zie `reference/`).
+- **24-07-2026**: dropdown-menu-regel verduidelijkt tot een voorwaarde in plaats van een blanket-regel (n.a.v. de dropdown die niet nodig bleek voor Van Oosten voor Vis, alle vier de categorieën pasten al op één pagina). Nieuwe regels toegevoegd: cookiemelding verplicht zodra een site een formulier heeft, verplichte `404.html` op elke site, een optioneel achtergrondfoto-hero-patroon (verdonkerde foto met tekst eroverheen, alleen waar het past), formulierregels (eerlijke verzendfeedback passend bij het echte mechanisme, honeypot-spambeveiliging, geen "Klik hier"-knoppen), en een expliciete toegankelijkheid-per-apparaat-check op de standaard breakpoints.
