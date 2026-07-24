@@ -57,7 +57,7 @@
     },
     {
       "id": "manimania",
-      "status": "in_progress",
+      "status": "needs_review",
       "bedrijfsnaam": "ManiMania",
       "branche": "Nagelstudio (manicure, pedicure, nagelverzorging)",
       "contactpersoon": "Marzi",
@@ -72,7 +72,7 @@
       "diensten": ["Manicure", "Japanse manicure", "Pedicure", "OPI GelColor", "E-Manicure & BIAB", "Nail Extension Treatment", "Nagelart"],
       "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
       "ontwerprichting": "Fris/vrouwelijk nagelstudio-gevoel, laat de echte OPI-productfoto's en nagelfoto's spreken, geen kunstmatige iconen. Brandquote als mogelijke hero-copy: \"Any woman can wear a great outfit, but it is her nails that make the statement.\" (Tammy Taylor)",
-      "notities": "Geen KVK-nummer vermeld op de site, bewust niet verzonnen. Geen openingstijden vermeld, bewust niet verzonnen (evt. 'op afspraak' als algemene formulering, geen concrete tijden). Eigenaresse heeft 18 jaar ervaring, dat is een echt feit en mag gebruikt worden. Volledige echte prijslijst aangeleverd door klant (tekst-export van de site) staat in de chatgeschiedenis van deze sessie en moet 1-op-1 overgenomen worden, niet verzinnen of afronden. Social: Facebook https://www.facebook.com/ManiManiamanicure, Instagram https://www.instagram.com/marzimanimania/.",
+      "notities": "Geen KVK-nummer vermeld op de site, bewust niet verzonnen. Geen openingstijden vermeld, bewust niet verzonnen (evt. 'op afspraak' als algemene formulering, geen concrete tijden). Eigenaresse heeft 18 jaar ervaring, dat is een echt feit en mag gebruikt worden. Social: Facebook https://www.facebook.com/ManiManiamanicure, Instagram https://www.instagram.com/marzimanimania/. NEEDS_REVIEW (build van 24-07-2026): site volledig gebouwd, gepusht naar commit f11b482 op main, achtstaps kwaliteitscontrole doorlopen. (1) Pages-deployment kon niet bevestigd worden: 'Deploy static content to Pages' faalde op de 'Setup Pages'-stap (bekend race-condition-patroon bij een gloednieuwe repo), en na ruim 6 minuten pollen verscheen geen groene run van beide workflowtypes voor commit f11b482. Controleer handmatig Settings > Pages (bron moet 'GitHub Actions' zijn) en herstart de workflow zo nodig eenmalig. (2) Geen prijslijst-bestand aangetroffen in uploads/manimania/ (alleen logo + 11 foto's), dus geen prijzen op de site getoond, alleen 'Op afspraak'/'Prijzen op aanvraag'. Vraag de klant om de echte prijslijst aan te leveren, dan kan alsnog een prijzen.html gebouwd worden.",
       "fotos_beschikbaar": true,
       "talen": ["nl"],
       "repo_ready": true,
