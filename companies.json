@@ -57,7 +57,7 @@
     },
     {
       "id": "manimania",
-      "status": "needs_review",
+      "status": "done",
       "bedrijfsnaam": "ManiMania",
       "branche": "Nagelstudio (manicure, pedicure, nagelverzorging)",
       "contactpersoon": "Marzi",
@@ -72,19 +72,19 @@
       "diensten": ["Manicure", "Japanse manicure", "Pedicure", "OPI GelColor", "E-Manicure & BIAB", "Nail Extension Treatment", "Nagelart"],
       "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
       "ontwerprichting": "Fris/vrouwelijk nagelstudio-gevoel, laat de echte OPI-productfoto's en nagelfoto's spreken, geen kunstmatige iconen. Brandquote als mogelijke hero-copy: \"Any woman can wear a great outfit, but it is her nails that make the statement.\" (Tammy Taylor)",
-      "notities": "Geen KVK-nummer vermeld op de site, bewust niet verzonnen. Geen openingstijden vermeld, bewust niet verzonnen (evt. 'op afspraak' als algemene formulering, geen concrete tijden). Eigenaresse heeft 18 jaar ervaring, dat is een echt feit en mag gebruikt worden. Social: Facebook https://www.facebook.com/ManiManiamanicure, Instagram https://www.instagram.com/marzimanimania/. NEEDS_REVIEW (build van 24-07-2026): site volledig gebouwd, gepusht naar commit f11b482 op main, achtstaps kwaliteitscontrole doorlopen. (1) Pages-deployment kon niet bevestigd worden: 'Deploy static content to Pages' faalde op de 'Setup Pages'-stap (bekend race-condition-patroon bij een gloednieuwe repo), en na ruim 6 minuten pollen verscheen geen groene run van beide workflowtypes voor commit f11b482. Controleer handmatig Settings > Pages (bron moet 'GitHub Actions' zijn) en herstart de workflow zo nodig eenmalig. (2) Geen prijslijst-bestand aangetroffen in uploads/manimania/ (alleen logo + 11 foto's), dus geen prijzen op de site getoond, alleen 'Op afspraak'/'Prijzen op aanvraag'. Vraag de klant om de echte prijslijst aan te leveren, dan kan alsnog een prijzen.html gebouwd worden.",
+      "notities": "Geen KVK-nummer vermeld op de site, bewust niet verzonnen. Geen openingstijden vermeld, bewust niet verzonnen (evt. 'op afspraak' als algemene formulering, geen concrete tijden). Eigenaresse heeft 18 jaar ervaring, dat is een echt feit en mag gebruikt worden. Social: Facebook https://www.facebook.com/ManiManiamanicure, Instagram https://www.instagram.com/marzimanimania/. Pages-deployment op 25-07-2026 alsnog bevestigd geslaagd ('pages build and deployment', commit f11b482), status daarom naar done. Openstaand punt: geen prijslijst-bestand aangetroffen in uploads/manimania/ (alleen logo + 11 foto's), dus geen prijzen op de site getoond, alleen 'Op afspraak'/'Prijzen op aanvraag'. Vraag de klant om de echte prijslijst aan te leveren, dan kan alsnog een prijzen.html gebouwd worden.",
       "fotos_beschikbaar": true,
       "talen": ["nl"],
       "repo_ready": true,
       "repo": "manimania",
-      "live_url": null,
-      "pitch_email_klaar": false,
+      "live_url": "https://svanwijksolutions.github.io/manimania/",
+      "pitch_email_klaar": true,
       "toegevoegd_op": "2026-07-24",
-      "afgerond_op": null
+      "afgerond_op": "2026-07-25"
     },
     {
       "id": "dekeukenvansandra",
-      "status": "needs_review",
+      "status": "done",
       "bedrijfsnaam": "De Keuken van Sandra",
       "branche": "Catering, workshops, patisserie en lunches aan huis (foodstyling/culinair)",
       "contactpersoon": "Sandra Kaag",
@@ -99,15 +99,15 @@
       "diensten": ["Hapjes en borrelplanken", "Catering op maat", "Buffet, walking dinner of diner op maat", "Tapas buffet (vanaf 20 personen)", "Chocolade (kerstkrans, valentijnshart, bonbonletter, roomtruffels)", "Lunches en lunchcatering", "Patisserie, gebak en high tea", "Workshops (o.a. vegan)", "Kistje van Sandra (cadeaupakket)", "Koekdoos (ook XL)", "Maaltijden bestellen", "Allerhande lekkers (houdbare producten zoals jam, saus, soep)"],
       "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
       "ontwerprichting": "Warm/ambachtelijk foodstyling-gevoel, laat de echte foto's van gerechten en creaties spreken (geen stockfoto-uitstraling), persoonlijke toon van Sandra zelf",
-      "notities": "Contactvoorkeur expliciet: bij voorkeur WhatsApp of e-mail, liever niet bellen (vaak op locatie/handen in het deeg). Site heeft bewust geen vaste prijslijst, wel een paar concrete prijzen: Kistje van Sandra vanaf €22,50, Koekdoos €11,-, Koekdoos XL €18,50 (PostNL verzendkosten €4,75 per doos, gratis bezorgd in Wateringen), maaltijd €6,95 (afhalen/bezorgen in overleg, min. 10 personen voor groepsbestelling). Tapas buffet vanaf 20 personen, borrelhapjes/buffet vanaf 10 personen. Samenwerking met 'We Canteen' voor warme bedrijfslunches, kan genoemd worden. Geen concrete Facebook/Instagram-URL's aangeleverd, alleen de labels 'Facebook' en 'Instagram'. NEEDS_REVIEW (build van 24-07-2026): site volledig gebouwd, gepusht naar commit 13b67c39 op main, achtstaps kwaliteitscontrole doorlopen. Het KVK-nummer 12345678 en het BTW-nummer zijn bewust NIET op de site gezet (12345678 oogt als een verdachte placeholder-reeks, zie RULES.md 'Content & eerlijkheid'), geverifieerd met een grep dat het nergens voorkomt; een mens moet het echte KVK-nummer aanleveren als dat gewenst is. Facebook/Instagram-iconen zijn weggelaten omdat er geen werkende URL's aangeleverd zijn, alleen de labels. Pages-deployment kon niet bevestigd worden: de eerste workflow-run faalde op de bekende 'Setup Pages'-race-condition, de automatisch gestarte 'pages build and deployment'-run stond bij de laatste check nog op in_progress (niet gefaald, ook niet groen). Controleer over enkele minuten de Actions-tab van de repo; wordt hij alsnog groen dan is er niets meer nodig, faalt hij dan is een nieuwe (evt. lege) commit de gebruikelijke fix.",
+      "notities": "Contactvoorkeur expliciet: bij voorkeur WhatsApp of e-mail, liever niet bellen (vaak op locatie/handen in het deeg). Site heeft bewust geen vaste prijslijst, wel een paar concrete prijzen: Kistje van Sandra vanaf €22,50, Koekdoos €11,-, Koekdoos XL €18,50 (PostNL verzendkosten €4,75 per doos, gratis bezorgd in Wateringen), maaltijd €6,95 (afhalen/bezorgen in overleg, min. 10 personen voor groepsbestelling). Tapas buffet vanaf 20 personen, borrelhapjes/buffet vanaf 10 personen. Samenwerking met 'We Canteen' voor warme bedrijfslunches, kan genoemd worden. Geen concrete Facebook/Instagram-URL's aangeleverd, alleen de labels 'Facebook' en 'Instagram', dus geen social-iconen op de site totdat de klant de echte URL's aanlevert. Het KVK-nummer 12345678 en het BTW-nummer zijn bewust NIET op de site gezet (12345678 oogt als een verdachte placeholder-reeks, zie RULES.md 'Content & eerlijkheid'), geverifieerd met een grep dat het nergens voorkomt; een mens moet het echte KVK-nummer aanleveren als dat gewenst is. Pages-deployment op 25-07-2026 alsnog bevestigd geslaagd ('pages build and deployment', commit 13b67c39), status daarom naar done.",
       "fotos_beschikbaar": true,
       "talen": ["nl"],
       "repo_ready": true,
       "repo": "dekeukenvansandra",
-      "live_url": null,
-      "pitch_email_klaar": false,
+      "live_url": "https://svanwijksolutions.github.io/dekeukenvansandra/",
+      "pitch_email_klaar": true,
       "toegevoegd_op": "2026-07-24",
-      "afgerond_op": null
+      "afgerond_op": "2026-07-25"
     }
   ]
 }
