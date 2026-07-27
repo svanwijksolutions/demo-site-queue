@@ -1,0 +1,95 @@
+Aanvullende content voor Cone6 (letterlijk overgenomen uit issue #1, "Cone6 nieuw bedrijf", 27-07-2026)
+Dit bestand bevat content die te uitgebreid is om in companies.json te zetten. Gebruik letterlijk, niets verzinnen/inkorten op een manier die de betekenis verandert.
+
+=== EXPLICIETE WENS VAN SEM (belangrijk, verwerk dit) ===
+"Ik wil aan deze pagina sowieso een aparte FAQ-sectie" — bouw een eigen FAQ-pagina/sectie met de vragen hieronder, niet verstopt in lopende tekst.
+
+Voor de conceptpitchmail: vermeld expliciet dat de klant (Yvonne) zelf dingen aan de website kan blijven beheren na oplevering, denk aan: het toevoegen van bedrijven/logo's van teambuilding-klanten die langs zijn geweest (social proof), en noem nog een paar andere dingen die handig zijn voor haar om zelf te kunnen aanpassen (bijv. nieuwe workshopdata, prijzen, FAQ-antwoorden). Dit is een aanvulling op het vaste pitchmail-format uit RULES.md, niet een vervanging.
+
+Foto-instructie (bevestiging, staat al in RULES.md/BUILD_INSTRUCTIONS.md): kijk goed naar de bestandsnamen in uploads/cone6/ (bevatten vaak een aanduiding van het onderwerp) en plaats ze onder de juiste sectie. Kwaliteit behouden, nooit uitrekken.
+
+=== ECHTE FEITEN ===
+KVK: 91311071
+BTW: NL004881380B20
+Adres: Hoog Harnasch 22, 2635 DL Den Hoorn (Zuid-Holland), eerste verdieping
+Regio: dichtbij Den Haag Zuid, Westland, Delft, direct naast de A4 en N211 Wippolderlaan
+Telefoon: 06 244 606 96 (beperkt bereikbaar, bij voorkeur mailen)
+E-mail: cone6keramiek@gmail.com
+Instagram: https://www.instagram.com/cone6keramiek/
+TikTok: https://www.tiktok.com/@cone6_keramiek
+Eigenaresse: Yvonne da Silva (1987), beeldend kunstenaar, opgeleid aan de Willem de Kooning Academie, heeft ook een lerarenopleiding Engels gevolgd. Haar eigen verhaal (mag gebruikt worden op een "over"-pagina, letterlijke strekking, mag ingekort/herschreven worden zolang de feiten kloppen): combineert een speelse, buiten-de-gebaande-paden-benadering uit haar kunstopleiding met pedagogische inzichten uit de lerarenopleiding, waardoor beginners zich niet overweldigd voelen en op hun eigen tempo leren.
+Bereikbaarheid: gratis parkeren voor de deur. Bezoeken kan alleen op afspraak.
+Telefonisch niet bereikbaar op maandag en vrijdag.
+
+=== AANBOD & PRIJZEN (letterlijk, niet verzinnen/aanpassen) ===
+Workshop: Draaien voor beginners — 2 uur, €80 p.p., incl. creatie, keuze uit 10 glazuurkleuren, koffie/thee/koekjes, onbeperkt klei/oefenruimte, afwerken+glazuren (biscuit+glazuurstook). Ook mogelijk doordeweeks/vrijdag-zaterdagavond vanaf 4 personen.
+Workshop: Boetseer een plantenpot — 3 uur, €105, incl. klei/glazuur/stookkosten/koffie/thee. Voorbeelddatum in aangeleverde tekst: 25 april 13:30-16:30 (kan verouderd zijn, gebruik als voorbeeld van format, niet als vaste datum tenzij bevestigd actueel). Klaar na 6-8 weken drogen/bakken/glazuren.
+Workshop: Keramiek beschilderen — ongeveer 120 minuten, vanaf 4 personen (individueel aansluiten bij groepsdatum mogelijk). Inbegrepen: plek aan tafel, schildermaterialen, persoonlijke begeleiding, koffie/thee, glazuren+afbakken. Prijzen van de keramiekstukken zelf: €50 tot €130 afhankelijk van formaat/complexiteit, meeste deelnemers kiezen €50-75. Klaar na 6-8 weken. Kinderen t/m 6 jaar onder begeleiding welkom.
+Workshop: Maak een ontbijtsetje — 3 uur, €95, incl. klei/glazuur/stookkosten/koffie/thee. Klaar na 6-8 weken. Vanaf 4 personen (individueel aansluiten bij groepsdatum mogelijk).
+Keramiek Cursus — 8 lessen van 2,5 uur, €415 incl. klei/glazuren/gereedschap/stookkosten. Nieuwe cursusrondes najaar 2026: zaterdagochtend 10:00-12:30 (5,12,19,26 sept, 3,10,31 okt, 7 nov), dinsdagavond 19:00-21:30 (8,15,22,29 sept, 6,13,27 okt, 3 nov), donderdagavond 19:00-21:30 (1,8,15 okt, 29 okt, 5,13 nov, 19,26 nov). Geen les in de herfstvakantie (17 t/m 25 okt). Na de cursus: toegang tot de open werkplaats om zelfstandig verder te werken.
+Teambuilding & bedrijfsuitjes — voor groepen tot en met 30 personen. Gratis parkeren. Ook op locatie mogelijk. Neem contact op voor mogelijkheden/prijzen (geen vaste prijs aangeleverd).
+Stookservice — kosten op basis van volume, actuele prijslijst in het atelier aanwezig (geen vast bedrag aangeleverd, dus niet verzinnen). Biscuit-/aardewerkglazuurstook op 1050°C, steengoed op 1220°C. Oven: 130 liter inhoud, bruikbare hoogte 43,5 cm, diameter ovenplaten 52 cm.
+Cadeaubon: mogelijk voor elke workshop, printbare bon per e-mail na aankoop, ook te bestellen als workshop-cadeau.
+Strippenkaart (voor de open werkplaats): 10 strippen, in te zetten binnen 12 weken vanaf de eerste sessie, strikt persoonlijk/niet overdraagbaar, afmelden kosteloos tot 24 uur van tevoren.
+
+=== ECHTE REVIEW-QUOTES (letterlijk, mogen gebruikt worden) ===
+Over de keramiekcursus:
+"Er zit hier een soort vanzelfsprekendheid in het maken. Alsof alles wat je nodig hebt er al is, nog voordat je weet dat je het nodig hebt." — Angela
+"Meer dan alleen iets maken. Tijdens deze cursus leer je stap voor stap verschillende keramiektechnieken, ontdek je wat er allemaal mogelijk is met klei en ontwikkel je vaardigheden waar je zelfstandig mee verder kunt. De persoonlijke begeleiding en fijne sfeer maken het een absolute aanrader." — Marieke
+
+Over teambuilding (5 sterren elk, geen naam bekend, dus geen naam verzinnen, gewoon los tonen of als "een deelnemer"):
+"Mijn eerste keer draaien, maar dankzij de goede begeleiding is het super goed gelukt!"
+"Hele leuke middag met collega's in een mooie studio. Fijne instructie en een top uitje!"
+"Wat een feestje! En het resultaat achteraf maakt het helemaal af."
+"Erg leuke workshop, ik ben heel benieuwd naar het resultaat!"
+"Super mooie en gezellige studio. Yvonne legt rustig en duidelijk uit en inspireert je om zelf aan de slag te gaan. Echt een aanrader!"
+"Heel leuke workshop! Ik werd er helemaal zen van en het resultaat is super goed gelukt. Aanrader!"
+
+=== FAQ (letterlijk, bouw hier de gevraagde aparte FAQ-sectie mee) ===
+Hoe boek ik een workshop of cursus bij CONE6?
+Je kunt je eenvoudig inschrijven via de website. De boekingen verlopen via een online reserveringssysteem (SimplyBook.me). Je kiest een datum, vult je gegevens in en rondt de betaling af via iDeal. Na het afronden van de reservering ontvang je automatisch een bevestiging per e-mail. Omdat er met kleine groepen wordt gewerkt, is je plek na boeking direct gereserveerd.
+
+Moet ik een aanbetaling doen?
+Nee. De workshop wordt bij het reserveren in één keer betaald via iDeal (via Mollie). Zo is je plek meteen definitief gereserveerd.
+
+Annuleren of verplaatsen?
+Er wordt bewust met kleine groepen gewerkt, dus elke deelnemer krijgt een eigen plek. Een reservering is daarom definitief: boekingen kunnen niet worden geannuleerd, verzet of terugbetaald, ook niet bij ziekte/weer/werkverplichtingen. Je mag je plek wel kosteloos overdragen aan iemand anders (vooraf melden, aanwezig bij aanvang). Regeling bij het CONE6-annuleren zelf (bijv. te weinig deelnemers): keuze uit andere datum, tegoed, of terugbetaling.
+
+Wat gebeurt er als CONE6 een workshop annuleert?
+Er wordt contact opgenomen; je kunt kiezen voor verplaatsen naar een andere datum, een tegoed, of terugbetaling.
+
+Gaan workshops ook door bij slecht weer?
+Ja, ook bij regen of code geel. Bij code oranje/rood kan de workshop verplaatst worden voor de veiligheid, dan wordt contact opgenomen.
+
+Moet ik iets meenemen naar de workshop?
+Nee, alle materialen zijn aanwezig. Draag kleding die vies mag worden (schorten zijn beschikbaar). Lang haar: elastiekje handig.
+
+Heb ik ervaring nodig?
+Nee, de workshops zijn geschikt voor beginners en worden stap voor stap begeleid.
+
+Is er een leeftijdsgrens?
+Workshops zijn geschikt voor volwassenen en oudere kinderen, voor sommige workshops kan een minimumleeftijd gelden (navragen).
+
+Hoe lang blijven werkstukken in het atelier?
+Maximaal 3 maanden, daarna kunnen ze niet langer worden opgeslagen.
+
+Wat als mijn werkstuk breekt of anders uitvalt?
+Keramiek is een ambachtelijk proces met een natuurlijk risico op scheuren/barsten/vervormen tijdens drogen/bakken/glazuren. Geen garantie op een perfect eindresultaat, geen recht op restitutie.
+
+Wat als ik te laat ben?
+Op tijd komen wordt geadviseerd. Later aansluiten kan meestal, maar gemiste uitleg wordt niet ingehaald.
+
+Kan ik een workshop cadeau geven?
+Ja, via een tegoedbon in het boekingssysteem, of neem contact op voor info over cadeaubonnen.
+
+Kan ik een privé workshop boeken?
+Ja, voor groepen (vrienden/familie/teamuitjes), afhankelijk van beschikbaarheid, neem contact op.
+
+=== ALGEMENE VOORWAARDEN (samenvatting van de belangrijkste punten, volledige tekst desgewenst opvraagbaar, gebruik dit alleen als er een aparte voorwaardenpagina gebouwd wordt) ===
+Gevestigd Hoog Harnasch 22, Den Hoorn. Reserveringen via cone6.nl/SimplyBook.me, geen aanbetalingen, volledig bedrag bij boeking via iDeal/Mollie. Reserveringen zijn definitief (geen annulering/verplaatsing/restitutie door de deelnemer, wel kosteloos overdragen aan een vervanger). Workshops gaan door bij regen/code geel; bij code oranje/rood kan CONE6 verplaatsen/annuleren met keuze uit nieuwe datum/tegoed/terugbetaling. Deelname op eigen risico, geen aansprakelijkheid voor schade/letsel behalve bij grove nalatigheid. Schade aan ovenplaten door glazuur op voetringen: kosten voor de deelnemer. Werkstukken maximaal 3 maanden bewaard. Klachten binnen 7 dagen schriftelijk indienen, reactie binnen 14 dagen. Nederlands recht van toepassing. Fotografie tijdens workshops kan voor promotiedoeleinden gebruikt worden tenzij vooraf bezwaar gemaakt. Atelier alleen toegankelijk voor ingeschreven deelnemers, geen introducees. Strippenkaarten (10 strippen, 12 weken geldig vanaf eerste sessie, niet overdraagbaar), afmelden kosteloos tot 24 uur van tevoren.
+
+=== PRIVACYVERKLARING (kernpunten, gebruik voor privacy.html) ===
+Verzamelt naam, e-mailadres, telefoonnummer, betaalgegevens bij boeking, voor het verwerken van inschrijvingen/betalingen/communicatie. Gegevens veilig opgeslagen, alleen gedeeld met derden als dat echt nodig is voor betalingsverwerking/planning. Cookies worden gebruikt, uitschakelbaar via de browser. Inzage/aanpassen van gegevens kan via cone6keramiek@gmail.com. Gegevens worden niet langer bewaard dan nodig (meestal duur van de workshop-deelname), betaalgegevens soms langer voor belastingdoeleinden. Nieuwsbrief-afmelden kan altijd.
+
+=== ONTWERPRICHTING (referentie uit de bestaande Squarespace-site, geen letterlijk over te nemen technische code, alleen sfeer/richting) ===
+Kopfont op de bestaande site: "Carter One" (rond, speels, vet display-lettertype). Bodyfont: "Nunito Sans". Kleurenpalet omvat roze/magenta-tinten, een levendig oranje/koraal accent, en een zachte blauwgrijze lichte kleur, met een ongewoon grote basis-lettergrootte (20px) voor een toegankelijk, laagdrempelig gevoel. Gebruik dit als sfeer-richting (speels, ambachtelijk, toegankelijk, niet steriel/zakelijk), niet als verplichting om exact dezelfde lettertypen/kleuren over te nemen. RULES.md's regel tegen generieke AI-sjabloon-pairings blijft leidend bij de uiteindelijke keuze.

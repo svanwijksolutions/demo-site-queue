@@ -81,6 +81,58 @@
       "pitch_email_klaar": true,
       "toegevoegd_op": "2026-07-24",
       "afgerond_op": "2026-07-25"
+    },
+    {
+      "id": "cone6",
+      "status": "pending",
+      "bedrijfsnaam": "Cone6",
+      "branche": "Keramiekatelier (workshops, cursussen, teambuilding, stookservice)",
+      "contactpersoon": "Yvonne da Silva",
+      "contact": {
+        "adres": "Hoog Harnasch 22, 2635 DL Den Hoorn (ZH)",
+        "telefoon": "06 244 606 96",
+        "email": "cone6keramiek@gmail.com",
+        "kvk": "91311071",
+        "huidige_site": "https://cone6.nl/"
+      },
+      "regio": "Den Hoorn / Den Haag Zuid / Westland / Delft",
+      "diensten": ["Workshops (draaien, boetseren, beschilderen, ontbijtsetje maken)", "Keramiekcursus (8 lessen)", "Teambuilding & bedrijfsuitjes", "Stookservice", "Cadeaubonnen"],
+      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": true },
+      "ontwerprichting": "Speels, ambachtelijk, toegankelijk. Zie uploads/cone6/aanvullende-content.txt voor de kleur-/lettertypereferentie van de bestaande site (niet verplicht om over te nemen, RULES.md's regel tegen generieke AI-sjabloon-pairings blijft leidend).",
+      "notities": "Volledige FAQ, algemene voorwaarden, privacyverklaring-kernpunten, echte reviewquotes en een pitchmail-specifieke instructie staan in uploads/cone6/aanvullende-content.txt, LEES DIT BESTAND VOLLEDIG voor je bouwt. Sem wil expliciet een aparte FAQ-sectie/pagina. BTW: NL004881380B20 (geen apart veld hiervoor, vermeld desgewenst naast KVK).",
+      "fotos_beschikbaar": true,
+      "talen": ["nl", "en"],
+      "repo_ready": true,
+      "repo": "cone6",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "toegevoegd_op": "2026-07-27"
+    },
+    {
+      "id": "dierenkliniek-animalis",
+      "status": "pending",
+      "bedrijfsnaam": "Dierenkliniek Animalis",
+      "branche": "Dierenkliniek / dierenarts (honden, katten, konijnen, knaagdieren)",
+      "contactpersoon": "Angelina de Jong",
+      "contact": {
+        "adres": "Harnaschpolder, Delft (geen concreet huisnummer aangeleverd, niet verzinnen)",
+        "telefoon": "015 737 0135",
+        "email": "dierenarts@dierenkliniekanimalis.nl",
+        "kvk": null,
+        "huidige_site": "https://dierenkliniekanimalis.nl/"
+      },
+      "regio": "Delft (Harnaschpolder)",
+      "diensten": ["Algemene dierenartszorg (honden, katten, konijnen, knaagdieren)", "VetPlan (preventief zorgabonnement)", "Pre-anesthetisch bloedonderzoek", "Spoedadvies voor konijnen/knaagdieren"],
+      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
+      "ontwerprichting": "Persoonlijke, warme, vertrouwde uitstraling passend bij 'de dierenarts met de persoonlijke benadering'. Geen verdere stijlvoorkeur aangeleverd.",
+      "notities": "Uitgebreide medische/informatieve content (spoedprotocol konijn dat niet eet, voedingsadvies konijnen, VetPlan-uitleg, handige links) staat in uploads/dierenkliniek-animalis/aanvullende-content.txt, LEES DIT BESTAND VOLLEDIG voor je bouwt. Medische instructies daarin NOOIT parafraseren, letterlijk overnemen. Geen KVK-nummer of huisnummer aangeleverd, bewust niet verzinnen. Openingstijden ma-vr 8:30-17:00 behalve woensdag (voorlopig gesloten, vermeld als 'tijdelijk', niet als vaste regel), pauze 12:30-13:00.",
+      "fotos_beschikbaar": true,
+      "talen": ["nl"],
+      "repo_ready": true,
+      "repo": "dierenkliniek-animalis",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "toegevoegd_op": "2026-07-27"
     }
   ]
 }
