@@ -29,7 +29,7 @@ Sem's Claude Pro-tegoed werkt met een rollend 5-uur-venster én een wekelijkse l
 Zorg voor een actuele lokale clone van `svanwijksolutions/demo-site-queue` (git pull, of add_repo+clone als je 'm nog niet hebt).
 
 ## STAP 2 — Intake-issues verwerken (nieuwe bedrijven)
-Lijst open issues met label `nieuw-bedrijf` op (`search_issues` of `list_issues`, `repo:svanwijksolutions/demo-site-queue`). Voor elk issue dat nog GEEN corresponderend item in `companies.json` heeft (vergelijk op de ingevulde `id`):
+Lijst open issues met label `nieuw-bedrijf` op (`search_issues` of `list_issues`, `repo:svanwijksolutions/demo-site-queue`). **Vertrouw niet blindelings op het label**: zoek ALTIJD ook op open issues waarvan de titel begint met `[Nieuw bedrijf]` (bevestigd probleem op 27-07-2026: GitHub Issue Forms plakken een label pas automatisch op een issue als dat label al als echt label in de repo bestaat, bij een nieuw/net-aangemaakt label wordt het stilletjes weggelaten). Kom je zo'n titel-match tegen zonder het label: verwerk 'm gewoon net zo, en zet het label er zelf op via `issue_write` (repareert het voor de toekomst). Voor elk issue dat nog GEEN corresponderend item in `companies.json` heeft (vergelijk op de ingevulde `id`):
 
 1. Parse de issue-body (GitHub Issue Forms renderen elk veld als `### <label>` gevolgd door de ingevulde waarde, of `_No response_` als leeg). Het formulier heeft maar vijf velden: `id`, `bedrijfsnaam`, een groot vrij-tekstveld `info`, `talen` en de repo-checkbox.
 2. Ontbreken `id`, `bedrijfsnaam` of `info`: reageer op het issue dat er verplichte info mist, laat het issue OPEN staan, ga door naar het volgende issue.
@@ -44,7 +44,7 @@ Lijst open issues met label `nieuw-bedrijf` op (`search_issues` of `list_issues`
 Dit mag ELK blok gebeuren, telt niet mee voor het nachtbudget.
 
 ## STAP 3 — Feedback-issues verwerken
-Lijst open issues met label `feedback` op. Verwerk er maximaal zoveel als er nog nachtbudget over is (zie hierboven), oudste eerst. Voor elk issue:
+Lijst open issues met label `feedback` op, plus ALTIJD ook open issues waarvan de titel begint met `[Feedback]` (zelfde label-betrouwbaarheidsprobleem als bij STAP 2, zet het label er zelf op als het ontbreekt). Verwerk er maximaal zoveel als er nog nachtbudget over is (zie hierboven), oudste eerst. Voor elk issue:
 
 1. Parse `site` (repo-naam of bedrijfsnaam) en `feedback` (de vrije tekst) uit de issue-body. Herleid de exacte repo-naam via `companies.json` (`repo`-veld) als een fuzzy match nodig is.
 2. Lees de feedback-tekst zelf na op een aanwijzing dat (een deel van) het punt voor alle sites moet gelden, nu én in de toekomst (er is geen apart vinkje meer voor, Sem schrijft dit gewoon in de tekst, bijv. "dit moet voortaan overal zo" of "geldt voor alle sites"). Staat zo'n aanwijzing er: verwerk dat specifieke punt EERST zelf (niet via een subagent) als nieuwe regel in `RULES.md` inclusief een gedateerde Wijzigingslog-regel die verwijst naar issue #<nummer>, commit+push, vóórdat je de subagent voor de sitefix zelf spawnt (zodat de subagent de nieuwe regel al vers kan lezen). De rest van het feedbackpunt (de concrete fix op déze site) gaat gewoon ook naar de subagent.
