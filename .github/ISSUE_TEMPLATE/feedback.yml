@@ -1,0 +1,30 @@
+name: "Feedback op een live demo-site"
+description: "Geef feedback op een bestaande demo-website, wordt 's nachts verwerkt."
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: input
+    id: site
+    attributes:
+      label: "Welke site"
+      description: "De repo-naam (bijv. ziehaarstralen-demo, vanoostenvoorvis, manimania) of gewoon de bedrijfsnaam."
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: "Feedback"
+      description: "Eén punt per regel is het makkelijkst te verwerken, maar hoeft niet per se."
+      placeholder: |
+        - Het logo mag groter in de header
+        - De foto op de contactpagina is onscherp
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: "Geldt dit ook voor toekomstige sites?"
+      description: "Laat leeg als je het niet zeker weet, dat wordt dan gewoon site-specifiek verwerkt."
+      options:
+        - label: "Ja, dit moet een vaste regel worden voor alle sites (komt in RULES.md)"
+          required: false

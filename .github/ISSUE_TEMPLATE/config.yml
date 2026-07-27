@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Uitleg / README"
+    url: https://github.com/svanwijksolutions/demo-site-queue#readme
+    about: "Hoe de intake en feedback-flow precies werken."

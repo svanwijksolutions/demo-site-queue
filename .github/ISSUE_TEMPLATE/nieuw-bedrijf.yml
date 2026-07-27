@@ -1,0 +1,115 @@
+name: "Nieuw bedrijf voor de demo-site pipeline"
+description: "Vul dit in om een nieuw bedrijf in de wachtrij te zetten voor een ongevraagde demo-website."
+title: "[Nieuw bedrijf] "
+labels: ["nieuw-bedrijf"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vul dit formulier volledig in. Foto's horen hier **niet** bij (bijlagen in issues zijn niet betrouwbaar op te halen), zie de stap hieronder voor hoe je foto's apart aanlevert.
+
+        **Foto's aanleveren (los van dit formulier):** ga naar de repo [`demo-site-queue`](https://github.com/svanwijksolutions/demo-site-queue), open de map `uploads/`, maak een nieuwe map aan met dezelfde `id` die je hieronder invult (bijv. `uploads/bakkerij-devries/`), en upload je foto's daar via "Add file" → "Upload files". Dat mag in één keer met meerdere bestanden tegelijk.
+  - type: input
+    id: id
+    attributes:
+      label: "Id (korte slug, geen spaties/hoofdletters)"
+      description: "Wordt gebruikt als repo-naam-basis en als mapnaam voor foto's, bijv. bakkerij-devries"
+      placeholder: "bakkerij-devries"
+    validations:
+      required: true
+  - type: input
+    id: bedrijfsnaam
+    attributes:
+      label: "Bedrijfsnaam"
+    validations:
+      required: true
+  - type: input
+    id: branche
+    attributes:
+      label: "Branche"
+      placeholder: "bijv. Bakkerij, Nagelstudio, Visboer"
+    validations:
+      required: true
+  - type: input
+    id: contactpersoon
+    attributes:
+      label: "Contactpersoon"
+    validations:
+      required: false
+  - type: input
+    id: adres
+    attributes:
+      label: "Adres"
+    validations:
+      required: false
+  - type: input
+    id: telefoon
+    attributes:
+      label: "Telefoon"
+    validations:
+      required: false
+  - type: input
+    id: email
+    attributes:
+      label: "E-mail"
+    validations:
+      required: false
+  - type: input
+    id: kvk
+    attributes:
+      label: "KVK-nummer (alleen invullen als je 'm zeker weet, anders leeg laten)"
+    validations:
+      required: false
+  - type: input
+    id: huidige_site
+    attributes:
+      label: "URL van de huidige website (indien aanwezig)"
+    validations:
+      required: false
+  - type: input
+    id: regio
+    attributes:
+      label: "Regio / werkgebied"
+    validations:
+      required: false
+  - type: textarea
+    id: diensten
+    attributes:
+      label: "Diensten / producten (één per regel)"
+    validations:
+      required: true
+  - type: textarea
+    id: reviews
+    attributes:
+      label: "Reviews (sterren, aantal, en losse reviewquotes 1:1 als je die hebt, anders leeg laten)"
+      description: "Nooit zelf reviews verzinnen als je ze niet hebt, dan gewoon leeg laten."
+    validations:
+      required: false
+  - type: textarea
+    id: ontwerprichting
+    attributes:
+      label: "Ontwerprichting / gewenste sfeer"
+      description: "Kleuren, stijl, toon. Wordt in de bouwinstructie gebruikt."
+    validations:
+      required: false
+  - type: input
+    id: talen
+    attributes:
+      label: "Talen (komma-gescheiden, bijv. nl of nl,en)"
+      placeholder: "nl"
+    validations:
+      required: false
+  - type: textarea
+    id: notities
+    attributes:
+      label: "Overige notities"
+      description: "Alles wat verder relevant is: contactvoorkeur, bijzonderheden, wat NIET gebruikt mag worden, etc."
+    validations:
+      required: false
+  - type: checkboxes
+    id: repo_status
+    attributes:
+      label: "Repo-status"
+      options:
+        - label: "Ik heb de lege GitHub-repo `<id>-demo` al aangemaakt (publiek, leeg)"
+          required: false

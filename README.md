@@ -4,31 +4,32 @@ Interne wachtrij voor Drivenn Agency's demo-site pipeline (svanwijksolutions san
 
 ## Hoe het werkt
 
-1. `companies.json` is de wachtrij. Elke nacht (22:00 NL-tijd) pakt de Routine tot 2-3 items met `status: "pending"` **en** `repo_ready: true` op, bouwt daar een volledige, ultra-moderne demo-website voor met animaties en (indien aangeleverd) echte foto's, zet die live via GitHub Pages, en schrijft een conceptpitchmail naar `pitches/<id>.md` in deze repo.
-2. GitHub Apps kunnen op een persoonlijk account geen nieuwe repo's aanmaken — dat is een platformbeperking, geen instelling. **Elk item heeft dus een handmatig aangemaakte lege repo nodig voordat de Routine het oppakt.**
-3. Na het aanmaken van de lege repo (publiek, naamgeving `<id>-demo`) zet je `repo_ready` op `true` en vul je `repo` in. Zonder die stap blijft een item gewoon `pending` en verschijnt het in de ochtendsamenvatting als "wacht op repo".
-4. Verder is het volledig automatisch: de Claude GitHub App staat op "All repositories", dus een nieuw aangemaakte repo is direct zichtbaar — de Routine hoeft 'm alleen nog aan zijn eigen sessie toe te voegen via `add_repo`, dat gebeurt vanzelf tijdens de run. Jij hoeft alleen de lege repo aan te maken, verder niets.
-5. De Routine draait in één vaste, persistente chat (bevestigd getest: een "verse sessie per run" krijgt geen toegang tot de GitHub-tools, dus dat kon niet). Binnen die ene chat krijgt elk bedrijf wel zijn eigen achtergrond-subagent, die geïsoleerd aan zijn eigen repo werkt en pas aan het eind rapporteert — het dichtstbijzijnde alternatief voor "elk bedrijf een eigen uitvoering" dat betrouwbaar werkt.
-6. Nieuw bedrijf of foto's toevoegen hoeft niet meer via deze bestanden direct — vertel het gewoon in de chat (met Claude) en die verwerkt het voor je in `companies.json`/`uploads/`.
-
-## Foto's aanleveren (overdag, vóór 22:00)
-
-De Routine heeft geen rechtenvrije foto's van een specifiek bedrijf — die moet jij aanleveren als je wilt dat de site echte foto's gebruikt in plaats van gegenereerde illustraties.
-
-1. Zet de foto's in `uploads/<id>/` in deze repo (willekeurige bestandsnamen, jpg/png/webp), waarbij `<id>` overeenkomt met het `id`-veld in `companies.json`.
-2. Zet `fotos_beschikbaar: true` in het item in `companies.json`.
-3. De Routine analyseert elke foto (compositie/oriëntatie/onderwerp) en plaatst 'm op een passende plek (hero, over-ons, sfeerbeeld, dienst-kaart) — altijd met een vaste aspect-ratio container + `object-fit: cover`, zodat niets uitgerekt of vervormd wordt, en met beschrijvende alt-tekst.
-4. Geen foto's aangeleverd voor een bedrijf (`fotos_beschikbaar: false` of ontbrekend)? Dan valt de Routine terug op gegenereerde illustraties/CSS-vormgeving, zoals bij `ziehaarstralen-demo`.
+1. Alle intake gaat sinds 27-07-2026 via **GitHub Issue-formulieren** op deze repo, niet meer via de chat, zie "Een nieuw bedrijf toevoegen" en "Feedback geven" hieronder.
+2. Drie keer per nacht (17:00, 22:00 en 02:00 NL-tijd, zie "Nachtschema en Claude-tegoed" hieronder) verwerkt een pipeline-blok: openstaande intake-issues (nieuw bedrijf → `companies.json`), openstaande feedback-issues (fixes op een bestaande site), en tot het resterende nachtbudget nieuwe bedrijf-builds. Alle stappen staan uitgeschreven in **[`PIPELINE.md`](PIPELINE.md)**, dat is de bindende bron voor het hele proces (de Routine-triggers zelf verwijzen er alleen naar).
+3. Elke ochtend om 07:00 NL-tijd (mail komt rond 07:30 binnen) krijg je een e-mail met wat er die nacht is gedaan en wat er eventueel nog van jou nodig is (bijv. een lege repo aanmaken).
+4. GitHub Apps kunnen op een persoonlijk account geen nieuwe repo's aanmaken, dat is een platformbeperking, geen instelling. **Elk nieuw bedrijf heeft dus nog steeds een handmatig aangemaakte lege repo nodig** (zie hieronder), dat is de enige stap die niet via het formulier gaat.
+5. De pipeline draait in één vaste, persistente sessie (bevestigd getest: een "verse sessie per run" krijgt geen toegang tot de GitHub-tools). Elk bedrijf/elke sitefix krijgt wel zijn eigen achtergrond-subagent, die geïsoleerd werkt en pas aan het eind rapporteert.
 
 ## Een nieuw bedrijf toevoegen
 
-1. Voeg een object toe aan `companies.json` met minimaal: `id`, `bedrijfsnaam`, `branche`, `contactpersoon`, `contact` (adres, telefoon, email, kvk, huidige_site), `regio`, `diensten`, `reviews`, `ontwerprichting`, `talen` (array, bijv. `["nl"]` of `["nl","en"]` — zie hieronder). Zet `status: "pending"`, `repo_ready: false`, `fotos_beschikbaar: false`.
-2. Maak op github.com/svanwijksolutions een nieuwe **publieke** repo aan genaamd `<id>-demo`.
-3. Zet `repo_ready: true` en `repo: "<id>-demo"` in het item.
-4. (Optioneel) Zet vóór 22:00 foto's in `uploads/<id>/` en `fotos_beschikbaar: true` — zie hierboven.
-5. Klaar — de eerstvolgende nachtrun (22:00 NL-tijd) pakt het op (mits er ruimte is, max. 2-3 per nacht).
+1. Ga naar [Issues → New issue](https://github.com/svanwijksolutions/demo-site-queue/issues/new/choose) op deze repo en kies **"Nieuw bedrijf voor de demo-site pipeline"**. Vul het formulier in (bedrijfsnaam, branche, contactgegevens, diensten, reviews indien bekend, ontwerprichting, talen, notities). Bedenk een korte `id` (slug zonder spaties/hoofdletters, bijv. `bakkerij-devries`), die gebruik je ook voor de foto's en de repo-naam.
+2. **Foto's horen niet in het issue** (bijlagen in issues zijn in deze sandbox niet betrouwbaar op te halen, bevestigd getest). Upload foto's apart: ga naar deze repo op github.com, open `uploads/`, maak een nieuwe map met dezelfde `id`, en upload je foto's daar via "Add file" → "Upload files" (mag in één keer met meerdere bestanden, geen limiet van vijf zoals in de chat).
+3. Maak op github.com/svanwijksolutions een nieuwe **publieke** repo aan genaamd `<id>-demo`, en vink in het issue-formulier de checkbox "Ik heb de lege GitHub-repo al aangemaakt" aan (kan ook later alsnog, zie punt 5).
+4. Dien het issue in. Het volgende pipeline-blok (elk blok verwerkt intake-issues, dus binnen enkele uren) leest het issue, zet er automatisch een item voor in `companies.json`, reageert op het issue met een bevestiging, en sluit het.
+5. Was de repo-checkbox niet aangevinkt (of had je 'm nog niet aangemaakt): het item komt er dan met `repo_ready: false` in te staan, en dat zie je terug in de ochtendmail als "nog nodig van jou". Maak de lege repo alsnog aan en zet in `companies.json` zelf `repo_ready: true` (of vraag Claude dat in de chat te doen), dan pakt de eerstvolgende run het op.
+6. Vanaf hier is het verder automatisch, tot maximaal 2 nieuwe builds per nacht (zie "Nachtschema en Claude-tegoed").
 
-Makkelijkste route: vertel het gewoon in de chat (met foto's als bijlage), Claude verwerkt de rest.
+## Feedback geven op een bestaande site
+
+1. Ga naar [Issues → New issue](https://github.com/svanwijksolutions/demo-site-queue/issues/new/choose) en kies **"Feedback op een live demo-site"**. Vul in welke site het betreft en je feedback (één punt per regel werkt het prettigst, hoeft niet per se).
+2. Vind je dat een punt voor ELKE toekomstige site zou moeten gelden (niet alleen voor deze ene site): vink de checkbox aan, dan wordt het automatisch als permanente regel in `RULES.md` vastgelegd, naast de sitefix zelf.
+3. Het volgende pipeline-blok met nog nachtbudget over (zie hieronder, maximaal 3 feedback-issues per nacht) pakt het op, past de fix toe op de live site, reageert op het issue met een samenvatting, en sluit het bij succes. Lukt iets niet, dan blijft het issue open staan met een toelichting.
+
+## Nachtschema en Claude-tegoed
+
+De pipeline draait in drie blokken per nacht: **17:00, 22:00 en 02:00 NL-tijd**, plus een **ochtendmail om 07:00**. Dit is bewust zo verdeeld vanwege hoe het Claude Pro-tegoed werkt: gebruik reset in een rollend 5-uur-venster, en drie blokken verspreid over de nacht voorkomen dat alles in één venster samenklontert. Er is daarnaast ook een **wekelijkse limiet** die over alle vensters heen loopt, drie blokken per nacht betekent dus niet drie keer zoveel werk: elk blok houdt een gedeeld nachtbudget aan (maximaal 2 nieuwe bedrijf-builds en maximaal 3 feedback-fixes per nacht, in totaal over de drie blokken samen, zie `PIPELINE.md` voor de precieze telling). Intake-issues verwerken (een nieuw bedrijf in de wachtrij zetten) telt niet mee, dat is alleen tekst parsen, geen bouw-werk.
+
+De ochtendmail (07:00, komt rond 07:30 binnen) draait in een eigen, verse sessie en vat samen wat er die nacht over de drie blokken heen is gebeurd: welke sites gebouwd/gefixt zijn, en wat er eventueel nog van jou nodig is (een repo aanmaken, ontbrekende verplichte info in een intake-issue, etc.).
 
 ## Talen
 
@@ -49,7 +50,7 @@ Nieuwe componenten toevoegen: plak de code gewoon in de chat (met een korte aanw
 - `done` — live, pitchmail klaar in `pitches/<id>.md`
 - `needs_review` — de Routine is vastgelopen of twijfelde (ontbrekende/tegenstrijdige info, mislukte Pages-build, etc.) — zie `notities` voor de reden. Nooit stilzwijgend verzonnen invullen.
 
-**Kans op een vastgelopen `in_progress`-item:** als een run halverwege afbreekt (bijv. door een sessie-onderbreking, zie "Credits en onderbroken runs" hieronder), kan een item op `in_progress` blijven staan zonder dat er ooit een subagent-rapport binnenkomt. Elke nachtrun controleert daarom bij STAP 3, vóór het selecteren van nieuwe `pending`-items: staat er een item langer dan 24 uur op `in_progress` (vergelijk met `toegevoegd_op`/de laatst bekende commit-tijd op dat item)? Zet het dan terug naar `needs_review` met als reden "vastgelopen `in_progress`, waarschijnlijk onderbroken run" in `notities`, ververs `overzicht.xlsx`, commit+push, en laat het gewoon aan Sem over om te beslissen of het opnieuw geprobeerd moet worden (bijv. door het terug op `pending` te zetten).
+**Kans op een vastgelopen `in_progress`-item:** als een run halverwege afbreekt (bijv. door een sessie-onderbreking, zie "Credits en onderbroken runs" hieronder), kan een item op `in_progress` blijven staan zonder dat er ooit een subagent-rapport binnenkomt. Elk pipeline-blok controleert daarom (zie `PIPELINE.md`, STAP 4), vóór het selecteren van nieuwe `pending`-items: staat er een item langer dan 24 uur op `in_progress`? Zet het dan terug naar `needs_review` met als reden "vastgelopen `in_progress`, waarschijnlijk onderbroken run" in `notities`, ververs `overzicht.xlsx`, commit+push, en laat het gewoon aan Sem over om te beslissen of het opnieuw geprobeerd moet worden (bijv. door het terug op `pending` te zetten).
 
 ## Overzicht.xlsx
 
@@ -57,15 +58,15 @@ Nieuwe componenten toevoegen: plak de code gewoon in de chat (met een korte aanw
 
 ## Vaste regels
 
-Alle regels die voor élke build gelden (techniek, eerlijkheid/geen verzonnen feiten, beeldmateriaal, taal, footer, robots/noindex, bewegende elementen, pitchmail, enz.) staan in **[`RULES.md`](RULES.md)**, niet meer hier. Dat bestand is de enige bindende bron — bij twijfel of tegenstrijdigheid wint `RULES.md`, ook van wat de bouwinstructie in de Routine zelf op dat moment zegt (die instructie kan achterlopen; `RULES.md` wordt live uit de repo gelezen bij elke build).
+Alle regels die voor élke build gelden (techniek, eerlijkheid/geen verzonnen feiten, beeldmateriaal, taal, footer, robots/noindex, bewegende elementen, pitchmail, enz.) staan in **[`RULES.md`](RULES.md)**, niet meer hier. Dat bestand is de enige bindende bron, bij twijfel of tegenstrijdigheid wint `RULES.md`, ook van wat `BUILD_INSTRUCTIONS.md`/`PIPELINE.md` op dat moment zeggen (die kunnen achterlopen; `RULES.md` wordt live uit de repo gelezen bij elke build).
 
-Zie voor de stap-voor-stap bouwprocedure (hoe je het aanpakt, kwaliteitscontrole, push/verify) de volledige bouwinstructie in de Routine zelf, en de `webdesign`-skill voor mapstructuur/hamburgermenu/SEO-basis.
+Zie voor de stap-voor-stap bouwprocedure **[`PIPELINE.md`](PIPELINE.md)** (orchestratie: intake/feedback verwerken, nachtbudget, bedrijven selecteren) en **[`BUILD_INSTRUCTIONS.md`](BUILD_INSTRUCTIONS.md)** (de instructie die elke bouw-subagent letterlijk krijgt), plus de `webdesign`-skill voor mapstructuur/hamburgermenu/SEO-basis.
 
 ## Feedback en regels
 
-Sem kan op elk moment in de chat feedback geven over hoe sites eruit moeten zien, moeten werken of zich moeten gedragen (bijv. "de footer moet er zo uitzien", "geen AI-illustraties", enz.). **Sinds 24-07-2026 geldt als staande afspraak:** zulke feedback wordt niet alleen toegepast op het moment zelf, maar ook vastgelegd als permanente regel in `RULES.md`, met een gedateerde regel in het wijzigingslog onderaan dat bestand. Waar zinvol wordt een nieuwe regel ook retroactief toegepast op bestaande `done`-sites, via de "regel-compliance check" die de orchestrator elke nachtrun uitvoert (zie de Routine-instructie) — zo hoeft niet elke keer handmatig een specifieke site aangewezen te worden.
+Feedback op een bestaande site gaat via het feedback-issue-formulier (zie hierboven), niet meer via de chat. **Sinds 24-07-2026 geldt daarnaast als staande afspraak:** feedback die voor ELKE toekomstige site zou moeten gelden (niet alleen deze ene site) wordt vastgelegd als permanente regel in `RULES.md`, met een gedateerde regel in het wijzigingslog onderaan dat bestand. In het feedback-issue-formulier kun je dit expliciet aanvinken zodat het automatisch als regel verwerkt wordt; geeft Sem zulke feedback toch nog een keer in de chat, dan pikt de aparte "Feedback naar regels"-Routine (draait dagelijks om 16:30 NL-tijd) dat ook op.
 
-Twijfelt de bouwende partij (subagent of orchestrator) of iets een eenmalige wens is of een staande regel: navragen bij Sem in plaats van het zelf te beslissen.
+Twijfelt de verwerkende partij (subagent of orchestrator) of iets een eenmalige wens voor die ene site is of een staande regel: behandel het als site-specifiek (geen RULES.md-wijziging) tenzij de checkbox in het formulier expliciet aangevinkt is, of het overduidelijk generiek bedoeld is.
 
 ## Communicatie (staande afspraak sinds 27-07-2026)
 
@@ -75,13 +76,15 @@ Dit geldt zowel voor gewone chatberichten als voor de samenvatting aan het eind 
 
 ## Credits en onderbroken runs
 
-De twee nachtelijke Routines draaien op hetzelfde Claude-account als de rest van deze chat en gebruiken dus hetzelfde tegoed. Wat wel en niet zeker is:
-- **Zeker:** een Routine is een geplande trigger die blijft bestaan ongeacht of een individuele run lukt. Raakt het tegoed op tijdens een run, dan faalt die ene run, maar de Routine zelf wordt niet verwijderd of uitgeschakeld — hij vuurt gewoon weer op het eerstvolgende geplande moment (elke dag, dezelfde tijd).
-- **Onzeker/niet hard gegarandeerd:** of een halverwege afgebroken run automatisch hervat zodra er weer tegoed is, vóór het volgende geplande moment. Daar is geen document over geraadpleegd waar dat expliciet bevestigd wordt, dus ga er niet blind van uit dat dat gebeurt.
-- **Concreet risico, nu ondervangen:** als een run precies afbreekt nadat een bedrijf op `status: "in_progress"` is gezet maar vóórdat de bijbehorende subagent heeft gerapporteerd, blijft dat item potentieel voor altijd "in bewerking" staan zonder dat iemand het merkt, want alleen `pending`-items worden automatisch opnieuw opgepakt. Zie de nieuwe check hierboven bij "Statussen": elke volgende run herkent een `in_progress`-item dat langer dan 24 uur stilstaat en zet het terug naar `needs_review`, zodat het niet onopgemerkt blijft hangen.
+Alle Routines (de drie nachtblokken, de ochtendmail, en de "Feedback naar regels"-Routine) draaien op hetzelfde Claude-account en gebruiken dus hetzelfde tegoed. Wat wel en niet zeker is:
+- **Zeker:** een Routine is een geplande trigger die blijft bestaan ongeacht of een individuele run lukt. Raakt het tegoed op tijdens een run, dan faalt die ene run, maar de Routine zelf wordt niet verwijderd of uitgeschakeld, hij vuurt gewoon weer op het eerstvolgende geplande moment (elke dag, dezelfde tijd).
+- **Onzeker/niet hard gegarandeerd:** of een halverwege afgebroken run automatisch hervat zodra er weer tegoed is, vóór het volgende geplande moment. Daar is geen document over geraadpleegd waar dat expliciet bevestigd wordt, dus ga er niet blind van uit dat dat gebeurt. Met drie blokken per nacht is dit risico kleiner geworden: valt blok 1 (17:00) om, dan pakt blok 2 (22:00) of blok 3 (02:00) dezelfde nacht nog verder op, in plaats van pas de volgende avond.
+- **Concreet risico, ondervangen:** als een run precies afbreekt nadat een bedrijf op `status: "in_progress"` is gezet maar vóórdat de bijbehorende subagent heeft gerapporteerd, blijft dat item potentieel voor altijd "in bewerking" staan zonder dat iemand het merkt, want alleen `pending`-items worden automatisch opnieuw opgepakt. Zie de check bij "Statussen": elk pipeline-blok herkent een `in_progress`-item dat langer dan 24 uur stilstaat en zet het terug naar `needs_review`.
+- **Wekelijkse limiet:** naast het rollende 5-uur-venster is er ook een wekelijkse limiet die over alle vensters heen loopt. Het nachtbudget (zie "Nachtschema en Claude-tegoed" hierboven) begrenst daarom hoeveel werk de drie blokken sámen per nacht mogen doen, drie keer per nacht vuren betekent dus bewust niet drie keer zoveel bouwwerk.
 
 ## Bekende sandbox-beperkingen
 
-- `*.github.io` en de meeste externe sites (o.a. 21st.dev, Google Maps/Fonts) zijn geblokkeerd door het netwerkbeleid van deze omgeving — subagents kunnen dus niet live naar componentgalerijen kijken voor inspiratie en gebruiken in plaats daarvan de uitgeschreven patroonlijst in de Routine-instructie. Live-URL's worden geverifieerd via de GitHub Actions-status, niet door de site zelf te bezoeken.
+- `*.github.io` en de meeste externe sites (o.a. 21st.dev, Google Maps/Fonts) zijn geblokkeerd door het netwerkbeleid van deze omgeving — subagents kunnen dus niet live naar componentgalerijen kijken voor inspiratie en gebruiken in plaats daarvan de uitgeschreven patroonlijst in `BUILD_INSTRUCTIONS.md`. Live-URL's worden geverifieerd via de GitHub Actions-status, niet door de site zelf te bezoeken.
+- **GitHub's eigen bijlage-CDN is ook geblokkeerd** (`user-images.githubusercontent.com`, `github.com/user-attachments/...`), bevestigd getest op 27-07-2026. Dit is precies waarom foto's bij een nieuw bedrijf NIET als issue-bijlage aangeleverd worden, maar apart als bestand in `uploads/<id>/` (zie "Een nieuw bedrijf toevoegen"), dat gaat via git en `raw.githubusercontent.com`, wat wel gewoon werkt.
 - Dit netwerkbeleid blokkeert niet alleen de bekende lijst hierboven, maar in de praktijk vrijwel elke willekeurige externe bedrijfswebsite (bevestigd bij o.a. `manimania.nl` en `dekeukenvansandra.nl`, beide met een expliciete `connect_rejected`/403 van de sandbox-proxy zelf, niet van de doelsite). Ga er dus van uit dat de huidige site van een nieuw bedrijf **niet** opgehaald kan worden met WebFetch/curl, ook al lijkt het een gewone publieke site. Vraag de klant altijd om de tekst van de bestaande site handmatig te plakken in de chat in plaats van te proberen 'm te bezoeken.
 - **Eerste push naar een gloednieuwe repo faalt soms op de "Setup Pages"-stap** (race condition: Pages moet nog voor het eerst ingeschakeld worden). Bevestigd waargenomen bij zowel `ziehaarstralen-demo` (1x falen, daarna vanzelf hersteld) als `vanoostenvoorvis` (2x falen, ook na een handmatige rerun van de workflow bleef `configure-pages` mislukken). In beide gevallen bouwde een automatische, losstaande GitHub-workflow "pages build and deployment" de site een paar minuten later alsnog succesvol, zonder enig ingrijpen. Bij de daaropvolgende push slaagden beide workflows meteen. **Conclusie: niet handmatig rerunnen bij een gefaalde eerste run** (dat kost alleen tijd en verandert niets), maar gewoon controleren of er een geslaagde "pages build and deployment"-run bijstaat (`actions_list` zonder workflow-naamfilter) voor dezelfde commit-sha. Beschouw de Pages-deployment als geslaagd zodra één van beide workflowtypes een groene run heeft voor de laatste commit. Alleen als geen van beide na een paar minuten slaagt, is `needs_review` op zijn plaats.
