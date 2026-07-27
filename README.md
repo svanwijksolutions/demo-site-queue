@@ -49,6 +49,10 @@ Nieuwe componenten toevoegen: plak de code gewoon in de chat (met een korte aanw
 - `done` — live, pitchmail klaar in `pitches/<id>.md`
 - `needs_review` — de Routine is vastgelopen of twijfelde (ontbrekende/tegenstrijdige info, mislukte Pages-build, etc.) — zie `notities` voor de reden. Nooit stilzwijgend verzonnen invullen.
 
+## Overzicht.xlsx
+
+`overzicht.xlsx` is een leesbaar Excel-overzicht van alle bedrijven in `companies.json` (bedrijfsnaam, contactpersoon, branche, regio, status, repo, live-URL, pitchmail-status, telefoon, e-mail, toegevoegd-op, afgerond-op), automatisch gegenereerd door `scripts/generate_overzicht.py`. Dit bestand wordt **niet handmatig bewerkt** — elke wijziging aan `companies.json` (nieuw bedrijf, statuswijziging, afgeronde build) wordt gevolgd door een her-run van dit script en een commit van het bijgewerkte `overzicht.xlsx` in dezelfde commit. Wil je zelf even snel het overzicht verversen: `python3 scripts/generate_overzicht.py` vanuit de root van deze repo (vereist `openpyxl`).
+
 ## Vaste regels
 
 Alle regels die voor élke build gelden (techniek, eerlijkheid/geen verzonnen feiten, beeldmateriaal, taal, footer, robots/noindex, bewegende elementen, pitchmail, enz.) staan in **[`RULES.md`](RULES.md)**, niet meer hier. Dat bestand is de enige bindende bron — bij twijfel of tegenstrijdigheid wint `RULES.md`, ook van wat de bouwinstructie in de Routine zelf op dat moment zegt (die instructie kan achterlopen; `RULES.md` wordt live uit de repo gelezen bij elke build).
