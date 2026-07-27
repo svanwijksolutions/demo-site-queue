@@ -1,4 +1,4 @@
-CONCEPT — NIET VERZONDEN
+CONCEPT: NIET VERZONDEN
 Onderwerp: Een voorstel voor een nieuwe website voor Van Oosten voor Vis
 
 Beste Wijnand,
@@ -15,6 +15,8 @@ Een paar dingen die ik heb meegenomen in het ontwerp:
 - Snel en overzichtelijk op de telefoon, want veel klanten zoeken openingstijden of het adres onderweg op.
 
 Belangrijk om te weten: ik heb dit gebouwd op basis van de tekst en foto's van uw huidige website, dus alles wat er nu op de conceptsite staat is gebaseerd op wat u zelf al publiceert. Prijzen heb ik bewust weggelaten, want die wisselen met de dagverse aanvoer, dat leek mij correcter dan een verouderd bedrag overnemen. Ook heb ik de oude vacaturetekst en de specifieke aanbieding van de dag niet overgenomen, omdat ik niet weet of die nog actueel zijn.
+
+Zo'n website is meer dan alleen een mooie plaat: een snelle, goed opgezette site die ook zoekmachines goed kunnen lezen, helpt u beter gevonden te worden op zoektermen als "verse vis Delft" of "visboer Buitenwatersloot". Dat kan bijdragen aan meer klanten die u online vinden, naast een professionelere eerste indruk voor iedereen die vooraf even wil kijken wie u bent.
 
 Deze site staat nu bewust niet open voor Google (nog niet geïndexeerd): het is een voorstel, geen vervanging van uw bestaande site totdat u daarvoor kiest. Wilt u hier iets mee, dan denk ik graag verder mee over de invulling, uw eigen domein en het actueel houden van aanbiedingen en prijzen.
 

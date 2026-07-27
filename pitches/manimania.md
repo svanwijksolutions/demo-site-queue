@@ -8,6 +8,8 @@ Op basis van de informatie op manimania.nl heb ik een nieuwe website gebouwd: ht
 
 Voor het beeld heb ik de foto's gebruikt die al bij ManiMania in gebruik zijn, waaronder de OPI-productfoto's en de nagelfoto's. Ik heb er bewust geen prijzen op gezet: ik had de actuele prijslijst niet, en ik verzin liever niets. Stuur je die op, dan zet ik ze er graag bij.
 
+Zo'n website is meer dan alleen een mooie plaat: een snelle, overzichtelijke site die ook zoekmachines goed kunnen lezen, helpt je beter gevonden te worden op zoektermen als "nagelstudio Wateringen" of "manicure Den Haag". Dat kan bijdragen aan meer aanvragen via je site, naast een professionelere eerste indruk voor nieuwe klanten die je nu al via Instagram of via via vinden.
+
 De site is nu alleen te bereiken via de link, hij staat niet aangemeld bij zoekmachines. Zo kun je rustig kijken of dit bij ManiMania past, zonder dat er meteen iets live hoeft te gaan.
 
 Wil je een keer bellen of mailen om te bespreken of dit iets voor je is? Ik denk graag met je mee, geheel vrijblijvend.
