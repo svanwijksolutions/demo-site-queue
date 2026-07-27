@@ -3,25 +3,26 @@ Onderwerp: Een voorstel voor een nieuwe website voor Zie Haar Stralen
 
 Beste Lisette,
 
-Mijn naam is Sem van Wijk, van S. van Wijk Solutions. Ik bouw af en toe op eigen initiatief een nieuwe website voor een lokale onderneming die mij opvalt, puur als voorbeeld van wat er mogelijk is, zonder enige verplichting. Zie Haar Stralen kwam zo bij mij in beeld.
+Ik ben Sem van Wijk, van S. van Wijk Solutions. Zonder dat u mij dat gevraagd heeft, heb ik een volledig nieuwe website voor Zie Haar Stralen gebouwd, gratis en vrijblijvend, puur als voorbeeld van wat er mogelijk is.
 
-Voor het gemak stuur ik meteen de link naar de gratis proefversie mee:
-👉 https://svanwijksolutions.github.io/ziehaarstralen-demo/
+👉 Bekijk 'm hier: https://svanwijksolutions.github.io/ziehaarstralen-demo/
 
-Goed om te weten:
-* Dit is een eerste opzet. Teksten, kleuren en foto's kunnen nog helemaal naar wens worden aangepast.
-* De website werkt uiteraard goed op zowel mobiel als computer, precies waar de meeste bruiden onderweg of 's avonds op de bank naar op zoek zijn.
-* Een goed opgezette, snelle site die zoekmachines ook goed kunnen lezen, helpt u beter gevonden te worden op zoektermen als "bruidskapsel Rijswijk" of "bruidsmake-up Delft". Dat kan bijdragen aan meer aanvragen voor een kennismaking, naast een professionelere eerste indruk voor bruiden die u nu al via via vinden.
-* Al uw 15 Google-reviews, allemaal 5 sterren, staan letterlijk overgenomen in een doorlopende balk op de homepage. En omdat op de site ook duidelijk in beeld staat dat u op de trouwdag zelf naar de locatie van de bruid reist, terwijl de proefsessie bij u thuis in Rijswijk plaatsvindt, komt dat onderscheid nu goed naar voren, iets wat salons die alleen op locatie werken niet kunnen bieden.
+Waarom dit de moeite waard is om te bekijken:
+* Meer aanvragen via Google: de site is zo opgebouwd dat zoekmachines hem goed kunnen lezen, wat u beter naar boven kan brengen op zoektermen als "bruidskapsel Rijswijk" of "bruidsmake-up Delft", precies waar bruiden naar zoeken.
+* Geen bruid haakt af op haar telefoon: de site werkt vlekkeloos op mobiel en desktop, terwijl de meeste bruiden juist onderweg of 's avonds op de bank zoeken.
+* Vertrouwen nog vóór het eerste contact: al uw 15 Google-reviews, allemaal 5 sterren, staan letterlijk overgenomen in een doorlopende balk op de homepage, zodat een bruid meteen ziet dat u goed bent voordat ze contact opneemt.
+* Uw onderscheidende werkwijze komt goed naar voren: dat de proefsessie bij u thuis in Rijswijk plaatsvindt, en dat u op de trouwdag zelf naar de locatie van de bruid reist, iets wat salons die alleen op locatie werken niet bieden.
 
-Wat als we verdergaan?
+Wat u er verder voor terugkrijgt als we samen verdergaan:
 * Ik koppel de nieuwe website netjes aan uw huidige domeinnaam.
-* Het contactformulier wordt veilig ingebouwd, zonder dat u daar vervelende spam mailtjes van ontvangt.
-* Ik neem al het technische beheer uit handen. Voor toekomstige aanpassingen is een mailtje of belletje naar mij voldoende!
+* Een veilig ingebouwd contactformulier, zonder dat u wordt overspoeld met spam.
+* Al het technische onderhoud neem ik uit handen, voor toekomstige aanpassingen is een mailtje of belletje naar mij voldoende.
+
+Over de kosten zeg ik hier bewust nog niets: dat bespreken we pas zodra u het resultaat heeft gezien en enthousiast bent, dat lijkt me eerlijker dan nu al een bedrag noemen. Een indicatie geef ik uiteraard graag zodra u dat wilt.
 
 Belangrijk om te weten: ik heb uw huidige site niet volledig kunnen inzien (die blokkeert geautomatiseerde bezoekers), dus ik vergelijk niet direct, dit voorstel staat op zichzelf. Er staan bewust geen verzonnen prijzen of reviewquotes op: de tarieven en reviews die u ziet zijn de echte, publiek bekende gegevens. Deze site staat ook nog niet aangemeld bij Google, het is een voorstel, geen vervanging van uw bestaande site totdat u daarvoor kiest.
 
-Ik hoor graag wat uw eerste indruk is. We kunnen er altijd even vrijblijvend over bellen, of ik kom even langs om het samen door te nemen.
+Ik hoor graag wat u ervan vindt, een kort berichtje terug mag ook prima. Vrijblijvend bellen of langskomen kan uiteraard ook.
 
 Met vriendelijke groet,
 Sem van Wijk

@@ -3,25 +3,26 @@ Onderwerp: Een voorstel voor een nieuwe website voor Van Oosten voor Vis
 
 Beste Wijnand,
 
-Mijn naam is Sem van Wijk, van S. van Wijk Solutions. Ik bouw af en toe op eigen initiatief een nieuwe website voor een lokale onderneming die mij opvalt, puur als voorbeeld van wat er mogelijk is, zonder enige verplichting. Van Oosten voor Vis kwam zo bij mij in beeld.
+Ik ben Sem van Wijk, van S. van Wijk Solutions. Zonder dat u mij dat gevraagd heeft, heb ik een volledig nieuwe website voor Van Oosten voor Vis gebouwd, gratis en vrijblijvend, puur als voorbeeld van wat er mogelijk is.
 
-Voor het gemak stuur ik meteen de link naar de gratis proefversie mee:
-👉 https://svanwijksolutions.github.io/vanoostenvoorvis/
+👉 Bekijk 'm hier: https://svanwijksolutions.github.io/vanoostenvoorvis/
 
-Goed om te weten:
-* Dit is een eerste opzet. Teksten, kleuren en foto's kunnen nog helemaal naar wens worden aangepast.
-* De website werkt uiteraard goed op zowel mobiel als computer, handig want veel klanten zoeken openingstijden of het adres onderweg op.
-* Een snelle, goed opgezette site die zoekmachines ook goed kunnen lezen, helpt u beter gevonden te worden op zoektermen als "verse vis Delft" of "visboer Buitenwatersloot". Dat kan bijdragen aan meer klanten die u online vinden, naast een professionelere eerste indruk voor iedereen die vooraf even wil kijken wie u bent.
-* Uw eigen foto's staan er echt in: het winkelinterieur, het schoonmaken van de vis en de archieffoto uit de jaren tachtig, samen met uw originele logo, geen stockfoto's. Het verhaal van de familie krijgt daarnaast een eigen plek, een tijdlijn van 1923 tot nu, van de handkar van Cornelis tot de winkel zoals hij er vandaag bijstaat. Dat stond op de oude site wat verstopt in lopende tekst, en is precies het soort verhaal dat klanten aan een winkel bindt.
+Waarom dit de moeite waard is om te bekijken:
+* Meer klanten die u online vinden: de site is zo opgebouwd dat zoekmachines hem goed kunnen lezen, wat u beter naar boven kan brengen op zoektermen als "verse vis Delft" of "visboer Buitenwatersloot".
+* Geen klant haakt onderweg af: de site werkt net zo goed op de telefoon als op de computer, handig voor wie snel even de openingstijden of het adres wil checken.
+* Een verhaal dat klanten aan u bindt: de tijdlijn van 1923 tot nu, van de handkar van Cornelis tot de winkel zoals hij er vandaag bijstaat, stond op de oude site verstopt in lopende tekst en krijgt nu een eigen, zichtbare plek.
+* Meteen herkenbaar als úw winkel: uw eigen foto's (het winkelinterieur, het schoonmaken van de vis, de archieffoto uit de jaren tachtig) en uw originele logo staan er echt in, geen stockfoto's.
 
-Wat als we verdergaan?
+Wat u er verder voor terugkrijgt als we samen verdergaan:
 * Ik koppel de nieuwe website netjes aan uw huidige domeinnaam.
-* Het contactformulier wordt veilig ingebouwd, zonder dat u daar vervelende spam mailtjes van ontvangt.
-* Ik neem al het technische beheer uit handen. Voor toekomstige aanpassingen is een mailtje of belletje naar mij voldoende!
+* Een veilig ingebouwd contactformulier, zonder dat u wordt overspoeld met spam.
+* Al het technische onderhoud neem ik uit handen, voor toekomstige aanpassingen is een mailtje of belletje naar mij voldoende.
+
+Over de kosten zeg ik hier bewust nog niets: dat bespreken we pas zodra u het resultaat heeft gezien en enthousiast bent, dat lijkt me eerlijker dan nu al een bedrag noemen. Een indicatie geef ik uiteraard graag zodra u dat wilt.
 
 Belangrijk om te weten: ik heb dit gebouwd op basis van de tekst en foto's van uw huidige website, dus alles wat er nu op de conceptsite staat is gebaseerd op wat u zelf al publiceert. Prijzen heb ik bewust weggelaten, want die wisselen met de dagverse aanvoer, dat leek mij correcter dan een verouderd bedrag overnemen. Ook heb ik de oude vacaturetekst en de specifieke aanbieding van de dag niet overgenomen, omdat ik niet weet of die nog actueel zijn. Deze site staat ook nog niet aangemeld bij Google, het is een voorstel, geen vervanging van uw bestaande site totdat u daarvoor kiest.
 
-Ik hoor graag wat uw eerste indruk is. We kunnen er altijd even vrijblijvend over bellen, of ik kom even langs om het samen door te nemen, ook over uw eigen domein en het actueel houden van aanbiedingen en prijzen.
+Ik hoor graag wat u ervan vindt, een kort berichtje terug mag ook prima. Vrijblijvend bellen of langskomen kan uiteraard ook, dan denk ik ook graag mee over uw eigen domein en het actueel houden van aanbiedingen en prijzen.
 
 Met vriendelijke groet,
 Sem van Wijk
