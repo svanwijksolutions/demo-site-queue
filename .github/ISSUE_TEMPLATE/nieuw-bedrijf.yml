@@ -47,5 +47,5 @@ body:
     attributes:
       label: "Repo-status"
       options:
-        - label: "Ik heb de lege GitHub-repo `<id>-demo` al aangemaakt (publiek, leeg)"
+        - label: "Ik heb de lege GitHub-repo al aangemaakt (publiek, leeg). Zet de exacte repo-naam ook even in het vrije tekstveld hierboven, bijv. 'repo aangemaakt: svanwijksolutions/bakkerij-devries'"
           required: false
