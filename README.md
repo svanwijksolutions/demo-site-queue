@@ -49,6 +49,8 @@ Nieuwe componenten toevoegen: plak de code gewoon in de chat (met een korte aanw
 - `done` — live, pitchmail klaar in `pitches/<id>.md`
 - `needs_review` — de Routine is vastgelopen of twijfelde (ontbrekende/tegenstrijdige info, mislukte Pages-build, etc.) — zie `notities` voor de reden. Nooit stilzwijgend verzonnen invullen.
 
+**Kans op een vastgelopen `in_progress`-item:** als een run halverwege afbreekt (bijv. door een sessie-onderbreking, zie "Credits en onderbroken runs" hieronder), kan een item op `in_progress` blijven staan zonder dat er ooit een subagent-rapport binnenkomt. Elke nachtrun controleert daarom bij STAP 3, vóór het selecteren van nieuwe `pending`-items: staat er een item langer dan 24 uur op `in_progress` (vergelijk met `toegevoegd_op`/de laatst bekende commit-tijd op dat item)? Zet het dan terug naar `needs_review` met als reden "vastgelopen `in_progress`, waarschijnlijk onderbroken run" in `notities`, ververs `overzicht.xlsx`, commit+push, en laat het gewoon aan Sem over om te beslissen of het opnieuw geprobeerd moet worden (bijv. door het terug op `pending` te zetten).
+
 ## Overzicht.xlsx
 
 `overzicht.xlsx` is een leesbaar Excel-overzicht van alle bedrijven in `companies.json` (bedrijfsnaam, contactpersoon, branche, regio, status, repo, live-URL, pitchmail-status, telefoon, e-mail, toegevoegd-op, afgerond-op), automatisch gegenereerd door `scripts/generate_overzicht.py`. Dit bestand wordt **niet handmatig bewerkt** — elke wijziging aan `companies.json` (nieuw bedrijf, statuswijziging, afgeronde build) wordt gevolgd door een her-run van dit script en een commit van het bijgewerkte `overzicht.xlsx` in dezelfde commit. Wil je zelf even snel het overzicht verversen: `python3 scripts/generate_overzicht.py` vanuit de root van deze repo (vereist `openpyxl`).
@@ -64,6 +66,19 @@ Zie voor de stap-voor-stap bouwprocedure (hoe je het aanpakt, kwaliteitscontrole
 Sem kan op elk moment in de chat feedback geven over hoe sites eruit moeten zien, moeten werken of zich moeten gedragen (bijv. "de footer moet er zo uitzien", "geen AI-illustraties", enz.). **Sinds 24-07-2026 geldt als staande afspraak:** zulke feedback wordt niet alleen toegepast op het moment zelf, maar ook vastgelegd als permanente regel in `RULES.md`, met een gedateerde regel in het wijzigingslog onderaan dat bestand. Waar zinvol wordt een nieuwe regel ook retroactief toegepast op bestaande `done`-sites, via de "regel-compliance check" die de orchestrator elke nachtrun uitvoert (zie de Routine-instructie) — zo hoeft niet elke keer handmatig een specifieke site aangewezen te worden.
 
 Twijfelt de bouwende partij (subagent of orchestrator) of iets een eenmalige wens is of een staande regel: navragen bij Sem in plaats van het zelf te beslissen.
+
+## Communicatie (staande afspraak sinds 27-07-2026)
+
+Elke keer dat er in de chat daadwerkelijk iets is uitgevoerd (een build, een RULES.md/README.md-wijziging, een statusupdate, een fix, etc.), sluit het antwoord af met één korte regel die met een vinkje begint en in het kort samenvat wat er gedaan is, bijvoorbeeld:
+`✅ ManiMania en De Keuken van Sandra live gezet, overzicht.xlsx bijgewerkt.`
+Dit geldt zowel voor gewone chatberichten als voor de samenvatting aan het eind van elke nachtelijke Routine-run (zowel de bouw-pipeline als de feedback-analyse). Bij "niets gedaan"-runs (leeg wachtrij, geen nieuwe feedback) is een vinkje niet nodig, dan volstaat de korte "niets te doen"-melding zoals al gebruikelijk.
+
+## Credits en onderbroken runs
+
+De twee nachtelijke Routines draaien op hetzelfde Claude-account als de rest van deze chat en gebruiken dus hetzelfde tegoed. Wat wel en niet zeker is:
+- **Zeker:** een Routine is een geplande trigger die blijft bestaan ongeacht of een individuele run lukt. Raakt het tegoed op tijdens een run, dan faalt die ene run, maar de Routine zelf wordt niet verwijderd of uitgeschakeld — hij vuurt gewoon weer op het eerstvolgende geplande moment (elke dag, dezelfde tijd).
+- **Onzeker/niet hard gegarandeerd:** of een halverwege afgebroken run automatisch hervat zodra er weer tegoed is, vóór het volgende geplande moment. Daar is geen document over geraadpleegd waar dat expliciet bevestigd wordt, dus ga er niet blind van uit dat dat gebeurt.
+- **Concreet risico, nu ondervangen:** als een run precies afbreekt nadat een bedrijf op `status: "in_progress"` is gezet maar vóórdat de bijbehorende subagent heeft gerapporteerd, blijft dat item potentieel voor altijd "in bewerking" staan zonder dat iemand het merkt, want alleen `pending`-items worden automatisch opnieuw opgepakt. Zie de nieuwe check hierboven bij "Statussen": elke volgende run herkent een `in_progress`-item dat langer dan 24 uur stilstaat en zet het terug naar `needs_review`, zodat het niet onopgemerkt blijft hangen.
 
 ## Bekende sandbox-beperkingen
 
