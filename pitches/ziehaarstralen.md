@@ -15,7 +15,7 @@ Waarom dit de moeite waard is om te bekijken:
 
 Wat u er verder voor terugkrijgt als we samen verdergaan:
 * Ik koppel de nieuwe website netjes aan uw huidige domeinnaam.
-* Een veilig ingebouwd contactformulier, zonder dat u wordt overspoeld met spam.
+* Een veilig ingebouwd contactformulier dat gekoppeld wordt aan uw eigen e-mailadres, zonder dat u wordt overspoeld met spam.
 * Al het technische onderhoud neem ik uit handen, voor toekomstige aanpassingen is een mailtje of belletje naar mij voldoende.
 
 Belangrijk om te weten: ik heb uw huidige site niet volledig automatisch kunnen inzien (die blokkeert geautomatiseerde bezoekers), dus dit voorstel staat op zichzelf. Er staan bewust geen verzonnen prijzen of reviewquotes op: de tarieven en reviews die u ziet zijn de echte, publiek bekende gegevens. Deze site staat ook nog niet aangemeld bij Google, het is een voorstel, geen vervanging van uw bestaande site totdat u daarvoor kiest.

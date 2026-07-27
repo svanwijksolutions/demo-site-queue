@@ -15,7 +15,7 @@ Waarom dit de moeite waard is om te bekijken:
 
 Wat u er verder voor terugkrijgt als we samen verdergaan:
 * Ik koppel de nieuwe website netjes aan uw huidige domeinnaam.
-* Een veilig ingebouwd contactformulier, zonder dat u wordt overspoeld met spam.
+* Een veilig ingebouwd contactformulier dat gekoppeld wordt aan uw eigen e-mailadres, zonder dat u wordt overspoeld met spam.
 * Al het technische onderhoud neem ik uit handen, voor toekomstige aanpassingen is een mailtje of belletje naar mij voldoende.
 
 Belangrijk om te weten: ik heb dit gebouwd op basis van de tekst en foto's van uw huidige website, dus alles wat er nu op de conceptsite staat is gebaseerd op wat u zelf al publiceert. Prijzen heb ik bewust weggelaten, want die wisselen met de dagverse aanvoer, dat leek mij correcter dan een verouderd bedrag overnemen. Ook heb ik de oude vacaturetekst en de specifieke aanbieding van de dag niet overgenomen, omdat ik niet weet of die nog actueel zijn. Deze site staat ook nog niet aangemeld bij Google, het is een voorstel, geen vervanging van uw bestaande site totdat u daarvoor kiest.
