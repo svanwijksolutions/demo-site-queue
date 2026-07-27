@@ -110,7 +110,7 @@
     },
     {
       "id": "dierenkliniek-animalis",
-      "status": "in_progress",
+      "status": "needs_review",
       "bedrijfsnaam": "Dierenkliniek Animalis",
       "branche": "Dierenkliniek / dierenarts (honden, katten, konijnen, knaagdieren)",
       "contactpersoon": "Angelina de Jong",
@@ -125,13 +125,13 @@
       "diensten": ["Algemene dierenartszorg (honden, katten, konijnen, knaagdieren)", "VetPlan (preventief zorgabonnement)", "Pre-anesthetisch bloedonderzoek", "Spoedadvies voor konijnen/knaagdieren"],
       "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
       "ontwerprichting": "Persoonlijke, warme, vertrouwde uitstraling passend bij 'de dierenarts met de persoonlijke benadering'. Geen verdere stijlvoorkeur aangeleverd.",
-      "notities": "Uitgebreide medische/informatieve content (spoedprotocol konijn dat niet eet, voedingsadvies konijnen, VetPlan-uitleg, handige links) staat in uploads/dierenkliniek-animalis/aanvullende-content.txt, LEES DIT BESTAND VOLLEDIG voor je bouwt. Medische instructies daarin NOOIT parafraseren, letterlijk overnemen. Geen KVK-nummer of huisnummer aangeleverd, bewust niet verzinnen. Openingstijden ma-vr 8:30-17:00 behalve woensdag (voorlopig gesloten, vermeld als 'tijdelijk', niet als vaste regel), pauze 12:30-13:00. 27-07-2026 (blok 1): bouw-subagent werd vrijwel meteen na de start onverwacht gestopt ('killed', geen inhoudelijke reden gerapporteerd, repo nog leeg bevestigd), terug naar pending zodat een volgend blok het gewoon opnieuw kan proberen.",
+      "notities": "Uitgebreide medische/informatieve content (spoedprotocol konijn dat niet eet, voedingsadvies konijnen, VetPlan-uitleg, handige links) staat in uploads/dierenkliniek-animalis/aanvullende-content.txt. Medische instructies daarin letterlijk overgenomen. Geen KVK-nummer of huisnummer aangeleverd, bewust niet verzinnen. Openingstijden ma-vr 8:30-17:00 behalve woensdag (voorlopig gesloten, vermeld als 'tijdelijk'), pauze 12:30-13:00. 27-07-2026 (blok 1): eerste bouwpoging onverwacht gestopt, terug naar pending. 27-07-2026 (blok 1, hervat): site volledig gebouwd en gecontroleerd (commit 2c24e39), acht-staps kwaliteitscontrole doorlopen, conceptpitchmail geschreven naar pitches/dierenkliniek-animalis.md. status needs_review omdat de Pages-deploy nog niet bevestigd groen kon worden: de 'Deploy static content to Pages'-workflow faalde op de bekende 'Setup Pages'-race-condition bij een gloednieuwe repo, en er is (ook na een tijdje wachten) geen tweede 'pages build and deployment'-run verschenen om dat te herstellen. Check zelf de Actions-tab van svanwijksolutions/dierenkliniek-animalis, en controleer of Settings > Pages > Source op 'GitHub Actions' staat; mogelijk moet dat bij een gloednieuwe repo eenmalig handmatig bevestigd worden voor de eerste deploy goed doorloopt.",
       "fotos_beschikbaar": true,
       "talen": ["nl"],
       "repo_ready": true,
       "repo": "dierenkliniek-animalis",
-      "live_url": null,
-      "pitch_email_klaar": false,
+      "live_url": "https://svanwijksolutions.github.io/dierenkliniek-animalis/ (deploy nog niet bevestigd groen, zie notities)",
+      "pitch_email_klaar": true,
       "toegevoegd_op": "2026-07-27"
     }
   ]
