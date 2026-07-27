@@ -81,33 +81,6 @@
       "pitch_email_klaar": true,
       "toegevoegd_op": "2026-07-24",
       "afgerond_op": "2026-07-25"
-    },
-    {
-      "id": "dekeukenvansandra",
-      "status": "done",
-      "bedrijfsnaam": "De Keuken van Sandra",
-      "branche": "Catering, workshops, patisserie en lunches aan huis (foodstyling/culinair)",
-      "contactpersoon": "Sandra Kaag",
-      "contact": {
-        "adres": "Fruitlaan 44, 2292 BB Wateringen",
-        "telefoon": "06 27 49 50 01",
-        "email": "sandra@dekeukenvansandra.nl",
-        "kvk": "12345678",
-        "huidige_site": "https://www.dekeukenvansandra.nl/"
-      },
-      "regio": "Wateringen / Westland / Den Haag",
-      "diensten": ["Hapjes en borrelplanken", "Catering op maat", "Buffet, walking dinner of diner op maat", "Tapas buffet (vanaf 20 personen)", "Chocolade (kerstkrans, valentijnshart, bonbonletter, roomtruffels)", "Lunches en lunchcatering", "Patisserie, gebak en high tea", "Workshops (o.a. vegan)", "Kistje van Sandra (cadeaupakket)", "Koekdoos (ook XL)", "Maaltijden bestellen", "Allerhande lekkers (houdbare producten zoals jam, saus, soep)"],
-      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
-      "ontwerprichting": "Warm/ambachtelijk foodstyling-gevoel, laat de echte foto's van gerechten en creaties spreken (geen stockfoto-uitstraling), persoonlijke toon van Sandra zelf",
-      "notities": "Contactvoorkeur expliciet: bij voorkeur WhatsApp of e-mail, liever niet bellen (vaak op locatie/handen in het deeg). Site heeft bewust geen vaste prijslijst, wel een paar concrete prijzen: Kistje van Sandra vanaf €22,50, Koekdoos €11,-, Koekdoos XL €18,50 (PostNL verzendkosten €4,75 per doos, gratis bezorgd in Wateringen), maaltijd €6,95 (afhalen/bezorgen in overleg, min. 10 personen voor groepsbestelling). Tapas buffet vanaf 20 personen, borrelhapjes/buffet vanaf 10 personen. Samenwerking met 'We Canteen' voor warme bedrijfslunches, kan genoemd worden. Geen concrete Facebook/Instagram-URL's aangeleverd, alleen de labels 'Facebook' en 'Instagram', dus geen social-iconen op de site totdat de klant de echte URL's aanlevert. Het KVK-nummer 12345678 en het BTW-nummer zijn bewust NIET op de site gezet (12345678 oogt als een verdachte placeholder-reeks, zie RULES.md 'Content & eerlijkheid'), geverifieerd met een grep dat het nergens voorkomt; een mens moet het echte KVK-nummer aanleveren als dat gewenst is. Pages-deployment op 25-07-2026 alsnog bevestigd geslaagd ('pages build and deployment', commit 13b67c39), status daarom naar done.",
-      "fotos_beschikbaar": true,
-      "talen": ["nl"],
-      "repo_ready": true,
-      "repo": "dekeukenvansandra",
-      "live_url": "https://svanwijksolutions.github.io/dekeukenvansandra/",
-      "pitch_email_klaar": true,
-      "toegevoegd_op": "2026-07-24",
-      "afgerond_op": "2026-07-25"
     }
   ]
 }
