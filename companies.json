@@ -84,7 +84,7 @@
     },
     {
       "id": "cone6",
-      "status": "pending",
+      "status": "in_progress",
       "bedrijfsnaam": "Cone6",
       "branche": "Keramiekatelier (workshops, cursussen, teambuilding, stookservice)",
       "contactpersoon": "Yvonne da Silva",
@@ -110,7 +110,7 @@
     },
     {
       "id": "dierenkliniek-animalis",
-      "status": "pending",
+      "status": "in_progress",
       "bedrijfsnaam": "Dierenkliniek Animalis",
       "branche": "Dierenkliniek / dierenarts (honden, katten, konijnen, knaagdieren)",
       "contactpersoon": "Angelina de Jong",
