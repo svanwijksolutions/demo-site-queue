@@ -22,6 +22,8 @@ Belangrijk om te weten: ik heb uw huidige site niet volledig automatisch kunnen 
 
 Ik hoor graag wat u ervan vindt, een kort berichtje terug mag ook prima. Vrijblijvend bellen of langskomen kan uiteraard ook.
 
+Wilt u weten wat deze website zou kosten? Laat het me dan gewoon weten.
+
 Met vriendelijke groet,
 Sem van Wijk
 S. van Wijk Solutions

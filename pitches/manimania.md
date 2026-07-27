@@ -22,6 +22,8 @@ Belangrijk om te weten: op basis van de informatie op manimania.nl heb ik deze s
 
 Ik hoor graag wat je ervan vindt, een kort berichtje terug mag ook prima. Vrijblijvend bellen of langskomen kan uiteraard ook.
 
+Wil je weten wat deze website zou kosten? Laat het me dan gewoon weten.
+
 Met vriendelijke groet,
 Sem van Wijk
 S. van Wijk Solutions

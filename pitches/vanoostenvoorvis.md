@@ -22,6 +22,8 @@ Belangrijk om te weten: ik heb dit gebouwd op basis van de tekst en foto's van u
 
 Ik hoor graag wat u ervan vindt, een kort berichtje terug mag ook prima. Vrijblijvend bellen of langskomen kan uiteraard ook, dan denk ik ook graag mee over uw eigen domein en het actueel houden van aanbiedingen en prijzen.
 
+Wilt u weten wat deze website zou kosten? Laat het me dan gewoon weten.
+
 Met vriendelijke groet,
 Sem van Wijk
 S. van Wijk Solutions
