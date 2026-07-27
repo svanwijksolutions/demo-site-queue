@@ -14,17 +14,10 @@ body:
     id: feedback
     attributes:
       label: "Feedback"
-      description: "Eén punt per regel is het makkelijkst te verwerken, maar hoeft niet per se."
+      description: "Eén punt per regel is het makkelijkst te verwerken, maar hoeft niet per se. Geldt een punt voor alle sites (nu en in de toekomst)? Zeg dat er dan gewoon bij, dan komt het in de vaste regels terecht."
       placeholder: |
         - Het logo mag groter in de header
         - De foto op de contactpagina is onscherp
+        - Dit moet voortaan voor alle sites gelden: ...
     validations:
       required: true
-  - type: checkboxes
-    id: scope
-    attributes:
-      label: "Geldt dit ook voor toekomstige sites?"
-      description: "Laat leeg als je het niet zeker weet, dat wordt dan gewoon site-specifiek verwerkt."
-      options:
-        - label: "Ja, dit moet een vaste regel worden voor alle sites (komt in RULES.md)"
-          required: false

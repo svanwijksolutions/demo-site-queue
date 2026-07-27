@@ -31,14 +31,15 @@ Zorg voor een actuele lokale clone van `svanwijksolutions/demo-site-queue` (git 
 ## STAP 2 — Intake-issues verwerken (nieuwe bedrijven)
 Lijst open issues met label `nieuw-bedrijf` op (`search_issues` of `list_issues`, `repo:svanwijksolutions/demo-site-queue`). Voor elk issue dat nog GEEN corresponderend item in `companies.json` heeft (vergelijk op de ingevulde `id`):
 
-1. Parse de issue-body (GitHub Issue Forms renderen elk veld als `### <label>` gevolgd door de ingevulde waarde, of `_No response_` als leeg).
-2. Ontbreekt `id`, `bedrijfsnaam`, `branche` of `diensten` (verplichte velden): reageer op het issue dat er verplichte info mist en welke, laat het issue OPEN staan (niet verwerkt), ga door naar het volgende issue.
-3. Bepaal `fotos_beschikbaar`: bestaat `uploads/<id>/` al met bestanden erin? Dan `true`, anders `false`.
-4. Bepaal `repo_ready` en `repo`: is de checkbox "Ik heb de lege GitHub-repo al aangemaakt" aangevinkt? Dan `repo_ready: true`, `repo: "<id>-demo"`. Anders `repo_ready: false`, `repo: "<id>-demo"` (verwachte naam, nog niet bevestigd).
-5. Voeg een nieuw item toe aan `companies.json` met alle geparste velden, `status: "pending"`, `talen` als array (split op komma, trim spaties, default `["nl"]` als leeg), `notities` = de ingevulde notities plus, indien relevant, een vermelding dat de repo nog aangemaakt moet worden.
-6. Ververs `overzicht.xlsx` (`python3 scripts/generate_overzicht.py`, installeer `openpyxl` met pip indien nodig).
-7. Commit (bericht: `Intake: <bedrijfsnaam> toegevoegd aan wachtrij (issue #<nummer>)`) en push.
-8. Reageer op het issue met een korte bevestiging (wat is toegevoegd, of de repo nog aangemaakt moet worden) en sluit het issue.
+1. Parse de issue-body (GitHub Issue Forms renderen elk veld als `### <label>` gevolgd door de ingevulde waarde, of `_No response_` als leeg). Het formulier heeft maar vijf velden: `id`, `bedrijfsnaam`, een groot vrij-tekstveld `info`, `talen` en de repo-checkbox.
+2. Ontbreken `id`, `bedrijfsnaam` of `info`: reageer op het issue dat er verplichte info mist, laat het issue OPEN staan, ga door naar het volgende issue.
+3. Lees `info` zorgvuldig en zelf-standig (dit is vrije tekst, geen vast format) en destilleer daaruit de velden die `companies.json` nodig heeft: `branche`, `contactpersoon`, `contact.adres`, `contact.telefoon`, `contact.email`, `contact.kvk`, `contact.huidige_site`, `regio`, `diensten` (array), `reviews` (`sterren`/`aantal`/`quotes_bekend`, alleen invullen als expliciet genoemd), `ontwerprichting`, en eventuele rest-info die nergens anders past als `notities`. Verzin NOOIT een veld dat niet in de tekst staat, laat het dan gewoon leeg/`null`. Is `branche` of `diensten` niet uit de tekst te herleiden: reageer dat er te weinig info in het vrije tekstveld staat om te verwerken, laat het issue OPEN staan, ga door naar het volgende issue.
+4. Bepaal `fotos_beschikbaar`: bestaat `uploads/<id>/` al met bestanden erin? Dan `true`, anders `false`. Staat er in die map ook een `notities.txt`? Laat die met rust (die is voor de bouw-subagent, niet voor jou), maar je mag 'm gebruiken om te checken of de foto's compleet aangeleverd lijken.
+5. Bepaal `repo_ready` en `repo`: is de checkbox "Ik heb de lege GitHub-repo al aangemaakt" aangevinkt? Dan `repo_ready: true`, `repo: "<id>-demo"`. Anders `repo_ready: false`, `repo: "<id>-demo"` (verwachte naam, nog niet bevestigd).
+6. Voeg een nieuw item toe aan `companies.json` met alle gedestilleerde velden, `status: "pending"`, `talen` als array (split op komma, trim spaties, default `["nl"]` als leeg).
+7. Ververs `overzicht.xlsx` (`python3 scripts/generate_overzicht.py`, installeer `openpyxl` met pip indien nodig).
+8. Commit (bericht: `Intake: <bedrijfsnaam> toegevoegd aan wachtrij (issue #<nummer>)`) en push.
+9. Reageer op het issue met een korte bevestiging: welke velden je uit de vrije tekst hebt gehaald (zodat Sem kan checken of er niets verkeerd geïnterpreteerd is), of de repo nog aangemaakt moet worden, en sluit het issue.
 
 Dit mag ELK blok gebeuren, telt niet mee voor het nachtbudget.
 
@@ -46,7 +47,7 @@ Dit mag ELK blok gebeuren, telt niet mee voor het nachtbudget.
 Lijst open issues met label `feedback` op. Verwerk er maximaal zoveel als er nog nachtbudget over is (zie hierboven), oudste eerst. Voor elk issue:
 
 1. Parse `site` (repo-naam of bedrijfsnaam) en `feedback` (de vrije tekst) uit de issue-body. Herleid de exacte repo-naam via `companies.json` (`repo`-veld) als een fuzzy match nodig is.
-2. Is de checkbox "moet een vaste regel worden" aangevinkt: verwerk dat punt EERST zelf (niet via een subagent) als nieuwe regel in `RULES.md` inclusief een gedateerde Wijzigingslog-regel die verwijst naar issue #<nummer>, commit+push, vóórdat je de subagent voor de sitefix zelf spawnt (zodat de subagent de nieuwe regel al vers kan lezen).
+2. Lees de feedback-tekst zelf na op een aanwijzing dat (een deel van) het punt voor alle sites moet gelden, nu én in de toekomst (er is geen apart vinkje meer voor, Sem schrijft dit gewoon in de tekst, bijv. "dit moet voortaan overal zo" of "geldt voor alle sites"). Staat zo'n aanwijzing er: verwerk dat specifieke punt EERST zelf (niet via een subagent) als nieuwe regel in `RULES.md` inclusief een gedateerde Wijzigingslog-regel die verwijst naar issue #<nummer>, commit+push, vóórdat je de subagent voor de sitefix zelf spawnt (zodat de subagent de nieuwe regel al vers kan lezen). De rest van het feedbackpunt (de concrete fix op déze site) gaat gewoon ook naar de subagent.
 3. Spawn een subagent met de inhoud van `FEEDBACK_FIX_INSTRUCTIONS.md`, met de repo-naam en de letterlijke feedback-tekst ingevuld. Meerdere feedback-issues in dit blok: spawn ze allemaal in ÉÉN bericht, parallel.
 4. Wacht op elk rapport. Succes: reageer op het issue met een korte samenvatting van wat is gedaan en sluit het issue. Probleem: reageer met de reden, laat het issue OPEN staan (blijft zichtbaar als openstaand werk, geen needs_review-mechanisme nodig voor losse feedback-issues).
 

@@ -6,9 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Vul dit formulier volledig in. Foto's horen hier **niet** bij (bijlagen in issues zijn niet betrouwbaar op te halen), zie de stap hieronder voor hoe je foto's apart aanlevert.
+        Vul hieronder de `id`, bedrijfsnaam en daarna gewoon vrije tekst in met alles wat je over het bedrijf weet. De pipeline haalt hier zelf de losse velden uit (branche, diensten, contactgegevens, etc.), dus je hoeft niets in een vast format te zetten.
 
-        **Foto's aanleveren (los van dit formulier):** ga naar de repo [`demo-site-queue`](https://github.com/svanwijksolutions/demo-site-queue), open de map `uploads/`, maak een nieuwe map aan met dezelfde `id` die je hieronder invult (bijv. `uploads/bakkerij-devries/`), en upload je foto's daar via "Add file" → "Upload files". Dat mag in één keer met meerdere bestanden tegelijk.
+        **Foto's aanleveren (los van dit formulier, bijlagen in issues zijn niet betrouwbaar op te halen):** ga naar de repo [`demo-site-queue`](https://github.com/svanwijksolutions/demo-site-queue), open de map `uploads/`, maak een nieuwe map aan met dezelfde `id` die je hieronder invult (bijv. `uploads/bakkerij-devries/`), en upload je foto's daar via "Add file" → "Upload files". Wil je per foto aangeven waar die op de site moet komen (bijv. hero, over-ons, een specifieke dienst)? Maak in diezelfde map een tekstbestandje `notities.txt` aan en zet er per foto een regel in, bijv. `IMG_001.jpg - grote foto voor de hero` of `logo.png - logo voor in de header`. Vrije vorm, ik lees het zelf.
   - type: input
     id: id
     attributes:
@@ -23,87 +23,23 @@ body:
       label: "Bedrijfsnaam"
     validations:
       required: true
-  - type: input
-    id: branche
+  - type: textarea
+    id: info
     attributes:
-      label: "Branche"
-      placeholder: "bijv. Bakkerij, Nagelstudio, Visboer"
+      label: "Alle bedrijfsinformatie (vrije tekst)"
+      description: "Typ hier gewoon alles wat je weet: branche, diensten/producten, contactpersoon, adres, telefoon, e-mail, KVK, huidige website, regio, reviews (alleen als je ze echt hebt), gewenste sfeer/kleuren, en al het overige. Geen vast format nodig, ik haal er zelf de losse velden uit. Verzin niets dat je niet zeker weet, laat het dan gewoon weg."
+      placeholder: |
+        Bakkerij De Vries, bakkerij in Delft. Contactpersoon: Jan de Vries, adres Marktstraat 12, 2611 AB Delft, tel 015-1234567, info@bakkerijdevries.nl. Geen KVK bekend. Huidige site: bakkerijdevries.nl. Werkgebied: Delft en omgeving.
+        Diensten: vers brood, taarten op bestelling, belegde broodjes, catering.
+        Reviews: geen bekend.
+        Sfeer: warm, ambachtelijk, houtlook, geen strak/koud design.
     validations:
       required: true
-  - type: input
-    id: contactpersoon
-    attributes:
-      label: "Contactpersoon"
-    validations:
-      required: false
-  - type: input
-    id: adres
-    attributes:
-      label: "Adres"
-    validations:
-      required: false
-  - type: input
-    id: telefoon
-    attributes:
-      label: "Telefoon"
-    validations:
-      required: false
-  - type: input
-    id: email
-    attributes:
-      label: "E-mail"
-    validations:
-      required: false
-  - type: input
-    id: kvk
-    attributes:
-      label: "KVK-nummer (alleen invullen als je 'm zeker weet, anders leeg laten)"
-    validations:
-      required: false
-  - type: input
-    id: huidige_site
-    attributes:
-      label: "URL van de huidige website (indien aanwezig)"
-    validations:
-      required: false
-  - type: input
-    id: regio
-    attributes:
-      label: "Regio / werkgebied"
-    validations:
-      required: false
-  - type: textarea
-    id: diensten
-    attributes:
-      label: "Diensten / producten (één per regel)"
-    validations:
-      required: true
-  - type: textarea
-    id: reviews
-    attributes:
-      label: "Reviews (sterren, aantal, en losse reviewquotes 1:1 als je die hebt, anders leeg laten)"
-      description: "Nooit zelf reviews verzinnen als je ze niet hebt, dan gewoon leeg laten."
-    validations:
-      required: false
-  - type: textarea
-    id: ontwerprichting
-    attributes:
-      label: "Ontwerprichting / gewenste sfeer"
-      description: "Kleuren, stijl, toon. Wordt in de bouwinstructie gebruikt."
-    validations:
-      required: false
   - type: input
     id: talen
     attributes:
       label: "Talen (komma-gescheiden, bijv. nl of nl,en)"
       placeholder: "nl"
-    validations:
-      required: false
-  - type: textarea
-    id: notities
-    attributes:
-      label: "Overige notities"
-      description: "Alles wat verder relevant is: contactvoorkeur, bijzonderheden, wat NIET gebruikt mag worden, etc."
     validations:
       required: false
   - type: checkboxes
