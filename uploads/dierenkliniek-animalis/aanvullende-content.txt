@@ -1,0 +1,46 @@
+Aanvullende content voor Dierenkliniek Animalis (letterlijk overgenomen uit issue #2, "Dierenkliniek Animalis", 27-07-2026)
+Dit bestand bevat content die te uitgebreid is om in companies.json te zetten. Gebruik letterlijk, niets verzinnen/inkorten op een manier die de betekenis verandert.
+
+=== ECHTE FEITEN ===
+Sinds 2016 gevestigd op de Hoefslagendreef in de Harnaschpolder in Delft.
+Behandelt: honden, katten, konijnen en knaagdieren.
+Slogan (mag letterlijk gebruikt worden): "De dierenarts in de Harnaschpolder in Delft met de persoonlijke benadering, die lief is voor je hond, kat, konijn en knaagdieren."
+Openingstijden: maandag t/m vrijdag 8:30-17:00 uur, BEHALVE woensdag (voorlopig gesloten wegens omstandigheden, dit is een tijdelijke/actuele mededeling, geen vaste regel, dus niet als permanente sluitingsdag afbeelden zonder disclaimer). Pauze elke werkdag (behalve woensdag) van 12:30-13:00, dan telefonisch minder goed bereikbaar.
+Telefoon: 015 737 0135
+E-mail: dierenarts@dierenkliniekanimalis.nl
+Facebook: https://www.facebook.com/dkanimalis/
+LinkedIn (waarschijnlijk de dierenarts/eigenaar): https://www.linkedin.com/in/angelina-de-jong-6679228/, naam: Angelina de Jong.
+NIET vermeld: KVK-nummer, adres met huisnummer (alleen straatnaam/wijk "Harnaschpolder"/Delft bekend, geen concreet huisnummer aangeleverd, dus niet verzinnen).
+
+=== DIENSTEN/THEMA'S ===
+- VetPlan: preventief zorgabonnement voor honden/katten/konijnen (vaste prijs per maand, geen bedrag aangeleverd, dus niet verzinnen). Bevat vaccinaties, gezondheidschecks, kortingen op bepaalde behandelingen/producten. Maandelijks opzegbaar. Expliciet GEEN verzekering, dit onderscheid moet duidelijk blijven staan als het gebruikt wordt.
+- Pre-anesthetisch bloedonderzoek: aanbevolen voorafgaand aan narcose/operaties, controleert nier-/leverfunctie voordat narcosemiddelen gebruikt worden. Uitleg beschikbaar (zie hieronder) voor een eventuele FAQ/infopagina.
+- Spoedprotocol voor een konijn dat niet eet: dit is medisch-inhoudelijke content (doseringen, "bunnywrap"-techniek, contactgegevens spoedklinieken). Alleen gebruiken als letterlijke, ongewijzigde tekst op een aparte informatiepagina, NOOIT herschrijven/samenvatten/parafraseren (medische instructies, foutgevoelig bij herformuleren). Zie hieronder voor de volledige tekst.
+
+=== SPOEDPROTOCOL KONIJN DAT NIET EET (letterlijk overnemen indien gebruikt, dit is medische content) ===
+"Help, mijn konijn eet niet! (en het is ook nog weekend...) Dit is een vervelende situatie, want een konijn dat niet eet is een spoedgeval! In het weekend is de kliniek gesloten. U zult dan naar een spoedarts moeten voor behandeling. Helaas zijn niet alle dierenartsen even ervaren/kundig in het behandelen van konijnen. Soms worden onnodige en kostbare diagnostische middelen ingezet."
+
+Spoedklinieken: Anicura Rijswijk (085-483 1300), Evidensia Den Haag (070-206 0900), Anicura Rotterdam Ommoord (010-420 6666), Evidensia Barendrecht (085-487 7090).
+
+Twee protocol-PDF's stonden op de oude site gelinkt (externe links naar het oude domein dierenkliniekanimalis.nl/wp-content/uploads/..., niet te verifiëren vanuit deze sandbox, alleen gebruiken als de links zelf gecontroleerd kunnen worden of anders de tekst hieronder gebruiken in plaats van de link):
+"Als er na behandeling onvoldoende verbetering is, neem dan zo spoedig mogelijk contact op met ons op de eerstvolgende werkdag."
+
+Zelf medicatie geven (alleen als ervaren konijnenbaasje, met Novacam hond 1,5 mg/ml en Cisaral Drops): 1 ml Novacam per kg lichaamsgewicht, 0,5 ml Cisaral per kg lichaamsgewicht (voorbeeld: konijn van 2 kg = 2 ml Novacam + 1 ml Cisaral). Is de buik niet bol/opgezet, dan 5-10 ml dun dwangvoer (Critical Care of geweekte brokjes) via een spuitje. Weigert het konijn dwangvoer, niet aandringen, stoppen. Na 2 uur nog steeds niet zelf etend: naar de spoedarts. Buitenkonijn bij kou naar binnen halen.
+
+Dwangvoeren konijnen/cavia's: nodig zodra een konijn/cavia langer dan 12 uur niet eet (darmen kunnen stil komen te liggen, levensbedreigend na 24 uur). Dwangvoer bestaat uit poeder (Critical Care of Recovery Supreme aanbevolen) aangelengd met warm water tot een papje, met een voerspuit (max 15 ml) toegediend, niet meer dan 1 ml per "hap". 3-4 voerbeurten per dag verspreid over de dag. Hoeveelheid per konijngrootte: groot (>4kg) 25 ml, middelgroot (2,5-4kg) 20 ml, klein (1,5-2,5kg) 15 ml, dwerg (<1,5kg) 10 ml per keer. Bij hevig tegenstribbelen: "bunnywrap"-techniek (in een handdoek wikkelen, alleen kop vrij) om verwondingen te voorkomen, zeker bij pas geopereerde konijnen. Keutels zijn een teken van doorstroming in het maagdarmkanaal, beginnen klein en worden normaler naarmate het konijn beter eet.
+
+Zelf eten stimuleren: verse groenten/kruiden (andijvie, witlof, wortelloof, peterselie, paardenbloemblad, vers gras van een schone plek, geen gemaaid gazongras). Bij gebitsbehandeling: groente in kleine stukjes.
+
+=== VOEDINGSADVIES KONIJNEN (letterlijk, informatief) ===
+Hooi en gras: essentieel voor kiezenslijtage (kiezen groeien levenslang door) en vezels/spijsvertering. Minstens zoveel hooi als het konijn groot is, goed hooi is bleekgroengeel en ruikt fris/kruidig. Vers gras ook goed (niet gemaaid gazongras, gist snel).
+Groenten en kruiden: andijvie, witlof, wortel, wortelloof, broccoli/bloemkool(blad), selderij, peterselie; "wilde" kruiden zoals paardenbloemblad en weegbree. Afwisselen, niet te veel tegelijk, langzaam opbouwen bij een konijn dat het niet gewend is. Wilgentakken/-twijgen om op te knabbelen, ook langzaam opbouwen.
+Pellets/brokjes: max. 20 gram per kilo konijn per dag, verdeeld over twee porties, bij voorkeur pellets (geen muesli, want dan eten ze selectief de calorierijke zaden en laten de gezonde brokjes liggen).
+Fruit/snoep: beperkt (appel bevat veel suiker), af en toe een klein stukje, komkommer ook oké. Geen knabbelstaven (te veel koolhydraten) of knaagstenen (te veel calcium, urinewegproblemen). Lijnzaad-/kruidenbrokje als alternatief.
+Gezelschap: konijnen zijn socialer met een maatje, een konijnenopvang kan hierbij helpen.
+
+=== HANDIGE LINKS (extern, alleen gebruiken als ze werken, niet garanderen vanuit deze sandbox) ===
+Spoedklinieken: Anicura Rijswijk, Evidensia Barendrecht, Anicura Drechtstreek (Dordrecht).
+Informatiebronnen: Dierenkliniek Wilhelminapark (bibliotheek voor dieren/ziekten), LICG (aanschaf/verzorging/wetgeving/reizen met huisdieren), Het Knaagspoor (konijnenopvang Ridderkerk), Bunny Bunch (konijnen-/knaagdiereninformatie).
+
+=== NIET GEBRUIKEN (verouderd/eenmalig, geen structurele feiten) ===
+"Donderdag 25 juni zijn wij door omstandigheden gesloten" — dit is een gedateerde, eenmalige mededeling uit het verleden, niet gebruiken als actuele/structurele info.
