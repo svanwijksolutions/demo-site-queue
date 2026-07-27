@@ -1,0 +1,43 @@
+<!-- Testimonials marquee: één horizontale balk, plak de kaarten-set TWEE KEER
+     achter elkaar in .tm-track (zoals hieronder), de animatie schuift precies
+     50% naar links, dat moet naadloos aansluiten op een identieke tweede set.
+     Vervang assets/icons/sprite.svg#icon-star door het sterretjes-icoon van de
+     site zelf. -->
+<section class="tm-section">
+  <div class="container tm-intro">
+    <span class="eyebrow">Wat klanten zeggen</span>
+    <h2>Beoordeeld met 5 sterren</h2>
+  </div>
+
+  <div class="tm-viewport">
+    <div class="tm-track">
+      <!-- set 1 -->
+      <figure class="tm-card">
+        <div class="tm-stars" aria-hidden="true">
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+        </div>
+        <blockquote class="tm-quote">Voorbeeldtekst van de review, letterlijk overgenomen.</blockquote>
+        <figcaption class="tm-name">Naam reviewer</figcaption>
+      </figure>
+      <!-- ...meer kaarten... -->
+
+      <!-- set 2: exacte kopie van set 1, voor de naadloze loop -->
+      <figure class="tm-card" aria-hidden="true">
+        <div class="tm-stars" aria-hidden="true">
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+          <svg><use href="assets/icons/sprite.svg#icon-star"></use></svg>
+        </div>
+        <blockquote class="tm-quote">Voorbeeldtekst van de review, letterlijk overgenomen.</blockquote>
+        <figcaption class="tm-name">Naam reviewer</figcaption>
+      </figure>
+      <!-- ...zelfde kaarten nogmaals... -->
+    </div>
+  </div>
+</section>

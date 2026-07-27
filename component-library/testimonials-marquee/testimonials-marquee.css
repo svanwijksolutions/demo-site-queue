@@ -1,0 +1,108 @@
+/* Testimonials marquee — pure CSS, geen JS nodig.
+   Eén horizontale balk met reviewkaarten die traag naar links doorloopt,
+   pauzeert bij hover/focus, en bij prefers-reduced-motion stilstaat en
+   gewoon handmatig horizontaal scrollbaar blijft (niets gaat verloren).
+   Pas de --tm-* variabelen aan de huisstijl van de site aan; ze vallen
+   terug op algemene site-variabelen als die al bestaan (--color-*, --font-*). */
+
+.tm-section {
+  --tm-card-bg: var(--color-surface, #ffffff);
+  --tm-card-border: var(--color-border, rgba(0, 0, 0, 0.08));
+  --tm-card-shadow: 0 24px 48px -28px rgba(0, 0, 0, 0.28);
+  --tm-text: var(--color-text, #1a1a1a);
+  --tm-text-muted: var(--color-text-muted, rgba(26, 26, 26, 0.62));
+  --tm-accent: var(--color-accent, #1a1a1a);
+  --tm-star: var(--color-star, #d9a441);
+  --tm-radius: 1.25rem;
+  --tm-gap: 1.25rem;
+  --tm-card-width: 20rem;
+  padding-block: clamp(3rem, 6vw, 6rem);
+}
+
+.tm-intro {
+  max-width: 34rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.tm-viewport {
+  margin-top: 2.5rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+}
+
+.tm-track {
+  display: flex;
+  gap: var(--tm-gap);
+  width: max-content;
+  animation: tm-scroll var(--tm-duration, 60s) linear infinite;
+  will-change: transform;
+}
+
+.tm-viewport:hover .tm-track,
+.tm-viewport:focus-within .tm-track {
+  animation-play-state: paused;
+}
+
+@keyframes tm-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tm-track {
+    animation: none;
+  }
+  .tm-viewport {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+.tm-card {
+  flex: 0 0 auto;
+  width: var(--tm-card-width);
+  margin: 0;
+  padding: 1.75rem;
+  border-radius: var(--tm-radius);
+  border: 1px solid var(--tm-card-border);
+  background: var(--tm-card-bg);
+  box-shadow: var(--tm-card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.tm-stars {
+  display: flex;
+  gap: 0.2rem;
+  color: var(--tm-star);
+}
+
+.tm-stars svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+
+.tm-quote {
+  margin: 0;
+  color: var(--tm-text);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  /* lange reviews netjes afkappen zodat kaarten gelijk van hoogte blijven */
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tm-name {
+  margin-top: auto;
+  font-weight: 600;
+  color: var(--tm-text);
+  font-size: 0.9rem;
+}
