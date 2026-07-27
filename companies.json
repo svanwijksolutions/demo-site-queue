@@ -16,7 +16,7 @@
       },
       "regio": "Rijswijk / Delft / Den Haag",
       "diensten": ["Bruidskapsels", "Bruidsmake-up", "Extensions", "Haarsieraden/accessoires", "Proefsessie"],
-      "reviews": { "sterren": 5, "aantal": 15, "quotes_bekend": false },
+      "reviews": { "sterren": 5, "aantal": 15, "quotes_bekend": true },
       "ontwerprichting": "Elegant/bruidsstijl, zachte kleuren, rose/creme, sierlijke typografie",
       "notities": "",
       "fotos_beschikbaar": false,
