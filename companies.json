@@ -84,7 +84,7 @@
     },
     {
       "id": "cone6",
-      "status": "needs_review",
+      "status": "done",
       "bedrijfsnaam": "Cone6",
       "branche": "Keramiekatelier (workshops, cursussen, teambuilding, stookservice)",
       "contactpersoon": "Yvonne da Silva",
@@ -99,18 +99,19 @@
       "diensten": ["Workshops (draaien, boetseren, beschilderen, ontbijtsetje maken)", "Keramiekcursus (8 lessen)", "Teambuilding & bedrijfsuitjes", "Stookservice", "Cadeaubonnen"],
       "reviews": { "sterren": null, "aantal": null, "quotes_bekend": true },
       "ontwerprichting": "Speels, ambachtelijk, toegankelijk. Zie uploads/cone6/aanvullende-content.txt voor de kleur-/lettertypereferentie van de bestaande site (niet verplicht om over te nemen, RULES.md's regel tegen generieke AI-sjabloon-pairings blijft leidend).",
-      "notities": "Volledige FAQ, algemene voorwaarden, privacyverklaring-kernpunten, echte reviewquotes en een pitchmail-specifieke instructie staan in uploads/cone6/aanvullende-content.txt. BTW: NL004881380B20. 27-07-2026 (blok 1): eerste bouwpoging onverwacht gestopt, terug naar pending. 27-07-2026 (blok 1, hervat): site volledig gebouwd, getest en gepusht (commit a5daae7), incl. NL/EN taalswitcher, aparte FAQ-pagina, algemene voorwaarden-pagina, teambuilding-pagina met de 14 echte klantlogo's. Meerdere echte bugs gevonden en gefixt tijdens QA (taalswitcher-crash, header-overflow 900-1024px, horizontale overflow op 320px, te kleine taalswitcher-knoppen, een onbedoeld 'vanaf'-woord bij de stookservice-prijs). Status needs_review: net als bij dierenkliniek-animalis faalde de Pages-deploy op de 'Setup Pages'-stap (twee runs, allebei mislukt, geen automatisch herstel na ruim wachten). Twee nieuwe repo's op dezelfde avond met exact dezelfde deploy-fout wijst op iets structureels bij gloednieuwe repo's, niet op toeval. Check de Actions-tab van svanwijksolutions/cone6, en controleer voor beide repo's (ook dierenkliniek-animalis) of Settings > Pages > Source op 'GitHub Actions' staat, dat moet mogelijk bij een gloednieuwe repo eenmalig handmatig ingesteld worden.",
+      "notities": "Volledige FAQ, algemene voorwaarden, privacyverklaring-kernpunten, echte reviewquotes en een pitchmail-specifieke instructie staan in uploads/cone6/aanvullende-content.txt. BTW: NL004881380B20. 27-07-2026 (blok 1): eerste bouwpoging onverwacht gestopt, terug naar pending. 27-07-2026 (blok 1, hervat): site volledig gebouwd, getest en gepusht (commit a5daae7), incl. NL/EN taalswitcher, aparte FAQ-pagina, algemene voorwaarden-pagina, teambuilding-pagina met de 14 echte klantlogo's. Meerdere echte bugs gevonden en gefixt tijdens QA (taalswitcher-crash, header-overflow 900-1024px, horizontale overflow op 320px, te kleine taalswitcher-knoppen, een onbedoeld 'vanaf'-woord bij de stookservice-prijs). Pages-deploy faalde eerst tweemaal op de 'Setup Pages'-stap (zelfde structurele oorzaak als dierenkliniek-animalis: Settings > Pages > Source stond nog niet op 'GitHub Actions' bij deze gloednieuwe repo's). Sem heeft dat zelf handmatig gezet, daarna de bestaande run opnieuw gestart, en de deploy is bevestigd geslaagd (run voor commit a5daae7, conclusion success). Status naar done.",
       "fotos_beschikbaar": true,
       "talen": ["nl", "en"],
       "repo_ready": true,
       "repo": "cone6",
-      "live_url": "https://svanwijksolutions.github.io/cone6/ (deploy nog niet bevestigd groen, zie notities)",
+      "live_url": "https://svanwijksolutions.github.io/cone6/",
       "pitch_email_klaar": true,
-      "toegevoegd_op": "2026-07-27"
+      "toegevoegd_op": "2026-07-27",
+      "afgerond_op": "2026-07-27"
     },
     {
       "id": "dierenkliniek-animalis",
-      "status": "needs_review",
+      "status": "done",
       "bedrijfsnaam": "Dierenkliniek Animalis",
       "branche": "Dierenkliniek / dierenarts (honden, katten, konijnen, knaagdieren)",
       "contactpersoon": "Angelina de Jong",
@@ -125,14 +126,15 @@
       "diensten": ["Algemene dierenartszorg (honden, katten, konijnen, knaagdieren)", "VetPlan (preventief zorgabonnement)", "Pre-anesthetisch bloedonderzoek", "Spoedadvies voor konijnen/knaagdieren"],
       "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
       "ontwerprichting": "Persoonlijke, warme, vertrouwde uitstraling passend bij 'de dierenarts met de persoonlijke benadering'. Geen verdere stijlvoorkeur aangeleverd.",
-      "notities": "Uitgebreide medische/informatieve content (spoedprotocol konijn dat niet eet, voedingsadvies konijnen, VetPlan-uitleg, handige links) staat in uploads/dierenkliniek-animalis/aanvullende-content.txt. Medische instructies daarin letterlijk overgenomen. Geen KVK-nummer of huisnummer aangeleverd, bewust niet verzinnen. Openingstijden ma-vr 8:30-17:00 behalve woensdag (voorlopig gesloten, vermeld als 'tijdelijk'), pauze 12:30-13:00. 27-07-2026 (blok 1): eerste bouwpoging onverwacht gestopt, terug naar pending. 27-07-2026 (blok 1, hervat): site volledig gebouwd en gecontroleerd (commit 2c24e39), acht-staps kwaliteitscontrole doorlopen, conceptpitchmail geschreven naar pitches/dierenkliniek-animalis.md. status needs_review omdat de Pages-deploy nog niet bevestigd groen kon worden: de 'Deploy static content to Pages'-workflow faalde op de bekende 'Setup Pages'-race-condition bij een gloednieuwe repo, en er is (ook na een tijdje wachten) geen tweede 'pages build and deployment'-run verschenen om dat te herstellen. Check zelf de Actions-tab van svanwijksolutions/dierenkliniek-animalis, en controleer of Settings > Pages > Source op 'GitHub Actions' staat; mogelijk moet dat bij een gloednieuwe repo eenmalig handmatig bevestigd worden voor de eerste deploy goed doorloopt.",
+      "notities": "Uitgebreide medische/informatieve content (spoedprotocol konijn dat niet eet, voedingsadvies konijnen, VetPlan-uitleg, handige links) staat in uploads/dierenkliniek-animalis/aanvullende-content.txt. Medische instructies daarin letterlijk overgenomen. Geen KVK-nummer of huisnummer aangeleverd, bewust niet verzinnen. Openingstijden ma-vr 8:30-17:00 behalve woensdag (voorlopig gesloten, vermeld als 'tijdelijk'), pauze 12:30-13:00. 27-07-2026 (blok 1): eerste bouwpoging onverwacht gestopt, terug naar pending. 27-07-2026 (blok 1, hervat): site volledig gebouwd en gecontroleerd (commit 2c24e39), acht-staps kwaliteitscontrole doorlopen, conceptpitchmail geschreven naar pitches/dierenkliniek-animalis.md. Pages-deploy faalde eerst op de 'Setup Pages'-stap (Settings > Pages > Source stond nog niet op 'GitHub Actions'). Sem heeft dat zelf handmatig gezet, daarna de bestaande run opnieuw gestart, en de deploy is bevestigd geslaagd (run voor commit 2c24e39, conclusion success). Status naar done.",
       "fotos_beschikbaar": true,
       "talen": ["nl"],
       "repo_ready": true,
       "repo": "dierenkliniek-animalis",
-      "live_url": "https://svanwijksolutions.github.io/dierenkliniek-animalis/ (deploy nog niet bevestigd groen, zie notities)",
+      "live_url": "https://svanwijksolutions.github.io/dierenkliniek-animalis/",
       "pitch_email_klaar": true,
-      "toegevoegd_op": "2026-07-27"
+      "toegevoegd_op": "2026-07-27",
+      "afgerond_op": "2026-07-27"
     }
   ]
 }
