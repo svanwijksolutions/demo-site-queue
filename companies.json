@@ -84,7 +84,7 @@
     },
     {
       "id": "cone6",
-      "status": "in_progress",
+      "status": "needs_review",
       "bedrijfsnaam": "Cone6",
       "branche": "Keramiekatelier (workshops, cursussen, teambuilding, stookservice)",
       "contactpersoon": "Yvonne da Silva",
@@ -99,13 +99,13 @@
       "diensten": ["Workshops (draaien, boetseren, beschilderen, ontbijtsetje maken)", "Keramiekcursus (8 lessen)", "Teambuilding & bedrijfsuitjes", "Stookservice", "Cadeaubonnen"],
       "reviews": { "sterren": null, "aantal": null, "quotes_bekend": true },
       "ontwerprichting": "Speels, ambachtelijk, toegankelijk. Zie uploads/cone6/aanvullende-content.txt voor de kleur-/lettertypereferentie van de bestaande site (niet verplicht om over te nemen, RULES.md's regel tegen generieke AI-sjabloon-pairings blijft leidend).",
-      "notities": "Volledige FAQ, algemene voorwaarden, privacyverklaring-kernpunten, echte reviewquotes en een pitchmail-specifieke instructie staan in uploads/cone6/aanvullende-content.txt, LEES DIT BESTAND VOLLEDIG voor je bouwt. Sem wil expliciet een aparte FAQ-sectie/pagina. BTW: NL004881380B20 (geen apart veld hiervoor, vermeld desgewenst naast KVK). 27-07-2026 (blok 1): bouw-subagent werd vrijwel meteen na de start onverwacht gestopt ('killed', geen inhoudelijke reden gerapporteerd, repo nog leeg bevestigd), terug naar pending zodat een volgend blok het gewoon opnieuw kan proberen.",
+      "notities": "Volledige FAQ, algemene voorwaarden, privacyverklaring-kernpunten, echte reviewquotes en een pitchmail-specifieke instructie staan in uploads/cone6/aanvullende-content.txt. BTW: NL004881380B20. 27-07-2026 (blok 1): eerste bouwpoging onverwacht gestopt, terug naar pending. 27-07-2026 (blok 1, hervat): site volledig gebouwd, getest en gepusht (commit a5daae7), incl. NL/EN taalswitcher, aparte FAQ-pagina, algemene voorwaarden-pagina, teambuilding-pagina met de 14 echte klantlogo's. Meerdere echte bugs gevonden en gefixt tijdens QA (taalswitcher-crash, header-overflow 900-1024px, horizontale overflow op 320px, te kleine taalswitcher-knoppen, een onbedoeld 'vanaf'-woord bij de stookservice-prijs). Status needs_review: net als bij dierenkliniek-animalis faalde de Pages-deploy op de 'Setup Pages'-stap (twee runs, allebei mislukt, geen automatisch herstel na ruim wachten). Twee nieuwe repo's op dezelfde avond met exact dezelfde deploy-fout wijst op iets structureels bij gloednieuwe repo's, niet op toeval. Check de Actions-tab van svanwijksolutions/cone6, en controleer voor beide repo's (ook dierenkliniek-animalis) of Settings > Pages > Source op 'GitHub Actions' staat, dat moet mogelijk bij een gloednieuwe repo eenmalig handmatig ingesteld worden.",
       "fotos_beschikbaar": true,
       "talen": ["nl", "en"],
       "repo_ready": true,
       "repo": "cone6",
-      "live_url": null,
-      "pitch_email_klaar": false,
+      "live_url": "https://svanwijksolutions.github.io/cone6/ (deploy nog niet bevestigd groen, zie notities)",
+      "pitch_email_klaar": true,
       "toegevoegd_op": "2026-07-27"
     },
     {
