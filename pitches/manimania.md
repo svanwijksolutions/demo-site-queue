@@ -18,7 +18,7 @@ Wat je er verder voor terugkrijgt als we samen verdergaan:
 * Een veilig ingebouwd contactformulier, zonder dat je wordt overspoeld met spam.
 * Al het technische onderhoud neem ik uit handen, voor toekomstige aanpassingen is een mailtje of belletje naar mij voldoende.
 
-Belangrijk om te weten: op basis van de informatie op manimania.nl heb ik deze site gebouwd, ik heb er bewust geen prijzen op gezet omdat ik de actuele prijslijst niet had en liever niets verzin. Stuur je die op, dan zet ik ze er graag bij. De site staat nu nog niet aangemeld bij zoekmachines, zo kun je rustig kijken of dit bij ManiMania past zonder dat er meteen iets live hoeft te gaan.
+Belangrijk om te weten: op basis van de informatie op manimania.nl heb ik deze site gebouwd, en je prijslijst is inmiddels verwerkt op een eigen prijzenpagina. De site staat nu nog niet aangemeld bij zoekmachines, zo kun je rustig kijken of dit bij ManiMania past zonder dat er meteen iets live hoeft te gaan.
 
 Ik hoor graag wat je ervan vindt, een kort berichtje terug mag ook prima. Vrijblijvend bellen of langskomen kan uiteraard ook.
 
