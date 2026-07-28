@@ -4,6 +4,8 @@ Dit is DE bindende bron voor hoe de nachtelijke pipeline-firing zich moet gedrag
 
 Je bent de ORCHESTRATOR. Bevestigd getest: sessies die via "verse sessie per keer" worden gestart hebben GEEN toegang tot `mcp__github__` of `mcp__Claude_Code_Remote__` tools, daarom draait de nachtelijke pipeline in dezelfde bestaande, persistente sessie. Delegeer elk bedrijf/elke sitefix aan een eigen achtergrond-subagent via de Agent-tool (`subagent_type: "general-purpose"`, `run_in_background: true`), subagents erven je volledige toolset inclusief GitHub-tools.
 
+**Model voor bouw-/feedback-subagents: geef altijd `model: "opus"` mee aan de Agent-tool call.** Besluit van Sem (28-07-2026): dit werk (nieuwe site bouwen, feedback op een live site verwerken) is het meest kwaliteitskritische deel van de pipeline — visueel/UX-oordeel, RULES.md-naleving, klantgevoelig — en verdient het beste model, ook al kost dat meer per taak dan Sonnet. Jijzelf (de orchestrator: intake parsen, budget bijhouden, companies.json bijwerken, dit bestand volgen) blijft op je eigen sessiemodel draaien, daar is geen Opus voor nodig.
+
 **Sinds 28-07-2026 draait dit nog maar één keer per nacht (was: drie blokken om 17:00/22:00/02:00 NL-tijd), en bouwt de pipeline nog maar 1 nieuw bedrijf per nacht (was: 2). Dit is een bewuste keuze van Sem om tokengebruik te verlagen richting haar wekelijkse Claude Pro-limiet — houd je bij elke wijziging aan dit bestand aan die intentie, voeg geen extra firings of hoger budget toe zonder dat Sem dat expliciet vraagt.**
 
 ## CONTEXT (geldt voor elk blok)
@@ -46,7 +48,7 @@ Lijst open issues met label `feedback` op, plus ALTIJD ook open issues waarvan d
 
 1. Parse `site` (repo-naam of bedrijfsnaam) en `feedback` (de vrije tekst) uit de issue-body. Herleid de exacte repo-naam via `companies.json` (`repo`-veld) als een fuzzy match nodig is.
 2. Lees de feedback-tekst zelf na op een aanwijzing dat (een deel van) het punt voor alle sites moet gelden, nu én in de toekomst (er is geen apart vinkje meer voor, Sem schrijft dit gewoon in de tekst, bijv. "dit moet voortaan overal zo" of "geldt voor alle sites"). Staat zo'n aanwijzing er: verwerk dat specifieke punt EERST zelf (niet via een subagent) als nieuwe regel in `RULES.md` inclusief een gedateerde Wijzigingslog-regel die verwijst naar issue #<nummer>, commit+push, vóórdat je de subagent voor de sitefix zelf spawnt (zodat de subagent de nieuwe regel al vers kan lezen). De rest van het feedbackpunt (de concrete fix op déze site) gaat gewoon ook naar de subagent.
-3. Spawn een subagent met de inhoud van `FEEDBACK_FIX_INSTRUCTIONS.md`, met de repo-naam en de letterlijke feedback-tekst ingevuld. Meerdere feedback-issues in dit blok: spawn ze allemaal in ÉÉN bericht, parallel.
+3. Spawn een subagent (`model: "opus"`, zie CONTEXT hierboven) met de inhoud van `FEEDBACK_FIX_INSTRUCTIONS.md`, met de repo-naam en de letterlijke feedback-tekst ingevuld. Meerdere feedback-issues in dit blok: spawn ze allemaal in ÉÉN bericht, parallel.
 4. Wacht op elk rapport. Succes: reageer op het issue met een korte samenvatting van wat is gedaan en sluit het issue. Probleem: reageer met de reden, laat het issue OPEN staan (blijft zichtbaar als openstaand werk, geen needs_review-mechanisme nodig voor losse feedback-issues).
 
 ## STAP 4 — Footer-retrofit + vastgelopen `in_progress`-check
@@ -60,7 +62,7 @@ Alleen zoveel als er nog nachtbudget over is (zie hierboven). Lees `companies.js
 
 1. Zet voor elk gekozen item `status: "in_progress"` in `companies.json`. Commit met een bericht dat begint met `NIEUWE BUILD:` (zie nachtbudget-telling hierboven), bijv. `NIEUWE BUILD: <bedrijfsnaam> opgepakt`. Push.
 2. Ververs `overzicht.xlsx`, neem mee in dezelfde commit.
-3. Spawn voor ELK gekozen item, in ÉÉN bericht, parallel, een subagent met de VOLLEDIGE inhoud van `BUILD_INSTRUCTIONS.md`, met de bedrijfsgegevens (het hele companies.json-item, inclusief `talen`) ingevuld op de daarvoor bedoelde plek. Elke subagent werkt ALLEEN aan zijn eigen bedrijf/repo, raakt companies.json/pitches NIET zelf aan, rapporteert aan het eind in platte tekst terug.
+3. Spawn voor ELK gekozen item, in ÉÉN bericht, parallel, een subagent (`model: "opus"`, zie CONTEXT hierboven) met de VOLLEDIGE inhoud van `BUILD_INSTRUCTIONS.md`, met de bedrijfsgegevens (het hele companies.json-item, inclusief `talen`) ingevuld op de daarvoor bedoelde plek. Elke subagent werkt ALLEEN aan zijn eigen bedrijf/repo, raakt companies.json/pitches NIET zelf aan, rapporteert aan het eind in platte tekst terug.
 4. Wacht op elk rapport, race niet vooruit, verzin geen resultaten.
 5. Verwerk per rapport, één voor één (voorkomt schrijfconflicten):
    - Succes: schrijf de pitchmail naar `pitches/<id>.md`, werk `companies.json` bij (`status: "done"`, `repo`, `live_url`, `pitch_email_klaar: true`, `afgerond_op`), ververs `overzicht.xlsx`, commit+push.
