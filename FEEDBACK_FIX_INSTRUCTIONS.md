@@ -14,6 +14,8 @@ FEEDBACK (letterlijk zoals aangeleverd, verwerk elk punt):
 ## Setup
 Voeg de repo toe met `add_repo`, clone 'm, `register_repo_root` na succes. Clone ook (read-only) `svanwijksolutions/demo-site-queue` en lees `RULES.md` VOLLEDIG, dat is de bindende, actuele bron voor alle vaste regels (kan net zijn aangepast naar aanleiding van deze of eerdere feedback). Behandel RULES.md als bindend.
 
+**Ga nooit uit van een schone, correcte startsituatie** (staande regel sinds 28-07-2026, n.a.v. een geval op Cone6 waar een eerdere feedback-verwerking zelf een bug had geïntroduceerd — mailto-verzending gesloopt plus precies de tekst toegevoegd die inmiddels verboden is — en die pas bij de volgende feedbackronde aan het licht kwam): bekijk `git log --oneline -10` op de site-repo voordat je begint. Staat er een recente commit die aangeeft dat een eerdere sessie al aan (een deel van) dezelfde feedback heeft gewerkt? Beoordeel die wijziging dan zelf kritisch alsof het je eigen werk was (klopt de banner-overlay/contrast echt, werkt het formulier nog, staat er geen verboden patroon in), in plaats van aan te nemen dat die al correct is. Vind je een fout: repareer die gewoon mee en meld het expliciet in je eindrapport, ook als het geen onderdeel was van de feedback die je nu meekreeg.
+
 Werk rechtstreeks op de `main`-branch (geen pull request, commit en push direct, PR's op deze repo's mergen vaak vrijwel direct vanzelf waardoor losse commits erna niet meer aankomen).
 
 ## Aanpak
