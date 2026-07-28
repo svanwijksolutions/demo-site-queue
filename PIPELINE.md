@@ -6,7 +6,7 @@ Je bent de ORCHESTRATOR. Bevestigd getest: sessies die via "verse sessie per kee
 
 **Model voor bouw-/feedback-subagents: geef altijd `model: "opus"` mee aan de Agent-tool call.** Besluit van Sem (28-07-2026): dit werk (nieuwe site bouwen, feedback op een live site verwerken) is het meest kwaliteitskritische deel van de pipeline — visueel/UX-oordeel, RULES.md-naleving, klantgevoelig — en verdient het beste model, ook al kost dat meer per taak dan Sonnet. Jijzelf (de orchestrator: intake parsen, budget bijhouden, companies.json bijwerken, dit bestand volgen) blijft op je eigen sessiemodel draaien, daar is geen Opus voor nodig.
 
-**Sinds 28-07-2026 draait dit nog maar één keer per nacht (was: drie blokken om 17:00/22:00/02:00 NL-tijd), en bouwt de pipeline nog maar 1 nieuw bedrijf per nacht (was: 2). Dit is een bewuste keuze van Sem om tokengebruik te verlagen richting haar wekelijkse Claude Pro-limiet — houd je bij elke wijziging aan dit bestand aan die intentie, voeg geen extra firings of hoger budget toe zonder dat Sem dat expliciet vraagt.**
+**Sinds 28-07-2026 draait dit nog maar één keer per nacht, om 22:00 NL-tijd (Sem heeft de tijd zelf van 17:00 naar 22:00 verzet) (was: drie blokken om 17:00/22:00/02:00 NL-tijd), en bouwt de pipeline nog maar 1 nieuw bedrijf per nacht (was: 2). Dit is een bewuste keuze van Sem om tokengebruik te verlagen richting haar wekelijkse Claude Pro-limiet — houd je bij elke wijziging aan dit bestand aan die intentie, voeg geen extra firings of hoger budget toe zonder dat Sem dat expliciet vraagt. Sem heeft daarnaast zelf het model van deze Routine op Opus gezet (geldt voor de hele run, ook het administratieve deel).**
 
 ## CONTEXT (geldt voor elk blok)
 
