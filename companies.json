@@ -158,7 +158,7 @@
     },
     {
       "id": "bitwizard",
-      "status": "in_progress",
+      "status": "done",
       "bedrijfsnaam": "BitWizard B.V.",
       "branche": "Elektronica-/IT-ingenieursbedrijf (custom elektronicaontwikkeling, Linux-diensten, netwerkdiensten, webshop met Raspberry Pi/Arduino-uitbreidingsborden)",
       "contactpersoon": null,
@@ -173,12 +173,19 @@
       "diensten": ["Custom elektronicaontwikkeling", "Linux-installaties & support", "Linux device driver-ontwikkeling", "Netwerkdiensten (infrastructuur, programmering, firewalls)", "WAN-simulatie", "Webshop met Raspberry Pi/Arduino-uitbreidingsborden"],
       "reviews": { "sterren": null, "aantal": null, "quotes_bekend": true },
       "ontwerprichting": "Technisch/degelijk, ingenieursbedrijf-gevoel (UNIX/Linux/netwerken sinds 1996). Geen concrete stijlvoorkeur aangeleverd, Sem vraagt zelf een passend lettertype/layout te kiezen dat bij het bedrijf past.",
-      "notities": "Id in het issue-formulier was letterlijk 'bitwizard-demo' ingevuld, maar de aangeleverde uploads-map heet 'bitwizard' (zonder -demo) en de repo 'svanwijksolutions/bitwizard-demo' bestaat al (bevestigd via search_repositories) — id hier dus teruggebracht naar de kale slug 'bitwizard' zodat uploads/repo-conventie weer klopt (zelfde soort mismatch als eerder gedocumenteerd bij losse repo-namen). Sem noemde expliciet 'de repo is svanwijksolutions/bitwizard-demo', dat komt overeen. Site moet Engels EN Nederlands zijn, Engels als eerste taal (expliciet zo genoemd) — vandaar talen: [en, nl] in die volgorde. Aparte webshop-link (niet de hoofdsite): https://www.bitwizard.nl/shop/, apart vermelden/linken, niet naar toe bouwen. Foto-instructie van Sem: de aangeleverde pandfoto (bedrijfspand.png) als achtergrond op de homepage gebruiken, iets donkerder gemaakt zodat eventuele tekst erover leesbaar blijft (conform bestaande contrast-check-regel in RULES.md). Bedrijf opgericht 1996, ook erkend leerbedrijf (Leerbedrijf ID 100395386, 1 stageplek). Extra bedrijfsnummer genoemd: Safe-nummer NL01455841 (niet KVK, apart vermeld, niet verwarren). Echte reviewquotes (geen sterrenaantal bekend, alleen tekst): 'Eigenaar weet van alles over elektronica', 'Zeer vriendelijke man, leuk bedrijf!', 'Goed'. Geen e-mailadres aangeleverd, alleen een contactformulier op de bestaande site — niet verzinnen.",
+      "notities": "Id in het issue-formulier was letterlijk 'bitwizard-demo' ingevuld, maar de aangeleverde uploads-map heet 'bitwizard' (zonder -demo) en de repo 'svanwijksolutions/bitwizard-demo' bestaat al (bevestigd via search_repositories) — id hier dus teruggebracht naar de kale slug 'bitwizard' zodat uploads/repo-conventie weer klopt (zelfde soort mismatch als eerder gedocumenteerd bij losse repo-namen). Sem noemde expliciet 'de repo is svanwijksolutions/bitwizard-demo', dat komt overeen. Site moet Engels EN Nederlands zijn, Engels als eerste taal (expliciet zo genoemd) — vandaar talen: [en, nl] in die volgorde. Aparte webshop-link (niet de hoofdsite): https://www.bitwizard.nl/shop/, apart vermelden/linken, niet naar toe bouwen. Foto-instructie van Sem: de aangeleverde pandfoto (bedrijfspand.png) als achtergrond op de homepage gebruiken, iets donkerder gemaakt zodat eventuele tekst erover leesbaar blijft (conform bestaande contrast-check-regel in RULES.md). Bedrijf opgericht 1996, ook erkend leerbedrijf (Leerbedrijf ID 100395386, 1 stageplek). Extra bedrijfsnummer genoemd: Safe-nummer NL01455841 (niet KVK, apart vermeld, niet verwarren). Echte reviewquotes (geen sterrenaantal bekend, alleen tekst): 'Eigenaar weet van alles over elektronica', 'Zeer vriendelijke man, leuk bedrijf!', 'Goed'. Geen e-mailadres aangeleverd, alleen een contactformulier op de bestaande site — niet verzinnen. 28-07-2026 (nachtrun): site volledig gebouwd, getest en gepusht (commit b576436), donker technisch ontwerp met merkpaars/cyaan accent, self-hosted lettertypen, EN standaard/NL tweede taalswitcher, tellers (1996/30 jaar/6 vakgebieden), zes diensten in symmetrisch grid, drie echte reviewquotes verwerkt. Bewuste afwijking: GEEN contactformulier op de site, want er is geen e-mailadres aangeleverd en de subagent wilde er terecht geen verzinnen (een mailto-formulier zonder adres of een 'bedankt'-tekst zonder echte verzending zou een verzonnen claim zijn) — de contactpagina is in plaats daarvan een hub met telefoon, adres/route, webshop-link, offerte-uitleg en FAQ's. Pages-deploy bevestigd geslaagd (run voor commit b576436, conclusion success). Status naar done.",
       "fotos_beschikbaar": true,
       "talen": ["en", "nl"],
       "repo_ready": true,
       "repo": "bitwizard-demo",
-      "toegevoegd_op": "2026-07-28"
+      "live_url": "https://svanwijksolutions.github.io/bitwizard-demo/",
+      "pitch_email_klaar": true,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
+      "toegevoegd_op": "2026-07-28",
+      "afgerond_op": "2026-07-28"
     },
     {
       "id": "meijer-administratievediensten",
