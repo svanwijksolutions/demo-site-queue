@@ -112,8 +112,8 @@
       "repo": "cone6",
       "live_url": "https://svanwijksolutions.github.io/cone6/",
       "pitch_email_klaar": true,
-      "pitch_verzonden": false,
-      "pitch_verzonden_op": null,
+      "pitch_verzonden": true,
+      "pitch_verzonden_op": "2026-07-28",
       "toegevoegd_op": "2026-07-27",
       "afgerond_op": "2026-07-27"
     },
