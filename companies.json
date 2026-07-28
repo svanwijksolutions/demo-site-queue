@@ -155,6 +155,54 @@
       "follow_up_op": null,
       "toegevoegd_op": "2026-07-27",
       "afgerond_op": "2026-07-27"
+    },
+    {
+      "id": "bitwizard",
+      "status": "pending",
+      "bedrijfsnaam": "BitWizard B.V.",
+      "branche": "Elektronica-/IT-ingenieursbedrijf (custom elektronicaontwikkeling, Linux-diensten, netwerkdiensten, webshop met Raspberry Pi/Arduino-uitbreidingsborden)",
+      "contactpersoon": null,
+      "contact": {
+        "adres": "Verl. Spiegelmakerstraat 37, 2645 LZ Delfgauw",
+        "telefoon": "+31 (0)15-2049110",
+        "email": null,
+        "kvk": "27239233",
+        "huidige_site": "https://www.bitwizard.nl/"
+      },
+      "regio": "Delfgauw (tussen Den Haag en Rotterdam, bij de A13)",
+      "diensten": ["Custom elektronicaontwikkeling", "Linux-installaties & support", "Linux device driver-ontwikkeling", "Netwerkdiensten (infrastructuur, programmering, firewalls)", "WAN-simulatie", "Webshop met Raspberry Pi/Arduino-uitbreidingsborden"],
+      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": true },
+      "ontwerprichting": "Technisch/degelijk, ingenieursbedrijf-gevoel (UNIX/Linux/netwerken sinds 1996). Geen concrete stijlvoorkeur aangeleverd, Sem vraagt zelf een passend lettertype/layout te kiezen dat bij het bedrijf past.",
+      "notities": "Id in het issue-formulier was letterlijk 'bitwizard-demo' ingevuld, maar de aangeleverde uploads-map heet 'bitwizard' (zonder -demo) en de repo 'svanwijksolutions/bitwizard-demo' bestaat al (bevestigd via search_repositories) — id hier dus teruggebracht naar de kale slug 'bitwizard' zodat uploads/repo-conventie weer klopt (zelfde soort mismatch als eerder gedocumenteerd bij losse repo-namen). Sem noemde expliciet 'de repo is svanwijksolutions/bitwizard-demo', dat komt overeen. Site moet Engels EN Nederlands zijn, Engels als eerste taal (expliciet zo genoemd) — vandaar talen: [en, nl] in die volgorde. Aparte webshop-link (niet de hoofdsite): https://www.bitwizard.nl/shop/, apart vermelden/linken, niet naar toe bouwen. Foto-instructie van Sem: de aangeleverde pandfoto (bedrijfspand.png) als achtergrond op de homepage gebruiken, iets donkerder gemaakt zodat eventuele tekst erover leesbaar blijft (conform bestaande contrast-check-regel in RULES.md). Bedrijf opgericht 1996, ook erkend leerbedrijf (Leerbedrijf ID 100395386, 1 stageplek). Extra bedrijfsnummer genoemd: Safe-nummer NL01455841 (niet KVK, apart vermeld, niet verwarren). Echte reviewquotes (geen sterrenaantal bekend, alleen tekst): 'Eigenaar weet van alles over elektronica', 'Zeer vriendelijke man, leuk bedrijf!', 'Goed'. Geen e-mailadres aangeleverd, alleen een contactformulier op de bestaande site — niet verzinnen.",
+      "fotos_beschikbaar": true,
+      "talen": ["en", "nl"],
+      "repo_ready": true,
+      "repo": "bitwizard-demo",
+      "toegevoegd_op": "2026-07-28"
+    },
+    {
+      "id": "meijer-administratievediensten",
+      "status": "pending",
+      "bedrijfsnaam": "Meijer Administratieve Diensten",
+      "branche": "Administratiekantoor / boekhouder (financiële administratie, loonadministratie, belastingaangiften voor bedrijven en particulieren)",
+      "contactpersoon": null,
+      "contact": {
+        "adres": "Kantoorgracht 1a, 2611 PE Delft",
+        "telefoon": "015 - 2 13 23 03",
+        "email": "info@meijerad.nl",
+        "kvk": "54278228",
+        "huidige_site": "https://www.meijerad.nl/"
+      },
+      "regio": "Delft / Rotterdam / Den Haag / Westland",
+      "diensten": ["Financiële administratie/boekhouding", "Loonadministratie", "BTW-aangiften", "Aangifte inkomstenbelasting", "Aangifte vennootschapsbelasting", "Aangifte erfbelasting", "Toeslagen aanvragen (huur-, zorg-, kinderopvang-, kindgebonden budget)", "Online boekhouden (Snelstart)", "Advies bij opzetten van ondernemingen", "Fiscaal advies"],
+      "reviews": { "sterren": 5, "aantal": null, "quotes_bekend": true },
+      "ontwerprichting": "Zakelijk/betrouwbaar, professioneel administratiekantoor-gevoel. Geen expliciete stijlvoorkeur aangeleverd.",
+      "notities": "Id in het issue-formulier was letterlijk 'meijer-administratievediensten-demo' ingevuld, maar de aangeleverde uploads-map heet 'meijer-administratievediensten' (zonder -demo) en de repo 'svanwijksolutions/meijer-administratievediensten-demo' bestaat al (bevestigd via search_repositories) — id hier dus teruggebracht naar de kale slug zodat uploads/repo-conventie weer klopt (zelfde mismatch als bij BitWizard, zie ook eerder gedocumenteerd probleem met losse repo-namen). BTW-nummer: NL851240185B01. Een YouTube-video moet verwerkt worden onder de 'Online boekhouden'-sectie: https://youtu.be/zQ-MzInzGOY. Foto-instructie van Sem: foto's niet uitrekken, en waar tekst over een foto komt die foto donkerder maken voor leesbaarheid (conform bestaande contrast-check-regel in RULES.md). Tweede telefoonnummer/bereikbaarheid genoemd verderop in de tekst: 06 - 51 879 139, telefonisch bereikbaar ma-vr 10:00-20:00 (dit is een aanvulling op, geen vervanging van, het primaire nummer hierboven). Prijzen inkomstenbelasting-aangifte (expliciet door Sem gevraagd dit generiek te formuleren, niet aan jaartal 2025 te binden): P-formulier €80, met fiscaal partner €115, F-formulier €140, W-formulier op aanvraag, mogelijk toeslag bij arbeidsintensieve aangiftes (bijv. echtscheiding, bijleenregeling, lijfrenteproblematiek). Snelstart-pakketten voor online boekhouden: inOrde €8,50 excl. btw/maand, inStap €14,50 excl. btw/maand (voorkeurspakket). Wat dit bedrijf NIET doet (belangrijk om niet per ongeluk te beloven): stichtingen/verenigingen, VVE, losse/deel-administratie, pensioen-/verzekeringsadvies, hypotheekadvies, schuldhulpverlening. Breed, divers klantenbestand (o.a. bouw, horeca, creatieve sector, advocatuur) mag als algemeen vertrouwenspunt genoemd worden, geen specifieke klantnamen. Gratis parkeren aan de Geerweg tot 12:00, vergunning voor de Paardenmarkt. Echte reviewquotes: Anne Rust (5/5, 'Is heel vlot en kundig.'), Ruben Provencio Kuijk (5/5, 'Top service. Efficiënt en professioneel. Contact gaat soepel.'), Wimoswin mo (5/5) en willem nieuwenhuis (5/5, geen tekst bij die laatste twee). In de vrije tekst zat ook losse, overduidelijk per ongeluk meegeplakte browser-devtools/CSS-output, genegeerd, geen bruikbare info.",
+      "fotos_beschikbaar": true,
+      "talen": ["nl", "en"],
+      "repo_ready": true,
+      "repo": "meijer-administratievediensten-demo",
+      "toegevoegd_op": "2026-07-28"
     }
   ]
 }
