@@ -40,6 +40,8 @@ COLUMNS = [
     ("Pitchmail klaar", 14),
     ("Pitchmail verzonden", 16),
     ("Verzonden op", 14),
+    ("Klantreactie", 18),
+    ("Follow-up op", 14),
     ("Telefoon", 16),
     ("E-mail", 26),
     ("Toegevoegd op", 14),
@@ -48,6 +50,13 @@ COLUMNS = [
 
 SENT_FILL = PatternFill(start_color="D1FAE5", end_color="D1FAE5", fill_type="solid")
 NOT_SENT_FILL = PatternFill(start_color="FEF3C7", end_color="FEF3C7", fill_type="solid")
+
+REACTIE_FILLS = {
+    "klant geworden": PatternFill(start_color="A7F3D0", end_color="A7F3D0", fill_type="solid"),
+    "interesse": PatternFill(start_color="BFDBFE", end_color="BFDBFE", fill_type="solid"),
+    "afgewezen": PatternFill(start_color="FECACA", end_color="FECACA", fill_type="solid"),
+    "nog geen reactie": PatternFill(start_color="E5E7EB", end_color="E5E7EB", fill_type="solid"),
+}
 
 
 def load_companies():
@@ -83,6 +92,8 @@ def build_workbook(companies):
             "Ja" if c.get("pitch_email_klaar") else "Nee",
             "Ja" if c.get("pitch_verzonden") else "Nee",
             c.get("pitch_verzonden_op") or "",
+            c.get("klant_reactie") or "nog geen reactie",
+            c.get("follow_up_op") or "",
             contact.get("telefoon", ""),
             contact.get("email", ""),
             c.get("toegevoegd_op", ""),
@@ -90,6 +101,7 @@ def build_workbook(companies):
         ]
         status_fill = STATUS_FILLS.get(c.get("status"), None)
         sent_col_idx = COLUMNS.index(("Pitchmail verzonden", 16)) + 1
+        reactie_col_idx = COLUMNS.index(("Klantreactie", 18)) + 1
         for col_idx, value in enumerate(values, start=1):
             cell = ws.cell(row=row_idx, column=col_idx, value=value)
             cell.font = BODY_FONT
@@ -99,6 +111,8 @@ def build_workbook(companies):
                 cell.fill = status_fill
             if col_idx == sent_col_idx and c.get("pitch_email_klaar"):
                 cell.fill = SENT_FILL if c.get("pitch_verzonden") else NOT_SENT_FILL
+            if col_idx == reactie_col_idx:
+                cell.fill = REACTIE_FILLS.get(c.get("klant_reactie") or "nog geen reactie", REACTIE_FILLS["nog geen reactie"])
 
     last_row = max(len(companies) + 1, 2)
     last_col_letter = get_column_letter(len(COLUMNS))

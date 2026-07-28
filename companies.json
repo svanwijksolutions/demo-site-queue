@@ -27,6 +27,8 @@
       "pitch_email_klaar": true,
       "pitch_verzonden": false,
       "pitch_verzonden_op": null,
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
       "toegevoegd_op": "2026-07-23",
       "afgerond_op": "2026-07-23"
     },
@@ -56,6 +58,8 @@
       "pitch_email_klaar": true,
       "pitch_verzonden": true,
       "pitch_verzonden_op": "2026-07-27",
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
       "toegevoegd_op": "2026-07-24",
       "afgerond_op": "2026-07-24"
     },
@@ -85,6 +89,8 @@
       "pitch_email_klaar": true,
       "pitch_verzonden": true,
       "pitch_verzonden_op": "2026-07-27",
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
       "toegevoegd_op": "2026-07-24",
       "afgerond_op": "2026-07-25"
     },
@@ -114,6 +120,8 @@
       "pitch_email_klaar": true,
       "pitch_verzonden": true,
       "pitch_verzonden_op": "2026-07-28",
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
       "toegevoegd_op": "2026-07-27",
       "afgerond_op": "2026-07-27"
     },
@@ -143,6 +151,8 @@
       "pitch_email_klaar": true,
       "pitch_verzonden": true,
       "pitch_verzonden_op": "2026-07-28",
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
       "toegevoegd_op": "2026-07-27",
       "afgerond_op": "2026-07-27"
     }
