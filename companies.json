@@ -25,6 +25,8 @@
       "repo": "ziehaarstralen-demo",
       "live_url": "https://svanwijksolutions.github.io/ziehaarstralen-demo/",
       "pitch_email_klaar": true,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
       "toegevoegd_op": "2026-07-23",
       "afgerond_op": "2026-07-23"
     },
@@ -52,6 +54,8 @@
       "repo": "vanoostenvoorvis",
       "live_url": "https://svanwijksolutions.github.io/vanoostenvoorvis/",
       "pitch_email_klaar": true,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
       "toegevoegd_op": "2026-07-24",
       "afgerond_op": "2026-07-24"
     },
@@ -79,6 +83,8 @@
       "repo": "manimania",
       "live_url": "https://svanwijksolutions.github.io/manimania/",
       "pitch_email_klaar": true,
+      "pitch_verzonden": true,
+      "pitch_verzonden_op": "2026-07-27",
       "toegevoegd_op": "2026-07-24",
       "afgerond_op": "2026-07-25"
     },
@@ -106,6 +112,8 @@
       "repo": "cone6",
       "live_url": "https://svanwijksolutions.github.io/cone6/",
       "pitch_email_klaar": true,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
       "toegevoegd_op": "2026-07-27",
       "afgerond_op": "2026-07-27"
     },
@@ -133,6 +141,8 @@
       "repo": "dierenkliniek-animalis",
       "live_url": "https://svanwijksolutions.github.io/dierenkliniek-animalis/",
       "pitch_email_klaar": true,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
       "toegevoegd_op": "2026-07-27",
       "afgerond_op": "2026-07-27"
     }

@@ -66,7 +66,7 @@ Alleen zoveel als er nog nachtbudget over is (zie hierboven). Lees `companies.js
 3. Spawn voor ELK gekozen item, in ÉÉN bericht, parallel, een subagent (`model: "opus"`, zie CONTEXT hierboven) met de VOLLEDIGE inhoud van `BUILD_INSTRUCTIONS.md`, met de bedrijfsgegevens (het hele companies.json-item, inclusief `talen`) ingevuld op de daarvoor bedoelde plek. Elke subagent werkt ALLEEN aan zijn eigen bedrijf/repo, raakt companies.json/pitches NIET zelf aan, rapporteert aan het eind in platte tekst terug.
 4. Wacht op elk rapport, race niet vooruit, verzin geen resultaten.
 5. Verwerk per rapport, één voor één (voorkomt schrijfconflicten):
-   - Succes: schrijf de pitchmail naar `pitches/<id>.md`, werk `companies.json` bij (`status: "done"`, `repo`, `live_url`, `pitch_email_klaar: true`, `afgerond_op`), ververs `overzicht.xlsx`, commit+push.
+   - Succes: schrijf de pitchmail naar `pitches/<id>.md`, werk `companies.json` bij (`status: "done"`, `repo`, `live_url`, `pitch_email_klaar: true`, `pitch_verzonden: false`, `pitch_verzonden_op: null`, `afgerond_op`), ververs `overzicht.xlsx`, commit+push. `pitch_verzonden` (staande sinds 28-07-2026) volgt of Sem de mail al echt heeft verstuurd naar de klant, niet alleen of het concept klaarstaat — dat weet alleen Sem, dus dit veld begint altijd op `false` en wordt alleen door Sem zelf (of op haar expliciete zeggen) op `true` gezet, nooit automatisch.
    - Probleem: zet `status: "needs_review"` met de reden in `notities`, ververs `overzicht.xlsx`, commit+push. Verzin nooit zelf een oplossing namens de subagent.
 
 ## STAP 6 — Afsluiten

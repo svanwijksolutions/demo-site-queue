@@ -38,11 +38,16 @@ COLUMNS = [
     ("Repo", 22),
     ("Live URL", 42),
     ("Pitchmail klaar", 14),
+    ("Pitchmail verzonden", 16),
+    ("Verzonden op", 14),
     ("Telefoon", 16),
     ("E-mail", 26),
     ("Toegevoegd op", 14),
     ("Afgerond op", 14),
 ]
+
+SENT_FILL = PatternFill(start_color="D1FAE5", end_color="D1FAE5", fill_type="solid")
+NOT_SENT_FILL = PatternFill(start_color="FEF3C7", end_color="FEF3C7", fill_type="solid")
 
 
 def load_companies():
@@ -76,12 +81,15 @@ def build_workbook(companies):
             c.get("repo", ""),
             c.get("live_url") or "",
             "Ja" if c.get("pitch_email_klaar") else "Nee",
+            "Ja" if c.get("pitch_verzonden") else "Nee",
+            c.get("pitch_verzonden_op") or "",
             contact.get("telefoon", ""),
             contact.get("email", ""),
             c.get("toegevoegd_op", ""),
             c.get("afgerond_op") or "",
         ]
         status_fill = STATUS_FILLS.get(c.get("status"), None)
+        sent_col_idx = COLUMNS.index(("Pitchmail verzonden", 16)) + 1
         for col_idx, value in enumerate(values, start=1):
             cell = ws.cell(row=row_idx, column=col_idx, value=value)
             cell.font = BODY_FONT
@@ -89,6 +97,8 @@ def build_workbook(companies):
             cell.alignment = Alignment(horizontal="left", vertical="center")
             if col_idx == 5 and status_fill:
                 cell.fill = status_fill
+            if col_idx == sent_col_idx and c.get("pitch_email_klaar"):
+                cell.fill = SENT_FILL if c.get("pitch_verzonden") else NOT_SENT_FILL
 
     last_row = max(len(companies) + 1, 2)
     last_col_letter = get_column_letter(len(COLUMNS))
