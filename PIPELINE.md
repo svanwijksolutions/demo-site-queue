@@ -1,8 +1,10 @@
 # PIPELINE.md — orchestratie-instructies voor de nachtelijke demo-site pipeline
 
-Dit is DE bindende bron voor hoe een nachtelijke pipeline-firing zich moet gedragen. De Routine-triggers zelf bevatten alleen een korte verwijzing hierheen (welk blok van de nacht het is), zodat wijzigingen aan het proces een gewone git-commit zijn in plaats van een bewerking van drie losse, bijna-identieke Routine-prompts.
+Dit is DE bindende bron voor hoe de nachtelijke pipeline-firing zich moet gedragen. De Routine-trigger zelf bevat alleen een korte verwijzing hierheen, zodat wijzigingen aan het proces een gewone git-commit zijn in plaats van een bewerking van de Routine-prompt zelf.
 
-Je bent de ORCHESTRATOR. Bevestigd getest: sessies die via "verse sessie per keer" worden gestart hebben GEEN toegang tot `mcp__github__` of `mcp__Claude_Code_Remote__` tools, daarom draaien de drie nachtblokken in dezelfde bestaande, persistente sessie. Delegeer elk bedrijf/elke sitefix aan een eigen achtergrond-subagent via de Agent-tool (`subagent_type: "general-purpose"`, `run_in_background: true`), subagents erven je volledige toolset inclusief GitHub-tools.
+Je bent de ORCHESTRATOR. Bevestigd getest: sessies die via "verse sessie per keer" worden gestart hebben GEEN toegang tot `mcp__github__` of `mcp__Claude_Code_Remote__` tools, daarom draait de nachtelijke pipeline in dezelfde bestaande, persistente sessie. Delegeer elk bedrijf/elke sitefix aan een eigen achtergrond-subagent via de Agent-tool (`subagent_type: "general-purpose"`, `run_in_background: true`), subagents erven je volledige toolset inclusief GitHub-tools.
+
+**Sinds 28-07-2026 draait dit nog maar één keer per nacht (was: drie blokken om 17:00/22:00/02:00 NL-tijd), en bouwt de pipeline nog maar 1 nieuw bedrijf per nacht (was: 2). Dit is een bewuste keuze van Sem om tokengebruik te verlagen richting haar wekelijkse Claude Pro-limiet — houd je bij elke wijziging aan dit bestand aan die intentie, voeg geen extra firings of hoger budget toe zonder dat Sem dat expliciet vraagt.**
 
 ## CONTEXT (geldt voor elk blok)
 
@@ -12,18 +14,14 @@ Je bent de ORCHESTRATOR. Bevestigd getest: sessies die via "verse sessie per kee
 - **NOOIT** `svanwijksolutions/waterfordscocktails` aanraken.
 - Scan NOOIT automatisch andere repo's in het svanwijksolutions-account op "lege" repo's om daar zomaar demo-code in te zetten. Meerdere repo's in dit account (bijv. bakkerij-peterse, jjgiezeschilderwerk, zosiavalstartherapie, wasserijdewaslijn, tomacoaching, waterfords-cms, saarloosvastgoed) zijn echte, lopende klantprojecten die niets met deze pipeline te maken hebben. Deze pipeline werkt uitsluitend met bedrijven die via `companies.json` (aangemaakt vanuit een "nieuw-bedrijf"-issue) in de wachtrij staan.
 
-## Welk blok is dit?
+## Nachtbudget
 
-De aanroepende Routine-prompt vertelt je welk blok dit is (1, 2 of 3) en hoeveel uur geleden blok 1 vermoedelijk startte. Dat bepaalt alleen het **nachtbudget** hieronder, de rest van de stappen zijn voor elk blok identiek.
+Sem's Claude Pro-tegoed werkt met een rollend 5-uur-venster én een wekelijkse limiet. Deze pipeline draait één keer per nacht, dus is geen lookback-berekening over meerdere firings meer nodig — het budget hieronder geldt gewoon voor deze ene run:
 
-## Nachtbudget (voorkomt dat drie blokken samen te veel verbruiken)
-
-Sem's Claude Pro-tegoed werkt met een rollend 5-uur-venster én een wekelijkse limiet. Drie blokken per nacht mogen NIET drie keer zoveel doen als de oude, enkele nachtrun. Reken daarom bij elk blok eerst uit wat er dit "nacht-venster" (sinds blok 1, dus ruwweg de laatste 5-10 uur, gebruik het aantal uur dat de trigger-prompt meegeeft) al gedaan is, en trek dat af van het totale nachtbudget:
-
-- **Maximaal 2 nieuwe bedrijf-builds per nacht, in totaal over alle drie de blokken samen.** Tel dit door commit-berichten op `companies.json` te doorzoeken die beginnen met `NIEUWE BUILD:` binnen het venster: `git log --since="<N> hours ago" --oneline -- companies.json | grep -c "NIEUWE BUILD:"`. Gebruik voor blok 1 altijd het volledige budget (2), voor blok 2 `--since="6 hours ago"`, voor blok 3 `--since="10 hours ago"`.
-- **Maximaal 3 feedback-issues verwerkt per nacht, in totaal.** Tel dit via `search_issues` met query `repo:svanwijksolutions/demo-site-queue label:feedback state:closed closed:>=<ISO-tijdstip N uur geleden>` (bereken het tijdstip met `date -u -d "-<N> hours" +%Y-%m-%dT%H:%M:%SZ`, zelfde N als hierboven).
-- Is het budget voor een categorie al op: sla die categorie dit blok over, meld dat kort in je afsluitende samenvatting, geen subagent spawnen voor iets waar toch geen budget meer voor is.
-- **Intake-issues verwerken (nieuwe bedrijven in companies.json zetten) telt NIET mee voor dit budget** — dat is alleen tekst parsen en een JSON-bestand bijwerken, geen bouw-werk, mag altijd elk blok.
+- **Maximaal 1 nieuwe bedrijf-build per nacht.**
+- **Maximaal 3 feedback-issues verwerkt per nacht.** Tel dit via `search_issues` met query `repo:svanwijksolutions/demo-site-queue label:feedback state:closed closed:>=<ISO-tijdstip 24 uur geleden>` (bereken het tijdstip met `date -u -d "-24 hours" +%Y-%m-%dT%H:%M:%SZ`) — dit is puur een vangnet tegen dubbel werk bij een handmatige extra trigger, niet iets waar je in de normale, enkele nachtrun tegenaan zou moeten lopen.
+- Is het budget voor een categorie al op: sla die categorie over, meld dat kort in je afsluitende samenvatting, geen subagent spawnen voor iets waar toch geen budget meer voor is.
+- **Intake-issues verwerken (nieuwe bedrijven in companies.json zetten) telt NIET mee voor dit budget** — dat is alleen tekst parsen en een JSON-bestand bijwerken, geen bouw-werk.
 
 ## STAP 1 — Setup
 Zorg voor een actuele lokale clone van `svanwijksolutions/demo-site-queue` (git pull, of add_repo+clone als je 'm nog niet hebt).
@@ -52,7 +50,7 @@ Lijst open issues met label `feedback` op, plus ALTIJD ook open issues waarvan d
 4. Wacht op elk rapport. Succes: reageer op het issue met een korte samenvatting van wat is gedaan en sluit het issue. Probleem: reageer met de reden, laat het issue OPEN staan (blijft zichtbaar als openstaand werk, geen needs_review-mechanisme nodig voor losse feedback-issues).
 
 ## STAP 4 — Footer-retrofit + vastgelopen `in_progress`-check
-Mag elk blok, is idempotent (checkt eerst of er iets te doen is):
+Is idempotent (checkt eerst of er iets te doen is):
 
 - **Footer-retrofit**: voor elke site in `companies.json` met `status: "done"`, controleer of `components/footer.html` al het driedelige `.footer-bottom`-blok heeft (zie `RULES.md`, sectie "Footer"). Ontbreekt dat: voeg het toe met de bestaande copyright-info van die site, commit+push naar de eigen `main`-branch van die site-repo, controleer kort of de Pages-deploy daarna nog slaagt. Heeft een site het al: sla over.
 - **Vastgelopen `in_progress`-check**: staat er een item op `status: "in_progress"` waarvan de laatste wijziging in de git-historie van `companies.json` langer dan 24 uur geleden is (`git log -1 --format=%cI -- companies.json` voor dat specifieke moment, of gewoon `git log --follow -p -- companies.json` doorzoeken op wanneer dat id voor het laatst `in_progress` werd)? Zet het terug naar `status: "needs_review"` met reden "vastgelopen in_progress, waarschijnlijk onderbroken run" in `notities`, ververs `overzicht.xlsx`, commit+push.
@@ -69,4 +67,8 @@ Alleen zoveel als er nog nachtbudget over is (zie hierboven). Lees `companies.js
    - Probleem: zet `status: "needs_review"` met de reden in `notities`, ververs `overzicht.xlsx`, commit+push. Verzin nooit zelf een oplossing namens de subagent.
 
 ## STAP 6 — Afsluiten
-Sluit af met een duidelijke, beknopte samenvatting van dit blok: welke intake-issues verwerkt zijn, welke feedback-issues verwerkt zijn (en welke nog open staan), welke bedrijven gebouwd zijn (met live-URL), wat het nachtbudget nog toeliet versus wat is overgeslagen, en of de footer-/stale-check iets te doen had. Eindig met één vinkje-regel conform `README.md` sectie "Communicatie".
+Sluit af met een duidelijke, beknopte samenvatting van deze nachtrun: welke intake-issues verwerkt zijn, welke feedback-issues verwerkt zijn (en welke nog open staan), welk bedrijf gebouwd is (met live-URL), of het bouwbudget is gebruikt of overgeslagen (en waarom), en of de footer-/stale-check iets te doen had. Eindig met één vinkje-regel conform `README.md` sectie "Communicatie".
+
+## Tokengebruik — algemene hygiëne
+
+Gebruik bij `mcp__github__`-tools (met name `search_issues`, `search_repositories`, `actions_list`) de parameter `minimal_output: true` als je de volledige payload niet nodig hebt — dit voorkomt onnodig grote JSON-dumps in context. Gebruik `list_*`-tools voor simpele, brede opvragingen en `search_*` alleen voor gerichte queries, conform de eigen instructies van de github MCP-server.
