@@ -15,12 +15,24 @@
         "huidige_site": "https://www.ziehaarstralen.nl/"
       },
       "regio": "Rijswijk / Delft / Den Haag",
-      "diensten": ["Bruidskapsels", "Bruidsmake-up", "Extensions", "Haarsieraden/accessoires", "Proefsessie"],
-      "reviews": { "sterren": 5, "aantal": 15, "quotes_bekend": true },
+      "diensten": [
+        "Bruidskapsels",
+        "Bruidsmake-up",
+        "Extensions",
+        "Haarsieraden/accessoires",
+        "Proefsessie"
+      ],
+      "reviews": {
+        "sterren": 5,
+        "aantal": 15,
+        "quotes_bekend": true
+      },
       "ontwerprichting": "Elegant/bruidsstijl, zachte kleuren, rose/creme, sierlijke typografie",
       "notities": "",
       "fotos_beschikbaar": false,
-      "talen": ["nl"],
+      "talen": [
+        "nl"
+      ],
       "repo_ready": true,
       "repo": "ziehaarstralen-demo",
       "live_url": "https://svanwijksolutions.github.io/ziehaarstralen-demo/",
@@ -46,12 +58,24 @@
         "huidige_site": "https://www.vanoostenvoorvis.nl/"
       },
       "regio": "Delft",
-      "diensten": ["Verse Noordzeevis", "Gerookte vis", "Kant-en-klaar/gebakken vis", "Vis bestellen vooraf", "Advies & bereidingstips"],
-      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
+      "diensten": [
+        "Verse Noordzeevis",
+        "Gerookte vis",
+        "Kant-en-klaar/gebakken vis",
+        "Vis bestellen vooraf",
+        "Advies & bereidingstips"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": false
+      },
       "ontwerprichting": "Kustmodern: diep marineblauw/petrol, fris blauw accent, gedurfde sans-serif typografie (Space Grotesk + Inter), geen bruidsstijl",
       "notities": "Geen KVK-nummer bekend, bewust weggelaten i.p.v. verzonnen. Geen recensiedata bekend, geen ratingbadge toegevoegd. Oude vacaturetekst en gedateerde dagaanbieding/prijs (Hollandse Nieuwe) bewust niet overgenomen omdat actualiteit onzeker is. Rijke echte familiegeschiedenis (1923-2015) verwerkt als tijdlijn op geschiedenis.html.",
       "fotos_beschikbaar": true,
-      "talen": ["nl"],
+      "talen": [
+        "nl"
+      ],
       "repo_ready": true,
       "repo": "vanoostenvoorvis",
       "live_url": "https://svanwijksolutions.github.io/vanoostenvoorvis/",
@@ -77,12 +101,26 @@
         "huidige_site": "https://manimania.nl/"
       },
       "regio": "Den Haag / Westland",
-      "diensten": ["Manicure", "Japanse manicure", "Pedicure", "OPI GelColor", "E-Manicure & BIAB", "Nail Extension Treatment", "Nagelart"],
-      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
+      "diensten": [
+        "Manicure",
+        "Japanse manicure",
+        "Pedicure",
+        "OPI GelColor",
+        "E-Manicure & BIAB",
+        "Nail Extension Treatment",
+        "Nagelart"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": false
+      },
       "ontwerprichting": "Fris/vrouwelijk nagelstudio-gevoel, laat de echte OPI-productfoto's en nagelfoto's spreken, geen kunstmatige iconen. Brandquote als mogelijke hero-copy: \"Any woman can wear a great outfit, but it is her nails that make the statement.\" (Tammy Taylor)",
       "notities": "Geen KVK-nummer vermeld op de site, bewust niet verzonnen. Geen openingstijden vermeld, bewust niet verzonnen (evt. 'op afspraak' als algemene formulering, geen concrete tijden). Eigenaresse heeft 18 jaar ervaring, dat is een echt feit en mag gebruikt worden. Social: Facebook https://www.facebook.com/ManiManiamanicure, Instagram https://www.instagram.com/marzimanimania/. Pages-deployment op 25-07-2026 alsnog bevestigd geslaagd ('pages build and deployment', commit f11b482), status daarom naar done. 27-07-2026: Sem leverde de volledige, echte prijslijst aan (uploads/manimania/prijslijst.txt), wordt verwerkt in een prijzen.html op de site, eerdere 'geen prijzen bekend'-aanpak is daarmee achterhaald. 27-07-2026: regio gecorrigeerd, Wateringen valt onder de gemeente Westland en stond ten onrechte als los gebied genoemd, blijft wel het vestigingsadres. Sem leverde 5 extra foto's aan in uploads/manimania/ (Opi-Gelcolor.jpg.webp, e-manicure-1-600x600.jpg, images.jpg, manicure-pedicure-verschil.jpg, nail-art2-1.jpg), feedbackronde verwerkt om ze te herbekijken en juist te plaatsen. 27-07-2026: pitchmail daadwerkelijk verstuurd naar Marzi.",
       "fotos_beschikbaar": true,
-      "talen": ["nl"],
+      "talen": [
+        "nl"
+      ],
       "repo_ready": true,
       "repo": "manimania",
       "live_url": "https://svanwijksolutions.github.io/manimania/",
@@ -108,12 +146,25 @@
         "huidige_site": "https://cone6.nl/"
       },
       "regio": "Den Hoorn / Den Haag Zuid / Westland / Delft",
-      "diensten": ["Workshops (draaien, boetseren, beschilderen, ontbijtsetje maken)", "Keramiekcursus (8 lessen)", "Teambuilding & bedrijfsuitjes", "Stookservice", "Cadeaubonnen"],
-      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": true },
+      "diensten": [
+        "Workshops (draaien, boetseren, beschilderen, ontbijtsetje maken)",
+        "Keramiekcursus (8 lessen)",
+        "Teambuilding & bedrijfsuitjes",
+        "Stookservice",
+        "Cadeaubonnen"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": true
+      },
       "ontwerprichting": "Speels, ambachtelijk, toegankelijk. Zie uploads/cone6/aanvullende-content.txt voor de kleur-/lettertypereferentie van de bestaande site (niet verplicht om over te nemen, RULES.md's regel tegen generieke AI-sjabloon-pairings blijft leidend).",
       "notities": "Volledige FAQ, algemene voorwaarden, privacyverklaring-kernpunten, echte reviewquotes en een pitchmail-specifieke instructie staan in uploads/cone6/aanvullende-content.txt. BTW: NL004881380B20. 27-07-2026 (blok 1): eerste bouwpoging onverwacht gestopt, terug naar pending. 27-07-2026 (blok 1, hervat): site volledig gebouwd, getest en gepusht (commit a5daae7), incl. NL/EN taalswitcher, aparte FAQ-pagina, algemene voorwaarden-pagina, teambuilding-pagina met de 14 echte klantlogo's. Meerdere echte bugs gevonden en gefixt tijdens QA (taalswitcher-crash, header-overflow 900-1024px, horizontale overflow op 320px, te kleine taalswitcher-knoppen, een onbedoeld 'vanaf'-woord bij de stookservice-prijs). Pages-deploy faalde eerst tweemaal op de 'Setup Pages'-stap (zelfde structurele oorzaak als dierenkliniek-animalis: Settings > Pages > Source stond nog niet op 'GitHub Actions' bij deze gloednieuwe repo's). Sem heeft dat zelf handmatig gezet, daarna de bestaande run opnieuw gestart, en de deploy is bevestigd geslaagd (run voor commit a5daae7, conclusion success). Status naar done. 28-07-2026 (eerdere ronde, buiten beeld door contextsamenvatting, ontdekt via git-historie): een eerste feedbackronde is verwerkt in commit e654d9e, maar met wisselende kwaliteit, logo/bannercontrast/marquee wel opgepakt, maar de mailto-verzending van het contactformulier per ongeluk gesloopt (submit deed bewust niets meer, met een TODO) en juist een 'dit is nog niet gekoppeld, mail voorlopig rechtstreeks'-tekst toegevoegd, exact het patroon dat nu in RULES.md verboden is. 28-07-2026 (tweede feedbackronde, ditmaal met een Opus-subagent conform de nieuwe modelkeuze-afspraak): commit eb2a9c7, Pages-deploy bevestigd geslaagd. Eerst zelf ontdekt en teruggedraaid wat er mis was aan e654d9e (mailto hersteld, verboden tekst verwijderd), daarna alle nieuwe feedbackpunten verwerkt: kaarten (features, workshops, keramiekcursus, stookservice, Speels/Ambachtelijk/Toegankelijk) bleken NIET even hoog te zijn door een CSS-bug (`.card { height: 100%; }` binnen een flex-container zonder vaste hoogte viel terug op eigen inhoudshoogte, dus effectief genegeerd), banner-overlay werkte helemaal niet door een verkeerde stapelvolgorde (0% verdonkering i.p.v. de bedoelde overlay, nu gemeten 8:1-11,5:1 contrast), logo bijgesneden (bestand had 584 van 1400px lege ruimte links) plus opgeschoven, organisatielogo's op de homepage nu een doorlopende balk (was een stilstaand rooster), contactpagina-kolommen nu gelijk uitgelijnd. Bijvangst: twee kloppende alt-teksten gecorrigeerd en niet-lazy geladen marquee-logo's (stonden wit tot ze in beeld scrolden). Open, niet aangepast: RULES.md's 'max 1x per foto'-regel wordt met de beschikbare foto's niet gehaald over de hele site heen (6 foto's staan op 2 pagina's), wel uniek per afzonderlijke pagina; met dit fotomateriaal (maar 2 ongebruikte foto's over) niet strikter op te lossen zonder vervangende fotografie. Zie ook FEEDBACK_FIX_INSTRUCTIONS.md-wijziging van 28-07-2026 n.a.v. deze ontdekking.",
       "fotos_beschikbaar": true,
-      "talen": ["nl", "en"],
+      "talen": [
+        "nl",
+        "en"
+      ],
       "repo_ready": true,
       "repo": "cone6",
       "live_url": "https://svanwijksolutions.github.io/cone6/",
@@ -139,12 +190,23 @@
         "huidige_site": "https://dierenkliniekanimalis.nl/"
       },
       "regio": "Delft (Harnaschpolder)",
-      "diensten": ["Algemene dierenartszorg (honden, katten, konijnen, knaagdieren)", "VetPlan (preventief zorgabonnement)", "Pre-anesthetisch bloedonderzoek", "Spoedadvies voor konijnen/knaagdieren"],
-      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": false },
+      "diensten": [
+        "Algemene dierenartszorg (honden, katten, konijnen, knaagdieren)",
+        "VetPlan (preventief zorgabonnement)",
+        "Pre-anesthetisch bloedonderzoek",
+        "Spoedadvies voor konijnen/knaagdieren"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": false
+      },
       "ontwerprichting": "Persoonlijke, warme, vertrouwde uitstraling passend bij 'de dierenarts met de persoonlijke benadering'. Geen verdere stijlvoorkeur aangeleverd.",
       "notities": "Uitgebreide medische/informatieve content (spoedprotocol konijn dat niet eet, voedingsadvies konijnen, VetPlan-uitleg, handige links) staat in uploads/dierenkliniek-animalis/aanvullende-content.txt. Medische instructies daarin letterlijk overgenomen. Geen KVK-nummer of huisnummer aangeleverd, bewust niet verzinnen. Openingstijden ma-vr 8:30-17:00 behalve woensdag (voorlopig gesloten, vermeld als 'tijdelijk'), pauze 12:30-13:00. 27-07-2026 (blok 1): eerste bouwpoging onverwacht gestopt, terug naar pending. 27-07-2026 (blok 1, hervat): site volledig gebouwd en gecontroleerd (commit 2c24e39), acht-staps kwaliteitscontrole doorlopen, conceptpitchmail geschreven naar pitches/dierenkliniek-animalis.md. Pages-deploy faalde eerst op de 'Setup Pages'-stap (Settings > Pages > Source stond nog niet op 'GitHub Actions'). Sem heeft dat zelf handmatig gezet, daarna de bestaande run opnieuw gestart, en de deploy is bevestigd geslaagd (run voor commit 2c24e39, conclusion success). Status naar done. 27-07-2026, feedbackronde verwerkt (commit 0e586ac, Pages-deploy bevestigd geslaagd): echte logo van Sem verwerkt (uploads/dierenkliniek-animalis/images.jpg, achtergrond transparant gemaakt), contactpagina-blokken (openingstijden/contactformulier) even hoog gemaakt, openingstijden overal naar per-dag-weergave, de vier diersoort-iconen (hond/kat/konijn/knaagdier) opnieuw getekend voor herkenbaarheid met 5s-zelftekenanimatie, nav-item 'Konijnen & knaagdieren' hernoemd naar 'Voeding & spoedadvies' plus een verwijzing naar de algemene diensten voor hond/kat op die pagina, LinkedIn-link van Angelina de Jong toegevoegd, en een echte mobiele overflow-bug op de contactpagina (e-mailadres liep over) gevonden en gefixt. Open punt, nog niet besloten: een paar foto's (hero-hond-onderzoek.png, verzorging-cavia.avif, konijnen-groep-eten.jpg, konijn-bij-dierenarts.jpg, kat-nagels-knippen.webp) komen elk meermaals op de site voor, wat ingaat tegen de 'max 1x per foto'-regel, maar dit is pre-existente content en er is geen vervangende fotografie beschikbaar; nog niet zelf aangepast. 28-07-2026, tweede feedbackronde verwerkt (commit 5ce93c69, Pages-deploy bevestigd geslaagd): 'Lees alles over VetPlan'-knop verwijderd (wees naar zichzelf, nergens extra info beschikbaar), VetPlan-disclaimer 'geen verzekering' herontworpen als omkaderd paneel met icoon, footer-openingstijden compacter gemaakt, statische mailto-tekst bij het contactformulier vervangen door een melding die pas na de klik op verzenden verschijnt (RULES.md-eerlijkheidsregel blijft geborgd, plus ontbrekende formuliervalidatie alsnog toegevoegd), contactformulier-blok vult nu netjes zijn hoogte i.p.v. dode witruimte en de mapskaart eronder is nu even breed als openingstijden+contactformulier samen (nieuwe RULES.md-regel van 28-07-2026), en de konijnenvoeding-sectie herontworpen (afbeelding stond afgesneden, nu op ware verhouding met sticky-gedrag). Bijvangst: twee pre-existente bugs gevonden en gefixt, mobiel hamburgermenu waarvan de links als lopende tekst op één regel stonden, en de sluitknop van dat menu die onder het menupaneel lag door een z-index-fout. Foto-hergebruik-punt hierboven staat nog open, niet aangeraakt. 28-07-2026, pitchmail verstuurd. Zelfde dag: Sem meldde dat het favicon/logotje in Google nog het oude placeholder-icoon toonde (een rond, oranje pootje) i.p.v. het echte logo — kleine aanpassing, zelf direct gedaan zonder subagent (commit 716874d, Pages-deploy bevestigd geslaagd): favicon.ico en apple-touch-icon.png opnieuw gegenereerd uit de dog/kat/konijn-silhouetten van het echte logo (assets/images/logo.png), i.p.v. het nooit-vervangen placeholder-icoon uit de eerste bouwpoging.",
       "fotos_beschikbaar": true,
-      "talen": ["nl"],
+      "talen": [
+        "nl"
+      ],
       "repo_ready": true,
       "repo": "dierenkliniek-animalis",
       "live_url": "https://svanwijksolutions.github.io/dierenkliniek-animalis/",
@@ -170,12 +232,26 @@
         "huidige_site": "https://www.bitwizard.nl/"
       },
       "regio": "Delfgauw (tussen Den Haag en Rotterdam, bij de A13)",
-      "diensten": ["Custom elektronicaontwikkeling", "Linux-installaties & support", "Linux device driver-ontwikkeling", "Netwerkdiensten (infrastructuur, programmering, firewalls)", "WAN-simulatie", "Webshop met Raspberry Pi/Arduino-uitbreidingsborden"],
-      "reviews": { "sterren": null, "aantal": null, "quotes_bekend": true },
+      "diensten": [
+        "Custom elektronicaontwikkeling",
+        "Linux-installaties & support",
+        "Linux device driver-ontwikkeling",
+        "Netwerkdiensten (infrastructuur, programmering, firewalls)",
+        "WAN-simulatie",
+        "Webshop met Raspberry Pi/Arduino-uitbreidingsborden"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": true
+      },
       "ontwerprichting": "Technisch/degelijk, ingenieursbedrijf-gevoel (UNIX/Linux/netwerken sinds 1996). Geen concrete stijlvoorkeur aangeleverd, Sem vraagt zelf een passend lettertype/layout te kiezen dat bij het bedrijf past.",
       "notities": "Id in het issue-formulier was letterlijk 'bitwizard-demo' ingevuld, maar de aangeleverde uploads-map heet 'bitwizard' (zonder -demo) en de repo 'svanwijksolutions/bitwizard-demo' bestaat al (bevestigd via search_repositories) — id hier dus teruggebracht naar de kale slug 'bitwizard' zodat uploads/repo-conventie weer klopt (zelfde soort mismatch als eerder gedocumenteerd bij losse repo-namen). Sem noemde expliciet 'de repo is svanwijksolutions/bitwizard-demo', dat komt overeen. Site moet Engels EN Nederlands zijn, Engels als eerste taal (expliciet zo genoemd) — vandaar talen: [en, nl] in die volgorde. Aparte webshop-link (niet de hoofdsite): https://www.bitwizard.nl/shop/, apart vermelden/linken, niet naar toe bouwen. Foto-instructie van Sem: de aangeleverde pandfoto (bedrijfspand.png) als achtergrond op de homepage gebruiken, iets donkerder gemaakt zodat eventuele tekst erover leesbaar blijft (conform bestaande contrast-check-regel in RULES.md). Bedrijf opgericht 1996, ook erkend leerbedrijf (Leerbedrijf ID 100395386, 1 stageplek). Extra bedrijfsnummer genoemd: Safe-nummer NL01455841 (niet KVK, apart vermeld, niet verwarren). Echte reviewquotes (geen sterrenaantal bekend, alleen tekst): 'Eigenaar weet van alles over elektronica', 'Zeer vriendelijke man, leuk bedrijf!', 'Goed'. Geen e-mailadres aangeleverd, alleen een contactformulier op de bestaande site — niet verzinnen. 28-07-2026 (nachtrun): site volledig gebouwd, getest en gepusht (commit b576436), donker technisch ontwerp met merkpaars/cyaan accent, self-hosted lettertypen, EN standaard/NL tweede taalswitcher, tellers (1996/30 jaar/6 vakgebieden), zes diensten in symmetrisch grid, drie echte reviewquotes verwerkt. Bewuste afwijking: GEEN contactformulier op de site, want er is geen e-mailadres aangeleverd en de subagent wilde er terecht geen verzinnen (een mailto-formulier zonder adres of een 'bedankt'-tekst zonder echte verzending zou een verzonnen claim zijn) — de contactpagina is in plaats daarvan een hub met telefoon, adres/route, webshop-link, offerte-uitleg en FAQ's. Pages-deploy bevestigd geslaagd (run voor commit b576436, conclusion success). Status naar done. 30-07-2026: feedbackronde (issue #6) gestart maar halverwege afgebroken doordat Sem's wekelijkse Claude-limiet volliep tijdens de subagent-run (niet dezelfde 529-storing als bij Meijer). Zes punten nog te verwerken: hero-foto-zichtbaarheid, kleurschema donker naar wit/blauw, info@bitwizard.nl verwerken + contactformulier toevoegen, altijd een Home-item in de nav (inmiddels vaste RULES.md-regel), en een bug waarbij de site standaard NL toont i.p.v. het bedoelde EN. Issue #6 blijft open, wordt bij de eerstvolgende run met budget opnieuw opgepakt.",
       "fotos_beschikbaar": true,
-      "talen": ["en", "nl"],
+      "talen": [
+        "en",
+        "nl"
+      ],
       "repo_ready": true,
       "repo": "bitwizard-demo",
       "live_url": "https://svanwijksolutions.github.io/bitwizard-demo/",
@@ -201,15 +277,69 @@
         "huidige_site": "https://www.meijerad.nl/"
       },
       "regio": "Delft / Rotterdam / Den Haag / Westland",
-      "diensten": ["Financiële administratie/boekhouding", "Loonadministratie", "BTW-aangiften", "Aangifte inkomstenbelasting", "Aangifte vennootschapsbelasting", "Aangifte erfbelasting", "Toeslagen aanvragen (huur-, zorg-, kinderopvang-, kindgebonden budget)", "Online boekhouden (Snelstart)", "Advies bij opzetten van ondernemingen", "Fiscaal advies"],
-      "reviews": { "sterren": 5, "aantal": null, "quotes_bekend": true },
+      "diensten": [
+        "Financiële administratie/boekhouding",
+        "Loonadministratie",
+        "BTW-aangiften",
+        "Aangifte inkomstenbelasting",
+        "Aangifte vennootschapsbelasting",
+        "Aangifte erfbelasting",
+        "Toeslagen aanvragen (huur-, zorg-, kinderopvang-, kindgebonden budget)",
+        "Online boekhouden (Snelstart)",
+        "Advies bij opzetten van ondernemingen",
+        "Fiscaal advies"
+      ],
+      "reviews": {
+        "sterren": 5,
+        "aantal": null,
+        "quotes_bekend": true
+      },
       "ontwerprichting": "Zakelijk/betrouwbaar, professioneel administratiekantoor-gevoel. Geen expliciete stijlvoorkeur aangeleverd.",
       "notities": "Id in het issue-formulier was letterlijk 'meijer-administratievediensten-demo' ingevuld, maar de aangeleverde uploads-map heet 'meijer-administratievediensten' (zonder -demo) en de repo 'svanwijksolutions/meijer-administratievediensten-demo' bestaat al (bevestigd via search_repositories) — id hier dus teruggebracht naar de kale slug zodat uploads/repo-conventie weer klopt (zelfde mismatch als bij BitWizard, zie ook eerder gedocumenteerd probleem met losse repo-namen). BTW-nummer: NL851240185B01. Een YouTube-video moet verwerkt worden onder de 'Online boekhouden'-sectie: https://youtu.be/zQ-MzInzGOY. Foto-instructie van Sem: foto's niet uitrekken, en waar tekst over een foto komt die foto donkerder maken voor leesbaarheid (conform bestaande contrast-check-regel in RULES.md). Tweede telefoonnummer/bereikbaarheid genoemd verderop in de tekst: 06 - 51 879 139, telefonisch bereikbaar ma-vr 10:00-20:00 (dit is een aanvulling op, geen vervanging van, het primaire nummer hierboven). Prijzen inkomstenbelasting-aangifte (expliciet door Sem gevraagd dit generiek te formuleren, niet aan jaartal 2025 te binden): P-formulier €80, met fiscaal partner €115, F-formulier €140, W-formulier op aanvraag, mogelijk toeslag bij arbeidsintensieve aangiftes (bijv. echtscheiding, bijleenregeling, lijfrenteproblematiek). Snelstart-pakketten voor online boekhouden: inOrde €8,50 excl. btw/maand, inStap €14,50 excl. btw/maand (voorkeurspakket). Wat dit bedrijf NIET doet (belangrijk om niet per ongeluk te beloven): stichtingen/verenigingen, VVE, losse/deel-administratie, pensioen-/verzekeringsadvies, hypotheekadvies, schuldhulpverlening. Breed, divers klantenbestand (o.a. bouw, horeca, creatieve sector, advocatuur) mag als algemeen vertrouwenspunt genoemd worden, geen specifieke klantnamen. Gratis parkeren aan de Geerweg tot 12:00, vergunning voor de Paardenmarkt. Echte reviewquotes: Anne Rust (5/5, 'Is heel vlot en kundig.'), Ruben Provencio Kuijk (5/5, 'Top service. Efficiënt en professioneel. Contact gaat soepel.'), Wimoswin mo (5/5) en willem nieuwenhuis (5/5, geen tekst bij die laatste twee). In de vrije tekst zat ook losse, overduidelijk per ongeluk meegeplakte browser-devtools/CSS-output, genegeerd, geen bruikbare info. 30-07-2026 (inhaalrun na gemiste run van 29-07-2026): bouwbudget hierop ingezet, twee bouwpogingen na elkaar direct mislukt door '529 Overloaded' (tijdelijke server-overbelasting bij Anthropic, geen inhoudelijk probleem, geen enkele stap van BUILD_INSTRUCTIONS.md is gehaald). Bewust terug naar pending i.p.v. needs_review (dit is geen beslissing voor Sem, gewoon een storing) zodat de eerstvolgende run met bouwbudget het automatisch opnieuw probeert. Faalt het een DERDE keer op rij om dezelfde infra-reden: dan pas needs_review zetten, zie PIPELINE.md.",
       "fotos_beschikbaar": true,
-      "talen": ["nl", "en"],
+      "talen": [
+        "nl",
+        "en"
+      ],
       "repo_ready": true,
       "repo": "meijer-administratievediensten-demo",
       "toegevoegd_op": "2026-07-28"
+    },
+    {
+      "id": "cocon-b-b",
+      "status": "pending",
+      "bedrijfsnaam": "Cocon",
+      "branche": "Bed & Breakfast met culinaire gastvrijheid (gastenverblijf in oprichting, nog geen definitieve locatie)",
+      "contactpersoon": "Ditte Wismeyer en Michael Dijkhuizen",
+      "contact": {
+        "adres": null,
+        "telefoon": null,
+        "email": null,
+        "kvk": null,
+        "huidige_site": "beleefcocon.nl"
+      },
+      "regio": "Zuid-Limburg / Heuvelland (o.a. Gulpen)",
+      "diensten": [
+        "Overnachting (Bed & Breakfast)",
+        "Culinaire gastvrijheid / diner-ervaring",
+        "Borrelplanken en hapjes samenstellen (op aanvraag)"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": false
+      },
+      "ontwerprichting": "Baseer het kleurenpalet op de kleuren van het logo (uploads/cocon-b-b/logo.jpg) gecombineerd met wit; laat het lettertype-gevoel van het logo als richting dienen voor de site-typografie. Sfeer: warm, landelijk-luxe, 'Toscane-in-Zuid-Limburg' (klant noemt dit zelf letterlijk als referentie), culinair/gastvrij, Heuvelland. Expliciete hero-instructie van Sem: de panoramafoto (mzl-tours-tegels-tickli-sunset.jpg) moet direct onder de header op de homepage als achtergrond, iets donkerder gemaakt, met mooie tekst erover heen. Namen van de twee eigenaren (Ditte en Michael) moeten prominent/'bovenin' in een introductie-/over-ons-sectie staan. Contactformulier is expliciet gevraagd.",
+      "notities": "Id in het issue-formulier was 'cocon-b-b' maar de aangeleverde uploads-map heette 'cocon-b&b' (met ampersand) — hernoemd naar uploads/cocon-b-b/ zodat de uploads/id-conventie weer klopt (zelfde soort mismatch als eerder bij meijer-administratievediensten en BitWizard). Bedrijfsnaam is bewust kort 'Cocon' (niet 'Cocon B&B'), zo genoemd door de klant zelf. BELANGRIJK — expliciete vrijheid van Sem: 'Wellicht heb je te weinig info van de b&b bijv prijzen en dat soort dingen, maak van dingen waarvan je denkt: dat heb je echt nodig voor een website van een b&b, maak daar maar gewoon wat van, dan ga ik dat later wel aanpassen naar hetgeen wat klopt. Denk ook aan een emailadres, telnr, adres etc etc. Leuke dingen om te doen in de buurt etc, hoelang dat rijden is etc etc. maak er gewoon een volle website van' — d.w.z. voor DIT bedrijf mag de bouw-subagent ontbrekende praktische info (prijzen, e-mailadres, telefoonnummer, adres, dingen-om-te-doen-in-de-buurt) zelf plausibel invullen als placeholder, expliciet anders dan de normale regel om nooit info te verzinnen. Nog geen definitieve locatie (klant zoekt nog een pand, 'toscane-achtige' regio Zuid-Limburg/Heuvelland) — geen concreet adres beweren. Wel al: eigen Instagram (@beleef.cocon) en Facebook (https://www.facebook.com/profile.php?id=61589452613993) bekend uit de tekst, en de aanstaande website beleefcocon.nl (nog vrijwel leeg volgens klant zelf) als bestaande-site-referentie. KvK-inschrijving is al gedaan (genoemd in tekst) maar geen KvK-nummer vermeld. Leuk detail uit de tekst voor eventueel over-ons: hun hond wordt 'Chef Sfeerbeheer' genoemd. Foto's: logo.jpg (voor kleurenpalet), mzl-tours-tegels-tickli-sunset.jpg (panorama, expliciet voor hero direct onder header, donkerder maken), overige (foto bnb.jpg, foto met hond.jpg, hapjes.jpg, kvk inschrijving.jpg, limburgse wijn.jpg, lokale smaken.jpg) naar eigen inzicht plaatsen — kvk inschrijving.jpg is een foto van het inschrijfmoment, waarschijnlijk geschikt voor over-ons/verhaal, niet als bewijsdocument tonen. notities-bestand in de uploads-map is leeg, geen per-foto plaatsingsinstructie.",
+      "fotos_beschikbaar": true,
+      "talen": [
+        "nl",
+        "en",
+        "de"
+      ],
+      "repo_ready": false,
+      "repo": "cocon-b-b-demo",
+      "toegevoegd_op": "2026-07-31"
     }
   ]
 }
