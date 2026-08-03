@@ -5,52 +5,52 @@ zoekronde. Dit bestand raakt nooit `companies.json` — een kandidaat wordt pas 
 als Sem zelf besluit hem op te pakken, via de normale intake-flow (zie `README.md`, "Een nieuw bedrijf
 toevoegen").
 
-Permanente regel sinds 03-08-2026: kandidaten altijd buiten het Westland, met Den Haag, Rotterdam en
-Delft als voorkeursregio's en Delft als sterkste voorkeur.
+Permanente regels:
+- Sinds 03-08-2026: kandidaten altijd buiten het Westland, met Den Haag, Rotterdam en Delft als
+  voorkeursregio's en Delft als sterkste voorkeur.
+- Sinds 03-08-2026 (tweede aanpassing dezelfde dag): voorkeur voor vakmensen/praktische
+  dienstverleners (denk aan glazenwassers, verhuisbedrijven, installateurs) boven hobbymatige
+  beauty-/creatieve kleinbedrijven (nagelstudio's, wimperstylistes, kleine modewinkeltjes e.d.). Zie
+  toelichting onderaan bij de ronde van vandaag: vakmensen die via Google gevonden willen worden
+  (loodgieters, elektriciens, dakdekkers, hoveniers) hebben vrijwel altijd al een eigen website, juist
+  omdát klanten hen zo zoeken. Hobbymatige/beauty-kleinbedrijven leunen vaker op alleen Instagram of
+  Facebook. Dat betekent dat er domweg minder "geen website"-kandidaten in de vakmensen-categorie te
+  vinden zijn — een kortere lijst met alleen echt geverifieerde vakmensen-kandidaten is dus normaal en
+  beter dan de lijst kunstmatig aanvullen met beauty-/hobbybedrijven.
 
 ---
 
 ## 03-08-2026 — eenmalige extra ronde op verzoek van Sem (buiten het normale zondagschema)
 
 Op verzoek van Sem meteen uitgevoerd in plaats van te wachten tot de eerstvolgende geplande
-zondagochtend-run. 9 kandidaten gevonden (net onder de gebruikelijke 10, zie toelichting onderaan).
-Alle kandidaten liggen buiten het Westland; verdeling is 4x Delft, 2x Den Haag, 3x Rotterdam, conform
-de voorkeur voor Delft.
+zondagochtend-run. Eerste versie van deze ronde bevatte ook enkele beauty-/hobbykandidaten (nagelstudio,
+wimperstyliste, visagiste, kledingwinkeltje, schoonheidssalon); die zijn op verzoek van Sem verwijderd
+en vervangen door vakmensen/praktische dienstverleners. Onderstaande 5 kandidaten zijn de definitieve
+lijst van deze ronde, ook als Excel-bestand aangeleverd (`leads-03-08-2026.xlsx`, niet in git — bewust
+lokaal/los aangeleverd, geen herleidbare koppeling nodig met dit .md-bestand).
 
-1. **Massagepraktijk Delft** — massage (ontspanning, sport, bedrijfsmassage op locatie) — Delft.
+1. **Klooster Glazenwasser** — glazenwasser (zeemleer/telescoopreiniging met osmosewater) — Rotterdam
+   (Huismanstraat 9-J). Facebook: [kloosterglazenwasser](https://www.facebook.com/kloosterglazenwasser/).
+   Geen eigen website gevonden, alleen een Facebook-pagina en vermeldingen in bedrijvengidsen.
+2. **Verhuisservice Rotterdam** — verhuisservice (inpakservice, demontage/montage) — Rotterdam.
+   Instagram: [@verhuisservice.rotterdam](https://www.instagram.com/verhuisservice.rotterdam/). Geen
+   eigen website gevonden, alleen een Instagram-profiel.
+3. **Smithuis Installatiebedrijf** — cv/verwarmingsmonteur (cv-ketels, water- en gasleidingen,
+   vloerverwarming, badkamer-/toiletrenovaties), zelfstandig ondernemer Michael Smithuis, 16 jaar
+   ervaring — Delft (Latijns-Amerikalaan 98). Geen eigen website gevonden, alleen vermeldingen op
+   Werkspot en in bedrijvengidsen.
+4. **Massagepraktijk Delft** — massage (ontspanning, sport, bedrijfsmassage op locatie) — Delft.
    Instagram: [@relaxedmetroos](https://www.instagram.com/relaxedmetroos/). Geen eigen website
    gevonden, alleen een Instagram-profiel.
-2. **Finila brows and lashes** — wimperextensions, wimperlift, wenkbrauwen — Delft (Ooievaarstraat 17).
-   Facebook: [Finilaeyelashes](https://www.facebook.com/Finilaeyelashes/). Geen eigen website
-   gevonden, alleen een Facebook-pagina (wel te boeken via het platform Fresha, maar dat is geen
-   eigen site).
-3. **Agnes — makeup artist Den Haag** — visagiste sinds 1992 (bruidsmake-up, feestmake-up,
-   fotoshoots) — Den Haag. Instagram:
-   [@makeup_artist_den_haag](https://www.instagram.com/makeup_artist_den_haag/). Geen eigen website
-   gevonden, alleen een Instagram-profiel.
-4. **Klooster Glazenwasser** — glazenwasser (zeemleer/telescoopreiniging met osmosewater) —
-   Rotterdam (Huismanstraat 9-J). Facebook:
-   [kloosterglazenwasser](https://www.facebook.com/kloosterglazenwasser/). Geen eigen website
-   gevonden, alleen een Facebook-pagina en vermeldingen in bedrijvengidsen.
 5. **Smakelijk-Kookservice** — kookservice/maaltijden — Den Haag. Facebook:
    [SmakelijkKookservice](https://www.facebook.com/SmakelijkKookservice/). Geen eigen website
    gevonden, alleen een Facebook-pagina.
-6. **Dulce Coco Nailz** — nagelstyliste, werkt vanuit een huisstudio — Rotterdam. Instagram:
-   [@dulcecoconailz](https://www.instagram.com/dulcecoconailz/). Geen eigen website gevonden, alleen
-   een Instagram-profiel.
-7. **Bij Astrid Mode en accessoires** — dameskleding en accessoires, ook grotere maten — Delft (van
-   Foreestweg 6). Instagram: [@bijastridmode](https://www.instagram.com/bijastridmode/). Geen eigen
-   website gevonden, alleen een Instagram-profiel.
-8. **Verhuisservice Rotterdam** — verhuisservice (inpakservice, demontage/montage) — Rotterdam.
-   Instagram: [@verhuisservice.rotterdam](https://www.instagram.com/verhuisservice.rotterdam/). Geen
-   eigen website gevonden, alleen een Instagram-profiel.
-9. **Schoonheidssalon Louise Delft** — schoonheidssalon — Delft. Instagram:
-   [@salon.louise.delft](https://www.instagram.com/salon.louise.delft/). Geen eigen website gevonden,
-   alleen een Instagram-profiel en een vermelding op het boekingsplatform Fresha.
 
-**Toelichting op het aantal:** deze ronde leverde 9 kandidaten op in plaats van de gebruikelijke
-minimaal 10. Bij tientallen andere doorzochte categorieën (o.a. meubelmaker, kunstenaar, hovenier,
-fietsenmaker, kapper, fotograaf) bleek de meest kansrijke kandidaat bij nader zoeken toch een eigen
-website te hebben, in het Westland te liggen, of buiten de drie voorkeursregio's — die zijn dus bewust
-weggelaten in plaats van als vulling meegeteld. Volgende ronde (reguliere zondagochtend-run) telt
-opnieuw vanaf een schone lei.
+**Toelichting op het aantal:** deze ronde levert 5 kandidaten op, minder dan de gebruikelijke minimaal
+10. Reden: na het verzoek om vooral vakmensen/praktische dienstverleners te zoeken in plaats van
+beauty-/hobbybedrijven, bleek bij tientallen doorzochte categorieën (loodgieter, elektricien,
+dakdekker, hovenier, stukadoor, timmerman, meubelstoffeerder, schoonmaakbedrijf, slotenmaker,
+containerverhuur) dat vrijwel elk bedrijf dat serieus opdrachten wil binnenhalen al een eigen website
+heeft — logisch, want klanten zoeken die vakmensen juist via Google. Alleen kandidaten waarbij
+expliciet geen eigen website te vinden was, zijn opgenomen; niets is als vulling toegevoegd. Volgende
+ronde (reguliere zondagochtend-run) telt opnieuw vanaf een schone lei en houdt deze voorkeur aan.
