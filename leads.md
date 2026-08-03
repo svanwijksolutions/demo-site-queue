@@ -5,52 +5,56 @@ zoekronde. Dit bestand raakt nooit `companies.json` — een kandidaat wordt pas 
 als Sem zelf besluit hem op te pakken, via de normale intake-flow (zie `README.md`, "Een nieuw bedrijf
 toevoegen").
 
-Permanente regels:
-- Sinds 03-08-2026: kandidaten altijd buiten het Westland, met Den Haag, Rotterdam en Delft als
-  voorkeursregio's en Delft als sterkste voorkeur.
-- Sinds 03-08-2026 (tweede aanpassing dezelfde dag): voorkeur voor vakmensen/praktische
-  dienstverleners (denk aan glazenwassers, verhuisbedrijven, installateurs) boven hobbymatige
-  beauty-/creatieve kleinbedrijven (nagelstudio's, wimperstylistes, kleine modewinkeltjes e.d.). Zie
-  toelichting onderaan bij de ronde van vandaag: vakmensen die via Google gevonden willen worden
-  (loodgieters, elektriciens, dakdekkers, hoveniers) hebben vrijwel altijd al een eigen website, juist
-  omdát klanten hen zo zoeken. Hobbymatige/beauty-kleinbedrijven leunen vaker op alleen Instagram of
-  Facebook. Dat betekent dat er domweg minder "geen website"-kandidaten in de vakmensen-categorie te
-  vinden zijn — een kortere lijst met alleen echt geverifieerde vakmensen-kandidaten is dus normaal en
-  beter dan de lijst kunstmatig aanvullen met beauty-/hobbybedrijven.
+Permanente regels (zie `PIPELINE.md`, STAP L2 voor het volledige detail):
+- Altijd buiten het Westland. Den Haag/Rotterdam/Delft zijn een lichte voorkeur (Delft het sterkst),
+  maar zoeken is niet meer beperkt tot alleen die drie steden.
+- Voorkeur voor zakelijke/B2B-dienstverleners en vakmensen (glazenwassers, installateurs, bouw-/
+  klusbedrijven, schoonmaak-voor-bedrijven, logistiek) boven zowel hobbymatige beauty-kleinbedrijven
+  ALS kleinschalige persoonlijke consumentendiensten met weinig omzetpotentieel (bijv. massage) — bij
+  B2B/vakmensen zit meer geld.
+- Elke kandidaat wordt individueel geverifieerd met een gerichte zoekopdracht op naam + "website"
+  vóórdat hij wordt opgenomen — een categorie-brede aanname ("dat soort bedrijven heeft meestal geen
+  website") is geen bewijs voor één specifiek bedrijf.
 
 ---
 
 ## 03-08-2026 — eenmalige extra ronde op verzoek van Sem (buiten het normale zondagschema)
 
 Op verzoek van Sem meteen uitgevoerd in plaats van te wachten tot de eerstvolgende geplande
-zondagochtend-run. Eerste versie van deze ronde bevatte ook enkele beauty-/hobbykandidaten (nagelstudio,
-wimperstyliste, visagiste, kledingwinkeltje, schoonheidssalon); die zijn op verzoek van Sem verwijderd
-en vervangen door vakmensen/praktische dienstverleners. Onderstaande 5 kandidaten zijn de definitieve
-lijst van deze ronde, ook als Excel-bestand aangeleverd (`leads-03-08-2026.xlsx`, niet in git — bewust
-lokaal/los aangeleverd, geen herleidbare koppeling nodig met dit .md-bestand).
+zondagochtend-run. Deze ronde had twee eerdere, inmiddels ingetrokken versies:
+1. Eerste versie bevatte beauty-/hobbykandidaten (nagelstudio, wimperstyliste, visagiste,
+   kledingwinkeltje, schoonheidssalon) — verwijderd op verzoek van Sem, die vakmensen/praktische
+   dienstverleners beter vindt.
+2. Tweede versie (verhuisservice, massagepraktijk, kookservice) bleek bij navraag van Sem alle drie
+   gewoon een eigen website te hebben — mijn verificatie was toen niet grondig genoeg (categoriebrede
+   aanname in plaats van per-kandidaat check). Vervangen door een derde ronde met individueel
+   geverifieerde vakmensen/B2B-kandidaten, plus een verschoven voorkeur naar B2B specifiek (waar meer
+   geld te halen valt dan bij bijv. massage).
 
-1. **Klooster Glazenwasser** — glazenwasser (zeemleer/telescoopreiniging met osmosewater) — Rotterdam
-   (Huismanstraat 9-J). Facebook: [kloosterglazenwasser](https://www.facebook.com/kloosterglazenwasser/).
-   Geen eigen website gevonden, alleen een Facebook-pagina en vermeldingen in bedrijvengidsen.
-2. **Verhuisservice Rotterdam** — verhuisservice (inpakservice, demontage/montage) — Rotterdam.
-   Instagram: [@verhuisservice.rotterdam](https://www.instagram.com/verhuisservice.rotterdam/). Geen
-   eigen website gevonden, alleen een Instagram-profiel.
-3. **Smithuis Installatiebedrijf** — cv/verwarmingsmonteur (cv-ketels, water- en gasleidingen,
+**Definitieve lijst van deze ronde — 3 kandidaten, elk individueel geverifieerd (aparte zoekopdracht op
+naam + "website", geen website gevonden):**
+
+1. **Klooster Glazenwasser** — glazenwasser (zeemleer/telescoopreiniging met osmosewater, particulier
+   én zakelijk) — Rotterdam (Huismanstraat 9-J). Facebook:
+   [kloosterglazenwasser](https://www.facebook.com/kloosterglazenwasser/). Contact loopt via een
+   hotmail-adres, geen eigen domein — bevestigd via directory-vermelding die expliciet "geen website"
+   aangeeft.
+2. **Smithuis Installatiebedrijf** — cv-/verwarmingsmonteur (cv-ketels, water- en gasleidingen,
    vloerverwarming, badkamer-/toiletrenovaties), zelfstandig ondernemer Michael Smithuis, 16 jaar
-   ervaring — Delft (Latijns-Amerikalaan 98). Geen eigen website gevonden, alleen vermeldingen op
-   Werkspot en in bedrijvengidsen.
-4. **Massagepraktijk Delft** — massage (ontspanning, sport, bedrijfsmassage op locatie) — Delft.
-   Instagram: [@relaxedmetroos](https://www.instagram.com/relaxedmetroos/). Geen eigen website
-   gevonden, alleen een Instagram-profiel.
-5. **Smakelijk-Kookservice** — kookservice/maaltijden — Den Haag. Facebook:
-   [SmakelijkKookservice](https://www.facebook.com/SmakelijkKookservice/). Geen eigen website
-   gevonden, alleen een Facebook-pagina.
+   ervaring, sinds 2018 — Delft (Latijns-Amerikalaan 98). Geen eigen website gevonden, alleen een
+   profiel op Werkspot en vermeldingen in bedrijvengidsen (Oozo, Telefoonboek.nl, Goudengids,
+   Bedrijvenregister).
+3. **Klusbedrijf K.B.D.** — bouw-/klusbedrijf (complete woningbouw, verbouwingen, badkamers,
+   aanbouwen, keukens, dakramen), KVK 27314753 — regio Den Haag (werkgebied ook Delft, Rotterdam en
+   omstreken). Geen eigen website gevonden, alleen vermeldingen op Dienst.nl en in bedrijvengidsen.
 
-**Toelichting op het aantal:** deze ronde levert 5 kandidaten op, minder dan de gebruikelijke minimaal
-10. Reden: na het verzoek om vooral vakmensen/praktische dienstverleners te zoeken in plaats van
-beauty-/hobbybedrijven, bleek bij tientallen doorzochte categorieën (loodgieter, elektricien,
-dakdekker, hovenier, stukadoor, timmerman, meubelstoffeerder, schoonmaakbedrijf, slotenmaker,
-containerverhuur) dat vrijwel elk bedrijf dat serieus opdrachten wil binnenhalen al een eigen website
-heeft — logisch, want klanten zoeken die vakmensen juist via Google. Alleen kandidaten waarbij
-expliciet geen eigen website te vinden was, zijn opgenomen; niets is als vulling toegevoegd. Volgende
-ronde (reguliere zondagochtend-run) telt opnieuw vanaf een schone lei en houdt deze voorkeur aan.
+**Toelichting op het aantal:** deze ronde levert 3 kandidaten op, ruim onder de gebruikelijke minimaal
+10. Na de correctie naar "vooral B2B, daar zit geld" is uitgebreid gezocht in loodgieter, dakdekker,
+timmerman, stukadoor, schilder, tegelzetter/vloerenlegger, hekwerkbedrijf, schoonmaakbedrijf (zakelijk),
+transportbedrijf/koeriersdienst, lasbedrijf/constructiebedrijf, verhuurbedrijf (bouwmaterieel),
+ongediertebestrijding, bedrijfscatering, kantoorbeplanting en bedrijfsverhuizing — in vrijwel elke
+categorie bleek elk bedrijf dat serieus gevonden wil worden al een eigen website te hebben. Dat is een
+duidelijk, herhaald patroon: hoe zakelijker/waardevoller de branche, hoe groter de kans dat er al in
+een website is geïnvesteerd. Alleen kandidaten met een harde, individuele bevestiging ("geen website
+gevonden bij naam-specifieke zoekopdracht") zijn opgenomen. Volgende ronde (reguliere zondagochtend-
+run) telt opnieuw vanaf een schone lei en houdt deze voorkeur en verificatie-aanpak aan.
