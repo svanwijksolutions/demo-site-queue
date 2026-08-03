@@ -83,6 +83,32 @@ Sluit af met een duidelijke, beknopte samenvatting van dit blok: welke feedback-
 
 ---
 
+# BLOK LEADS — 23:30 NL-tijd, dinsdag en vrijdag
+
+Toegevoegd op verzoek van Sem op 01-08-2026 ("ik wil dat je ook 's nachts opzoek gaat naar bedrijven met een lelijke/verouderde website... maak er een routine van, zoek 2x per week"). Geen subagent nodig voor dit blok, dit is gewoon orchestrator-werk (zoeken + een bestand bijwerken), geen bouw- of kwaliteitskritisch werk zoals STAP B4/F2.
+
+**Harde beperking, ALTIJD zo communiceren in het afsluitende bericht, nooit verzwijgen of omzeilen:** WebFetch/curl naar een willekeurige externe bedrijfswebsite is in deze sandbox geblokkeerd (bevestigd getest 01-08-2026, HTTP 403 op o.a. manimania.nl, consistent met de al langer bekende sandbox-beperking in `README.md`). Dit blok kan dus NOOIT beoordelen of een bestaande website er visueel lelijk of verouderd uitziet, dat zou puur giswerk zijn en dat doen we niet (zie RULES.md, "nooit verzonnen feiten"). In plaats daarvan zoekt dit blok naar een signaal dat WEL betrouwbaar via zoekresultaten vast te stellen is: bedrijven waarvoor geen eigen, vindbare website bestaat (alleen een Instagram-/Facebook-profiel, een vermelding in een bedrijvengids, of helemaal niets). Dat is een eerlijke, andere invalshoek dan "lelijke website" maar wel een geldig signaal dat een website nuttig zou zijn, en verifieerbaar zonder de site te hoeven bekijken.
+
+## STAP L1 — Setup
+Zorg voor een actuele lokale clone van `svanwijksolutions/demo-site-queue` (git pull, of add_repo+clone als je 'm nog niet hebt).
+
+## STAP L2 — Zoeken
+Gebruik `WebSearch` in een paar categorieën die passen bij Sem's bestaande doelgroep (kleine, lokale of jonge ondernemingen: marketingbureaus, creatieve/ambachtelijke bedrijven, horeca/hospitality, persoonlijke dienstverlening, etc., zie ook de branches van de bedrijven die al in `companies.json` staan als richtlijn voor "past bij ons profiel"). Varieer de zoekopdrachten/categorieën per run zodat je niet steeds dezelfde resultaten oplevert. Voor elke kandidaat die opduikt: controleer in de zoekresultaten zelf (geen WebFetch nodig/mogelijk) of er een duidelijke, eigen bedrijfsdomeinnaam bij staat. Geen eigen domein te vinden, alleen social media of een vermelding zonder eigen site: geschikte kandidaat.
+
+Let op: brede "beste/top bedrijven"-achtige zoekopdrachten leveren vaak juist gevestigde, goed vindbare bedrijven op (die hebben per definitie al een website). Zoek specifieker/kleinschaliger (bijv. een branche + kleinere plaatsnaam, of een zoekterm die typisch is voor een net gestart bedrijf) voor een hogere trefkans.
+
+## STAP L3 — Vastleggen
+Verzamel **minimaal 10 kandidaten** per run: bedrijfsnaam, branche, regio (indien bekend), het beste gevonden linkje (social-mediaprofiel of bedrijvengids-vermelding, GEEN "website"-link want die is er per definitie niet), en een korte eerlijke reden (bijv. "geen eigen website gevonden, alleen een Instagram-profiel"). Kom je bij toeval een bedrijf tegen dat WEL een eigen domein heeft maar er in de zoekresultaten al summier op wordt gewezen dat de site verouderd/gebroken is (zeldzaam, maar als het zo expliciet ergens staat, bijv. in een review): mag ook meegenomen worden, met bronvermelding, dat is dan geen giswerk maar een gevonden feit.
+
+Voeg een gedateerde sectie toe aan `leads.md` (root van deze repo, aanmaken als het nog niet bestaat) met de kandidaten van deze run, onder een duidelijke kop met de datum. Commit (bijv. `Leads: 10 nieuwe kandidaten (dd-mm-jjjj)`) en push.
+
+Dit blok schrijft NOOIT naar `companies.json` en bouwt/wijzigt NOOIT een site-repo. Een kandidaat wordt pas een echt pipeline-item als Sem zelf besluit hem op te pakken, via de normale intake-flow (zie README.md, "Een nieuw bedrijf toevoegen").
+
+## STAP L4 — Afsluiten (BLOK LEADS)
+Sluit af met een korte samenvatting: hoeveel kandidaten gevonden, welke categorieën gebruikt, en herhaal kort de beperking hierboven (dit zijn bedrijven zonder vindbare website, geen beoordeelde "lelijke" websites). Eindig met één vinkje-regel conform `README.md` sectie "Communicatie".
+
+---
+
 ## Tokengebruik — algemene hygiëne
 
 Gebruik bij `mcp__github__`-tools (met name `search_issues`, `search_repositories`, `actions_list`) de parameter `minimal_output: true` als je de volledige payload niet nodig hebt — dit voorkomt onnodig grote JSON-dumps in context. Gebruik `list_*`-tools voor simpele, brede opvragingen en `search_*` alleen voor gerichte queries, conform de eigen instructies van de github MCP-server.
