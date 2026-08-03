@@ -354,6 +354,55 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "afgerond_op": "2026-08-01"
+    },
+    {
+      "id": "smithuis-installatie",
+      "status": "pending",
+      "bedrijfsnaam": "Smithuis Installatiebedrijf",
+      "branche": "Installatietechniek / allround klusbedrijf (CV-ketels, water/gas/sanitair, badkamers, zonnepanelen, elektra, klein bouwkundig werk)",
+      "contactpersoon": "Michael Smithuis",
+      "contact": {
+        "adres": null,
+        "telefoon": "06 23800848",
+        "email": "smithuisinstallatie@hotmail.com",
+        "kvk": "69749736",
+        "huidige_site": null
+      },
+      "regio": "Delft e.o. (Zuid-Holland; klanten o.a. uit Rotterdam, Den Haag, Schiedam, Zoetermeer, Vlaardingen)",
+      "diensten": [
+        "CV-ketels vervangen, installeren en verplaatsen",
+        "Water-, gas- en cv-leidingen",
+        "Radiatoren en cv-installaties",
+        "Vloerverwarming",
+        "Zonnepanelen plaatsen",
+        "Complete badkamer- en toiletrenovaties",
+        "Sloop-, demontage- en opruimwerkzaamheden (woning, tuin, kelder)",
+        "Elektra (kleine werkzaamheden)",
+        "Stucadoren",
+        "Schilderwerk (binnen en buiten)"
+      ],
+      "reviews": {
+        "sterren": 4.8,
+        "aantal": 109,
+        "quotes_bekend": true
+      },
+      "ontwerprichting": "Kleuren: wit, rood en blauw (kleuren van het logo, expliciet gevraagd door de klant). Sfeer: 'extreem mooie en stoere website' (letterlijke wens klant). WhatsApp-knop in beeld (floating of prominent) en een belicoon in de header voor snel bellen, expliciet gevraagd. FAQ-sectie met uitleg over de dienstverlening (klant wil hiermee tijd besparen, minder herhaalvragen). Reviews in een lopende balk (marquee) op de homepage — gebruik de meegeleverde Werkspot-reviews (4.8/5, 109 reviews in de issue-tekst), kies een sterke, representatieve selectie (niet alle ~80 letterlijk overnemen), waar mogelijk een review koppelen aan het bijpassende dienst-type (bijv. een CV-ketel-review bij de CV-ketel-dienst). Negeer de ene 1-sterren review (Chan, Rotterdam) in de marquee-selectie — niet representatief en er staat al een weerwoord van Michael bij in de brontekst. Before/after-foto's: klant vraagt expliciet zorgvuldig te kijken welke foto's bij elkaar horen voor een before/after-weergave.",
+      "notities": "Vrij-tekstveld had geen expliciete repo-naam vermeld ondanks aangevinkte checkbox; repo bevestigd via search_repositories als leeg/publiek 'svanwijksolutions/smithuis-installatie' (aangemaakt 2026-08-03, exacte match met het id, geen -demo-suffix). Bedrijfsnaam-veld in het formulier was kort 'Smithuis installatie', maar de klant zelf gebruikt overal 'Smithuis Installatiebedrijf' (ook zo op Werkspot/Facebook) — die volledige naam aangehouden. Uploads-map heette 'smithuis-installatiebedrijf' i.p.v. 'smithuis-installatie' (zelfde soort mismatch als eerder bij cocon-b-b/meijer-administratievediensten/BitWizard) — hernoemd naar uploads/smithuis-installatie/ zodat de uploads/id-conventie weer klopt. Geen straatadres bekend, alleen regio Delft. Geen bestaand eigen website; wel een Werkspot-profiel (https://www.werkspot.nl/profiel/smithuis-installatiebedrijf/reviews) met alle reviews, en een Facebook-pagina 'Smithuis Installatiebedrijf' genoemd voor meer foto's (niet als huidige_site ingevuld, want geen eigen domein). 38 foto's aangeleverd in uploads/smithuis-installatie/, geen bestand duidelijk 'logo' genoemd — bouw-subagent moet zelf een geschikt logo/kleurherkenningspunt uit de foto's halen of anders puur op de gevraagde kleuren (wit/rood/blauw) afgaan. Klant vraagt in de pitchmail te benadrukken: klanten kunnen makkelijker contact opnemen (WhatsApp/bel-knop), de FAQ bespaart Michael tijd op herhaalvragen, en hij kan zelf eenvoudig projecten toevoegen/verwijderen op de site — dit laatste vermeldt de subagent alleen als het bouwproces al een eenvoudig zelf-update-mechanisme oplevert, anders niet verzinnen. notities-bestand in de uploads-map is leeg (1 byte), geen per-foto plaatsingsinstructie.",
+      "fotos_beschikbaar": true,
+      "talen": [
+        "nl",
+        "en"
+      ],
+      "repo_ready": true,
+      "repo": "smithuis-installatie",
+      "toegevoegd_op": "2026-08-03",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
+      "klant_reactie": null,
+      "follow_up_op": null,
+      "afgerond_op": null
     }
   ]
 }
