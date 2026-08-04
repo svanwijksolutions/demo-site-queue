@@ -357,7 +357,7 @@
     },
     {
       "id": "smithuis-installatie",
-      "status": "in_progress",
+      "status": "done",
       "bedrijfsnaam": "Smithuis Installatiebedrijf",
       "branche": "Installatietechniek / allround klusbedrijf (CV-ketels, water/gas/sanitair, badkamers, zonnepanelen, elektra, klein bouwkundig werk)",
       "contactpersoon": "Michael Smithuis",
@@ -387,7 +387,7 @@
         "quotes_bekend": true
       },
       "ontwerprichting": "Kleuren: wit, rood en blauw (kleuren van het logo, expliciet gevraagd door de klant). Sfeer: 'extreem mooie en stoere website' (letterlijke wens klant). WhatsApp-knop in beeld (floating of prominent) en een belicoon in de header voor snel bellen, expliciet gevraagd. FAQ-sectie met uitleg over de dienstverlening (klant wil hiermee tijd besparen, minder herhaalvragen). Reviews in een lopende balk (marquee) op de homepage — gebruik de meegeleverde Werkspot-reviews (4.8/5, 109 reviews in de issue-tekst), kies een sterke, representatieve selectie (niet alle ~80 letterlijk overnemen), waar mogelijk een review koppelen aan het bijpassende dienst-type (bijv. een CV-ketel-review bij de CV-ketel-dienst). Negeer de ene 1-sterren review (Chan, Rotterdam) in de marquee-selectie — niet representatief en er staat al een weerwoord van Michael bij in de brontekst. Before/after-foto's: klant vraagt expliciet zorgvuldig te kijken welke foto's bij elkaar horen voor een before/after-weergave.",
-      "notities": "Vrij-tekstveld had geen expliciete repo-naam vermeld ondanks aangevinkte checkbox; repo bevestigd via search_repositories als leeg/publiek 'svanwijksolutions/smithuis-installatie' (aangemaakt 2026-08-03, exacte match met het id, geen -demo-suffix). Bedrijfsnaam-veld in het formulier was kort 'Smithuis installatie', maar de klant zelf gebruikt overal 'Smithuis Installatiebedrijf' (ook zo op Werkspot/Facebook) — die volledige naam aangehouden. Uploads-map heette 'smithuis-installatiebedrijf' i.p.v. 'smithuis-installatie' (zelfde soort mismatch als eerder bij cocon-b-b/meijer-administratievediensten/BitWizard) — hernoemd naar uploads/smithuis-installatie/ zodat de uploads/id-conventie weer klopt. Geen straatadres bekend, alleen regio Delft. Geen bestaand eigen website; wel een Werkspot-profiel (https://www.werkspot.nl/profiel/smithuis-installatiebedrijf/reviews) met alle reviews, en een Facebook-pagina 'Smithuis Installatiebedrijf' genoemd voor meer foto's (niet als huidige_site ingevuld, want geen eigen domein). 38 foto's aangeleverd in uploads/smithuis-installatie/, geen bestand duidelijk 'logo' genoemd — bouw-subagent moet zelf een geschikt logo/kleurherkenningspunt uit de foto's halen of anders puur op de gevraagde kleuren (wit/rood/blauw) afgaan. Klant vraagt in de pitchmail te benadrukken: klanten kunnen makkelijker contact opnemen (WhatsApp/bel-knop), de FAQ bespaart Michael tijd op herhaalvragen, en hij kan zelf eenvoudig projecten toevoegen/verwijderen op de site — dit laatste vermeldt de subagent alleen als het bouwproces al een eenvoudig zelf-update-mechanisme oplevert, anders niet verzinnen. notities-bestand in de uploads-map is leeg (1 byte), geen per-foto plaatsingsinstructie.",
+      "notities": "Vrij-tekstveld had geen expliciete repo-naam vermeld ondanks aangevinkte checkbox; repo bevestigd via search_repositories als leeg/publiek 'svanwijksolutions/smithuis-installatie' (aangemaakt 2026-08-03, exacte match met het id, geen -demo-suffix). Bedrijfsnaam-veld in het formulier was kort 'Smithuis installatie', maar de klant zelf gebruikt overal 'Smithuis Installatiebedrijf' (ook zo op Werkspot/Facebook) — die volledige naam aangehouden. Uploads-map heette 'smithuis-installatiebedrijf' i.p.v. 'smithuis-installatie' (zelfde soort mismatch als eerder bij cocon-b-b/meijer-administratievediensten/BitWizard) — hernoemd naar uploads/smithuis-installatie/ zodat de uploads/id-conventie weer klopt. Geen straatadres bekend, alleen regio Delft. Geen bestaand eigen website; wel een Werkspot-profiel (https://www.werkspot.nl/profiel/smithuis-installatiebedrijf/reviews) met alle reviews, en een Facebook-pagina 'Smithuis Installatiebedrijf' genoemd voor meer foto's (niet als huidige_site ingevuld, want geen eigen domein). 38 foto's aangeleverd in uploads/smithuis-installatie/, geen bestand duidelijk 'logo' genoemd — bouw-subagent moet zelf een geschikt logo/kleurherkenningspunt uit de foto's halen of anders puur op de gevraagde kleuren (wit/rood/blauw) afgaan. Klant vraagt in de pitchmail te benadrukken: klanten kunnen makkelijker contact opnemen (WhatsApp/bel-knop), de FAQ bespaart Michael tijd op herhaalvragen, en hij kan zelf eenvoudig projecten toevoegen/verwijderen op de site — dit laatste vermeldt de subagent alleen als het bouwproces al een eenvoudig zelf-update-mechanisme oplevert, anders niet verzinnen. notities-bestand in de uploads-map is leeg (1 byte), geen per-foto plaatsingsinstructie. UPDATE 04-08-2026 (build): succesvol gebouwd door bouw-subagent, commit c749bd4, Pages-deploy bevestigd geslaagd (via Actions API, live-URL zelf niet bezocht conform regel). Van de 38 aangeleverde foto's waren er 19 bruikbaar (overige 19 waren 96x96px thumbnails); before/after-paren gevonden voor de badkamerrenovatie (drieluik, klant had zelf al 'Van dit.../Naar.../Dit!' als serie gefotografeerd) en twee dakkapelprojecten. Geen logobestand aangetroffen tussen de foto's, dus een beeldmerk (huis met rode/blauwe golven) zelf als SVG getekend in de gevraagde kleuren. Reviews: tien curated, letterlijke Werkspot-quotes verwerkt in een testimonials-marquee, elk gekoppeld aan het bijpassende diensttype. NL/EN taalswitcher gebouwd (356 vertaalsleutels), inclusief vertaalde reviews met bronvermelding. Geen adres, openingstijden of prijzen bekend, dus bewust niet op de site of in de pitchmail gezet. Zelf-projecten-toevoegen (door klant gevraagd) is NIET geïmplementeerd, want de site heeft geen CMS; bewust niet in de pitchmail opgenomen. Pitchmail staat klaar in pitches/smithuis-installatie.md, nog niet verzonden.",
       "fotos_beschikbaar": true,
       "talen": [
         "nl",
@@ -396,13 +396,13 @@
       "repo_ready": true,
       "repo": "smithuis-installatie",
       "toegevoegd_op": "2026-08-03",
-      "live_url": null,
-      "pitch_email_klaar": false,
+      "live_url": "https://svanwijksolutions.github.io/smithuis-installatie/",
+      "pitch_email_klaar": true,
       "pitch_verzonden": false,
       "pitch_verzonden_op": null,
-      "klant_reactie": null,
+      "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": null
+      "afgerond_op": "2026-08-04"
     }
   ]
 }
