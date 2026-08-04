@@ -67,3 +67,12 @@ Met vriendelijke groet,
 Sem van Wijk
 S. van Wijk Solutions
 https://svanwijksolutions.nl
+
+---
+
+## Instagram-bericht (DM, kort)
+
+Hoi Ditte en Michael! 👋 Ik kwam jullie Cocon-plannen tegen en heb voor de lol een gratis proefwebsite gebouwd, met de zonsondergang over het Heuvelland bovenaan, drie talen en een boekingsoverzicht erin: https://svanwijksolutions.github.io/cocon-b-b/
+
+Kost niks, gewoon even kijken. Leuk? Laat het weten, dan werken we 'm samen verder af 🌿
+
