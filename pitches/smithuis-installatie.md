@@ -64,3 +64,12 @@ Met vriendelijke groet,
 Sem van Wijk
 S. van Wijk Solutions
 https://svanwijksolutions.nl
+
+---
+
+## Instagram-bericht (DM, kort)
+
+Hoi Michael! 👋 Zag dat Smithuis Installatiebedrijf nog geen eigen website heeft, alleen je Werkspot- en Facebook-profiel. Heb voor de grap een gratis proefversie gebouwd, met je 4,8 uit 109 reviews erop en een directe WhatsApp-knop: https://svanwijksolutions.github.io/smithuis-installatie/
+
+Gewoon even kijken, kost niks. Leuk? Laat het weten, dan maken we 'm verder af 🔧
+
