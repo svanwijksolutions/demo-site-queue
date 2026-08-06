@@ -494,6 +494,52 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "afgerond_op": null
+    },
+    {
+      "id": "wisselbekers",
+      "status": "pending",
+      "bedrijfsnaam": "Wisselbekers",
+      "branche": "Duurzaam retour-/recyclingsysteem voor kartonnen koffiebekers (B2B, initiatief van Wildenberg Recycling)",
+      "contactpersoon": null,
+      "contact": {
+        "adres": "De Werf 50, 2544 EK Den Haag",
+        "telefoon": "070-5113662",
+        "email": "info@wisselbekers.nl",
+        "kvk": null,
+        "huidige_site": "https://www.wisselbekers.nl/"
+      },
+      "regio": "Den Haag",
+      "diensten": [
+        "Levering kartonnen bekers (evt. met eigen bedrukking/logo)",
+        "Bekerbox inzamelsysteem",
+        "Wisselen: gelijktijdig leveren nieuwe bekers + retour ophalen gebruikte bekers",
+        "Recyclen naar de papier- en kartonindustrie",
+        "Rolcontainers voor tijdelijke opslag",
+        "Bekerhouder en Bekertray",
+        "Verklaring van Recycling voor milieuzorgsysteem"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": false
+      },
+      "ontwerprichting": "Kleuren groen, wit, blauw. Titel/hero-tekst: 'Hét duurzame retoursysteem voor drinkbekers'.",
+      "notities": "Repo-checkbox in het issue staat UNCHECKED, dus repo_ready blijft false totdat Sem een lege repo aanmaakt en dat meldt — dit item is bij deze verwerking NIET bouwbaar, ongeacht wachtrij-positie. Sem vraagt expliciet de pijnpunten van de HUIDIGE site te benoemen in de pitchmail: verouderd (dateert uit 2014), de YouTube-video op de homepage (https://www.youtube.com/watch?v=iQpDW6Lx80M) werkt niet meteen/goed, het contactformulier is verouderd, en er is geen Engelse versie (nieuwe site moet dat wel hebben, vandaar talen nl+en ondanks dat de brontekst zelf nog geen Engels bevat). Wisselbekers.nl won de MKB Den Haag Duurzaamheidsprijs 2014 (People/Planet/Profit/Innovatie/Balans) — sterk vertrouwenspunt, mag prominent. Bekers: FSC-gecertificeerd karton met recyclebare PE-coating, 180cc en 200cc, bedrukking al vanaf 10.000 stuks bij ca. 2-3 weken levertijd na ontwerp-goedkeuring (kleinere oplages ook mogelijk). Volumevoorbeeld voor content: een gewone vuilniszak vat ca. 100 bekers, een volle Bekerbox ca. 800 (scheelt al snel 7 vuilniszakken), een rolcontainer (770 liter, 8 dozen) vat ca. 6400 bekers (ruim 60 vuilniszakken). FAQ-content beschikbaar (drie vragen+antwoorden): verschil PLA- vs PE-coating (biologisch afbreekbaar vs. de eigen PE-bekers), minimale oplage voor eigen opdruk, en of de bekers in gangbare koffieautomaten passen. Social: Facebook (http://www.facebook.com/wisselbekers) en LinkedIn (https://www.linkedin.com/company/wisselbekers-nl). Rolcontainer-optie (770 liter) is alleen beschikbaar in de regio Den Haag, dat als voorbehoud vermelden i.p.v. weglaten. Geen KvK-nummer aangeleverd, bewust niet verzinnen. notities.txt in de uploads-map is leeg (1 byte).",
+      "fotos_beschikbaar": true,
+      "talen": [
+        "nl",
+        "en"
+      ],
+      "repo_ready": false,
+      "repo": null,
+      "toegevoegd_op": "2026-08-06",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
+      "afgerond_op": null
     }
   ]
 }
