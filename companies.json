@@ -450,6 +450,50 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "afgerond_op": null
+    },
+    {
+      "id": "garagebedrijf-dennis",
+      "status": "pending",
+      "bedrijfsnaam": "Garagebedrijf Dennis",
+      "branche": "Autogarage / RDW-erkend APK-keuringsstation (reparaties, onderhoud, alle merken)",
+      "contactpersoon": "Dennis",
+      "contact": {
+        "adres": "Goudlaan 63, 2544 EG Den Haag",
+        "telefoon": "070-3080596 / 06-16724822",
+        "email": null,
+        "kvk": null,
+        "huidige_site": null
+      },
+      "regio": "Den Haag",
+      "diensten": [
+        "APK-keuring (RDW-erkend)",
+        "Reparaties (alle merken)",
+        "Grote/kleine servicebeurt",
+        "Regulier onderhoud",
+        "Airco-installatie en -reparatie"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": true
+      },
+      "ontwerprichting": "Stoer, kleuren rood en zwart met witte tekst. Logo altijd op een zwarte achtergrond plaatsen. Achtergrond zwart met een grijze honingraat-patroon (motorsport-achtig) door de hele site heen, ter vervanging van de honingraat-achtergrond van de huidige site. RDW-erkenning met een icoon benadrukken. Sem vraagt expliciet de Engelse taal in de pitchmail te benadrukken, o.a. omdat er ook Engelstalige reviews tussen staan.",
+      "notities": "Openingstijden uit de brontekst: ma-vr 09:00-18:00, za 10:00-14:00 (zondag niet genoemd, dus gesloten aanhouden, niet verzinnen). Zeer veel Google-reviews aangeleverd (tientallen), overwegend kort en positief; twee afwijkende noteren om NIET te gebruiken: Valentin Buia (reactie eigenaar 'weet niet waarom u mij 3 sterren geeft, heb uw auto niet eens gemaakt' — duidt op mogelijk verkeerd gekoppelde review) en de losse opmerking van Sem dat het sterren-icoontje in de geplakte tekst altijd 1 te veel telt (bijv. '6 iconen' betekent eigenlijk 5 sterren) — dit is puur een kanttekening bij de brontekst, geen bruikbaar content-detail, niet op de site zetten. Kies voor de marquee een representatieve selectie van de sterkste/duidelijkste quotes (net als bij eerdere bedrijven), niet alle tientallen. Logo staat in de uploads-map; verder veel automerk-logo's (Cupra, Dacia, Renault, SEAT, Tesla, Volvo, Audi, BMW, Mercedes, en vele losse jpg's) aangeleverd om te suggereren dat alle merken hier terecht kunnen — als 'merken waar wij aan werken'-sectie of vergelijkbaar gebruiken, geen extern logo-gebruik zonder deze bronbestanden. rdw-erkend1.jpg is het RDW-erkenningsicoon. Geen e-mailadres of KvK-nummer aangeleverd, bewust niet verzinnen. notities.txt in de uploads-map is leeg (1 byte).",
+      "fotos_beschikbaar": true,
+      "talen": [
+        "nl",
+        "en"
+      ],
+      "repo_ready": true,
+      "repo": "garagebedrijf-dennis",
+      "toegevoegd_op": "2026-08-06",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
+      "afgerond_op": null
     }
   ]
 }
