@@ -403,6 +403,53 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "afgerond_op": "2026-08-04"
+    },
+    {
+      "id": "schilderpoort-ijzerwaren",
+      "status": "pending",
+      "bedrijfsnaam": "Schilperoort IJzerwaren",
+      "branche": "IJzerwarenwinkel (sleutelservice, verlichting, gereedschappen, verf, tuinartikelen, naambordjes)",
+      "contactpersoon": "Onno Schilperoort en Remco Schilperoort",
+      "contact": {
+        "adres": "Prins Johan Friso Promenade 150, 2284 DC Rijswijk (filiaal Bogaard) en Herenstraat 72, 2282 BZ Rijswijk (filiaal Herenstraat) — twee vestigingen",
+        "telefoon": "070-3935325 (Bogaard) / 070-3954117 (Herenstraat)",
+        "email": "bogaard@schilperoort-ijzerwaren.nl / herenstraat@schilperoort-ijzerwaren.nl",
+        "kvk": null,
+        "huidige_site": "https://schilperoort-ijzerwaren.nl/"
+      },
+      "regio": "Rijswijk",
+      "diensten": [
+        "Sleutelservice (huis, brievenbus, kluis, fiets, motor, scooter, auto met transponder)",
+        "Verlichting (halogeen, led, gloeilampen, tl-verlichting)",
+        "Gereedschappen (Neo, Topex, KWB, Verto)",
+        "Verfartikelen",
+        "Stofzuigerzakken",
+        "Horren",
+        "Naambordjes (eigen online bestelservice)",
+        "Tuinartikelen"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": true
+      },
+      "ontwerprichting": "Kleuren behouden zoals nu: lichtblauw, wit, zwart. Reviews in een lopende balk (marquee) weergeven, met een Google-icoon erboven/erbij (klant voegt dit icoon zelf toe aan de foto's). Een aparte FAQ-pagina toevoegen.",
+      "notities": "BELANGRIJK naamgeving: het issue-formulier en de id/uploads-map spellen het bedrijf als 'Schilderpoort', maar de echte bedrijfsnaam en domeinnaam zijn 'Schilperoort' (schilperoort-ijzerwaren.nl, eigenaren Onno en Remco Schilperoort) — waarschijnlijk een verspreking/typefout van Sem bij het aanmaken van het issue. Id/uploads-map/repo-naam zijn onderling consistent als 'schilderpoort-ijzerwaren' (bevestigd via search_repositories, svanwijksolutions/schilderpoort-ijzerwaren bestaat al leeg), dus die kale slug blijft ongewijzigd staan zodat de conventie klopt, maar de bouw-subagent moet de ECHTE bedrijfsnaam 'Schilperoort IJzerwaren' overal op de site gebruiken, niet 'Schilderpoort'. Sem vraagt expliciet in de pitchmail te benadrukken dat de nieuwe site ook in het Engels is (huidige site heeft dat niet); rondom de Bogaard wonen relatief veel mensen met een niet-Nederlandse achtergrond, dus dat is een concrete meerwaarde om te noemen. Vakantiesluiting Herenstraat: 18-26 september 2026 (weer open 29-9-2026), evt. als 'zie huidige openingstijden'-voorbehoud vermelden i.p.v. een tijdelijke sluiting als permanent te presenteren. Losse link naar naambordje-bestelservice (extern domein): https://1034000.naambord.nl/ — als externe link behouden, niet naar toe bouwen. Reviews: overwegend positief, een paar kritische (Christian Burger over sleutels op maat, Peter Slootweg over prijs bizon-rubber) — NIET gebruiken in de marquee-selectie, kies representatieve positieve quotes zoals bij eerdere bedrijven. Foto's in uploads/schilderpoort-ijzerwaren/: winkelfoto's (winkel_buiten.webp, wandvooraanzicht2.jpg), locatiefoto's van beide panden, een google-reviews.png screenshot (niet direct als contentbron gebruiken, quotes zijn al uitgetypt in dit veld), een logo (logo-altijdopwitteachtergrond.jpg) en drie merklogo's (neotools-merk1.png, topex-merk2.jpg, verto-merk3.png, deltafix-merk4.png) voor een 'merken die wij verkopen'-sectie. notities.txt in de uploads-map is leeg (1 byte).",
+      "fotos_beschikbaar": true,
+      "talen": [
+        "nl",
+        "en"
+      ],
+      "repo_ready": true,
+      "repo": "schilderpoort-ijzerwaren",
+      "toegevoegd_op": "2026-08-06",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
+      "afgerond_op": null
     }
   ]
 }
