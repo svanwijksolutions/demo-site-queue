@@ -540,6 +540,50 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "afgerond_op": null
+    },
+    {
+      "id": "geo",
+      "status": "pending",
+      "bedrijfsnaam": "Geo B.V.",
+      "branche": "Oliehandel / bunkerbedrijf (gasolie, smeeroliën, scheepsbenodigdheden) voor visserij, zeevaart, offshore en binnenvaart",
+      "contactpersoon": null,
+      "contact": {
+        "adres": "Augustapolder 34, 2992 SR Barendrecht (kantoor) — daarnaast magazijn/bunkering Deltahaven 6, 3251 LC Stellendam en bunkering Scheveningen",
+        "telefoon": "078-6772682 (kantoor Barendrecht) / 06-53487162 (bunkerboot Stellendam) / 06-25593581 (bunkerboot Scheveningen)",
+        "email": "info@geobv.nl",
+        "kvk": null,
+        "huidige_site": "https://www.geobv.nl/"
+      },
+      "regio": "Barendrecht / Stellendam / Scheveningen (Zuid-Holland, havens en scheepvaart)",
+      "diensten": [
+        "24-uurs bunkerservice met eigen bunkerschepen",
+        "Levering gasolie/diesel (visserij, sportvisserij, zeevaart, offshore, binnenvaart, pleziervaart)",
+        "Smeeroliën van A-merken (o.a. Esso-Mobil, Shell)",
+        "Petroleum, gasolie en smeermiddelen voor landbouw en industrie",
+        "Scheepsbenodigdheden (verf International/Sigma/Shipcoat, ontvetters, filters Mitsubishi/Fleetguard, reddings-/drijfmiddelen Secu, stuurstoelen)"
+      ],
+      "reviews": {
+        "sterren": null,
+        "aantal": null,
+        "quotes_bekend": false
+      },
+      "ontwerprichting": "Kleuren behouden: blauw, rood, wit.",
+      "notities": "Sem noemt expliciete pijnpunten van de huidige site die in de pitchmail benoemd mogen worden: ziet er niet uit, bedrijfshistorie niet bijgewerkt, lelijk/slecht leesbaar, sterk gedateerd, en niet mobielvriendelijk (dezelfde layout als op pc, dus slecht leesbaar op telefoon). Certificeringen als vertrouwenspunt: ISO 9001:2015 en ISCC EU (erkende hernieuwbare brandstoffen) — logo/certificaatafbeeldingen staan in de uploads-map (iso-certificaat.png, iscc-eu-certificaat.png). Drie vestigingen/contactpunten, elk met eigen telefoonnummer, apart vermelden i.p.v. samenvoegen tot één adres. Sem vraagt expliciet om de bestaande links naar productcatalogi en veiligheidsinformatiebladen (MSDS) te behouden: product catalogus Esso-Mobil en scheepsbenodigdheden (PDF's op geobv.nl), MSDS-bladen voor gasolie/Mobil-producten/Shell Alvania EP2 (ook PDF's op geobv.nl), en de algemene voorwaarden (eveneens PDF op geobv.nl) — deze bestaan niet in de uploads-map, dus als externe links naar het bestaande geobv.nl-domein laten staan, niet zelf een PDF verzinnen of hosten. Uitgebreide bedrijfsvoering-tekst over kwaliteit/veiligheid/milieu/ARBO/sociale verantwoordelijkheid/business ethiek is beschikbaar maar erg lang en corporate; een ingekorte, wervende versie gebruiken past beter bij een MKB-demosite dan de volledige tekst letterlijk over te nemen. Geen KvK-nummer aangeleverd, bewust niet verzinnen. Foto's in uploads/geo/: havenfoto (Scheveningen), twee (bijna identieke) scheepsfoto's, een vrachtwagenfoto (met een tweede variant '(2)'), een vat-olie-foto, en de twee certificaat-afbeeldingen. notities.txt in de uploads-map is leeg (1 byte).",
+      "fotos_beschikbaar": true,
+      "talen": [
+        "nl",
+        "en"
+      ],
+      "repo_ready": true,
+      "repo": "geo",
+      "toegevoegd_op": "2026-08-06",
+      "live_url": null,
+      "pitch_email_klaar": false,
+      "pitch_verzonden": false,
+      "pitch_verzonden_op": null,
+      "klant_reactie": "nog geen reactie",
+      "follow_up_op": null,
+      "afgerond_op": null
     }
   ]
 }
