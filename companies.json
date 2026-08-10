@@ -453,7 +453,7 @@
     },
     {
       "id": "garagebedrijf-dennis",
-      "status": "in_progress",
+      "status": "done",
       "bedrijfsnaam": "Garagebedrijf Dennis",
       "branche": "Autogarage / RDW-erkend APK-keuringsstation (reparaties, onderhoud, alle merken)",
       "contactpersoon": "Dennis",
@@ -462,7 +462,7 @@
         "telefoon": "070-3080596 / 06-16724822",
         "email": null,
         "kvk": null,
-        "huidige_site": null
+        "huidige_site": "http://garagebedrijfdennis.nl/ (bestaat, inhoud niet te controleren door sandbox-netwerkblokkade)"
       },
       "regio": "Den Haag",
       "diensten": [
@@ -478,7 +478,7 @@
         "quotes_bekend": true
       },
       "ontwerprichting": "Stoer, kleuren rood en zwart met witte tekst. Logo altijd op een zwarte achtergrond plaatsen. Achtergrond zwart met een grijze honingraat-patroon (motorsport-achtig) door de hele site heen, ter vervanging van de honingraat-achtergrond van de huidige site. RDW-erkenning met een icoon benadrukken. Sem vraagt expliciet de Engelse taal in de pitchmail te benadrukken, o.a. omdat er ook Engelstalige reviews tussen staan.",
-      "notities": "Openingstijden uit de brontekst: ma-vr 09:00-18:00, za 10:00-14:00 (zondag niet genoemd, dus gesloten aanhouden, niet verzinnen). Zeer veel Google-reviews aangeleverd (tientallen), overwegend kort en positief; twee afwijkende noteren om NIET te gebruiken: Valentin Buia (reactie eigenaar 'weet niet waarom u mij 3 sterren geeft, heb uw auto niet eens gemaakt' — duidt op mogelijk verkeerd gekoppelde review) en de losse opmerking van Sem dat het sterren-icoontje in de geplakte tekst altijd 1 te veel telt (bijv. '6 iconen' betekent eigenlijk 5 sterren) — dit is puur een kanttekening bij de brontekst, geen bruikbaar content-detail, niet op de site zetten. Kies voor de marquee een representatieve selectie van de sterkste/duidelijkste quotes (net als bij eerdere bedrijven), niet alle tientallen. Logo staat in de uploads-map; verder veel automerk-logo's (Cupra, Dacia, Renault, SEAT, Tesla, Volvo, Audi, BMW, Mercedes, en vele losse jpg's) aangeleverd om te suggereren dat alle merken hier terecht kunnen — als 'merken waar wij aan werken'-sectie of vergelijkbaar gebruiken, geen extern logo-gebruik zonder deze bronbestanden. rdw-erkend1.jpg is het RDW-erkenningsicoon. Geen e-mailadres of KvK-nummer aangeleverd, bewust niet verzinnen. notities.txt in de uploads-map is leeg (1 byte).",
+      "notities": "Openingstijden uit de brontekst: ma-vr 09:00-18:00, za 10:00-14:00 (zondag niet genoemd, dus gesloten aanhouden, niet verzinnen). Zeer veel Google-reviews aangeleverd (tientallen), overwegend kort en positief; twee afwijkende noteren om NIET te gebruiken: Valentin Buia (reactie eigenaar 'weet niet waarom u mij 3 sterren geeft, heb uw auto niet eens gemaakt' — duidt op mogelijk verkeerd gekoppelde review) en de losse opmerking van Sem dat het sterren-icoontje in de geplakte tekst altijd 1 te veel telt (bijv. '6 iconen' betekent eigenlijk 5 sterren) — dit is puur een kanttekening bij de brontekst, geen bruikbaar content-detail, niet op de site zetten. Kies voor de marquee een representatieve selectie van de sterkste/duidelijkste quotes (net als bij eerdere bedrijven), niet alle tientallen. Logo staat in de uploads-map; verder veel automerk-logo's (Cupra, Dacia, Renault, SEAT, Tesla, Volvo, Audi, BMW, Mercedes, en vele losse jpg's) aangeleverd om te suggereren dat alle merken hier terecht kunnen — als 'merken waar wij aan werken'-sectie of vergelijkbaar gebruiken, geen extern logo-gebruik zonder deze bronbestanden. rdw-erkend1.jpg is het RDW-erkenningsicoon. Geen e-mailadres of KvK-nummer aangeleverd, bewust niet verzinnen. notities.txt in de uploads-map is leeg (1 byte). | BOUW AFGEROND (10-08-2026): subagent-rapport succesvol, 5 commits, alle Pages-deploys groen, volledige 8-stappen-QA doorlopen zonder problemen. Twee dingen ontdekt tijdens de bouw die de moeite waard zijn om te weten: (1) er bleek GEEN eigen logo-bestand in de uploads-map te zitten ondanks de eerdere notitie dat het er zou staan, alleen automerk-logo's/RDW-icoon/een .url-snelkoppeling - de subagent heeft daarom een eigen handgemaakt typografisch merkteken (rode zeshoek met witte D) gebouwd, een echt logo kan er later overheen; (2) er bestaat wel degelijk een huidige website (garagebedrijfdennis.nl, gevonden via het .url-bestand en bevestigd met een zoekopdracht), maar die kon niet ingezien worden door de sandbox-netwerkblokkade, dus de pitchmail claimt terecht niet dat er geen site gevonden kon worden, alleen dat hij niet te openen was. Bij het zoeken kwamen ook een KVK-nummer (72311509) en een Google-rating (4,9 uit ruim 100 reviews) naar boven die BEWUST niet op de site gebruikt zijn omdat ze niet in de oorspronkelijk aangeleverde gegevens stonden - deze cijfers hier alleen ter info genoteerd, niet als geverifieerd geacht totdat Sem ze zelf bevestigt. Geen contactformulier gebouwd (geen e-mailadres bekend, net als bij BitWizard).",
       "fotos_beschikbaar": true,
       "talen": [
         "nl",
@@ -487,13 +487,13 @@
       "repo_ready": true,
       "repo": "garagebedrijf-dennis",
       "toegevoegd_op": "2026-08-06",
-      "live_url": null,
-      "pitch_email_klaar": false,
+      "live_url": "https://svanwijksolutions.github.io/garagebedrijf-dennis/",
+      "pitch_email_klaar": true,
       "pitch_verzonden": false,
       "pitch_verzonden_op": null,
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": null
+      "afgerond_op": "2026-08-10"
     },
     {
       "id": "wisselbekers",
