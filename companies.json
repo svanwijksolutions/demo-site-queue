@@ -42,7 +42,13 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "toegevoegd_op": "2026-07-23",
-      "afgerond_op": "2026-07-23"
+      "afgerond_op": "2026-07-23",
+      "updates": [
+        {
+          "datum": "2026-07-23",
+          "wat": "Eerste versie live gezet"
+        }
+      ]
     },
     {
       "id": "vanoostenvoorvis",
@@ -85,7 +91,13 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "toegevoegd_op": "2026-07-24",
-      "afgerond_op": "2026-07-24"
+      "afgerond_op": "2026-07-24",
+      "updates": [
+        {
+          "datum": "2026-07-24",
+          "wat": "Eerste versie live gezet"
+        }
+      ]
     },
     {
       "id": "manimania",
@@ -130,7 +142,17 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "toegevoegd_op": "2026-07-24",
-      "afgerond_op": "2026-07-25"
+      "afgerond_op": "2026-07-25",
+      "updates": [
+        {
+          "datum": "2026-07-25",
+          "wat": "Eerste versie live gezet"
+        },
+        {
+          "datum": "2026-07-27",
+          "wat": "Feedbackronde: echte prijslijst verwerkt in nieuwe prijzen.html, 5 extra foto's opnieuw geplaatst, regio gecorrigeerd"
+        }
+      ]
     },
     {
       "id": "cone6",
@@ -174,7 +196,19 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "toegevoegd_op": "2026-07-27",
-      "afgerond_op": "2026-07-27"
+      "afgerond_op": "2026-07-27",
+      "updates": [
+        {
+          "datum": "2026-07-27",
+          "wat": "Eerste versie live gezet (NL/EN, FAQ, algemene voorwaarden, teambuilding-pagina)",
+          "commit": "a5daae7"
+        },
+        {
+          "datum": "2026-07-28",
+          "wat": "Feedbackronde: kaarten gelijk gemaakt, bannercontrast, logo bijgesneden, logo-marquee doorlopend; mailto hersteld en verboden tekst verwijderd",
+          "commit": "eb2a9c7"
+        }
+      ]
     },
     {
       "id": "dierenkliniek-animalis",
@@ -216,7 +250,29 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "toegevoegd_op": "2026-07-27",
-      "afgerond_op": "2026-07-27"
+      "afgerond_op": "2026-07-27",
+      "updates": [
+        {
+          "datum": "2026-07-27",
+          "wat": "Eerste versie live gezet",
+          "commit": "2c24e39"
+        },
+        {
+          "datum": "2026-07-27",
+          "wat": "Feedbackronde: echt logo verwerkt, openingstijden per dag, diersoort-iconen opnieuw getekend, mobiele overflow-fix",
+          "commit": "0e586ac"
+        },
+        {
+          "datum": "2026-07-28",
+          "wat": "Tweede feedbackronde: VetPlan-knop/disclaimer herzien, contactformulier-melding na klik, kaart-uitlijning, hamburgermenu-bugs",
+          "commit": "5ce93c69"
+        },
+        {
+          "datum": "2026-07-28",
+          "wat": "Favicon en apple-touch-icon opnieuw gegenereerd uit het echte logo",
+          "commit": "716874d"
+        }
+      ]
     },
     {
       "id": "bitwizard",
@@ -261,7 +317,18 @@
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
       "toegevoegd_op": "2026-07-28",
-      "afgerond_op": "2026-07-28"
+      "afgerond_op": "2026-07-28",
+      "updates": [
+        {
+          "datum": "2026-07-28",
+          "wat": "Eerste versie live gezet",
+          "commit": "b576436"
+        },
+        {
+          "datum": "2026-07-30",
+          "wat": "Feedbackronde (issue #6) deels verwerkt, afgebroken door weeklimiet; issue blijft open"
+        }
+      ]
     },
     {
       "id": "meijer-administratievediensten",
@@ -310,7 +377,13 @@
       "pitch_verzonden_op": null,
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": "2026-07-31"
+      "afgerond_op": "2026-07-31",
+      "updates": [
+        {
+          "datum": "2026-07-31",
+          "wat": "Eerste versie live gezet"
+        }
+      ]
     },
     {
       "id": "cocon-b-b",
@@ -353,7 +426,14 @@
       "pitch_verzonden_op": null,
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": "2026-08-01"
+      "afgerond_op": "2026-08-01",
+      "updates": [
+        {
+          "datum": "2026-08-01",
+          "wat": "Eerste versie live gezet",
+          "commit": "b42a083"
+        }
+      ]
     },
     {
       "id": "smithuis-installatie",
@@ -402,7 +482,14 @@
       "pitch_verzonden_op": null,
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": "2026-08-04"
+      "afgerond_op": "2026-08-04",
+      "updates": [
+        {
+          "datum": "2026-08-04",
+          "wat": "Eerste versie live gezet",
+          "commit": "c749bd4"
+        }
+      ]
     },
     {
       "id": "schilderpoort-ijzerwaren",
@@ -449,7 +536,13 @@
       "pitch_verzonden_op": null,
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": null
+      "afgerond_op": null,
+      "updates": [
+        {
+          "datum": "2026-08-10",
+          "wat": "Bouw deels uitgevoerd (3 commits: basis+FAQ+NL/EN-taalswitcher, beeldmateriaal, taal/menu-polish) maar niet afgerond; op needs_review gezet"
+        }
+      ]
     },
     {
       "id": "garagebedrijf-dennis",
@@ -493,7 +586,13 @@
       "pitch_verzonden_op": null,
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": "2026-08-10"
+      "afgerond_op": "2026-08-10",
+      "updates": [
+        {
+          "datum": "2026-08-10",
+          "wat": "Eerste versie live gezet (5 commits, volledige 8-staps QA)"
+        }
+      ]
     },
     {
       "id": "wisselbekers",
@@ -539,7 +638,8 @@
       "pitch_verzonden_op": null,
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": null
+      "afgerond_op": null,
+      "updates": []
     },
     {
       "id": "geo",
@@ -583,7 +683,13 @@
       "pitch_verzonden_op": null,
       "klant_reactie": "nog geen reactie",
       "follow_up_op": null,
-      "afgerond_op": "2026-08-11"
+      "afgerond_op": "2026-08-11",
+      "updates": [
+        {
+          "datum": "2026-08-11",
+          "wat": "Eerste versie live gezet (5 commits, volledige 8-staps QA)"
+        }
+      ]
     }
   ]
 }

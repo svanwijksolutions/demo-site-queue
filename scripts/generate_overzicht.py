@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Genereert overzicht.xlsx uit companies.json. Draait automatisch als onderdeel
-van de nachtelijke demo-site pipeline, telkens als companies.json wijzigt."""
+van de nachtelijke demo-site pipeline, telkens als companies.json wijzigt.
+
+Naast het hoofdoverzicht (tab "Overzicht") maakt dit script een tweede tab
+"Updategeschiedenis": een chronologische lijst (nieuwste eerst) van elke keer dat
+een site is gebouwd of aangepast, met de datum en een korte omschrijving van wat er
+is veranderd. Zo kan Sem in één oogopslag zien wanneer er iets is bijgewerkt (bijv.
+na feedback) en waarop ze kan controleren. De brondata staat per bedrijf in het
+`updates`-veld in companies.json (een lijst met {datum, wat, commit?, live_url?})."""
 
 import json
 import sys
@@ -46,6 +53,16 @@ COLUMNS = [
     ("E-mail", 26),
     ("Toegevoegd op", 14),
     ("Afgerond op", 14),
+    ("Laatste update", 14),
+    ("Laatste wijziging", 50),
+]
+
+UPDATE_COLUMNS = [
+    ("Bedrijfsnaam", 26),
+    ("Datum", 14),
+    ("Wat is er veranderd", 78),
+    ("Commit", 14),
+    ("Live URL", 42),
 ]
 
 SENT_FILL = PatternFill(start_color="D1FAE5", end_color="D1FAE5", fill_type="solid")
@@ -64,23 +81,36 @@ def load_companies():
     return data["companies"]
 
 
-def build_workbook(companies):
-    wb = Workbook()
-    ws = wb.active
-    ws.title = "Overzicht"
+def sorted_updates(company):
+    """Updates van een bedrijf, oplopend op datum (oudste eerst)."""
+    updates = company.get("updates") or []
+    return sorted(updates, key=lambda u: u.get("datum") or "")
 
-    for col_idx, (header, width) in enumerate(COLUMNS, start=1):
+
+def latest_update(company):
+    ups = sorted_updates(company)
+    return ups[-1] if ups else None
+
+
+def style_header(ws, columns):
+    for col_idx, (header, width) in enumerate(columns, start=1):
         cell = ws.cell(row=1, column=col_idx, value=header)
         cell.font = HEADER_FONT
         cell.fill = HEADER_FILL
         cell.alignment = Alignment(horizontal="left", vertical="center")
         cell.border = BORDER
         ws.column_dimensions[get_column_letter(col_idx)].width = width
-
     ws.freeze_panes = "A2"
+
+
+def build_overview_sheet(ws, companies):
+    style_header(ws, COLUMNS)
 
     for row_idx, c in enumerate(companies, start=2):
         contact = c.get("contact", {})
+        last = latest_update(c)
+        last_datum = last.get("datum", "") if last else (c.get("afgerond_op") or "")
+        last_wat = last.get("wat", "") if last else ""
         values = [
             c.get("bedrijfsnaam", ""),
             c.get("contactpersoon", ""),
@@ -98,15 +128,19 @@ def build_workbook(companies):
             contact.get("email", ""),
             c.get("toegevoegd_op", ""),
             c.get("afgerond_op") or "",
+            last_datum,
+            last_wat,
         ]
         status_fill = STATUS_FILLS.get(c.get("status"), None)
         sent_col_idx = COLUMNS.index(("Pitchmail verzonden", 16)) + 1
         reactie_col_idx = COLUMNS.index(("Klantreactie", 18)) + 1
+        wijziging_col_idx = COLUMNS.index(("Laatste wijziging", 50)) + 1
         for col_idx, value in enumerate(values, start=1):
             cell = ws.cell(row=row_idx, column=col_idx, value=value)
             cell.font = BODY_FONT
             cell.border = BORDER
-            cell.alignment = Alignment(horizontal="left", vertical="center")
+            wrap = col_idx == wijziging_col_idx
+            cell.alignment = Alignment(horizontal="left", vertical="center", wrap_text=wrap)
             if col_idx == 5 and status_fill:
                 cell.fill = status_fill
             if col_idx == sent_col_idx and c.get("pitch_email_klaar"):
@@ -122,6 +156,51 @@ def build_workbook(companies):
             name="TableStyleMedium2", showRowStripes=True, showFirstColumn=False
         )
         ws.add_table(table)
+
+
+def build_updates_sheet(ws, companies):
+    style_header(ws, UPDATE_COLUMNS)
+
+    # Verzamel alle update-events over alle bedrijven, nieuwste eerst.
+    events = []
+    for c in companies:
+        for u in sorted_updates(c):
+            events.append((c, u))
+    events.sort(key=lambda e: e[1].get("datum") or "", reverse=True)
+
+    for row_idx, (c, u) in enumerate(events, start=2):
+        values = [
+            c.get("bedrijfsnaam", ""),
+            u.get("datum", ""),
+            u.get("wat", ""),
+            u.get("commit", "") or "",
+            u.get("live_url") or c.get("live_url") or "",
+        ]
+        for col_idx, value in enumerate(values, start=1):
+            cell = ws.cell(row=row_idx, column=col_idx, value=value)
+            cell.font = BODY_FONT
+            cell.border = BORDER
+            wrap = col_idx == 3
+            cell.alignment = Alignment(horizontal="left", vertical="top", wrap_text=wrap)
+
+    last_row = max(len(events) + 1, 2)
+    last_col_letter = get_column_letter(len(UPDATE_COLUMNS))
+    if len(events) > 0:
+        table = Table(displayName="Updategeschiedenis", ref=f"A1:{last_col_letter}{last_row}")
+        table.tableStyleInfo = TableStyleInfo(
+            name="TableStyleMedium2", showRowStripes=True, showFirstColumn=False
+        )
+        ws.add_table(table)
+
+
+def build_workbook(companies):
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Overzicht"
+    build_overview_sheet(ws, companies)
+
+    ws_updates = wb.create_sheet("Updategeschiedenis")
+    build_updates_sheet(ws_updates, companies)
 
     wb.save(OUTPUT_XLSX)
     return OUTPUT_XLSX
