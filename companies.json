@@ -3,7 +3,7 @@
   "companies": [
     {
       "id": "ziehaarstralen",
-      "status": "done",
+      "status": "wacht_op_akkoord",
       "bedrijfsnaam": "Zie Haar Stralen",
       "branche": "Bruidskapsel- en bruidsmake-up salon (aan huis)",
       "contactpersoon": "Lisette",
@@ -46,7 +46,9 @@
       "updates": [
         {
           "datum": "2026-07-23",
-          "wat": "Eerste versie live gezet"
+          "wat": [
+            "Eerste versie live gezet"
+          ]
         }
       ]
     },
@@ -95,7 +97,9 @@
       "updates": [
         {
           "datum": "2026-07-24",
-          "wat": "Eerste versie live gezet"
+          "wat": [
+            "Eerste versie live gezet"
+          ]
         }
       ]
     },
@@ -146,11 +150,17 @@
       "updates": [
         {
           "datum": "2026-07-25",
-          "wat": "Eerste versie live gezet"
+          "wat": [
+            "Eerste versie live gezet"
+          ]
         },
         {
           "datum": "2026-07-27",
-          "wat": "Feedbackronde: echte prijslijst verwerkt in nieuwe prijzen.html, 5 extra foto's opnieuw geplaatst, regio gecorrigeerd"
+          "wat": [
+            "Echte prijslijst verwerkt in nieuwe prijzen.html",
+            "5 extra foto's opnieuw geplaatst",
+            "Regio gecorrigeerd"
+          ]
         }
       ]
     },
@@ -200,12 +210,19 @@
       "updates": [
         {
           "datum": "2026-07-27",
-          "wat": "Eerste versie live gezet (NL/EN, FAQ, algemene voorwaarden, teambuilding-pagina)",
+          "wat": [
+            "Eerste versie live gezet (NL/EN, FAQ, algemene voorwaarden, teambuilding-pagina)"
+          ],
           "commit": "a5daae7"
         },
         {
           "datum": "2026-07-28",
-          "wat": "Feedbackronde: kaarten gelijk gemaakt, bannercontrast, logo bijgesneden, logo-marquee doorlopend; mailto hersteld en verboden tekst verwijderd",
+          "wat": [
+            "Kaarten op gelijke hoogte gebracht",
+            "Bannercontrast verbeterd",
+            "Logo bijgesneden en logo-marquee doorlopend gemaakt",
+            "Mailto-verzending hersteld en verboden tekst verwijderd"
+          ],
           "commit": "eb2a9c7"
         }
       ]
@@ -254,22 +271,36 @@
       "updates": [
         {
           "datum": "2026-07-27",
-          "wat": "Eerste versie live gezet",
+          "wat": [
+            "Eerste versie live gezet"
+          ],
           "commit": "2c24e39"
         },
         {
           "datum": "2026-07-27",
-          "wat": "Feedbackronde: echt logo verwerkt, openingstijden per dag, diersoort-iconen opnieuw getekend, mobiele overflow-fix",
+          "wat": [
+            "Echt logo verwerkt",
+            "Openingstijden per dag getoond",
+            "Diersoort-iconen opnieuw getekend",
+            "Mobiele overflow-fix"
+          ],
           "commit": "0e586ac"
         },
         {
           "datum": "2026-07-28",
-          "wat": "Tweede feedbackronde: VetPlan-knop/disclaimer herzien, contactformulier-melding na klik, kaart-uitlijning, hamburgermenu-bugs",
+          "wat": [
+            "VetPlan-knop en -disclaimer herzien",
+            "Contactformulier-melding pas na klik",
+            "Kaart-uitlijning gecorrigeerd",
+            "Hamburgermenu-bugs opgelost"
+          ],
           "commit": "5ce93c69"
         },
         {
           "datum": "2026-07-28",
-          "wat": "Favicon en apple-touch-icon opnieuw gegenereerd uit het echte logo",
+          "wat": [
+            "Favicon en apple-touch-icon opnieuw gegenereerd uit het echte logo"
+          ],
           "commit": "716874d"
         }
       ]
@@ -321,18 +352,22 @@
       "updates": [
         {
           "datum": "2026-07-28",
-          "wat": "Eerste versie live gezet",
+          "wat": [
+            "Eerste versie live gezet"
+          ],
           "commit": "b576436"
         },
         {
           "datum": "2026-07-30",
-          "wat": "Feedbackronde (issue #6) deels verwerkt, afgebroken door weeklimiet; issue blijft open"
+          "wat": [
+            "Feedbackronde (issue #6) deels verwerkt, afgebroken door weeklimiet; issue blijft open"
+          ]
         }
       ]
     },
     {
       "id": "meijer-administratievediensten",
-      "status": "done",
+      "status": "wacht_op_akkoord",
       "bedrijfsnaam": "Meijer Administratieve Diensten",
       "branche": "Administratiekantoor / boekhouder (financiële administratie, loonadministratie, belastingaangiften voor bedrijven en particulieren)",
       "contactpersoon": null,
@@ -381,13 +416,15 @@
       "updates": [
         {
           "datum": "2026-07-31",
-          "wat": "Eerste versie live gezet"
+          "wat": [
+            "Eerste versie live gezet"
+          ]
         }
       ]
     },
     {
       "id": "cocon-b-b",
-      "status": "done",
+      "status": "wacht_op_akkoord",
       "bedrijfsnaam": "Cocon",
       "branche": "Bed & Breakfast met culinaire gastvrijheid (gastenverblijf in oprichting, nog geen definitieve locatie)",
       "contactpersoon": "Ditte Wismeyer en Michael Dijkhuizen",
@@ -430,14 +467,16 @@
       "updates": [
         {
           "datum": "2026-08-01",
-          "wat": "Eerste versie live gezet",
+          "wat": [
+            "Eerste versie live gezet"
+          ],
           "commit": "b42a083"
         }
       ]
     },
     {
       "id": "smithuis-installatie",
-      "status": "done",
+      "status": "wacht_op_akkoord",
       "bedrijfsnaam": "Smithuis Installatiebedrijf",
       "branche": "Installatietechniek / allround klusbedrijf (CV-ketels, water/gas/sanitair, badkamers, zonnepanelen, elektra, klein bouwkundig werk)",
       "contactpersoon": "Michael Smithuis",
@@ -486,7 +525,9 @@
       "updates": [
         {
           "datum": "2026-08-04",
-          "wat": "Eerste versie live gezet",
+          "wat": [
+            "Eerste versie live gezet"
+          ],
           "commit": "c749bd4"
         }
       ]
@@ -540,13 +581,16 @@
       "updates": [
         {
           "datum": "2026-08-10",
-          "wat": "Bouw deels uitgevoerd (3 commits: basis+FAQ+NL/EN-taalswitcher, beeldmateriaal, taal/menu-polish) maar niet afgerond; op needs_review gezet"
+          "wat": [
+            "Bouw deels uitgevoerd (3 commits: basis+FAQ+NL/EN, beeldmateriaal, taal/menu-polish)",
+            "Niet afgerond; op needs_review gezet"
+          ]
         }
       ]
     },
     {
       "id": "garagebedrijf-dennis",
-      "status": "done",
+      "status": "wacht_op_akkoord",
       "bedrijfsnaam": "Garagebedrijf Dennis",
       "branche": "Autogarage / RDW-erkend APK-keuringsstation (reparaties, onderhoud, alle merken)",
       "contactpersoon": "Dennis",
@@ -590,7 +634,9 @@
       "updates": [
         {
           "datum": "2026-08-10",
-          "wat": "Eerste versie live gezet (5 commits, volledige 8-staps QA)"
+          "wat": [
+            "Eerste versie live gezet (5 commits, volledige 8-staps QA)"
+          ]
         }
       ]
     },
@@ -643,7 +689,7 @@
     },
     {
       "id": "geo",
-      "status": "done",
+      "status": "wacht_op_akkoord",
       "bedrijfsnaam": "Geo B.V.",
       "branche": "Oliehandel / bunkerbedrijf (gasolie, smeeroliën, scheepsbenodigdheden) voor visserij, zeevaart, offshore en binnenvaart",
       "contactpersoon": null,
@@ -687,7 +733,9 @@
       "updates": [
         {
           "datum": "2026-08-11",
-          "wat": "Eerste versie live gezet (5 commits, volledige 8-staps QA)"
+          "wat": [
+            "Eerste versie live gezet (5 commits, volledige 8-staps QA)"
+          ]
         }
       ]
     }

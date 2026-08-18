@@ -16,9 +16,9 @@ checklist niet: het vangt alleen concrete, grep-bare regressies, geen ontwerpkwa
 
 ## Uitvoering
 
-Voor elk item in `companies.json` met `status: "done"`: haal via `get_file_contents` (raw, geen clone nodig
-voor deze lichte check) de bestanden op die in de checks hieronder genoemd staan, uit de `repo` van dat
-bedrijf. Voer elke check uit. Sla per site alleen de TREFFERS (problemen) op, geen "OK"-regels.
+Voor elk item in `companies.json` met `status: "done"` of `status: "wacht_op_akkoord"` (d.w.z. elke gebouwde,
+live site): haal via `get_file_contents` (raw, geen clone nodig voor deze lichte check) de bestanden op die in
+de checks hieronder genoemd staan, uit de `repo` van dat bedrijf. Voer elke check uit. Sla per site alleen de TREFFERS (problemen) op, geen "OK"-regels.
 
 ## Checks
 

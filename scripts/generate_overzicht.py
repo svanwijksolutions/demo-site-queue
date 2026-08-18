@@ -7,7 +7,14 @@ Naast het hoofdoverzicht (tab "Overzicht") maakt dit script een tweede tab
 een site is gebouwd of aangepast, met de datum en een korte omschrijving van wat er
 is veranderd. Zo kan Sem in één oogopslag zien wanneer er iets is bijgewerkt (bijv.
 na feedback) en waarop ze kan controleren. De brondata staat per bedrijf in het
-`updates`-veld in companies.json (een lijst met {datum, wat, commit?, live_url?})."""
+`updates`-veld in companies.json (een lijst met {datum, wat, commit?, live_url?}).
+
+Conventies (op verzoek van Sem):
+- Datums worden ALTIJD getoond als dd-mm-jjjj (intern in companies.json staan ze
+  als JJJJ-MM-DD voor correcte sortering; hier worden ze bij het tonen omgezet).
+- Het `wat`-veld mag een lijst zijn; elk item wordt een los `-`-puntje onder elkaar.
+- Status wordt pas "done" als Sem de site mailt of expliciet akkoord geeft; een
+  gebouwde-maar-nog-niet-goedgekeurde site heeft status "wacht_op_akkoord"."""
 
 import json
 import sys
@@ -31,9 +38,18 @@ BORDER = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
 
 STATUS_FILLS = {
     "done": PatternFill(start_color="D1FAE5", end_color="D1FAE5", fill_type="solid"),
+    "wacht_op_akkoord": PatternFill(start_color="DBEAFE", end_color="DBEAFE", fill_type="solid"),
     "in_progress": PatternFill(start_color="FEF3C7", end_color="FEF3C7", fill_type="solid"),
     "needs_review": PatternFill(start_color="FEE2E2", end_color="FEE2E2", fill_type="solid"),
     "pending": PatternFill(start_color="E5E7EB", end_color="E5E7EB", fill_type="solid"),
+}
+
+STATUS_LABELS = {
+    "done": "Done",
+    "wacht_op_akkoord": "Wacht op akkoord",
+    "in_progress": "In progress",
+    "needs_review": "Needs review",
+    "pending": "Pending",
 }
 
 COLUMNS = [
@@ -41,7 +57,7 @@ COLUMNS = [
     ("Contactpersoon", 22),
     ("Branche", 30),
     ("Regio", 24),
-    ("Status", 14),
+    ("Status", 18),
     ("Repo", 22),
     ("Live URL", 42),
     ("Pitchmail klaar", 14),
@@ -81,6 +97,27 @@ def load_companies():
     return data["companies"]
 
 
+def fmt_date(val):
+    """JJJJ-MM-DD -> dd-mm-jjjj. Andere waarden blijven ongewijzigd."""
+    if not val:
+        return ""
+    s = str(val)
+    parts = s.split("-")
+    if len(parts) == 3 and len(parts[0]) == 4 and parts[0].isdigit():
+        y, m, d = parts
+        return f"{d}-{m}-{y}"
+    return s
+
+
+def render_wat(wat):
+    """Maakt van `wat` (lijst of string) losse `-`-puntjes onder elkaar."""
+    if isinstance(wat, list):
+        items = [str(x).strip() for x in wat if str(x).strip()]
+    else:
+        items = [str(wat).strip()] if str(wat).strip() else []
+    return "\n".join("- " + it for it in items)
+
+
 def sorted_updates(company):
     """Updates van een bedrijf, oplopend op datum (oudste eerst)."""
     updates = company.get("updates") or []
@@ -108,30 +145,31 @@ def build_overview_sheet(ws, companies):
 
     for row_idx, c in enumerate(companies, start=2):
         contact = c.get("contact", {})
+        status = c.get("status", "")
         last = latest_update(c)
-        last_datum = last.get("datum", "") if last else (c.get("afgerond_op") or "")
-        last_wat = last.get("wat", "") if last else ""
+        last_datum = fmt_date(last.get("datum")) if last else fmt_date(c.get("afgerond_op"))
+        last_wat = render_wat(last.get("wat")) if last else ""
         values = [
             c.get("bedrijfsnaam", ""),
             c.get("contactpersoon", ""),
             c.get("branche", ""),
             c.get("regio", ""),
-            c.get("status", ""),
+            STATUS_LABELS.get(status, status),
             c.get("repo", ""),
             c.get("live_url") or "",
             "Ja" if c.get("pitch_email_klaar") else "Nee",
             "Ja" if c.get("pitch_verzonden") else "Nee",
-            c.get("pitch_verzonden_op") or "",
+            fmt_date(c.get("pitch_verzonden_op")),
             c.get("klant_reactie") or "nog geen reactie",
-            c.get("follow_up_op") or "",
+            fmt_date(c.get("follow_up_op")),
             contact.get("telefoon", ""),
             contact.get("email", ""),
-            c.get("toegevoegd_op", ""),
-            c.get("afgerond_op") or "",
+            fmt_date(c.get("toegevoegd_op")),
+            fmt_date(c.get("afgerond_op")),
             last_datum,
             last_wat,
         ]
-        status_fill = STATUS_FILLS.get(c.get("status"), None)
+        status_fill = STATUS_FILLS.get(status, None)
         sent_col_idx = COLUMNS.index(("Pitchmail verzonden", 16)) + 1
         reactie_col_idx = COLUMNS.index(("Klantreactie", 18)) + 1
         wijziging_col_idx = COLUMNS.index(("Laatste wijziging", 50)) + 1
@@ -140,7 +178,8 @@ def build_overview_sheet(ws, companies):
             cell.font = BODY_FONT
             cell.border = BORDER
             wrap = col_idx == wijziging_col_idx
-            cell.alignment = Alignment(horizontal="left", vertical="center", wrap_text=wrap)
+            valign = "top" if wrap else "center"
+            cell.alignment = Alignment(horizontal="left", vertical=valign, wrap_text=wrap)
             if col_idx == 5 and status_fill:
                 cell.fill = status_fill
             if col_idx == sent_col_idx and c.get("pitch_email_klaar"):
@@ -171,8 +210,8 @@ def build_updates_sheet(ws, companies):
     for row_idx, (c, u) in enumerate(events, start=2):
         values = [
             c.get("bedrijfsnaam", ""),
-            u.get("datum", ""),
-            u.get("wat", ""),
+            fmt_date(u.get("datum")),
+            render_wat(u.get("wat")),
             u.get("commit", "") or "",
             u.get("live_url") or c.get("live_url") or "",
         ]
