@@ -9,7 +9,7 @@ Op 27-07-2026 stuurde ik je een gratis en vrijblijvend ontwerp voor een nieuwe w
 
 👉 https://svanwijksolutions.github.io/manimania/
 
-Waar het je vooral bij kan helpen: nu vinden nieuwe klanten je vooral via Instagram of via-via. De nieuwe site is zo gebouwd dat je ook beter bovenkomt in Google op bijvoorbeeld "nagelstudio Wateringen" of "manicure Den Haag", zodat mensen die actief op zoek zijn naar een nagelstudio bij jou uitkomen en niet bij een ander. Zo maak je je minder afhankelijk van alleen Instagram, en oogt het meteen professioneel voor wie je nog niet kent.
+Waar het je vooral bij helpt: de site ziet er veel moderner uit en leest een stuk makkelijker, waardoor bezoekers niet meteen wegklikken maar blijven kijken en eerder een afspraak maken. En doordat de site technisch beter in elkaar zit, kom je hoger in Google (bijvoorbeeld op "nagelstudio Wateringen"), zodat nieuwe klanten je vinden zonder dat ze je al kennen.
 
 Het blijft gratis en vrijblijvend. Wil je dat ik je er kort over bel, of hoor je liever eerst wat het kost? Laat het gerust weten.
 

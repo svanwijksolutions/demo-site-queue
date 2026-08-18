@@ -9,7 +9,7 @@ Op 04-08-2026 stuurde ik u een gratis en vrijblijvend websitevoorstel voor BitWi
 
 👉 https://svanwijksolutions.github.io/bitwizard-demo/
 
-Waar het u vooral bij kan helpen: de nieuwe site is technisch zo opgebouwd dat u beter vindbaar wordt in Google op zoekopdrachten als "custom elektronica laten ontwikkelen" of "Linux device driver ontwikkeling", zodat nieuwe opdrachtgevers u eerder vinden. Daarbij staat alles standaard in het Engels, met één knop naar het Nederlands, zodat ook buitenlandse klanten direct kunnen meelezen zonder taalbarrière, en oogt de site strak en actueel, wat vertrouwen wekt bij iemand die u nog niet kent.
+Waar het u vooral bij helpt: de site oogt een stuk moderner en professioneler, staat in twee talen (standaard Engels, met één knop naar het Nederlands) en is beter vindbaar in Google op bijvoorbeeld "Linux device driver ontwikkeling". Zo bereikt u ook buitenlandse opdrachtgevers, en maakt u meteen een betrouwbare eerste indruk op iemand die u nog niet kent.
 
 Het blijft gratis en vrijblijvend. Zal ik u er kort over bellen, of hoort u liever eerst wat het zou kosten? Laat het gerust weten.
 

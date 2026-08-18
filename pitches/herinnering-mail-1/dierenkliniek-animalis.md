@@ -8,7 +8,7 @@ Op 28-07-2026 stuurde ik u een gratis en vrijblijvend ontwerp voor een nieuwe we
 
 👉 https://svanwijksolutions.github.io/dierenkliniek-animalis/
 
-Het grootste voordeel voor u zit in de vindbaarheid: de nieuwe site is technisch zo opgebouwd dat u beter bovenkomt in Google op bijvoorbeeld "dierenarts Harnaschpolder", en dat hij op de telefoon prettig en overzichtelijk werkt. Zo vinden nieuwe patiënteigenaren u makkelijker en haken ze niet af op een pagina die op de telefoon lastig leest.
+Een concreet voordeel voor uw praktijk: op de site staat spoedadvies voor huisdieren, zodat een bezorgde eigenaar eerst zelf kan kijken wat te doen en het eerder zelf probeert in plaats van meteen te bellen. Dat scheelt u telefoontjes over dingen die mensen ook zelf kunnen opvangen. Daarnaast oogt de site moderner, leest hij prettiger en is hij beter vindbaar in Google.
 
 Het blijft gratis en vrijblijvend. Een kort berichtje terug, ook als het een nee is, stel ik op prijs.
 

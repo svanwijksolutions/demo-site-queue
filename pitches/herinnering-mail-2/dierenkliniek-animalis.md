@@ -9,7 +9,7 @@ Op 28-07-2026 stuurde ik u een gratis en vrijblijvend ontwerp voor een nieuwe we
 
 👉 https://svanwijksolutions.github.io/dierenkliniek-animalis/
 
-Waar het u vooral bij kan helpen: nieuwe patiënteigenaren in de buurt zoeken online naar een dierenarts. De nieuwe site is zo gebouwd dat u beter bovenkomt in Google op bijvoorbeeld "dierenarts Harnaschpolder", en dat de site op de telefoon prettig en overzichtelijk werkt, zodat iemand die u nog niet kent u sneller vindt en niet afhaakt op een lastig leesbare pagina. Zo levert de site u vooral nieuwe aanmeldingen op die u nu online misschien misloopt.
+Waar het u vooral bij helpt: op de site staat spoedadvies voor huisdieren, zodat een bezorgde eigenaar eerst zelf de juiste stappen kan vinden en het eerder zelf probeert, in plaats van meteen te bellen. Dat scheelt u telefoontjes over dingen die mensen ook zelf kunnen opvangen. Daarbovenop oogt de site moderner, leest hij prettiger en is hij beter vindbaar in Google (bijvoorbeeld op "dierenarts Harnaschpolder"), zodat nieuwe patiënteigenaren u makkelijker vinden.
 
 Het blijft gratis en vrijblijvend. Zal ik u er kort over bellen, of hoort u liever eerst wat het zou kosten? Laat het gerust weten.
 

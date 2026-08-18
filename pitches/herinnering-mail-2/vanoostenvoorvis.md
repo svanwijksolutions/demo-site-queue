@@ -9,7 +9,7 @@ Op 27-07-2026 stuurde ik u een gratis en vrijblijvend voorstel voor een nieuwe w
 
 👉 https://svanwijksolutions.github.io/vanoostenvoorvis/
 
-Waar het u vooral bij kan helpen: mensen zoeken tegenwoordig eerst op hun telefoon naar "verse vis" met hun plaats erbij voordat ze de deur uitgaan. De nieuwe site is er speciaal op gebouwd om daar goed bovenaan mee te komen en op de telefoon meteen het juiste te tonen, zodat die zoekende klant bij ú uitkomt in plaats van bij een supermarkt of viskraam die makkelijker online te vinden is. Kortom: het doel is dat u er nieuwe klanten mee binnenhaalt die u nu online misloopt.
+Waar het u vooral bij helpt: de site ziet er veel moderner uit en leest makkelijker, zodat bezoekers blijven in plaats van weg te klikken, en u komt beter naar boven in Google. En het familieverhaal komt nu sterk naar voren: dat Van Oosten al sinds 1923, dus ruim honderd jaar, een echt familiebedrijf is, maakt dat een nieuwe klant zich sneller bij u vertrouwd voelt en eerder voor uw winkel kiest.
 
 Het blijft gratis en vrijblijvend. Zal ik u er kort over bellen, of hoort u liever eerst wat het zou kosten? Laat het gerust weten.
 

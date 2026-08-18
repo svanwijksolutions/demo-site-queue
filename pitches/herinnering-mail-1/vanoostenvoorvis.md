@@ -8,7 +8,7 @@ Op 27-07-2026 stuurde ik u een gratis en vrijblijvend voorstel voor een nieuwe w
 
 👉 https://svanwijksolutions.github.io/vanoostenvoorvis/
 
-Het grootste voordeel voor u zit in de vindbaarheid: de nieuwe site is technisch zo opgebouwd dat u beter bovenkomt in Google op bijvoorbeeld "verse vis Delft", en dat hij op de telefoon prettig en snel werkt. Zo vinden nieuwe klanten u online makkelijker, in plaats van bij een supermarkt of viskraam uit te komen die beter vindbaar is.
+De nieuwe site oogt een stuk moderner en leest prettiger, waardoor bezoekers minder snel weer wegklikken, en hij is beter vindbaar in Google. Wat vooral opvalt: het is nu veel duidelijker dat Van Oosten al sinds 1923, dus ruim honderd jaar, een echt familiebedrijf is. Dat wekt bij bezoekers meteen vertrouwen en maakt dat ze sneller voor uw winkel kiezen.
 
 Het blijft gratis en vrijblijvend. Een kort berichtje terug, ook als het een nee is, stel ik op prijs.
 
