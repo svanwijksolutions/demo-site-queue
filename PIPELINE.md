@@ -6,7 +6,7 @@ Je bent de ORCHESTRATOR. Bevestigd getest: sessies die via "verse sessie per kee
 
 **Model voor bouw-/feedback-subagents: geef altijd `model: "opus"` mee aan de Agent-tool call.** Besluit van Sem (28-07-2026): dit werk (nieuwe site bouwen, feedback op een live site verwerken) is het meest kwaliteitskritische deel van de pipeline — visueel/UX-oordeel, RULES.md-naleving, klantgevoelig — en verdient het beste model, ook al kost dat meer per taak dan Sonnet. Jijzelf (de orchestrator: intake parsen, budget bijhouden, companies.json bijwerken, dit bestand volgen) blijft op je eigen sessiemodel draaien, daar is geen Opus voor nodig.
 
-**Sinds 31-07-2026 draait de pipeline in TWEE losse blokken per nacht, elk met een eigen budget** (was: één run om 22:00 die alles deed): **BLOK BOUW om 21:30 NL-tijd** (max 1 nieuwe bedrijf-build) en **BLOK FEEDBACK om 02:30 NL-tijd** (max 2 feedback-issues), op expliciet verzoek van Sem. Dit is een bewuste keuze om bouw- en feedbackwerk over de nacht te spreiden — houd je bij elke wijziging aan dit bestand aan die intentie, voeg geen extra firings of hoger budget toe zonder dat Sem dat expliciet vraagt. Sem heeft het model van de Routine-sessie zelf op Opus gezet (geldt voor de hele run, ook het administratieve deel).
+**De pipeline draait in losse blokken met elk een eigen budget** (was tot 31-07-2026: één run om 22:00 die alles deed). **Sinds 18-08-2026 (op verzoek van Sem) draait BLOK BOUW nog maar twee keer per week: dinsdag en donderdag om 21:30 NL-tijd** (max 1 nieuwe bedrijf-build per keer, dus 2 per week; was: elke avond). **BLOK FEEDBACK blijft elke nacht om 02:30 NL-tijd** (max 2 feedback-issues). Dit is een bewuste keuze — houd je bij elke wijziging aan dit bestand aan die intentie, voeg geen extra firings of hoger budget toe zonder dat Sem dat expliciet vraagt. De losse ochtend-samenvatting-Routine is op 18-08-2026 uitgezet, ook op verzoek van Sem: BLOK BOUW sluit nu zelf kort af met de live-URL en eventuele mankementen (zie STAP B5), er wordt geen aparte ochtendmail meer verstuurd. Sem heeft het model van de Routine-sessie zelf op Opus gezet (geldt voor de hele run, ook het administratieve deel).
 
 ## CONTEXT (geldt voor beide blokken)
 
@@ -19,9 +19,9 @@ Je bent de ORCHESTRATOR. Bevestigd getest: sessies die via "verse sessie per kee
 
 ---
 
-# BLOK BOUW — 21:30 NL-tijd
+# BLOK BOUW — dinsdag & donderdag, 21:30 NL-tijd
 
-**Budget: maximaal 1 nieuwe bedrijf-build per keer.**
+**Budget: maximaal 1 nieuwe bedrijf-build per keer. Draait alleen dinsdag en donderdag (2 per week).**
 
 ## STAP B1 — Setup
 Zorg voor een actuele lokale clone van `svanwijksolutions/demo-site-queue` (git pull, of add_repo+clone als je 'm nog niet hebt).
@@ -58,7 +58,7 @@ Alleen zoveel als er nog bouwbudget over is (max 1, zie boven). Lees `companies.
    - Probleem, puur infrastructureel (staande regel sinds 30-07-2026, n.a.v. een run waar bouwpogingen na elkaar meteen strandden op `529 Overloaded` resp. een wekelijkse-limiet-melding): faalde de subagent al vóórdat hij ook maar aan STAP 1 van BUILD_INSTRUCTIONS.md kon beginnen, door een API/server-fout of een limiet-melding die niets met déze bouwopdracht te maken heeft? Dat is geen beslissing voor Sem. Zet de status terug naar `pending` (niet `needs_review`) met een korte notitie inclusief foutmelding en pogingnummer, zodat het volgende BLOK BOUW het vanzelf opnieuw probeert. Probeer het zelf in dezelfde run maximaal één keer opnieuw (niet vaker, dat is zinloos tijdens een storing/limiet). Faalt hetzelfde bedrijf een DERDE keer op rij (over meerdere blokken heen) op dezelfde infra-reden: zet het dán alsnog op `needs_review`, dat patroon is het melden waard.
 
 ## STAP B5 — Afsluiten (BLOK BOUW)
-Sluit af met een duidelijke, beknopte samenvatting van dit blok: welke intake-issues verwerkt zijn, welk bedrijf gebouwd is (met live-URL) of waarom niet, en of de footer-/stale-check iets te doen had. Eindig met één vinkje-regel conform `README.md` sectie "Communicatie".
+Sluit KORT af (op verzoek van Sem 18-08-2026, geen uitgebreide samenvatting meer): eindig met de live-URL van de gebouwde website, plus een korte aanduiding of er nog iets mist of wat er fout ging als de bouw niet (volledig) is gelukt. Is er niets gebouwd (lege wachtrij of geen pending+ready item, of alleen intake-/footer-/stale-werk gedaan): meld dat in één regel. Geen uitgebreide opsomming en geen vinkje-regel nodig voor dit blok.
 
 ---
 
