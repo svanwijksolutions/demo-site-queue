@@ -1,16 +1,20 @@
 CONCEPT HERINNERINGSMAIL (ronde 1): NIET VERZONDEN
 Oorspronkelijke pitch verzonden op: 28-07-2026
-Onderwerp: Een nieuw ontwerp voor de website van Dierenkliniek Animalis
+Onderwerp: Herinneringsmail vrijblijvend websiteconcept voor Dierenkliniek Animalis
 
 Beste Angelina,
 
-Op 28-07-2026 stuurde ik u een gratis en vrijblijvend ontwerp voor een nieuwe website voor Dierenkliniek Animalis. Dit is een korte herinnering, voor het geval het is blijven liggen.
+Op 28-07-2026 stuurde ik u een gratis en vrijblijvend websiteconcept voor Dierenkliniek Animalis. Dit is een korte herinnering, voor het geval het is blijven liggen.
 
-👉 https://svanwijksolutions.github.io/dierenkliniek-animalis/
+👉 [Dierenkliniek Animalis: Dierenarts in Delft (Harnaschpolder)](https://svanwijksolutions.github.io/dierenkliniek-animalis/)
 
-Een concreet voordeel voor uw praktijk: op de site staat spoedadvies voor huisdieren, zodat een bezorgde eigenaar eerst zelf kan kijken wat te doen en het eerder zelf probeert in plaats van meteen te bellen. Dat scheelt u telefoontjes over dingen die mensen ook zelf kunnen opvangen. Daarnaast oogt de site moderner, leest hij prettiger en is hij beter vindbaar in Google.
+Waar de nieuwe website u vooral bij gaat helpen:
+- Op de site staat spoedadvies voor huisdieren, zodat een bezorgde eigenaar eerst zelf de juiste stappen kan vinden en het eerder zelf probeert in plaats van meteen te bellen. Dat scheelt u telefoontjes over dingen die mensen ook zelf kunnen opvangen.
+- De site oogt moderner, leest prettiger en is beter vindbaar in Google (bijvoorbeeld op "dierenarts Harnaschpolder"), zodat nieuwe patiënteigenaren u makkelijker vinden.
 
-Het blijft gratis en vrijblijvend. Een kort berichtje terug, ook als het een nee is, stel ik op prijs.
+Het websiteconcept is gratis en vrijblijvend, dus neem zeker even een kijkje. Zullen we deze week contact hebben om het websiteconcept te bespreken?
+
+Ik hoor het graag!
 
 Met vriendelijke groet,
 Sem van Wijk
