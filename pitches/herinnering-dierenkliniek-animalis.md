@@ -1,21 +1,16 @@
-CONCEPT HERINNERINGSMAIL: NIET VERZONDEN
+CONCEPT HERINNERINGSMAIL (ronde 1): NIET VERZONDEN
 Oorspronkelijke pitch verzonden op: 28-07-2026
-Onderwerp: Nog even terugkomen op het websiteontwerp voor Dierenkliniek Animalis
+Onderwerp: Een nieuw ontwerp voor de website van Dierenkliniek Animalis
 
 Beste Angelina,
 
-Op 28-07-2026 stuurde ik u een gratis en vrijblijvend websiteontwerp voor Dierenkliniek Animalis. Misschien is het in de praktijkdrukte ondergesneeuwd, dus ik kom er even kort en vrijblijvend op terug.
+Op 28-07-2026 stuurde ik u een gratis en vrijblijvend ontwerp voor een nieuwe website voor Dierenkliniek Animalis. Dit is een korte herinnering, voor het geval het is blijven liggen.
 
-U kunt het hier nog steeds bekijken:
 👉 https://svanwijksolutions.github.io/dierenkliniek-animalis/
 
-Waarom het de moeite waard is voor uw kliniek:
-- Beter vindbaar in Google op zoektermen als "dierenarts Harnaschpolder" of "dierenarts Delft konijn", zodat nieuwe patiënteigenaren u makkelijker vinden.
-- Werkt overal soepel, op de telefoon net zo goed als op de computer.
-- Uw diensten overzichtelijk bij elkaar: algemene dierenartszorg, het VetPlan zorgabonnement (met duidelijk vermeld dat dit geen verzekering is) en pre-anesthetisch bloedonderzoek.
-- Een eigen informatiepagina voor konijnen en knaagdieren, met uw voedingsadvies en het volledige spoedprotocol, in een warme uitstraling die past bij een kliniek met tijd voor de klant.
+Het grootste voordeel voor u zit in de vindbaarheid: de nieuwe site is technisch zo opgebouwd dat u beter bovenkomt in Google op bijvoorbeeld "dierenarts Harnaschpolder", en dat hij op de telefoon prettig en overzichtelijk werkt. Zo vinden nieuwe patiënteigenaren u makkelijker en haken ze niet af op een pagina die op de telefoon lastig leest.
 
-Er zit geen enkele verplichting aan vast. Een kort berichtje terug, ook als het een nee is, stel ik op prijs. Wilt u weten wat het zou kosten? Laat het gerust weten.
+Het blijft gratis en vrijblijvend. Een kort berichtje terug, ook als het een nee is, stel ik op prijs.
 
 Met vriendelijke groet,
 Sem van Wijk

@@ -1,15 +1,15 @@
-CONCEPT HERINNERINGSMAIL 2: NIET VERZONDEN
+CONCEPT HERINNERINGSMAIL (ronde 2): NIET VERZONDEN
 Oorspronkelijke pitch verzonden op: 28-07-2026
 Insteek: wat lost de website op / wat levert het op
-Onderwerp: Laat je website de veelgestelde vragen alvast beantwoorden
+Onderwerp: Een nieuw websiteconcept voor Cone6
 
 Beste Yvonne,
 
-Ik kom nog even terug op het websiteconcept voor Cone6 (https://svanwijksolutions.github.io/cone6/), omdat ik denk dat het je vooral tijd kan besparen.
+Op 28-07-2026 stuurde ik je een gratis en vrijblijvend websiteconcept voor Cone6. Dit is nog een korte herinnering, voor het geval het is blijven liggen.
 
-Bij workshops en cursussen krijg je waarschijnlijk steeds dezelfde vragen: wanneer zijn de data, wat kost het, kan het met een groep, kan ik ook los aansluiten? Op de nieuwe site staan al je workshops, de cursus en teambuilding overzichtelijk bij elkaar, met een aparte FAQ-pagina die precies die vragen alvast beantwoordt. Zo krijgen mensen hun antwoord al voordat ze je mailen of bellen, en houd jij meer tijd over voor het atelier.
+👉 https://svanwijksolutions.github.io/cone6/
 
-Twee dingen die je er extra mee bereikt: de site staat ook in het Engels (handig voor de internationale bezoekers in de regio Den Haag, Westland en Delft), en je kunt later zelf nieuwe data of FAQ-antwoorden toevoegen zonder dat daar iemand voor nodig is.
+Waar het je vooral bij kan helpen: je wordt beter vindbaar in Google op bijvoorbeeld "keramiek workshop Den Haag" of "keramiekcursus Delft", zodat mensen die zo'n workshop zoeken bij jou uitkomen. En met een duidelijke FAQ vinden bezoekers het antwoord op de veelgestelde vragen (data, prijs, groepen) alvast zelf, zodat jij minder van diezelfde vragen per mail of telefoon krijgt en meer tijd overhoudt voor het atelier. De site staat bovendien ook in het Engels, handig voor de internationale bezoekers in de regio.
 
 Het blijft gratis en vrijblijvend. Zal ik je er kort over bellen, of hoor je liever eerst wat het kost? Laat het gerust weten.
 

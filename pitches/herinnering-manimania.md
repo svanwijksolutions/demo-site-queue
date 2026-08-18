@@ -1,22 +1,16 @@
-CONCEPT HERINNERINGSMAIL: NIET VERZONDEN
+CONCEPT HERINNERINGSMAIL (ronde 1): NIET VERZONDEN
 Oorspronkelijke pitch verzonden op: 27-07-2026
-Onderwerp: Nog even terugkomen op het websiteontwerp voor ManiMania
+Onderwerp: Een nieuw ontwerp voor de website van ManiMania
 
 Beste Marzi,
 
-Op 27-07-2026 stuurde ik je een gratis en vrijblijvend ontwerp voor een nieuwe website voor ManiMania. Misschien is het tussen alles door blijven liggen, dus ik kom er even kort en vrijblijvend op terug.
+Op 27-07-2026 stuurde ik je een gratis en vrijblijvend ontwerp voor een nieuwe website voor ManiMania. Dit is een korte herinnering, voor het geval het is blijven liggen.
 
-Je kunt het hier nog steeds bekijken:
 👉 https://svanwijksolutions.github.io/manimania/
 
-Waarom het de moeite waard is voor je studio:
-- Beter vindbaar in Google op zoektermen als "nagelstudio Wateringen" of "manicure Den Haag", zodat nieuwe klanten je makkelijker vinden dan alleen via Instagram of via-via.
-- Een professionelere eerste indruk voor wie je nog niet kent.
-- Al je zeven behandelingen overzichtelijk bij elkaar, met je eigen foto's en een aparte prijzenpagina met je volledige prijslijst.
-- Je 18 jaar ervaring krijgt een eigen plek, en de contactpagina linkt direct door naar de route op Bieslookpad 1.
-- Werkt net zo goed op de telefoon als op de computer.
+Het grootste voordeel voor jou zit in de vindbaarheid: de nieuwe site is zo opgebouwd dat je ook in Google beter bovenkomt op bijvoorbeeld "nagelstudio Wateringen" of "manicure Den Haag", en niet meer alleen afhankelijk bent van Instagram en via-via. Zo vinden nieuwe klanten je makkelijker, en oogt het meteen professioneel.
 
-Er zit geen enkele verplichting aan vast. Een kort berichtje terug, ook als het een nee is, vind ik fijn. Wil je weten wat het zou kosten? Laat het gerust weten.
+Het blijft gratis en vrijblijvend. Een kort berichtje terug, ook als het een nee is, vind ik fijn.
 
 Met vriendelijke groet,
 Sem van Wijk

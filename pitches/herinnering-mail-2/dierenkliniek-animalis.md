@@ -1,15 +1,15 @@
-CONCEPT HERINNERINGSMAIL 2: NIET VERZONDEN
+CONCEPT HERINNERINGSMAIL (ronde 2): NIET VERZONDEN
 Oorspronkelijke pitch verzonden op: 28-07-2026
 Insteek: wat lost de website op / wat levert het op
-Onderwerp: Bezorgde baasjes vinden hun antwoord al op de site
+Onderwerp: Een nieuw ontwerp voor de website van Dierenkliniek Animalis
 
 Beste Angelina,
 
-Ik kom nog even terug op het websiteontwerp voor Dierenkliniek Animalis (https://svanwijksolutions.github.io/dierenkliniek-animalis/), omdat het u op een praktisch punt kan helpen.
+Op 28-07-2026 stuurde ik u een gratis en vrijblijvend ontwerp voor een nieuwe website voor Dierenkliniek Animalis. Dit is nog een korte herinnering, voor het geval het is blijven liggen.
 
-Een bezorgde eigenaar van bijvoorbeeld een konijn dat niet eet, belt vaak meteen in paniek. Op de nieuwe site staat daarvoor een eigen informatiepagina met uw voedingsadvies en het volledige spoedprotocol, inclusief de spoednummers. Zo vindt zo'n baasje de eerste stappen en het antwoord al op uw site, wat rust geeft én laat zien dat u de expert bent, nog voordat er gebeld is. Ook het VetPlan staat duidelijk uitgelegd (met de vermelding dat het geen verzekering is), wat misverstanden aan de telefoon voorkomt.
+👉 https://svanwijksolutions.github.io/dierenkliniek-animalis/
 
-En doordat de site beter vindbaar is op "dierenarts Harnaschpolder" en soepel werkt op de telefoon, vinden nieuwe patiënteigenaren u makkelijker.
+Waar het u vooral bij kan helpen: nieuwe patiënteigenaren in de buurt zoeken online naar een dierenarts. De nieuwe site is zo gebouwd dat u beter bovenkomt in Google op bijvoorbeeld "dierenarts Harnaschpolder", en dat de site op de telefoon prettig en overzichtelijk werkt, zodat iemand die u nog niet kent u sneller vindt en niet afhaakt op een lastig leesbare pagina. Zo levert de site u vooral nieuwe aanmeldingen op die u nu online misschien misloopt.
 
 Het blijft gratis en vrijblijvend. Zal ik u er kort over bellen, of hoort u liever eerst wat het zou kosten? Laat het gerust weten.
 
