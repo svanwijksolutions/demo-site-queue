@@ -637,6 +637,17 @@
           "wat": [
             "Eerste versie live gezet (5 commits, volledige 8-staps QA)"
           ]
+        },
+        {
+          "datum": "2026-08-18",
+          "wat": [
+            "Homepage-kop 'Van Audi tot Volvo' vervangen door 'Met auto's van deze merken werken wij'",
+            "Merkenbalk toont nu de automerk-logo's (twee sporen) in plaats van de namen",
+            "Meta-/verantwoordingstekst over ontbrekende beoordeling verwijderd",
+            "'10 Google-reviews'-teller weggehaald; kerncijfers nu symmetrisch (38 merken, 6 dagen open)",
+            "Lettertypes sitebreed iets kleiner en ontwerp moderner (marquee, oplopende tellers, gestaggerde reveals)"
+          ],
+          "commit": "b8c7146"
         }
       ]
     },
