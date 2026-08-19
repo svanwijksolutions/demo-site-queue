@@ -482,6 +482,17 @@
             "Eerste versie live gezet"
           ],
           "commit": "b42a083"
+        },
+        {
+          "datum": "2026-08-19",
+          "wat": [
+            "Herzien naar een operationele B&B (framing 'nog zoekende' eruit)",
+            "Placeholder-/statustekst 'nog even geduld met de details' verwijderd",
+            "Interactieve SVG-kaart van het Heuvelland met 12 info-markers en toelichtingen eronder",
+            "Boekingskalender met een paar bezette datums",
+            "Google Maps-link met pin toegevoegd; conceptmail aangevuld met uitleg over later aanpassen / CMS"
+          ],
+          "commit": "06bad74"
         }
       ]
     },

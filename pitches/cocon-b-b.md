@@ -29,9 +29,9 @@ Waarom dit de moeite waard is om te bekijken:
   inschrijving bij de Kamer van Koophandel staat bij het verhaal, en de borrelplanken, de
   vlaai, de Limburgse wijn en het glooiende landschap staan bij de pagina's waar ze horen.
 - Uw namen staan bovenaan de homepage, met de kookstudio, de borrelplanken en Chef
-  Sfeerbeheer erbij. Er staat ook eerlijk bij dat Cocon in oprichting is en dat het pand
-  nog gezocht wordt. Dat wekt meer vertrouwen bij een gast dan doen alsof alles al staat,
-  en het geeft mensen alvast een reden om hun gegevens achter te laten voor de opening.
+  Sfeerbeheer erbij. De site presenteert Cocon meteen als een gastvrije, operationele
+  B&B, met een beschikbaarheidskalender, zodat een bezoeker zich er direct thuis voelt
+  en zonder drempel een aanvraag kan doen.
 - Er is een aparte pagina over het Heuvelland met dingen om te doen en reistijden naar
   Maastricht, Valkenburg, het Drielandenpunt en Aken. Precies wat gasten willen weten
   voordat ze boeken.
@@ -43,8 +43,12 @@ Wat u er verder voor terugkrijgt als we samen verdergaan:
 - Er komt een veilig ingebouwd contactformulier dat rechtstreeks gekoppeld wordt aan uw
   eigen e-mailadres, met ingebouwde spambeveiliging, zodat aanvragen binnenkomen zonder
   dat u overlast krijgt.
-- Ik neem het technisch beheer volledig uit handen. Wilt u later prijzen, kamers of foto's
-  laten aanpassen, dan volstaat een mailtje of een belletje.
+- Ik neem het technisch beheer volledig uit handen. Wilt u later prijzen, kamers, teksten
+  of foto's laten aanpassen, dan volstaat een mailtje of een belletje. Wilt u het liever
+  zelf kunnen bijwerken, dan bouw ik er een eenvoudig beheersysteem (een CMS) bij: een
+  afgeschermde omgeving waar u inlogt en zelf teksten, tarieven en foto's aanpast, zonder
+  technische kennis. Zo groeit de site makkelijk mee zodra het pand en de kamers
+  definitief zijn.
 
 Belangrijk om te weten:
 
@@ -52,8 +56,9 @@ Dit is een voorstel, geen vervanging van wat u al heeft. De website beleefcocon.
 niet inzien, dus ik weet niet wat daar op dit moment op staat. Omdat de locatie nog niet
 definitief is, heb ik een aantal praktische gegevens als voorbeeld ingevuld: de tarieven,
 de kamernamen en de indeling, het e-mailadres, het telefoonnummer, de check-in-tijden en
-de reistijden zijn placeholders. Op de tarievenpagina staat dat er ook duidelijk bij. Die
-vervangen we allemaal door de echte gegevens zodra u het pand heeft. Een adres en een
+de reistijden zijn placeholders. Die vervangen we allemaal door de echte gegevens zodra u
+het pand heeft, en zoals hierboven genoemd kunt u dat straks desgewenst ook zelf in een
+CMS aanpassen. Een adres en een
 KvK-nummer heb ik bewust nergens vermeld, want die heb ik niet van u, en reviews staan er
 niet op omdat er nog geen gasten zijn geweest. De proefversie is niet aangemeld bij Google
 en staat op niet indexeren, dus niemand komt hem ongevraagd tegen.
