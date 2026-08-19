@@ -419,6 +419,17 @@
           "wat": [
             "Eerste versie live gezet"
           ]
+        },
+        {
+          "datum": "2026-08-19",
+          "wat": [
+            "Reviews: geen aantal meer genoemd, twee uitgeschreven quotes (Anne Rust, Ruben Provencio Kuijk) met vijf sterren; kale namenlijst verwijderd",
+            "Achtergrondfoto 'Even sparren over uw administratie?' lichter gemaakt",
+            "Lettertype sitebreed iets kleiner; Google Maps-kaart even breed maar minder hoog",
+            "Taalswitcher nu een landendropdown met vlaggen (NL/EN)",
+            "Contactformulier losgekoppeld van mailto (alleen bevestiging), adressen linken naar Google Maps, footer-lettertype klein en uniform"
+          ],
+          "commit": "2ee6bf43"
         }
       ]
     },

@@ -128,7 +128,48 @@ Gedistilleerd uit een technische-SEO-checklist die Sem heeft aangeleverd (bron: 
   8. Laagdrempelige afsluiting: uitnodiging voor een vrijblijvend telefoontje of langskomen, én expliciet de ruimte geven om gewoon kort te reageren (verlaagt de drempel om te reageren). Voeg als allerlaatste zin vóór de groet een korte, uitnodigende regel toe die de deur opent naar een prijsvraag zonder zelf een bedrag te noemen, bijv. "Wilt u weten wat deze website zou kosten? Laat het me dan gewoon weten." (toegevoegd 27-07-2026, op verzoek van Sem). Dit is geen prijszin (die blijft verboden, zie punt 7), maar een uitnodiging om er zelf naar te vragen. Daarna groet, naam, "S. van Wijk Solutions", link naar svanwijksolutions.nl.
 - Onderbouw klantwaarde-claims altijd realistisch en zonder overdrijving ("kan bijdragen aan", niet "gegarandeerd meer klanten" of "significant hoger"), blijf binnen de bestaande eerlijkheidsregel (geen verzonnen cijfers/garanties, geen verzonnen "verouderd"-claim als de site nooit is ingezien). Behoud de bestaande, ingetogen schrijfstijl (Nederlands, geen stijlstreepjes, geen opgeklopte taal, netjes en onderbouwd) zoals in de bestaande pitchmails in `pitches/`.
 
+## Herinneringsmail
+Vaste opzet voor een herinneringsmail aan een bedrijf dat eerder een (pitch)websiteconcept ontving en nog niet heeft gereageerd (staande regel sinds 18-08-2026, exact format aangeleverd door Sem). Gebruik ALTIJD deze opbouw, niet vrij invullen. De verstuurde voorbeelden staan in `pitches/herinnering-mail-1/`.
+
+```
+Emailadres: [emailadres waar de eerste mail naartoe is gegaan]
+
+Onderwerp: Herinneringsmail vrijblijvend websiteconcept voor [Bedrijfsnaam]
+
+Beste [Naam],
+
+Op [datum eerste mail, dd-mm-jj] stuurde ik u een gratis en vrijblijvend websiteconcept voor [Bedrijfsnaam]. Dit is een korte herinnering, voor het geval het is blijven liggen.
+
+👉 [Link website, met beschrijvende linktekst: "Bedrijfsnaam: korte typering in plaats"]
+
+Waar de nieuwe website u vooral bij gaat helpen:
+
+* [Sterk punt 1: wat maakt deze website beter dan de huidige website. Kies een concreet, kloppend verbeterpunt dat de nieuwe site daadwerkelijk heeft, bijv. een extra taal, een contactformulier zodat er sneller en makkelijker contact wordt opgenomen, een FAQ zodat vragen van bezoekers beantwoord worden voordat ze u opbellen, of toegevoegde testimonials die bezoekers meer vertrouwen geven.]
+* De site ziet er veel moderner uit en leest makkelijker, zodat bezoekers blijven kijken in plaats van weg te klikken, en u komt beter naar boven in Google.
+
+Het websiteconcept is geheel gratis en vrijblijvend, dus neem zeker even een kijkje via de link. Zullen we deze week contact hebben om het websiteconcept te bespreken? Ik ben benieuwd naar uw mening.
+
+Ik hoor het graag!
+
+Met vriendelijke groet,
+Sem van Wijk
+S. van Wijk Solutions
+https://svanwijksolutions.nl
+```
+
+Vaste regels:
+- Bovenaan een regel `Emailadres:` met het e-mailadres waar de oorspronkelijke mail naartoe ging.
+- Onderwerp exact `Herinneringsmail vrijblijvend websiteconcept voor <Bedrijfsnaam>`.
+- Aanspreekvorm (u/je) overnemen van de oorspronkelijke pitchmail van dat bedrijf (het template toont "u" als voorbeeld).
+- Altijd de oorspronkelijke verzenddatum noemen (dd-mm-jj) en expliciet dat dit een herinnering is.
+- Link met een beschrijvende tekst (bedrijfsnaam + korte typering + plaats), geen kale URL.
+- Bullet 1 = het sterkste concrete verbeterpunt van de nieuwe site t.o.v. de huidige site; benoem alleen wat de nieuwe site echt heeft en verzin geen tekortkoming van de huidige site die je niet kent (zie de eerlijkheidsregels).
+- Bullet 2 = altijd de vaste zin over moderner, beter leesbaar en beter in Google.
+- Afsluiting exact zoals in het template (gratis en vrijblijvend + vraag om deze week contact + "Ik ben benieuwd naar uw mening." + "Ik hoor het graag!"), gevolgd door de groet.
+- Al verstuurde herinneringen (`pitches/herinnering-mail-1/`) worden niet met terugwerkende kracht aangepast; deze opzet geldt voor toekomstige herinneringen.
+
 ## Wijzigingslog
+- **18-08-2026** (3): nieuwe sectie "Herinneringsmail" met de vaste opzet die Sem aanleverde (onderwerp "Herinneringsmail vrijblijvend websiteconcept voor <bedrijf>", `Emailadres:`-regel, beschrijvende link, twee bullets waarvan de tweede vast, en een vaste afsluiting met "Ik ben benieuwd naar uw mening."). Geldt voor toekomstige herinneringen; de al verstuurde exemplaren in `pitches/herinnering-mail-1/` blijven ongewijzigd. `_HERINNERINGSMAIL_STRUCTUUR.md` verwijst nu naar deze sectie.
 - **18-08-2026**: feedback op Geo (issue #18) en Garagebedrijf Dennis (issue #19) leverde meerdere nieuwe permanente regels op: (1) geüploade foto's altijd volledig zichtbaar, geen belangrijk deel wegcroppen; (2) een set bij elkaar horende iconen krijgt altijd dezelfde kleur; (3) footer-lettertype klein en overal gelijk; (4) adressen (footer/contact) linken naar Google Maps met een maps-pin-icoontje; (5) contactformulier krijgt NOOIT meer een `mailto:`/verzendkoppeling (Sem koppelt later zelf Formspree bij akkoord van de klant), maar toont wel altijd een bevestiging na indienen; (6) geen meta-/verantwoordingsteksten op de site (bijv. "bewust geen gemiddelde beoordeling omdat die cijfers niet zijn aangeleverd"); (7) losse gelijksoortige items (klant-/merknamen of -logo's, korte kenmerken) liever in een doorlopende balk/marquee dan als kale AI-achtige bulletlijst, en waar logo's beschikbaar zijn logo's tonen i.p.v. namen. De site-specifieke punten van deze twee issues (o.a. logo naar links bij Geo, certificeringen alleen op de kwaliteitpagina, catalogus-links herstellen, sitebrede iets kleinere lettertypes, "moderner/dikker" bij Garagebedrijf Dennis) zijn als gewone feedback-fix opgepakt.
 - **18-08-2026** (2): feedback op Meijer (issue #20): nieuwe regel onder "Content & eerlijkheid", bij minder dan 12 beoordelingen nooit het aantal noemen, alleen een paar reviewquotes uitschrijven met de gegeven sterren (sluit aan bij het weghalen van de reviews-teller bij Garagebedrijf Dennis, #19). Overige punten van #20 (kale reviewer-namenlijst weg, achtergrondfoto lichter, maps-kaart minder hoog maar even breed, lettertype iets kleiner, landendropdown met vlaggen) en van #21 Cocon (moderner + framing naar een operationele B&B i.p.v. "nog zoekende", placeholder-disclaimer weg, kaart met info-bolletjes van dingen te doen in de omgeving, boekingspagina met een paar bezette datums, en in de conceptmail benoemen dat dit soort dingen later aanpasbaar is, incl. uitleg over een CMS) zijn als site-specifieke feedback-fix opgepakt.
 - **03-08-2026**: nieuwe regel onder "Pitchmail" (punt 5e): waar mogelijk een concrete, zelf geverifieerde tekortkoming van de bestaande/oude site van het bedrijf benoemen naast de verbetering die de nieuwe site daarop biedt, in plaats van alleen generieke SEO-/mobiel-/vertrouwenspunten. N.a.v. feedback op BitWizard (issue #10): "zoek iets op wat niet goed is en wat wij wel hebben verbeterd... dit moet je ook verwerken voor toekomstige mailconcepten."
