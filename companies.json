@@ -769,6 +769,19 @@
           "wat": [
             "Eerste versie live gezet (5 commits, volledige 8-staps QA)"
           ]
+        },
+        {
+          "datum": "2026-08-20",
+          "wat": [
+            "Logo verder naar links in de header",
+            "Dienst-iconen allemaal dezelfde kleur",
+            "'Wie er bij ons bunkert' nu een lopende balk i.p.v. bulletlijst",
+            "Foto's volledig zichtbaar gemaakt (geen crop)",
+            "Certificaten alleen nog op de kwaliteitpagina",
+            "Footer-lettertype klein en uniform; adressen linken naar Google Maps met pin",
+            "Contactformulier zonder mailto (met bevestiging); lettertype sitebreed iets kleiner"
+          ],
+          "commit": "c267f89"
         }
       ]
     }
